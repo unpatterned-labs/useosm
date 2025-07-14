@@ -56,12 +56,13 @@
   --color-grey-300: #2c3038;
   --color-grey-400: #1f2227;
   --color-grey-500: #1b1d22;
+  
   /* Green */
-  --color-grey-50: #f3f7ef;
-  --color-grey-75: #ccdcbf;
-  --color-grey-100: #b7cea5;
-  --color-grey-200: #98b87e;
-  --color-grey-300: #83aa63;
-  --color-grey-400: #5c7745;
-  --color-grey-500: #50683c;
+  --color-green-50: #f3f7ef;
+  --color-green-75: #ccdcbf;
+  --color-green-100: #b7cea5;
+  --color-green-200: #98b87e;
+  --color-green-300: #83aa63;
+  --color-green-400: #5c7745;
+  --color-green-500: #50683c;
 }
