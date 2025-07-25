@@ -27,4 +27,4 @@ We will use Astro as the framework for this project to ensure a fast, scalable, 
 
 ## Status
 
-Proposed.
+Accepted.
