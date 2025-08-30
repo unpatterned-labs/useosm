@@ -1,8 +1,15 @@
 ---
-import Welcome from "@/components/Welcome.astro";
+import Hero from "@/components/home/hero.astro";
+import AboutOSM from "@/components/home/about-osm.astro";
 import Layout from "@/layouts/Layout.astro";
+import { APP_CONFIG } from "@/config/Content";
 ---
 
-<Layout>
-  <Welcome />
+<Layout
+  title={APP_CONFIG.HOME_PAGE.title}
+  description={APP_CONFIG.HOME_PAGE.description}
+>
+<Hero />
+<AboutOSM />
+
 </Layout>

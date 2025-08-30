@@ -1,0 +1,17 @@
+---
+import Hero from "@/components/resources/hero.astro";
+import Layout from "@/layouts/Layout.astro";
+import { APP_CONFIG } from "@/config/Content";
+import ResourceSearch from "@/components/react-components/resources/ResourceSearch";
+---
+
+<Layout
+  title={APP_CONFIG.RESOURCES_PAGE.title}
+  description={APP_CONFIG.RESOURCES_PAGE.description}
+>
+<Hero />
+<section class="relative flex w-full justify-center items-center">
+  <ResourceSearch client:load />
+</section>
+
+</Layout>

@@ -1,0 +1,72 @@
+---
+import AppIcons from 'src/config/AppIcons';
+import { type IconNameType } from 'src/config/AppIcons';
+import cn from 'src/utils/cn';
+
+export interface Props {
+  variant?: 'primary' | 'secondary' | 'tertiary' | 'outline';
+  size?: 'sm' | 'md' | 'lg';
+  type?: 'button' | 'submit' | 'reset';
+  href?: string;
+  id: string;
+  disabled?: boolean;
+  icon_name?: IconNameType ;
+  class?: string;
+  [key: string]: any; // For additional HTML attributes
+}
+
+const { 
+  variant = 'primary',
+  size = 'md',
+  type = 'button',
+  href,
+  disabled = false,
+  icon_name,
+  id,
+  class: className = '',
+  ...rest
+} = Astro.props;
+
+// Base classes
+const baseClasses = 'inline-flex items-center gap-2 text-nowrap justify-center font-medium transition-all ease-in-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 cursor-pointer disabled:pointer-events-none disabled:opacity-50';
+
+// Size variants
+const sizeClasses = {
+  sm: 'h-8 px-3 sm:text-sm rounded-2xl',
+  md: 'h-10 px-4 sm:text-base rounded-2xl',
+  lg: 'h-[3.131rem] px-6 sm:text-lg text-sm rounded-3xl'
+};
+
+// Color variants
+const variantClasses = {
+    primary: 'bg-grey-400 text-white hover:bg-grey-300 hover:text-surface-10 disabled:text-grey-400 disabled:bg-green-50',
+    secondary: 'bg-grey-50 text-neutral-200 hover:bg-surface-40 disabled:text-neutral-disabled disabled:bg-surface-elevated',
+    tertiary: 'bg-surface-10 text-grey-300 hover:bg-surface-30 hover:text-neutral-200 disabled:text-neutral-disabled disabled:bg-surface-elevated',
+    outline: 'text-grey-300 hover:text-neutral-200 disabled:text-neutral-disabled'
+};
+
+// Combine all classes
+const buttonClasses = cn(
+  baseClasses,
+  sizeClasses[size],
+  variantClasses[variant],
+  className
+);
+
+const Component = href ? 'a' : 'button'
+const Icon = icon_name ? AppIcons[icon_name] : null;
+
+
+---
+
+<Component 
+  type={type}
+  id={id}
+  disabled={disabled}
+  class={buttonClasses}
+  href={disabled ? undefined : href}
+  {...rest}
+>
+  <slot />
+  {icon_name && <Icon />}
+</Component>
