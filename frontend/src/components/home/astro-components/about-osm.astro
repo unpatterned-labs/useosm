@@ -1,5 +1,5 @@
 ---
-import VideoDialog from "../react-components/VideDialog";
+import VideoDialog from "@/components/shared/react-components/VideoDialog";
 import {APP_CONFIG} from "@/config/Content";
 
 ---
@@ -19,10 +19,7 @@ import {APP_CONFIG} from "@/config/Content";
 </section>
 
 <script>
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-
-gsap.registerPlugin(ScrollTrigger);
+import gsap from "@/utils/gsap";
 
 const about = document.getElementById("about");
 
@@ -33,21 +30,6 @@ gsap.from(about, {
   scrollTrigger: {
     trigger: about,
     start: "top 90%", // when box enters 80% of viewport
-    toggleActions: "play none none reverse", 
-  },
-});
-
-
-const video = document.getElementById("video");
-
-gsap.from(video, {
-  opacity: 0,
-  scale: 0.1, // start small (10%)
-  duration: 1.5,
-  ease: "power3.out",
-  scrollTrigger: {
-    trigger: video,
-    start: "top 90%", // when video enters 90% of viewport
     toggleActions: "play none none reverse", 
   },
 });

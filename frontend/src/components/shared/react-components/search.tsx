@@ -1,4 +1,4 @@
-import { SearchIcon } from "@/assets/icons/SearchIcon";
+import { SearchIcon } from "@/assets/icons/react/SearchIcon";
 import { useState } from "react";
 import cn from "src/utils/cn";
 

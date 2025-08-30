@@ -1,5 +1,5 @@
-import Search from "../search";
-import ResourceList from "./ResourceList";
+import Search from "@/components/shared/react-components/search";
+import ResourceList from "@/components/resources/react-components/ResourceList";
 
 const ResourceSearch = () => {
   return (
