@@ -1,4 +1,4 @@
-import { Plus } from "@/assets/icons/Plus";
+import { Plus } from "@/assets/icons/react/Plus";
 import Thumbnail from "@/assets/images/thumbnail.jpg";
 
 const ResourceCard = ({ href }: { href: string }) => {

@@ -1,6 +1,6 @@
 ---
 import { APP_CONFIG } from "@/config/Content";
-import HeroBgVector from "../shared/hero-bg-vector.astro";
+import HeroBgVector from "@/components/shared/astro-components/hero-bg-vector.astro";
 
 ---
 
@@ -16,10 +16,7 @@ import HeroBgVector from "../shared/hero-bg-vector.astro";
 </HeroBgVector>
 
 <script>
-    import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-
-gsap.registerPlugin(ScrollTrigger);
+import gsap from "@/utils/gsap";
 
 const box = document.getElementById("box");
 

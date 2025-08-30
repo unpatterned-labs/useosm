@@ -1,12 +1,9 @@
 ---
 import {APP_CONFIG} from "@/config/Content";
-import Button from "../ui/Button.astro";
-import Tag from "../ui/Tag.astro";
-import HeroBgVector from "../shared/hero-bg-vector.astro";
-
-function parseHeroText(text: string) {
-  return text.replace(/<bolder>(.*?)<\/bolder>/g, '<span class="font-bold text-green-300">$1</span>');
-}
+import Button from "@/components/ui/astro-ui/button.astro";
+import Tag from "@/components/ui/astro-ui/tag.astro";
+import HeroBgVector from "@/components/shared/astro-components/hero-bg-vector.astro";
+import {parseHeroText} from "@/utils/text-formatter";
 
 const heroText = parseHeroText(APP_CONFIG.HOME_PAGE.Hero.title);
 ---
@@ -47,11 +44,7 @@ const heroText = parseHeroText(APP_CONFIG.HOME_PAGE.Hero.title);
 </HeroBgVector>
 
 <script>
-
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-
-gsap.registerPlugin(ScrollTrigger);
+import gsap from "@/utils/gsap";
 
 const box = document.getElementById("box");
 
@@ -66,8 +59,6 @@ gsap.from(box, {
     toggleActions: "play none none reverse", 
   },
 });
-
-
 
 const typingBox = document.getElementById("typingBox");
 const text = typingBox?.dataset?.typingText || "";
