@@ -1,0 +1,55 @@
+---
+import VideoDialog from "../react-components/VideDialog";
+import {APP_CONFIG} from "@/config/Content";
+
+---
+
+<section class="lg:h-[63.5rem] md:h-[50rem] h-[20rem] bg-grey-500 w-full flex flex-col justify-center items-center relative">
+    <VideoDialog client:load id="video" />
+
+    <div class="w-full flex flex-col items-center justify-end h-full sm:pb-[5.56rem] pb-[3.1rem]" id="about">
+        <div class="max-w-[49.125rem] space-y-4 flex flex-col items-center justify-center text-center text-surface-20">
+            <h2 class="sm:text-4xl text-xl font-semibold ">{APP_CONFIG.HOME_PAGE.AboutOSM.title}</h2>
+            <p class="md:text-xl text-sm font-normal">
+            {APP_CONFIG.HOME_PAGE.AboutOSM.description}
+            </p>
+        </div>
+    </div>
+    <div class="bg-[url('../assets/background/about_osm_vector.svg')] bg-no-repeat bg-cover absolute inset-0 lg:top-5"  />
+</section>
+
+<script>
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
+
+const about = document.getElementById("about");
+
+gsap.from(about, {
+  opacity: 0,
+  y: 100, // starts below
+  duration: 1.5,
+  scrollTrigger: {
+    trigger: about,
+    start: "top 90%", // when box enters 80% of viewport
+    toggleActions: "play none none reverse", 
+  },
+});
+
+
+const video = document.getElementById("video");
+
+gsap.from(video, {
+  opacity: 0,
+  scale: 0.1, // start small (10%)
+  duration: 1.5,
+  ease: "power3.out",
+  scrollTrigger: {
+    trigger: video,
+    start: "top 90%", // when video enters 90% of viewport
+    toggleActions: "play none none reverse", 
+  },
+});
+
+</script>

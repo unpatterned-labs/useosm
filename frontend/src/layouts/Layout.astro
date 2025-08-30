@@ -1,19 +1,90 @@
 ---
 import "@fontsource/geist-sans";
 import "@/styles/global.css";
+import AnnouncementBanner from "@/components/shared/announcement-banner.astro";
+export interface Props {
+  title?: string;
+  description?: string;
+  favicon?: string;
+  lang?: string;
+}
+
+const { 
+  title = "useOSM",
+  description = "Showcase the use of OpenStreetMap Data",
+  lang = "en"
+} = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang={lang}>
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
-    <title>Astro Basics</title>
+      {description && <meta name="description" content={description} />}
+    <title>useOSM - {title}</title>
+    
+    <!-- Core SEO Meta Tags -->
+    {description && <meta name="description" content={description} />}
+    <meta name="keywords" content="useOSM, OpenStreetMap, mapping, geospatial, open source maps" />
+    <meta name="author" content="Unpatterned" />
+    <meta name="robots" content="index, follow" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={Astro.url} />
+    <meta property="og:title" content={`useOSM - ${title}`} />
+    {description && <meta property="og:description" content={description} />}
+    <!-- <meta property="og:image" content="/og-image.jpg" /> -->
+    <meta property="og:site_name" content="useOSM" />
+    
+    <!-- Twitter Card -->
+    <!-- <meta name="twitter:card" content="summary_large_image" /> -->
+    <meta name="twitter:url" content={Astro.url} />
+    <meta name="twitter:title" content={`useOSM - ${title}`} />
+    {description && <meta name="twitter:description" content={description} />}
+    <!-- <meta name="twitter:image" content="/twitter-image.jpg" /> -->
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href={Astro.url} />
+    
+    <!-- Additional Favicons -->
+    <!-- <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" /> -->
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="theme-color" content="#ffffff" />
+    
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+      {JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "useOSM",
+        "url": Astro.url,
+        "description": description,
+        "publisher": {
+          "@type": "Organization",
+          "name": "useOSM"
+        }
+      })}
+    </script>
+    
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="/fonts/your-font.woff2" as="font" type="font/woff2" crossorigin />
+    
+    <!-- DNS Prefetch for External Domains -->
+    <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="//www.google-analytics.com" />
   </head>
   <body>
-    <slot />
+    <!-- Wrapper for slide-in animation -->
+    <main class="slide-in-container">
+      <AnnouncementBanner />
+        <slot />
+    </main>
   </body>
 </html>
 
@@ -23,5 +94,28 @@ import "@/styles/global.css";
     margin: 0;
     width: 100%;
     height: 100%;
+    overflow-x: hidden; /* Prevent horizontal scroll during animations */
+  }
+
+  /* Initial states for slide-in animations */
+  .slide-in-container {
+    opacity: 0;
+    transform: translateX(-80px);
   }
 </style>
+
+<script>
+  import { gsap } from "gsap";
+  // Wait for DOM to be ready
+  document.addEventListener('DOMContentLoaded', () => {
+    // Initial page load animations
+    const tl = gsap.timeline();
+    // Animate the main container
+    tl.to(".slide-in-container", {
+      opacity: 1,
+      x: 0,
+      duration: 0.9,
+      ease: "power2.out"
+    })
+  });
+</script>
