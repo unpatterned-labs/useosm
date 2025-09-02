@@ -2,6 +2,7 @@
 import "@fontsource/geist-sans";
 import "@/styles/global.css";
 import AnnouncementBanner from "@/components/shared/astro-components/announcement-banner.astro";
+import NavBar from "@/components/header";
 export interface Props {
   title?: string;
   description?: string;
@@ -83,8 +84,10 @@ const {
     <!-- Wrapper for slide-in animation -->
     <main class="slide-in-container">
       <AnnouncementBanner />
+      <NavBar client:load/>
         <slot />
     </main>
+    
   </body>
 </html>
 

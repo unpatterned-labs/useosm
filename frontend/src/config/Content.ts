@@ -1,4 +1,49 @@
-export const APP_CONFIG = {
+import type { AppConfigType } from "src/types/content";
+import { APP_ROUTES } from "./Routes";
+
+export const APP_CONFIG:AppConfigType = {
+  NAVBAR: {
+    Usecases: {
+      route: '',
+      children: [
+        {
+          title: "Disaster Response & Humanitarian Aid",
+          description: "How HOT, Missing Maps, and NGOs use OSM to respond to emergencies, map vulnerable areas, and plan logistics.",
+          route: APP_ROUTES.USECASES('disaster-response-and-humanitarian-aid') // we need to review how we want to handle these routes.
+        },
+        {
+          title: "Urban Planning",
+          description: "City governments and researchers using OSM for planning, zoning, or policy analysis.",
+           route: APP_ROUTES.USECASES('urban-planning')
+        },
+        {
+          title: "Education & Research",
+          description: "How universities and students use OSM in classrooms, thesis work, and citizen science.",
+          route: APP_ROUTES.USECASES('education')
+        },
+        {
+          title: "Mobility & Transport",
+          description: "Ride-sharing, routing, bike networks, accessibility, and how tools like GraphHopper, Valhalla, and OsmAnd power them.",
+          route: APP_ROUTES.USECASES('mobility')
+        },
+        {
+          title: "Environment & Climate",
+          description: "Deforestation, climate monitoring, biodiversity tracking. Show examples using OSM + satellite imagery.",
+          route: APP_ROUTES.USECASES('environment-and-climate')
+        },
+        {
+          title: "Navigation & Location Services",
+          description: "Tech companies building navigation apps or local services using OSM data.",
+          route: APP_ROUTES.USECASES('environment-and-climate')
+        }
+      ]
+    },
+    Resources: {
+      route: APP_ROUTES.RESOURCES,
+      children: [
+      ]
+    }
+  },
   HOME_PAGE: {
     title: "Home",
     description: "Showcase the use of OpenStreetMap Data",

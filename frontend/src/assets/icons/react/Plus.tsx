@@ -1,6 +1,6 @@
-import { type SVGProps } from "react";
+import type { TSVGProps } from "src/types/shared";
 
-export const Plus = (props: SVGProps<SVGSVGElement>) => {
+export const Plus = (props: TSVGProps) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

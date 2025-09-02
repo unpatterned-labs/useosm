@@ -61,6 +61,10 @@
   --color-neutral-200: #2a2d2b;
   --color-neutral-disabled: #b3b5b4;
 
+  /* White */
+  --color-white-2: #F9F9F9;
+  --color-white-3:#F4F6F8;
+
   /* Surface */
   --color-surface-10: #ffffff;
   --color-surface-20: #fbfbfb;
