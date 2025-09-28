@@ -1,18 +1,17 @@
-
 export type NavChild = {
   title: string;
   description: string;
   route: string;
-}
+};
 
-export type NavItem=  {
+export type NavItem = {
   route: string;
   children: NavChild[];
-}
+};
 
 export type NavbarConfig = {
   [key: string]: NavItem;
-}
+};
 
 export interface HeroContent {
   title: string;
@@ -28,7 +27,7 @@ export type HomePageContent = {
     title: string;
     description: string;
   };
-}
+};
 
 export type ResourcesPageContent = {
   title: string;
@@ -39,11 +38,11 @@ export type ResourcesPageContent = {
   search: {
     placeholder: string;
   };
-}
+};
 
 export type AppConfigType = {
   NAVBAR: NavbarConfig;
   HOME_PAGE: HomePageContent;
   RESOURCES_PAGE: ResourcesPageContent;
   announcementContent: string[];
-}
+};

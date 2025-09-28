@@ -1,20 +1,18 @@
 ---
-import cn from 'src/utils/cn';
+import cn from "src/utils/cn";
 
 export interface Props {
   className?: string;
 }
 
-const { 
-    className
-} = Astro.props;
-
+const { className } = Astro.props;
 ---
 
 <div
-  class={cn("inline-flex items-center bg-green-50 text-green-500 py-2 px-4 text-sm md:text-base font-medium rounded-4xl", 
-    className
-   )}
+  class={cn(
+    "inline-flex items-center bg-green-50 text-green-500 py-2 px-4 text-sm md:text-base font-medium rounded-4xl",
+    className,
+  )}
 >
-    <slot />
+  <slot />
 </div>

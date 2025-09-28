@@ -14,7 +14,6 @@ We are building the UseOSM platform with a focus on high page performance, a con
 
 - [UI Integration](https://docs.astro.build/en/guides/integrations-guide/#official-integrations): Developers experienced with React can seamlessly integrate React UI components into Astro, allowing for familiar and efficient interface development within the Astro framework.
 
-
 ## Considered Options
 
 - [Astro](https://astro.build/): Astro is an open-source web framework designed for building fast, content-focused websites.It emphasizes performance by rendering components on the server and sending minimal JavaScript to the browser. Astro supports integration with various UI frameworks like React, Preact, Svelte, and Vue. It's well-suited for content-heavy sites like blogs, marketing pages, and e-commerce sites.

@@ -3,8 +3,8 @@ import ResourceList from "@/components/resources/react-components/ResourceList";
 
 const ResourceSearch = () => {
   return (
-    <main className="w-screen lg:top-[calc(100vh-72rem)] top-[calc(100vh-65rem)] absolute space-y-20">
-      <div className="flex items-center justify-center w-full">
+    <main className="absolute top-[calc(100vh-65rem)] w-screen space-y-20 lg:top-[calc(100vh-72rem)]">
+      <div className="flex w-full items-center justify-center">
         <Search
           placeholder="Search..."
           onChange={(value) => {

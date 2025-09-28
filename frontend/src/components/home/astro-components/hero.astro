@@ -1,28 +1,33 @@
 ---
-import {APP_CONFIG} from "@/config/Content";
+import { APP_CONFIG } from "@/config/Content";
 import Button from "@/components/ui/astro-ui/button.astro";
 import Tag from "@/components/ui/astro-ui/tag.astro";
 import HeroBgVector from "@/components/shared/astro-components/hero-bg-vector.astro";
-import {parseHeroText} from "@/utils/text-formatter";
+import { parseHeroText } from "@/utils/text-formatter";
 
 const heroText = parseHeroText(APP_CONFIG.HOME_PAGE.Hero.title);
 ---
 
-<HeroBgVector 
-  className="w-full h-screen gap-12 transition-all delay-200 ease-in-out"
+<HeroBgVector
+  className="h-screen w-full gap-12 transition-all delay-200 ease-in-out"
 >
-  <div class="space-y-6 text-center max-w-[45.219rem]" id="box">
+  <div class="max-w-[45.219rem] space-y-6 text-center" id="box">
     <div class="space-y-6">
       <Tag>
         {APP_CONFIG.HOME_PAGE.Hero.tagline}
       </Tag>
     </div>
-    <h1 class="sm:text-6xl text-3xl font-semibold" set:html={heroText} />
-    <p id="typingBox" class="sm:text-lg text-sm font-normal text-grey-300" data-typing-text={APP_CONFIG.HOME_PAGE.Hero.description} />
+    <h1 class="text-3xl font-semibold sm:text-6xl" set:html={heroText} />
+    <p
+      id="typingBox"
+      class="text-grey-300 text-sm font-normal sm:text-lg"
+      data-typing-text={APP_CONFIG.HOME_PAGE.Hero.description}
+    >
+    </p>
   </div>
- 
-  <div class="flex md:flex-row md:gap-9 flex-col gap-4 w-full max-w-sm">
-    <Button 
+
+  <div class="flex w-full max-w-sm flex-col gap-4 md:flex-row md:gap-9">
+    <Button
       size="lg"
       icon_name="arrow_right"
       class="w-full"
@@ -32,7 +37,7 @@ const heroText = parseHeroText(APP_CONFIG.HOME_PAGE.Hero.title);
     >
       Start Contributing
     </Button>
-    <Button 
+    <Button
       variant="secondary"
       size="lg"
       id="watch-videos-button"
@@ -44,36 +49,36 @@ const heroText = parseHeroText(APP_CONFIG.HOME_PAGE.Hero.title);
 </HeroBgVector>
 
 <script>
-import gsap from "@/utils/gsap";
+  import gsap from "@/utils/gsap";
 
-const box = document.getElementById("box");
+  const box = document.getElementById("box");
 
-gsap.from(box, {
-  opacity: 0,
-  y: 70, // starts below
-  duration: 2,
-  ease: "bounce.out",
-  scrollTrigger: {
-    trigger: box,
-    start: "top 60%", // when box enters 60% of viewport
-    toggleActions: "play none none reverse", 
-  },
-});
+  gsap.from(box, {
+    opacity: 0,
+    y: 70, // starts below
+    duration: 2,
+    ease: "bounce.out",
+    scrollTrigger: {
+      trigger: box,
+      start: "top 60%", // when box enters 60% of viewport
+      toggleActions: "play none none reverse",
+    },
+  });
 
-const typingBox = document.getElementById("typingBox");
-const text = typingBox?.dataset?.typingText || "";
+  const typingBox = document.getElementById("typingBox");
+  const text = typingBox?.dataset?.typingText || "";
 
-gsap.to({}, {
-  duration: text.length * 0.05,
-  onUpdate: function () {
-    const progress = Math.floor(this.progress() * text.length);
-    if(typingBox) {
-      typingBox.textContent = text.substring(0, progress);
-    }
-  },
-  ease: "none",
-});
-
-
-
+  gsap.to(
+    {},
+    {
+      duration: text.length * 0.05,
+      onUpdate: function () {
+        const progress = Math.floor(this.progress() * text.length);
+        if (typingBox) {
+          typingBox.textContent = text.substring(0, progress);
+        }
+      },
+      ease: "none",
+    },
+  );
 </script>

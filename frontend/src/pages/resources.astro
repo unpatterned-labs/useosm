@@ -9,9 +9,8 @@ import ResourceSearch from "@/components/resources/react-components/ResourceSear
   title={APP_CONFIG.RESOURCES_PAGE.title}
   description={APP_CONFIG.RESOURCES_PAGE.description}
 >
-<Hero />
-<section class="relative flex w-full justify-center items-center">
-  <ResourceSearch client:load />
-</section>
-
+  <Hero />
+  <section class="relative flex w-full items-center justify-center">
+    <ResourceSearch client:load />
+  </section>
 </Layout>

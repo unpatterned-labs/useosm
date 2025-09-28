@@ -1,34 +1,32 @@
 ---
 import { APP_CONFIG } from "@/config/Content";
 import HeroBgVector from "@/components/shared/astro-components/hero-bg-vector.astro";
-
 ---
 
-
-<HeroBgVector 
-  className="w-full h-[calc(100vh-20rem)] gap-12 sm:bg-[url('../assets/background/resources_vector.svg')] bg-[url('../assets/background/sm_resources_vector.svg')]"
+<HeroBgVector
+  className="h-[calc(100vh-20rem)] w-full gap-12 bg-[url('../assets/background/sm_resources_vector.svg')] sm:bg-[url('../assets/background/resources_vector.svg')]"
 >
-<div class="md:w-[36rem] w-full text-center bg-contain" id="box">
-    <h1 class="sm:text-4xl text-3xl font-semibold text-grey-300">
-        {APP_CONFIG.RESOURCES_PAGE.Hero.title}
+  <div class="w-full bg-contain text-center md:w-[36rem]" id="box">
+    <h1 class="text-grey-300 text-3xl font-semibold sm:text-4xl">
+      {APP_CONFIG.RESOURCES_PAGE.Hero.title}
     </h1>
-</div>
+  </div>
 </HeroBgVector>
 
 <script>
-import gsap from "@/utils/gsap";
+  import gsap from "@/utils/gsap";
 
-const box = document.getElementById("box");
+  const box = document.getElementById("box");
 
-gsap.from(box, {
-  opacity: 0,
-  y: 70, // starts below
-  duration: 2,
-  ease: "bounce.out",
-  scrollTrigger: {
-    trigger: box,
-    start: "top 60%", // when box enters 60% of viewport
-    toggleActions: "play none none reverse", 
-  },
-});
+  gsap.from(box, {
+    opacity: 0,
+    y: 70, // starts below
+    duration: 2,
+    ease: "bounce.out",
+    scrollTrigger: {
+      trigger: box,
+      start: "top 60%", // when box enters 60% of viewport
+      toggleActions: "play none none reverse",
+    },
+  });
 </script>
