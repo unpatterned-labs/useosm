@@ -1,7 +1,7 @@
 ---
 // AnnouncementBanner.astro
 import cn from "src/utils/cn";
-import {APP_CONFIG} from "@/config/Content";
+import { APP_CONFIG } from "@/config/Content";
 export interface Props {
   bgColor?: string;
   textColor?: string;
@@ -9,34 +9,41 @@ export interface Props {
   speed?: number;
 }
 
-const { 
-  bgColor = "bg-red-50", 
-  textColor = "text-red-300", 
+const {
+  bgColor = "bg-red-50",
+  textColor = "text-red-300",
   height = "md:h-14 h-11",
-  speed = 100
+  speed = 100,
 } = Astro.props;
-
 ---
+
 <section
-  class={cn("sticky top-0 z-50 md:py-4 py-2.5 overflow-hidden",
+  class={cn(
+    "sticky top-0 z-50 md:py-4 py-2.5 overflow-hidden",
     bgColor,
-    height
+    height,
   )}
   id="announcement-banner"
   data-speed={speed}
 >
-  <div class="relative h-full flex items-center">
-    <div 
-      class={cn("text-nowrap md:text-base text-sm whitespace-nowrap flex items-center",
-        textColor
+  <div class="relative flex h-full items-center">
+    <div
+      class={cn(
+        "text-nowrap md:text-base text-sm whitespace-nowrap flex items-center",
+        textColor,
       )}
       id="scroll-content"
-
     >
       <!-- First instance of content -->
-      <span class="inline-block mr-8" set:html={APP_CONFIG.announcementContent.join('')}></span>
+      <span
+        class="mr-8 inline-block"
+        set:html={APP_CONFIG.announcementContent.join("")}
+      />
       <!-- Second instance for seamless loop -->
-      <span class="inline-block mr-8" set:html={APP_CONFIG.announcementContent.join('')}></span>
+      <span
+        class="mr-8 inline-block"
+        set:html={APP_CONFIG.announcementContent.join("")}
+      />
     </div>
   </div>
 </section>
@@ -45,30 +52,30 @@ const {
   import { gsap } from "gsap";
 
   // Wait for DOM to be ready
-  document.addEventListener('DOMContentLoaded', () => {
-    const banner = document.getElementById('announcement-banner');
-    const scrollContent = document.getElementById('scroll-content');
-    
+  document.addEventListener("DOMContentLoaded", () => {
+    const banner = document.getElementById("announcement-banner");
+    const scrollContent = document.getElementById("scroll-content");
+
     if (!banner || !scrollContent) {
-      console.error('Banner elements not found');
+      console.error("Banner elements not found");
       return;
     }
 
     let animation: gsap.core.Tween;
 
     const speed = banner.dataset.speed ? parseInt(banner.dataset.speed) : 100;
-        
+
     // Function to start the animation
     const startAnimation = () => {
       // Get the width of one content instance (including margin)
       const firstChild = scrollContent.children[0];
       if (!firstChild) return;
-      
+
       const contentWidth = (firstChild as HTMLElement).offsetWidth + 10; // 32px for mr-8 (2rem)
-      
+
       // Set initial position
       gsap.set(scrollContent, { x: 0 });
-      
+
       // Create infinite scroll animation
       animation = gsap.to(scrollContent, {
         x: -contentWidth,
@@ -78,17 +85,17 @@ const {
         onRepeat: () => {
           // Reset position for seamless loop
           gsap.set(scrollContent, { x: 0 });
-        }
+        },
       });
-      
-      console.log('Animation started'); // Debug log
+
+      console.log("Animation started"); // Debug log
     };
 
     // Function to pause animation
     const pauseAnimation = () => {
       if (animation) {
         animation.pause();
-        console.log('Animation paused'); // Debug log
+        console.log("Animation paused"); // Debug log
       }
     };
 
@@ -96,20 +103,20 @@ const {
     const resumeAnimation = () => {
       if (animation) {
         animation.resume();
-        console.log('Animation resumed'); // Debug log
+        console.log("Animation resumed"); // Debug log
       }
     };
 
     // Event listeners for hover
-    banner.addEventListener('mouseenter', pauseAnimation);
-    banner.addEventListener('mouseleave', resumeAnimation);
+    banner.addEventListener("mouseenter", pauseAnimation);
+    banner.addEventListener("mouseleave", resumeAnimation);
 
     // Start the animation after a small delay to ensure elements are rendered
     setTimeout(startAnimation, 100);
 
     // Handle window resize
     let resizeTimeout: any;
-    window.addEventListener('resize', () => {
+    window.addEventListener("resize", () => {
       clearTimeout(resizeTimeout);
       resizeTimeout = setTimeout(() => {
         if (animation) {
@@ -126,11 +133,11 @@ const {
   #scroll-content {
     will-change: transform;
   }
-  
+
   /* Fade out edges for smooth visual effect */
   #announcement-banner::before,
   #announcement-banner::after {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     bottom: 0;
@@ -138,13 +145,13 @@ const {
     z-index: 10;
     pointer-events: none;
   }
-  
+
   #announcement-banner::before {
     left: 0;
     background: linear-gradient(to right, currentColor, transparent);
     opacity: 0.1;
   }
-  
+
   #announcement-banner::after {
     right: 0;
     background: linear-gradient(to left, currentColor, transparent);

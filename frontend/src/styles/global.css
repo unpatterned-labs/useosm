@@ -61,17 +61,20 @@
   --color-neutral-200: #2a2d2b;
   --color-neutral-disabled: #b3b5b4;
 
+  /* White */
+  --color-white-2: #f9f9f9;
+  --color-white-3: #f4f6f8;
+
   /* Surface */
   --color-surface-10: #ffffff;
   --color-surface-20: #fbfbfb;
-  --color-surface-30: #F4F6F8;
-  --color-surface-40: #FBFBFB;
+  --color-surface-30: #f4f6f8;
+  --color-surface-40: #fbfbfb;
   --color-surface-elevated: #f5f5f6;
 
   /* Red */
-  --color-red-50: #FCE8E780;
-  --color-red-300: #DF1B12;
-
+  --color-red-50: #fce8e780;
+  --color-red-300: #df1b12;
 
   /* Green */
   --color-green-50: #f3f7ef;
@@ -82,10 +85,7 @@
   --color-green-400: #5c7745;
   --color-green-500: #50683c;
 
-
   /* Box Shadow */
-  --shadow-dialog: 8px -8px 56px 0px #2C303814;
-  --shadow-card: 0px 8px 24px 0px #2C303805;
-
+  --shadow-dialog: 8px -8px 56px 0px #2c303814;
+  --shadow-card: 0px 8px 24px 0px #2c303805;
 }
-

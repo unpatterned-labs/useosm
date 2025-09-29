@@ -6,17 +6,30 @@ export interface Props {
   strokeWidth?: string | number;
 }
 
-const { 
-  size = 24, 
-  class: className = "", 
+const {
+  size = 24,
+  class: className = "",
   stroke = "currentColor",
-  strokeWidth = 1.5
+  strokeWidth = 1.5,
 } = Astro.props;
-
 ---
 
-
-<svg width={size} height={size} viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z" stroke={stroke} stroke-width={strokeWidth} stroke-miterlimit="10"/>
-<path d="M21.5 16L13.5 11V21L21.5 16Z" stroke={stroke} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round"/>
+<svg
+  width={size}
+  height={size}
+  viewBox="0 0 32 32"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path
+    d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z"
+    stroke={stroke}
+    stroke-width={strokeWidth}
+    stroke-miterlimit="10"></path>
+  <path
+    d="M21.5 16L13.5 11V21L21.5 16Z"
+    stroke={stroke}
+    stroke-width={strokeWidth}
+    stroke-linecap="round"
+    stroke-linejoin="round"></path>
 </svg>

@@ -11,7 +11,7 @@ const Search = ({
 }) => {
   const [searchText, setSearchText] = useState("");
   return (
-    <div className="bg-surface-30 flex md:w-[25rem] w-full items-center gap-2 rounded-4xl border border-gray-300 p-3.5">
+    <div className="bg-surface-30 flex w-full items-center gap-2 rounded-4xl border border-gray-300 p-3.5 md:w-[25rem]">
       <SearchIcon
         className={cn(
           "transition-all delay-150 ease-in-out",
