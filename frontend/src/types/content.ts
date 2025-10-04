@@ -1,16 +1,15 @@
 export type NavChild = {
   title: string;
-  description: string;
-  route: string;
+  description?: string;
+  route?: string;
+  isHref?: boolean;
+  href?: string;
 };
 
 export type NavItem = {
   route: string;
+  title: string;
   children: NavChild[];
-};
-
-export type NavbarConfig = {
-  [key: string]: NavItem;
 };
 
 export interface HeroContent {
@@ -40,9 +39,38 @@ export type ResourcesPageContent = {
   };
 };
 
+export type ExploreOSMItem = {
+  title: string;
+  href: string;
+  isHref: boolean;
+  route?: string;
+};
+
+export type ExploreOSMSection = {
+  title: string;
+  children: ExploreOSMItem[];
+};
+
+export type LanguageItem = {
+  language: string;
+  supported: boolean;
+};
+
 export type AppConfigType = {
-  NAVBAR: NavbarConfig;
+  USECASES: NavItem;
+  RESOURCES: NavItem;
   HOME_PAGE: HomePageContent;
   RESOURCES_PAGE: ResourcesPageContent;
   announcementContent: string[];
+  EXPLORE_OSM: ExploreOSMSection;
+  LANGUAGES: LanguageItem[];
+  TAGLINE: string;
+  COPYRIGHT: string;
+  BUY_US_A_COFFEE: {
+    text: string;
+    link: string;
+  };
+  SOCIALS: {
+    GitHub: string;
+  };
 };

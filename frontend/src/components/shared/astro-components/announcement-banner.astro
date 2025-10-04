@@ -1,7 +1,7 @@
 ---
 // AnnouncementBanner.astro
 import cn from "src/utils/cn";
-import { APP_CONFIG } from "@/config/Content";
+import { APP_CONTENT } from "@/config/Content";
 export interface Props {
   bgColor?: string;
   textColor?: string;
@@ -37,12 +37,12 @@ const {
       <!-- First instance of content -->
       <span
         class="mr-8 inline-block"
-        set:html={APP_CONFIG.announcementContent.join("")}
+        set:html={APP_CONTENT.announcementContent.join("")}
       />
       <!-- Second instance for seamless loop -->
       <span
         class="mr-8 inline-block"
-        set:html={APP_CONFIG.announcementContent.join("")}
+        set:html={APP_CONTENT.announcementContent.join("")}
       />
     </div>
   </div>

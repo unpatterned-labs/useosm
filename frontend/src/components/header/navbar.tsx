@@ -1,4 +1,4 @@
-import { APP_CONFIG } from "@/config/Content";
+import { APP_CONTENT } from "@/config/Content";
 import UseOSMLogo from "@/assets/useosm_logo.svg";
 import { APP_ROUTES } from "@/config/Routes";
 import { Button } from "@/components/ui/react/button";
@@ -52,22 +52,25 @@ export const NavBar = () => {
             />
           </a>
           <ul className="hidden gap-x-10 lg:flex" role="menubar">
-            {Object.keys(APP_CONFIG.NAVBAR).map((route) => {
-              const config = APP_CONFIG.NAVBAR[route];
-              const hasChildren = config.children.length > 0;
+            {[APP_CONTENT.USECASES, APP_CONTENT.RESOURCES].map((config) => {
+              const hasRoute = config.route.length > 0;
               return (
-                <li key={`route-${route}`} role="none" className="relative">
-                  {hasChildren ? (
-                    <DropdownMenu route={route} config={config} />
+                <li
+                  key={`route-${config.title}`}
+                  role="none"
+                  className="relative"
+                >
+                  {!hasRoute ? (
+                    <DropdownMenu config={config} />
                   ) : (
                     <Button
                       href={config.route}
                       size="lg"
                       variant="navlink"
                       role="menuitem"
-                      id={`nav-link-${route}`}
+                      id={`nav-link-${config.route}`}
                     >
-                      {route}
+                      {config.title}
                     </Button>
                   )}
                 </li>
@@ -117,21 +120,20 @@ export const NavBar = () => {
 
       {/* Mobile Menu */}
       <div
-        className={`fixed top-0  right-0 z-40 h-full w-full transform bg-white transition-transform duration-300 ease-in-out lg:hidden ${
-          mobileMenuIsOpened ? "translate-x-0" : "translate-x-full"
+        className={`fixed top-0 right-0 z-40 h-full w-full transform bg-white transition-transform duration-300 ease-in-out lg:hidden ${
+          mobileMenuIsOpened ? "translate-x-0" : "hidden translate-x-full"
         }`}
       >
         <div className="px-4 pt-36">
           <nav aria-label="Mobile navigation">
-            <ul role="menubar" className="flex gap-y-6 flex-col">
-              {Object.keys(APP_CONFIG.NAVBAR).map((route) => {
-                const config = APP_CONFIG.NAVBAR[route];
-                const hasChildren = config.children.length > 0;
+            <ul role="menubar" className="flex flex-col gap-y-6">
+              {[APP_CONTENT.USECASES, APP_CONTENT.RESOURCES].map((config) => {
+                const hasRoute = config.route.length > 0;
                 return (
-                  <li key={`mobile-route-${route}`} role="none">
-                    {hasChildren ? (
+                  <li key={`mobile-route-${config.title}`} role="none">
+                    {!hasRoute ? (
                       <MobileDropdownMenu
-                        route={route}
+                        route={config.title}
                         config={config}
                         onItemClick={() => setMobileMenuIsOpened(false)}
                       />
@@ -141,11 +143,11 @@ export const NavBar = () => {
                         size="lg"
                         variant="navlink"
                         role="menuitem"
-                        id={`mobile-nav-link-${route}`}
+                        id={`mobile-nav-link-${config.title}`}
                         className="!text-grey-300 w-full justify-start px-2 py-2 text-left !text-base !font-semibold"
                         onClick={() => setMobileMenuIsOpened(false)}
                       >
-                        {route}
+                        {config.title}
                       </Button>
                     )}
                   </li>
@@ -187,7 +189,7 @@ const MobileDropdownMenu = ({
             href={child.route}
             id={child.title}
             onClick={onItemClick}
-            className="text-grey-200 w-full text-wrap justify-start px-2 py-2 text-base font-medium"
+            className="text-grey-200 w-full justify-start px-2 py-2 text-base font-medium text-wrap"
           >
             <h3>{child.title}</h3>
           </Button>
@@ -198,13 +200,7 @@ const MobileDropdownMenu = ({
 };
 
 // Desktop Dropdown Menu Component (unchanged)
-const DropdownMenu = ({
-  route,
-  config,
-}: {
-  route: string;
-  config: NavItem;
-}) => {
+const DropdownMenu = ({ config }: { config: NavItem }) => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const [focusedIndex, setFocusedIndex] = useState<number>(-1);
   const timeoutRef = useRef<NodeJS.Timeout | null>(null);
@@ -322,10 +318,10 @@ const DropdownMenu = ({
         size="lg"
         variant={isOpen ? "navlinkHovered" : "navlink"}
         role="button"
-        id={`nav-link-${route}`}
+        id={`nav-link-${config.title}`}
         aria-haspopup="true"
         aria-expanded={isOpen}
-        aria-controls={`menu-${route}`}
+        aria-controls={`menu-${config.title}`}
         onKeyDown={handleButtonKeyDown}
         onClick={(e: React.MouseEvent<HTMLButtonElement>) => {
           e.preventDefault();
@@ -333,14 +329,14 @@ const DropdownMenu = ({
           // Do nothing for mouse clicks - let hover handle it
         }}
       >
-        {route}
+        {config.title}
       </Button>
 
       {isOpen && (
         <div
-          id={`menu-${route}`}
+          id={`menu-${config.title}`}
           role="menu"
-          aria-labelledby={`nav-link-${route}`}
+          aria-labelledby={`nav-link-${config.title}`}
           className="border-grey-50 absolute z-10 grid w-3xl origin-top-right -translate-x-1/3 grid-cols-2 gap-x-2 rounded-2xl border bg-white p-4 shadow-2xl focus:outline-none"
           style={{ top: "100%" }}
           onKeyDown={handleMenuKeyDown}

@@ -1,11 +1,11 @@
 ---
-import { APP_CONFIG } from "@/config/Content";
+import { APP_CONTENT } from "@/config/Content";
 import Button from "@/components/ui/astro-ui/button.astro";
 import Tag from "@/components/ui/astro-ui/tag.astro";
 import HeroBgVector from "@/components/shared/astro-components/hero-bg-vector.astro";
 import { parseHeroText } from "@/utils/text-formatter";
 
-const heroText = parseHeroText(APP_CONFIG.HOME_PAGE.Hero.title);
+const heroText = parseHeroText(APP_CONTENT.HOME_PAGE.Hero.title);
 ---
 
 <HeroBgVector
@@ -14,14 +14,14 @@ const heroText = parseHeroText(APP_CONFIG.HOME_PAGE.Hero.title);
   <div class="max-w-[45.219rem] space-y-6 text-center" id="box">
     <div class="space-y-6">
       <Tag>
-        {APP_CONFIG.HOME_PAGE.Hero.tagline}
+        {APP_CONTENT.HOME_PAGE.Hero.tagline}
       </Tag>
     </div>
     <h1 class="text-3xl font-semibold sm:text-6xl" set:html={heroText} />
     <p
       id="typingBox"
       class="text-grey-300 text-sm font-normal sm:text-lg"
-      data-typing-text={APP_CONFIG.HOME_PAGE.Hero.description}
+      data-typing-text={APP_CONTENT.HOME_PAGE.Hero.description}
     >
     </p>
   </div>

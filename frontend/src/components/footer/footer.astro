@@ -1,0 +1,76 @@
+---
+import { APP_ROUTES } from "@/config/Routes";
+import { APP_CONTENT } from "@/config/Content";
+import { APP_CONFIG } from "@/config/Config";
+import { CoffeeIcon } from "@/assets/icons/react/CoffeeIcon";
+import { GitHubIcon } from "@/assets/icons/react/GitHubIcon";
+import { UseOSMLogoIcon } from "@/assets/icons/react/UseOSMLogoIcon";
+import { FooterColumn } from "@/components/footer/footer-column";
+---
+
+<footer class="bg-grey-500 min-h-80 w-full flex-col space-y-4 pt-12">
+  <div
+    class="flex w-full flex-col-reverse gap-10 px-4 py-6 md:grid md:grid-cols-12 md:p-12 xl:p-24"
+  >
+    <div class="col-span-full flex flex-col gap-y-8 lg:col-span-5">
+      <a href={APP_ROUTES.HOME} aria-label="useOSM" rel="noopener noreferrer">
+        <UseOSMLogoIcon
+          className="text-grey-75 h-[23px] w-[97px] hover:text-white md:h-[31px] md:w-[161px]"
+        />
+      </a>
+      <p
+        class="text-grey-75 max-w-xs text-sm text-wrap whitespace-pre-line md:max-w-full"
+      >
+        {APP_CONTENT.TAGLINE}
+      </p>
+
+      <a
+        href={APP_CONTENT.SOCIALS.GitHub}
+        target="_blank"
+        aria-label="GitHub repository"
+        rel="noopener noreferrer"
+      >
+        <div
+          class="bg-grey-300 flex size-8 items-center justify-center rounded-full"
+        >
+          <GitHubIcon className="size-4 text-white" />
+        </div>
+      </a>
+      {
+        APP_CONFIG.enableBuyMeACoffee && (
+          <a
+            href={APP_CONTENT.BUY_US_A_COFFEE.link}
+            target="_blank"
+            title={APP_CONTENT.BUY_US_A_COFFEE.text}
+          >
+            <p class="text-grey-75 flex items-center space-x-2 text-sm font-semibold transition-colors hover:text-white">
+              <span>{APP_CONTENT.BUY_US_A_COFFEE.text}</span>
+              <CoffeeIcon className="size-4" />
+            </p>
+          </a>
+        )
+      }
+    </div>
+
+    <div
+      class="col-span-full flex w-full flex-col gap-10 md:grid md:grid-cols-7 lg:col-span-7"
+    >
+      {
+        [
+          APP_CONTENT.USECASES,
+          APP_CONTENT.EXPLORE_OSM,
+          APP_CONTENT.RESOURCES,
+        ].map((section, id) => (
+          <FooterColumn section={section} isWide={id === 0} />
+        ))
+      }
+    </div>
+  </div>
+  <div
+    class="border-grey-300 flex w-full items-center justify-center border-t-[1px] px-10 py-8"
+  >
+    <p class="text-grey-75 text-center text-xs font-bold md:text-sm">
+      {APP_CONTENT.COPYRIGHT}
+    </p>
+  </div>
+</footer>
