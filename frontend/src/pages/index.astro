@@ -2,12 +2,12 @@
 import Hero from "@/components/home/astro-components/hero.astro";
 import AboutOSM from "@/components/home/astro-components/about-osm.astro";
 import Layout from "@/layouts/page-layout.astro";
-import { APP_CONFIG } from "@/config/Content";
+import { APP_CONTENT } from "@/config/Content";
 ---
 
 <Layout
-  title={APP_CONFIG.HOME_PAGE.title}
-  description={APP_CONFIG.HOME_PAGE.description}
+  title={APP_CONTENT.HOME_PAGE.title}
+  description={APP_CONTENT.HOME_PAGE.description}
 >
   <Hero />
   <AboutOSM />

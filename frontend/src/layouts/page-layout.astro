@@ -3,6 +3,7 @@ import "@fontsource/geist-sans";
 import "@/styles/global.css";
 import AnnouncementBanner from "@/components/shared/astro-components/announcement-banner.astro";
 import NavBar from "@/components/header";
+import Footer from "@/components/footer/footer.astro"
 export interface Props {
   title?: string;
   description?: string;
@@ -86,6 +87,7 @@ const {
       <AnnouncementBanner />
       <NavBar client:load/>
         <slot />
+      <Footer />
     </main>
     
   </body>
