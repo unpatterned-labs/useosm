@@ -37,6 +37,29 @@ export type ResourcesPageContent = {
   search: {
     placeholder: string;
   };
+  resourcesList: ResourceItem[];
+};
+
+export enum ResourceCategory {
+  ALL = "All",
+  EDITORS = "Editors",
+  DATA_EXTRACTION_AND_ANALYSIS = "Data Extraction and Analysis",
+  MAP_VISUALIZATION_STACK = "Map Visualization",
+  DATA_ANALYTICS = "Data Analytics",
+  USER_INTERACTION = "User Interaction",
+  LIBRARIES = "Libraries",
+  NAVIGATION = "Navigation",
+  MOBILE = "Mobile",
+}
+
+export type ResourceItem = {
+  title: string;
+  category: ResourceCategory;
+  slug: string;
+  image: string;
+  description?: string;
+  lastUpdated?: string;
+  content?: string;
 };
 
 export type ExploreOSMItem = {

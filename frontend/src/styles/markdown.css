@@ -1,0 +1,50 @@
+@layer components {
+  .markdown-content {
+    h1 {
+      @apply text-grey-500 mt-12 mb-6 text-4xl font-bold;
+    }
+    h2 {
+      @apply text-grey-300 mt-10 mb-1 text-xl font-medium;
+    }
+    h3 {
+      @apply text-grey-300 mt-8 mb-3 text-2xl font-semibold;
+    }
+    h4 {
+      @apply text-grey-300 mt-6 mb-2 text-xl font-semibold;
+    }
+    h5 {
+      @apply text-grey-300 mt-4 mb-2 text-lg font-semibold;
+    }
+    h6 {
+      @apply text-grey-300 mt-4 mb-2 text-base font-semibold;
+    }
+
+    p {
+      @apply text-grey-200 mb-4 text-base leading-7 font-light text-justify;
+    }
+
+    ul {
+      @apply text-grey-200 mb-2 list-disc space-y-1 pl-6 text-base leading-7 font-light;
+    }
+
+    ol {
+      @apply text-grey-200 mb-2 list-decimal space-y-1 pl-6 text-base leading-7 font-light;
+    }
+
+    img {
+      @apply mx-auto my-6 block h-auto max-w-full shadow-md;
+    }
+
+    a {
+      @apply text-red-100 underline transition-colors duration-200 ease-in-out hover:text-red-75;
+    }
+
+    code {
+      font-family: "Courier New", Courier, monospace;
+    }
+
+    pre {
+      font-family: "Courier New", Courier, monospace;
+    }
+  }
+}

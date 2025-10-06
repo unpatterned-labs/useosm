@@ -1,5 +1,4 @@
 ---
-import "@fontsource/geist-sans";
 import "@/styles/global.css";
 import AnnouncementBanner from "@/components/shared/astro-components/announcement-banner.astro";
 import NavBar from "@/components/header";
@@ -51,6 +50,9 @@ const {
     
     <!-- Canonical URL -->
     <link rel="canonical" href={Astro.url} />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
     
     <!-- Additional Favicons -->
     <!-- <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
@@ -110,7 +112,7 @@ const {
 </style>
 
 <script>
-  import { gsap } from "gsap";
+  import gsap from "@/utils/gsap";
   // Wait for DOM to be ready
   document.addEventListener('DOMContentLoaded', () => {
     // Initial page load animations

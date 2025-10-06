@@ -1,0 +1,22 @@
+---
+import Hero from "@/components/resources/astro-components/hero.astro";
+import Layout from "@/layouts/page-layout.astro";
+import { APP_CONTENT } from "@/config/Content";
+import OsmResources from "@/components/resources/react-components/Resources";
+---
+
+<Layout
+  title={APP_CONTENT.RESOURCES_PAGE.title}
+  description={APP_CONTENT.RESOURCES_PAGE.description}
+>
+  <section class="relative pb-20">
+    <Hero
+      class="h-[calc(100vh-30rem)] bg-cover bg-bottom bg-no-repeat"
+    />
+    <OsmResources 
+      list={APP_CONTENT.RESOURCES_PAGE.resourcesList} 
+      searchPlaceholder={APP_CONTENT.RESOURCES_PAGE.search.placeholder} 
+      client:load 
+    />
+  </section>
+</Layout>

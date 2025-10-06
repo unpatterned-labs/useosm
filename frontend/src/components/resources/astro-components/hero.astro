@@ -1,10 +1,19 @@
 ---
 import { APP_CONTENT } from "@/config/Content";
+import cn from "src/utils/cn";
 import HeroBgVector from "@/components/shared/astro-components/hero-bg-vector.astro";
+
+const { class: className } = Astro.props;
 ---
 
+
 <HeroBgVector
-  className="h-[calc(100vh-20rem)] w-full gap-12 bg-[url('../assets/background/sm_resources_vector.svg')] sm:bg-[url('../assets/background/resources_vector.svg')]"
+  className={cn(
+    "h-[calc(100vh-20rem)] w-full gap-12",
+    "bg-[url('../assets/background/sm_resources_vector.svg')]",
+    "sm:bg-[url('../assets/background/resources_vector.svg')]",
+    className
+  )}
 >
   <div class="w-full bg-contain text-center md:w-[36rem]" id="box">
     <h1 class="text-grey-300 text-3xl font-semibold sm:text-4xl">

@@ -1,5 +1,6 @@
-import type { AppConfigType } from "src/types/content";
+import { ResourceCategory, type AppConfigType } from "src/types/content";
 import { APP_ROUTES } from "./Routes";
+import { generateResourcePath } from "@/helper/generatePath";
 
 export const APP_CONTENT: AppConfigType = {
   USECASES: {
@@ -50,26 +51,27 @@ export const APP_CONTENT: AppConfigType = {
     children: [
       {
         title: "Editors",
-        route: "",
-        isHref: false,
+        route: generateResourcePath(ResourceCategory.EDITORS),
+        isHref: true,
       },
       {
         title: "Data Extraction and Analysis",
-        route: "",
-        isHref: false,
+        route: generateResourcePath(ResourceCategory.DATA_EXTRACTION_AND_ANALYSIS),
+        isHref: true,
       },
       {
         title: "Map Visualization Stack",
-        route: "",
-        isHref: false,
+        route: generateResourcePath(ResourceCategory.MAP_VISUALIZATION_STACK),
+        isHref: true,
       },
       {
         title: "Navigation & Mobile Framework",
-        route: "",
-        isHref: false,
+        route: generateResourcePath(ResourceCategory.NAVIGATION),
+        isHref: true,
       },
     ],
   },
+  
   HOME_PAGE: {
     title: "Home",
     description: "Showcase the use of OpenStreetMap Data",
@@ -97,6 +99,53 @@ export const APP_CONTENT: AppConfigType = {
     search: {
       placeholder: "Search...",
     },
+    resourcesList: [
+      {
+        title: "iD Editor",
+        category: ResourceCategory.EDITORS,
+        slug: "id-editor",
+        image: "https://ideditor.com/img/sprite.png",
+        description:
+          "A user-friendly, web-based map editor for OpenStreetMap, designed for beginners and experienced mappers alike.",
+        lastUpdated: "2024-01-15",
+      },
+      {
+        title: "JOSM",
+        category: ResourceCategory.EDITORS,
+        slug: "josm",
+        image: "https://josm.openstreetmap.de/logo.png",
+        description:
+          "Java OpenStreetMap Editor (JOSM) is a powerful desktop application for editing OpenStreetMap data.",
+        lastUpdated: "2024-01-15",
+      },
+      {
+        title: "MapWithAI",
+        category: ResourceCategory.LIBRARIES,
+        slug: "mapwithai",
+        image: "https://mapwith.ai/logo.png",
+        description:
+          "MapWithAI is a web-based tool that leverages artificial intelligence to assist in the editing and enhancement of OpenStreetMap data.",
+        lastUpdated: "2024-01-15",
+      },
+      {
+        title: "OSMAnd",
+        category: ResourceCategory.NAVIGATION,
+        slug: "osmand",
+        image: "https://osmand.net/images/osmand_logo.png",
+        description:
+          "OSMAnd is a map and navigation application for Android and iOS that uses OpenStreetMap data.",
+        lastUpdated: "2024-01-15",
+      },
+      {
+        title: "OSMCha",
+        category: ResourceCategory.DATA_EXTRACTION_AND_ANALYSIS,
+        slug: "osmcha",
+        image: "https://osmcha.org/static/images/osmcha_logo.png",
+        description:
+          "OSMCha is a web-based tool for reviewing changes in OpenStreetMap data, helping to ensure data quality and integrity.",
+        lastUpdated: "2024-01-15",
+      },
+    ],
   },
   announcementContent: [
     // State of the Map 2025 Announcement
