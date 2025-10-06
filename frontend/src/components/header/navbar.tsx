@@ -6,9 +6,20 @@ import { useState, useRef, useEffect } from "react";
 import type { NavItem } from "src/types/content";
 import { HamburgerIcon } from "@/assets/icons/react/HamburgerIcon";
 import { XIcon } from "@/assets/icons/react/XIcon";
+import cn from "@/utils/cn";
 
 export const NavBar = () => {
   const [mobileMenuIsOpened, setMobileMenuIsOpened] = useState<boolean>(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  // Detect scroll and toggle blur background
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50); // adjust threshold if needed
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   // Close mobile menu on escape key
   useEffect(() => {
@@ -38,7 +49,12 @@ export const NavBar = () => {
   return (
     <>
       <nav
-        className="relative z-50 flex items-center justify-between px-6 py-4 lg:px-14"
+        className={cn(
+          "sticky top-11 z-50 flex items-center justify-between px-6 py-4 md:top-14 lg:px-14",
+          isScrolled
+            ? "bg-opacity-90 shadow-dialog backdrop-blur-xs backdrop-filter"
+            : "",
+        )}
         aria-label="Main navigation"
       >
         <div className="flex items-center gap-x-40">
@@ -359,10 +375,10 @@ const DropdownMenu = ({ config }: { config: NavItem }) => {
                 setFocusedIndex(-1);
               }}
             >
-              <h2 className="text-grey-400 text-sm font-semibold">
+              <h2 className="text-grey-200 text-sm font-semibold">
                 {child.title}
               </h2>
-              <p className="text-grey-200 text-xs">{child.description}</p>
+              <p className="text-grey-100 text-xs">{child.description}</p>
             </a>
           ))}
         </div>
