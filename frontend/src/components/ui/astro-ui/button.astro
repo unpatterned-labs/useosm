@@ -4,8 +4,8 @@ import { type IconNameType } from "src/config/AppIcons";
 import cn from "src/utils/cn";
 
 export interface Props {
-  variant?: "primary" | "secondary" | "tertiary" | "outline";
-  size?: "sm" | "md" | "lg";
+  variant?: "primary" | "secondary" | "tertiary" | "primary-two" | "outline";
+  size?: "sm" | "md" | "lg" | "xl";
   type?: "button" | "submit" | "reset";
   href?: string;
   id: string;
@@ -36,6 +36,7 @@ const sizeClasses = {
   sm: "h-8 px-3 sm:text-sm rounded-2xl",
   md: "h-10 px-4 sm:text-base rounded-2xl",
   lg: "h-[3.131rem] px-6 sm:text-lg text-sm rounded-3xl",
+  xl: "md:h-[6.18rem] h-[5.5rem] px-6 text-3xl rounded-[3.5rem]",
 };
 
 // Color variants
@@ -48,6 +49,8 @@ const variantClasses = {
     "bg-surface-10 text-grey-300 hover:bg-surface-30 hover:text-neutral-200 disabled:text-neutral-disabled disabled:bg-surface-elevated",
   outline:
     "text-grey-300 hover:text-neutral-200 disabled:text-neutral-disabled",
+  "primary-two":
+    "bg-green-300 text-white hover:bg-green-100 hover:text-white disabled:text-green-100 disabled:bg-green-50",
 };
 
 // Combine all classes

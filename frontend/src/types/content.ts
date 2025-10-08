@@ -26,6 +26,30 @@ export type HomePageContent = {
     title: string;
     description: string;
   };
+  HowOSMWorks: {
+    title: string;
+    tagline: string;
+    steps: Array<{
+      title: string;
+      description: string;
+      image: string;
+    }>;
+    actions: {
+      title: string;
+      downloadEbook: {
+        text: string;
+        link: string;
+      };
+      watchVideo: {
+        text: string;
+        link: string;
+      };
+      getStarted: {
+        text: string;
+        link: string;
+      };
+    };
+  };
 };
 
 export type ResourcesPageContent = {
