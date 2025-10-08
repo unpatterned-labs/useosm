@@ -1,6 +1,9 @@
 import { ResourceCategory, type AppConfigType } from "src/types/content";
 import { APP_ROUTES } from "./Routes";
 import { generateResourcePath } from "@/helper/generatePath";
+import OsmStep1 from "@/assets/images/osm_step_1.jpg";
+import OsmStep2 from "@/assets/images/osm_step_2.jpg";
+import OsmStep3 from "@/assets/images/osm_step_3.jpg";
 
 export const APP_CONTENT: AppConfigType = {
   USECASES: {
@@ -56,7 +59,9 @@ export const APP_CONTENT: AppConfigType = {
       },
       {
         title: "Data Extraction and Analysis",
-        route: generateResourcePath(ResourceCategory.DATA_EXTRACTION_AND_ANALYSIS),
+        route: generateResourcePath(
+          ResourceCategory.DATA_EXTRACTION_AND_ANALYSIS,
+        ),
         isHref: true,
       },
       {
@@ -71,7 +76,7 @@ export const APP_CONTENT: AppConfigType = {
       },
     ],
   },
-  
+
   HOME_PAGE: {
     title: "Home",
     description: "Showcase the use of OpenStreetMap Data",
@@ -87,6 +92,45 @@ export const APP_CONTENT: AppConfigType = {
       title: "What's OpenStreetMap",
       description:
         "OpenStreetMap is the free, editable map of the world; built by people like you. From remote villages to busy cities, OSM helps power apps, emergency services, transport systems, and more.",
+    },
+    HowOSMWorks: {
+      tagline: "How OSM Works",
+      title: "How to contribute to Openstreemap",
+      steps: [
+        {
+          title: "Explore",
+          description:
+            "Browse the map and find areas that need updating. Missing roads, new buildings, or incorrect information - every contribution matters.",
+          image: OsmStep1.src,
+        },
+        {
+          title: "Start Mapping",
+          description:
+            "Use tools like the iD Editor or JOSM (a more advanced offline editor) to add roads, outline buildings, map paths, and label locations with the correct names.",
+           image: OsmStep2.src,
+        },
+        {
+          title: "Upload Changesets",
+          description:
+            "After making edits, save and upload your changes with a brief description. This instantly improves the global, open-access map data that anyone can use.",
+          image: OsmStep3.src,
+        },
+      ],
+      actions: {
+        title: "Ready to start contributing",
+        downloadEbook: {
+          text: "Download eBook",
+          link: "https://learnosm.org/en/beginner/",
+        },
+        watchVideo: {
+          text: "Watch Tutorial Video",
+          link: "https://www.youtube.com/watch?v=Zx7pKyYxH2c",
+        },
+        getStarted: {
+          text: "Start Mapping",
+          link: "https://www.openstreetmap.org/",
+        },
+      },
     },
   },
 

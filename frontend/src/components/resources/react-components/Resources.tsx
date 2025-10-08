@@ -27,6 +27,7 @@ const Resources = ({
 
   // Update filtered list when active category changes
   const filterResources = (category: string, searchText: string) => {
+    
     const filtered = list.filter((item) => {
       const matchesCategory =
         category === ResourceCategory.ALL || item.category === category;
@@ -60,8 +61,9 @@ const Resources = ({
         handleCategorySelect={(category: string) =>
           filterResources(category, "")
         }
+        searchText={searchText}
         searchPlaceholder={searchPlaceholder}
-        handleSearch={(text: string) => filterResources(activeCategory, text)}
+        handleSearch={(text: string) => filterResources(ResourceCategory.ALL, text)}
       />
       <ResourceList list={filteredList} />
     </main>

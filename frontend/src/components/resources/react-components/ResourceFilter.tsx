@@ -8,13 +8,15 @@ const ResourceFilter = ({
   activeCategory,
   handleCategorySelect,
   handleSearch,
-  searchPlaceholder = "Search resources..."
+  searchPlaceholder = "Search resources...",
+  searchText
 }: {
   list: ResourceItem[];
   activeCategory: string;
   handleCategorySelect: (category: string) => void;
   handleSearch: (text: string) => void;
   searchPlaceholder: string
+  searchText: string
 }) => {
   // Memoized category statistics
   const CategoryStats = useMemo(() => {
@@ -41,6 +43,7 @@ const ResourceFilter = ({
         <Search
           placeholder={searchPlaceholder}
           onChange={(value) => handleSearch(value)}
+          value={searchText}
         />
       </div>
       <CategoryFilter
