@@ -8,7 +8,7 @@ export const UsersIcon = (props: TSVGProps) => {
       viewBox="0 0 33 32"
       {...props}
     >
-      <g clip-path="url(#clip0_3358_1325)">
+      <g clipPath="url(#clip0_3358_1325)">
         <path
           opacity="0.2"
           d="M16.2 23C18.9614 23 21.2 20.7614 21.2 18C21.2 15.2386 18.9614 13 16.2 13C13.4385 13 11.2 15.2386 11.2 18C11.2 20.7614 13.4385 23 16.2 23Z"

@@ -107,7 +107,7 @@ const OSMStatsSlider = ({
             e.preventDefault();
           }
         }}
-        className="bg-grey-50 ring-white-2 focus:outline-white-2 h-3 w-full cursor-pointer appearance-none rounded-4xl ring-4 [&::-moz-range-thumb]:h-0 [&::-moz-range-thumb]:w-0 [&::-moz-range-thumb]:appearance-none [&::-webkit-slider-thumb]:h-0 [&::-webkit-slider-thumb]:w-0 [&::-webkit-slider-thumb]:appearance-none"
+        className="bg-grey-50 ring-white-2 focus:outline-white-2 h-3 w-full cursor-pointer appearance-none rounded-4xl ring-4 [&::-moz-range-thumb]:size-6 [&::-moz-range-thumb]:appearance-none [&::-moz-range-thumb]:bg-transparent [&::-webkit-slider-thumb]:size-6 [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:bg-transparent"
       />
 
       {/* Marks */}
@@ -157,8 +157,8 @@ const OSMStatsInsights = ({ activeYear }: { activeYear: number }) => {
       ].map((stat, id) => (
         <div className="flex flex-col gap-y-6" key={`osm-stat-${id}`}>
           <div className="flex items-center gap-x-2">
-            <div className="flex size-8 items-center justify-center rounded-full bg-green-300 p-2 text-white md:size-12">
-              <stat.icon />
+            <div className="flex size-8 items-center justify-center rounded-full bg-green-300 p-2 md:size-12">
+              <stat.icon className="size-8 text-white md:size-12" />
             </div>
             <p className="text-grey-200 text-left text-sm md:text-base">
               {stat.title}
