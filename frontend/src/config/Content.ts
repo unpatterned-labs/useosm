@@ -1,6 +1,6 @@
 import { ResourceCategory, type AppConfigType } from "src/types/content";
 import { APP_ROUTES } from "./Routes";
-import { generateResourcePath } from "@/helper/generatePath";
+import { generateResourcePath } from "src/helpers/generatePath";
 import OsmStep1 from "@/assets/images/osm_step_1.jpg";
 import OsmStep2 from "@/assets/images/osm_step_2.jpg";
 import OsmStep3 from "@/assets/images/osm_step_3.jpg";
@@ -93,6 +93,9 @@ export const APP_CONTENT: AppConfigType = {
       description:
         "OpenStreetMap is the free, editable map of the world; built by people like you. From remote villages to busy cities, OSM helps power apps, emergency services, transport systems, and more.",
     },
+    OSMStats: {
+      title: "See how OpenStreetMap is making a difference around the world",
+    },
     HowOSMWorks: {
       tagline: "How OSM Works",
       title: "How to contribute to Openstreemap",
@@ -107,7 +110,7 @@ export const APP_CONTENT: AppConfigType = {
           title: "Start Mapping",
           description:
             "Use tools like the iD Editor or JOSM (a more advanced offline editor) to add roads, outline buildings, map paths, and label locations with the correct names.",
-           image: OsmStep2.src,
+          image: OsmStep2.src,
         },
         {
           title: "Upload Changesets",

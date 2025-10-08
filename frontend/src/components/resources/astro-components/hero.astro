@@ -6,13 +6,12 @@ import HeroBgVector from "@/components/shared/astro-components/hero-bg-vector.as
 const { class: className } = Astro.props;
 ---
 
-
 <HeroBgVector
   className={cn(
     "h-[calc(100vh-20rem)] w-full gap-12",
     "bg-[url('../assets/background/sm_resources_vector.svg')]",
     "bg-[url('../assets/background/resources_vector.svg')]",
-    className
+    className,
   )}
 >
   <div class="w-full bg-contain text-center md:w-[36rem]" id="box">

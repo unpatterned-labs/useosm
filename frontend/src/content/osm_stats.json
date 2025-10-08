@@ -1,0 +1,156 @@
+{
+  "2004": {
+    "changesets": 1000000,
+    "contributors": 1000000,
+    "mappedFeatures": 20220000,
+    "countries": 45,
+    "apps": 45
+  },
+  "2005": {
+    "changesets": 1020000,
+    "contributors": 1015000,
+    "mappedFeatures": 20500000,
+    "countries": 46,
+    "apps": 46
+  },
+  "2006": {
+    "changesets": 1045000,
+    "contributors": 1030000,
+    "mappedFeatures": 20800000,
+    "countries": 47,
+    "apps": 46
+  },
+  "2007": {
+    "changesets": 1070000,
+    "contributors": 1050000,
+    "mappedFeatures": 21150000,
+    "countries": 48,
+    "apps": 47
+  },
+  "2008": {
+    "changesets": 1095000,
+    "contributors": 1070000,
+    "mappedFeatures": 21500000,
+    "countries": 49,
+    "apps": 48
+  },
+  "2009": {
+    "changesets": 1120000,
+    "contributors": 1095000,
+    "mappedFeatures": 21850000,
+    "countries": 50,
+    "apps": 49
+  },
+  "2010": {
+    "changesets": 1145000,
+    "contributors": 1120000,
+    "mappedFeatures": 22200000,
+    "countries": 51,
+    "apps": 50
+  },
+  "2011": {
+    "changesets": 1170000,
+    "contributors": 1145000,
+    "mappedFeatures": 22600000,
+    "countries": 52,
+    "apps": 51
+  },
+  "2012": {
+    "changesets": 1195000,
+    "contributors": 1170000,
+    "mappedFeatures": 23000000,
+    "countries": 53,
+    "apps": 52
+  },
+  "2013": {
+    "changesets": 1220000,
+    "contributors": 1195000,
+    "mappedFeatures": 23450000,
+    "countries": 54,
+    "apps": 53
+  },
+  "2014": {
+    "changesets": 1245000,
+    "contributors": 1220000,
+    "mappedFeatures": 23900000,
+    "countries": 55,
+    "apps": 54
+  },
+  "2015": {
+    "changesets": 1270000,
+    "contributors": 1245000,
+    "mappedFeatures": 24350000,
+    "countries": 56,
+    "apps": 55
+  },
+  "2016": {
+    "changesets": 1295000,
+    "contributors": 1270000,
+    "mappedFeatures": 24800000,
+    "countries": 57,
+    "apps": 56
+  },
+  "2017": {
+    "changesets": 1320000,
+    "contributors": 1295000,
+    "mappedFeatures": 25250000,
+    "countries": 58,
+    "apps": 57
+  },
+  "2018": {
+    "changesets": 1345000,
+    "contributors": 1320000,
+    "mappedFeatures": 25700000,
+    "countries": 59,
+    "apps": 58
+  },
+  "2019": {
+    "changesets": 1370000,
+    "contributors": 1345000,
+    "mappedFeatures": 26150000,
+    "countries": 60,
+    "apps": 59
+  },
+  "2020": {
+    "changesets": 1395000,
+    "contributors": 1370000,
+    "mappedFeatures": 26600000,
+    "countries": 61,
+    "apps": 60
+  },
+  "2021": {
+    "changesets": 1420000,
+    "contributors": 1395000,
+    "mappedFeatures": 27050000,
+    "countries": 62,
+    "apps": 61
+  },
+  "2022": {
+    "changesets": 1445000,
+    "contributors": 1420000,
+    "mappedFeatures": 27500000,
+    "countries": 63,
+    "apps": 62
+  },
+  "2023": {
+    "changesets": 1470000,
+    "contributors": 1445000,
+    "mappedFeatures": 27950000,
+    "countries": 64,
+    "apps": 63
+  },
+  "2024": {
+    "changesets": 1495000,
+    "contributors": 1470000,
+    "mappedFeatures": 28400000,
+    "countries": 65,
+    "apps": 64
+  },
+  "2025": {
+    "changesets": 1520000,
+    "contributors": 1495000,
+    "mappedFeatures": 28850000,
+    "countries": 66,
+    "apps": 65
+  }
+}

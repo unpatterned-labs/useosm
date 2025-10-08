@@ -7,104 +7,117 @@ import ArrowRight from "@/assets/icons/astro/ArrowRight.astro";
 import cn from "@/utils/cn";
 ---
 
-
-<section 
-    class={cn("w-full py-34 px-4 md:px-6 lg:px-0 bg-no-repeat bg-right-bottom flex flex-col md:items-center",
-        "bg-[url('../assets/background/sm_how_osm_works_vector.svg')]",
-        "sm:bg-[url('../assets/background/sm_how_osm_works_vector.svg')]",
-        " bg-[position:20%_85%] sm:bg-[position:95%_80%] lg:bg-[position:98%_2010%]"
-)}>
-    <div class="max-w-full flex flex-col gap-2 items-center justify-center mb-12">
-        <Tag>
-            {APP_CONTENT.HOME_PAGE.HowOSMWorks.tagline}
-        </Tag>
-        <h4 class="md:text-3xl text-center text-2xl text-grey-300 font-semibold">{APP_CONTENT.HOME_PAGE.HowOSMWorks.title}</h4>
-    </div>
-    <div>
-        <ul
-        id="steps"
-        class="w-full max-w-[1248px] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 px-4 sm:px-6 lg:px-8 mb-20 mx-auto"
-        >
-        {
-            APP_CONTENT.HOME_PAGE.HowOSMWorks.steps.map((step, index) => (
-            <li
-                class="relative p-6 group col-span-1 hover:shadow-dialog transition-all delay-150 ease-in-out rounded-lg bg-green-50 min-h-[28rem] sm:min-h-[30rem] flex flex-col gap-8 justify-between bg-[url('../assets/background/contribute_osm_step_vector.svg')] bg-no-repeat bg-contain bg-right-top"
-            >
-                <div class="space-y-6">
-                <div class="flex items-center gap-4 justify-between">
-                    <span class="text-green-500 font-semibold text-xl sm:text-2xl">
-                    {String(index + 1).padStart(2, '0')}
-                    </span>
-                    <svg
-                    height="6"
-                    viewBox="0 0 311 6"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    >
-                    <path
-                        d="M305.667 3C305.667 4.47276 306.861 5.66667 308.333 5.66667C309.806 5.66667 311 4.47276 311 3C311 1.52724 309.806 0.333333 308.333 0.333333C306.861 0.333333 305.667 1.52724 305.667 3ZM0 3V3.5H308.333V3V2.5H0V3Z"
-                        fill="#50683C"
-                    />
-                    </svg>
-                </div>
-                <div class="space-y-2">
-                    <h4 class="text-xl sm:text-2xl font-semibold text-grey-300">{step.title}</h4>
-                    <p class="text-sm sm:text-base text-grey-300">{step.description}</p>
-                </div>
-                </div>
-                <div class="overflow-hidden rounded-md">
-                <img
-                    src={step.image}
-                    alt={step.title}
-                    class="h-full w-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-110"
-                />
-                </div>
-            </li>
-            ))
-        }
-        </ul>
-    </div>
-    <div class="max-w-full flex flex-col lg:flex-row gap-2 lg:items-center items-start min-h-fit">
-        <div class="flex flex-col gap-8" >
-            <div class="inline-flex gap-2 items-center">
-                <h4 class="md:text-4xl text-2xl text-grey-300 font-light align-middle">{APP_CONTENT.HOME_PAGE.HowOSMWorks.actions.title}</h4>
-                <MapTrifold class="text-green-300" size={33} />
+<section
+  class={cn(
+    "w-full py-34 px-4 md:px-6 lg:px-0 bg-no-repeat bg-right-bottom flex flex-col md:items-center",
+    "bg-[url('../assets/background/sm_how_osm_works_vector.svg')]",
+    "sm:bg-[url('../assets/background/sm_how_osm_works_vector.svg')]",
+    " bg-[position:20%_85%] sm:bg-[position:95%_80%] lg:bg-[position:98%_2010%]",
+  )}
+>
+  <div class="mb-12 flex max-w-full flex-col items-center justify-center gap-2">
+    <Tag>
+      {APP_CONTENT.HOME_PAGE.HowOSMWorks.tagline}
+    </Tag>
+    <h4 class="text-grey-300 text-center text-2xl font-semibold md:text-3xl">
+      {APP_CONTENT.HOME_PAGE.HowOSMWorks.title}
+    </h4>
+  </div>
+  <div>
+    <ul
+      id="steps"
+      class="mx-auto mb-20 grid w-full max-w-[1248px] grid-cols-1 gap-6 px-4 sm:grid-cols-2 sm:px-6 md:gap-8 lg:grid-cols-3 lg:px-8"
+    >
+      {
+        APP_CONTENT.HOME_PAGE.HowOSMWorks.steps.map((step, index) => (
+          <li class="group hover:shadow-dialog relative col-span-1 flex min-h-[28rem] flex-col justify-between gap-8 rounded-lg bg-green-50 bg-[url('../assets/background/contribute_osm_step_vector.svg')] bg-contain bg-right-top bg-no-repeat p-6 transition-all delay-150 ease-in-out sm:min-h-[30rem]">
+            <div class="space-y-6">
+              <div class="flex items-center justify-between gap-4">
+                <span class="text-xl font-semibold text-green-500 sm:text-2xl">
+                  {String(index + 1).padStart(2, "0")}
+                </span>
+                <svg
+                  height="6"
+                  viewBox="0 0 311 6"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M305.667 3C305.667 4.47276 306.861 5.66667 308.333 5.66667C309.806 5.66667 311 4.47276 311 3C311 1.52724 309.806 0.333333 308.333 0.333333C306.861 0.333333 305.667 1.52724 305.667 3ZM0 3V3.5H308.333V3V2.5H0V3Z"
+                    fill="#50683C"
+                  />
+                </svg>
+              </div>
+              <div class="space-y-2">
+                <h4 class="text-grey-300 text-xl font-semibold sm:text-2xl">
+                  {step.title}
+                </h4>
+                <p class="text-grey-300 text-sm sm:text-base">
+                  {step.description}
+                </p>
+              </div>
             </div>
-            <Button
-                variant="primary-two"
-                size="xl"
-                id="get-started-button"
-                href={APP_CONTENT.HOME_PAGE.HowOSMWorks.actions.getStarted.link}
-                class="md:w-fit w-full gap-8"
-            >
-                {APP_CONTENT.HOME_PAGE.HowOSMWorks.actions.getStarted.text}
-                <div class="bg-white rounded-full size-10 flex items-center justify-center">
-                    <ArrowRight class="text-green-300" size={20} />
-                </div>
-            </Button>
+            <div class="overflow-hidden rounded-md">
+              <img
+                src={step.image}
+                alt={step.title}
+                class="h-full w-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-110"
+              />
+            </div>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+  <div
+    class="flex min-h-fit max-w-full flex-col items-start gap-2 lg:flex-row lg:items-center"
+  >
+    <div class="flex flex-col gap-8">
+      <div class="inline-flex items-center gap-2">
+        <h4 class="text-grey-300 align-middle text-2xl font-light md:text-4xl">
+          {APP_CONTENT.HOME_PAGE.HowOSMWorks.actions.title}
+        </h4>
+        <MapTrifold class="text-green-300" size={33} />
+      </div>
+      <Button
+        variant="primary-two"
+        size="xl"
+        id="get-started-button"
+        href={APP_CONTENT.HOME_PAGE.HowOSMWorks.actions.getStarted.link}
+        class="w-full gap-8 md:w-fit"
+      >
+        {APP_CONTENT.HOME_PAGE.HowOSMWorks.actions.getStarted.text}
+        <div
+          class="flex size-10 items-center justify-center rounded-full bg-white"
+        >
+          <ArrowRight class="text-green-300" size={20} />
         </div>
-        <div class="space-y-6 flex flex-col md:mt-16 mt-8 lg:mt-24 w-full lg:w-auto">
-            <Button
-                size="lg"
-                id="download-ebook-button"
-                class="rounded-full gap-8 font-normal"
-                href={APP_CONTENT.HOME_PAGE.HowOSMWorks.actions.downloadEbook.link}
-                icon_name="download"
-            >
-                {APP_CONTENT.HOME_PAGE.HowOSMWorks.actions.downloadEbook.text}
-            </Button>
-             <Button
-                variant="secondary"
-                size="lg"
-                id="watch-video-button"
-                class="rounded-full gap-8 font-normal min-w-full"
-                href={APP_CONTENT.HOME_PAGE.HowOSMWorks.actions.watchVideo.link}
-                icon_name="play"
-            >
-                {APP_CONTENT.HOME_PAGE.HowOSMWorks.actions.watchVideo.text}
-            </Button>
-            </div> 
+      </Button>
     </div>
+    <div
+      class="mt-8 flex w-full flex-col space-y-6 md:mt-16 lg:mt-24 lg:w-auto"
+    >
+      <Button
+        size="lg"
+        id="download-ebook-button"
+        class="gap-8 rounded-full font-normal"
+        href={APP_CONTENT.HOME_PAGE.HowOSMWorks.actions.downloadEbook.link}
+        icon_name="download"
+      >
+        {APP_CONTENT.HOME_PAGE.HowOSMWorks.actions.downloadEbook.text}
+      </Button>
+      <Button
+        variant="secondary"
+        size="lg"
+        id="watch-video-button"
+        class="min-w-full gap-8 rounded-full font-normal"
+        href={APP_CONTENT.HOME_PAGE.HowOSMWorks.actions.watchVideo.link}
+        icon_name="play"
+      >
+        {APP_CONTENT.HOME_PAGE.HowOSMWorks.actions.watchVideo.text}
+      </Button>
+    </div>
+  </div>
 </section>
 
 <script>
@@ -112,15 +125,15 @@ import cn from "@/utils/cn";
 
   const steps = document.getElementById("steps");
 
-    gsap.from(steps, {
-        opacity: 0,
-        y: 50, // starts below
-        duration: 2,
-        ease: "elastic.out(1, 0.3)",
-        scrollTrigger: {
-        trigger: steps,
-        start: "top 80%", // when box enters 60% of viewport
-        toggleActions: "play none none reverse",
-        },
-    });
+  gsap.from(steps, {
+    opacity: 0,
+    y: 50, // starts below
+    duration: 2,
+    ease: "elastic.out(1, 0.3)",
+    scrollTrigger: {
+      trigger: steps,
+      start: "top 80%", // when box enters 60% of viewport
+      toggleActions: "play none none reverse",
+    },
+  });
 </script>

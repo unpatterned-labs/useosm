@@ -26,6 +26,9 @@ export type HomePageContent = {
     title: string;
     description: string;
   };
+  OSMStats: {
+    title: string;
+  };
   HowOSMWorks: {
     title: string;
     tagline: string;
@@ -120,4 +123,12 @@ export type AppConfigType = {
   SOCIALS: {
     GitHub: string;
   };
+};
+
+export type TOSMStats = {
+  apps: number;
+  contributors: number;
+  countries: number;
+  mappedFeatures: number;
+  changesets: number;
 };

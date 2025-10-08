@@ -9,27 +9,25 @@ interface Props {
   publishDate: Date;
 }
 
-const { title, thumbnail, slug, description, author, publishDate } = Astro.props;
+const { title, thumbnail, slug, description, author, publishDate } =
+  Astro.props;
 ---
 
-<main class="max-w-[calc(100vw-56.5rem)] mx-auto px-4 py-8 sm:px-6 lg:px-8">
-    <div class="mb-[5.5rem] overflow-hidden rounded-3xl">
-        <img
-          src={thumbnail}
-          alt={`thumbnail-${slug}`}
-          class="h-[25.44rem] w-full object-contain"
-        />
-      </div>
-    <header class="space-y-8 mb-8">
-      <h1 class="text-4xl font-semibold text-gray-900 mb-4 text-center">
-        {title}
-      </h1>
-      <p class="text-grey-200 font-light leading-7 text-base">{description}</p>
-    </header>
-    <article
-     class="markdown-content"
-    >
-        <slot />
-    </article>
+<main class="mx-auto max-w-[calc(100vw-56.5rem)] px-4 py-8 sm:px-6 lg:px-8">
+  <div class="mb-[5.5rem] overflow-hidden rounded-3xl">
+    <img
+      src={thumbnail}
+      alt={`thumbnail-${slug}`}
+      class="h-[25.44rem] w-full object-contain"
+    />
+  </div>
+  <header class="mb-8 space-y-8">
+    <h1 class="mb-4 text-center text-4xl font-semibold text-gray-900">
+      {title}
+    </h1>
+    <p class="text-grey-200 text-base leading-7 font-light">{description}</p>
+  </header>
+  <article class="markdown-content">
+    <slot />
+  </article>
 </main>
-

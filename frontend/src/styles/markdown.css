@@ -20,7 +20,7 @@
     }
 
     p {
-      @apply text-grey-200 mb-4 text-base leading-7 font-light text-justify;
+      @apply text-grey-200 mb-4 text-justify text-base leading-7 font-light;
     }
 
     ul {
@@ -36,7 +36,7 @@
     }
 
     a {
-      @apply text-red-100 underline transition-colors duration-200 ease-in-out hover:text-red-75;
+      @apply hover:text-red-75 text-red-100 underline transition-colors duration-200 ease-in-out;
     }
 
     code {

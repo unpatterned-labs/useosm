@@ -21,7 +21,7 @@ const Search = ({
       />
       <input
         placeholder={placeholder}
-        className="placeholder:text-grey-100 text-grey-300 md:text-base text-sm flex-auto bg-transparent font-medium outline-none"
+        className="placeholder:text-grey-100 text-grey-300 flex-auto bg-transparent text-sm font-medium outline-none md:text-base"
         value={value}
         onChange={(e) => {
           onChange(e.target.value);
