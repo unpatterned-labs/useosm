@@ -63,7 +63,7 @@ const OSMStatsSlider = ({
     <div className="relative flex w-full flex-col items-center gap-y-8">
       {/* Thumb label inside wrapper */}
       <div
-        className={`border-grey-50 text-grey-400 pointer-events-none absolute top-1 flex h-10 w-16 cursor-pointer items-center justify-center rounded-4xl border bg-white font-medium shadow-xl transition-transform duration-150`}
+        className={`border-grey-50 text-base text-grey-400 pointer-events-none absolute top-1 flex h-10 w-16 cursor-pointer items-center justify-center rounded-4xl border bg-white font-medium shadow-xl transition-transform duration-150`}
         style={{
           left: thumbLeft,
           transform: "translateX(-50%) translateY(-50%)",
@@ -107,7 +107,7 @@ const OSMStatsSlider = ({
             e.preventDefault();
           }
         }}
-        className="bg-grey-50 ring-white-2 focus:outline-white-2 h-3 w-full cursor-pointer appearance-none rounded-4xl ring-4 [&::-moz-range-thumb]:size-12 [&::-moz-range-thumb]:appearance-none [&::-moz-range-thumb]:bg-transparent [&::-webkit-slider-thumb]:size-12 [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:bg-transparent"
+        className="bg-grey-50 ring-white-2 focus:outline-white-2 h-3 w-full cursor-pointer appearance-none rounded-4xl ring-4 [&::-moz-range-thumb]:size-12 [&::-moz-range-thumb]:appearance-none [&::-moz-range-thumb]:bg-none [&::-webkit-slider-thumb]:size-12 [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:bg-none"
       />
 
       {/* Marks */}
@@ -157,7 +157,7 @@ const OSMStatsInsights = ({ activeYear }: { activeYear: number }) => {
       ].map((stat, id) => (
         <div className="flex flex-col gap-y-6" key={`osm-stat-${id}`}>
           <div className="flex items-center gap-x-2">
-            <div className="flex size-8 items-center justify-center rounded-full bg-green-300 p-2 md:size-12">
+            <div className="flex size-8 items-center justify-center rounded-full bg-green-300 p-1 md:p-2 md:size-12">
               <stat.icon className="size-8 text-white md:size-12" />
             </div>
             <p className="text-grey-200 text-left text-sm md:text-base">
