@@ -252,7 +252,7 @@ export const APP_CONTENT: AppConfigType = {
     },
   ],
   TAGLINE: `Making OpenStreetMap (OSM) accessible to everyone. \n  Built with ❤️ for the mapping community.`,
-  COPYRIGHT: `© ${new Date().getFullYear()} useOSM. Built for the OpenStreetMap community • Data © OpenStreetMap contributors.`,
+  COPYRIGHT: `© ${new Date().getFullYear()} UseOSM. Built for the OpenStreetMap community • Data © OpenStreetMap contributors.`,
   BUY_US_A_COFFEE: {
     text: "Buy us a coffee",
     link: "https://buymeacoffee.com/useosm",

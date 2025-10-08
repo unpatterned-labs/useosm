@@ -61,7 +61,7 @@ export const NavBar = () => {
           <a href={APP_ROUTES.HOME}>
             <img
               src={UseOSMLogo.src}
-              alt="useOSM home"
+              alt="UseOSM home"
               loading="lazy"
               decoding="async"
               className="h-[23px] w-[97px] md:h-[31px] md:w-[161px]"
