@@ -107,7 +107,7 @@ const OSMStatsSlider = ({
             e.preventDefault();
           }
         }}
-        className="bg-grey-50 ring-white-2 focus:outline-white-2 h-3 w-full cursor-pointer appearance-none rounded-4xl ring-4 [&::-moz-range-thumb]:size-8 [&::-moz-range-thumb]:appearance-none [&::-moz-range-thumb]:bg-none [&::-webkit-slider-thumb]:size-8 [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:bg-none"
+        className="bg-grey-50 ring-white-2 focus:outline-white-2 h-3 w-full cursor-pointer appearance-none rounded-4xl ring-4 [&::-moz-range-thumb]:size-8 [&::-moz-range-thumb]:appearance-none [&::-moz-range-thumb]:bg-none [&::-moz-range-thumb]:rounded-full [&::-webkit-slider-thumb]:size-8 [&::-webkit-slider-thumb]:rounded-full [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:bg-none"
       />
 
       {/* Marks */}
