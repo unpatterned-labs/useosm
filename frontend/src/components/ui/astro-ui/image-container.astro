@@ -1,5 +1,5 @@
 ---
-import cn from '@/utils/cn';
+import cn from "@/utils/cn";
 export interface Props {
   src: string;
   alt?: string;
@@ -7,19 +7,20 @@ export interface Props {
   className: string;
 }
 
-const {
-    src,
-    alt = "Image",
-    figure = false,
-    className = "",
-} = Astro.props;
+const { src, alt = "Image", figure = false, className = "" } = Astro.props;
 ---
 
-<div class="max-w-full space-y-4 justify-center my-8">
-  <img 
-    src={src} 
-    alt={alt} 
+<div class="my-8 max-w-full justify-center space-y-4">
+  <img
+    src={src}
+    alt={alt}
     class={cn("max-h-auto max-w-full rounded-lg shadow-md", className)}
   />
-  {figure && <figcaption class="text-center text-sm text-gray-500 mt-2">{alt}</figcaption>}
+  {
+    figure && (
+      <figcaption class="mt-2 text-center text-sm text-gray-500">
+        {alt}
+      </figcaption>
+    )
+  }
 </div>

@@ -5,7 +5,7 @@ const ResourceCard = ({
   title = "Resource Title",
   href,
   image = Thumbnail.src,
-  ref
+  ref,
 }: {
   title?: string;
   href: string;

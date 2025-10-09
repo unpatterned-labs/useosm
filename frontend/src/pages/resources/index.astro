@@ -10,13 +10,11 @@ import OsmResources from "@/components/resources/react-components/Resources";
   description={APP_CONTENT.RESOURCES_PAGE.description}
 >
   <section class="relative pb-20">
-    <Hero
-      class="h-[calc(100vh-30rem)] bg-cover bg-bottom bg-no-repeat"
-    />
-    <OsmResources 
-      list={APP_CONTENT.RESOURCES_PAGE.resourcesList} 
-      searchPlaceholder={APP_CONTENT.RESOURCES_PAGE.search.placeholder} 
-      client:load 
+    <Hero class="h-[calc(100vh-30rem)] bg-cover bg-bottom bg-no-repeat" />
+    <OsmResources
+      list={APP_CONTENT.RESOURCES_PAGE.resourcesList}
+      searchPlaceholder={APP_CONTENT.RESOURCES_PAGE.search.placeholder}
+      client:load
     />
   </section>
 </Layout>

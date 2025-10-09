@@ -9,19 +9,16 @@ const heroText = parseHeroText(APP_CONTENT.HOME_PAGE.Hero.title);
 ---
 
 <HeroBgVector
-  className="h-screen w-full gap-12 transition-all delay-200 ease-in-out lg:p-0 md:px-6 px-4"
+  className="h-screen w-full gap-12 px-4 transition-all delay-200 ease-in-out md:px-6 lg:p-0"
 >
   <div class="max-w-[45.219rem] space-y-6 text-center" id="box">
     <div class="space-y-6">
       <Tag>
         {APP_CONTENT.HOME_PAGE.Hero.tagline}
-      </Tag>  
+      </Tag>
     </div>
     <h1 class="text-3xl font-semibold sm:text-6xl" set:html={heroText} />
-    <p
-      id="typingBox"
-      class="text-grey-300 text-sm font-normal sm:text-lg"
-    >
+    <p id="typingBox" class="text-grey-300 text-sm font-normal sm:text-lg">
       {APP_CONTENT.HOME_PAGE.Hero.description}
     </p>
   </div>

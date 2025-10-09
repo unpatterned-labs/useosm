@@ -5,7 +5,13 @@ import MapTrifold from "@/assets/icons/astro/MapTrifold.astro";
 import Download from "@/assets/icons/astro/Download.astro";
 import Play from "@/assets/icons/astro/Play.astro";
 
-export type IconNameType = "arrow_right" | "arrow_left" | "arrow_right_up" | "map_trifold" | "download" | "play";
+export type IconNameType =
+  | "arrow_right"
+  | "arrow_left"
+  | "arrow_right_up"
+  | "map_trifold"
+  | "download"
+  | "play";
 
 const AppIcons: Record<IconNameType, any> = {
   arrow_right: ArrowRight,
@@ -13,7 +19,7 @@ const AppIcons: Record<IconNameType, any> = {
   arrow_right_up: ArrowRightUp,
   map_trifold: MapTrifold,
   download: Download,
-  play: Play
+  play: Play,
 };
 
 export default AppIcons;

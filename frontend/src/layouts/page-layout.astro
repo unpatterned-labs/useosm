@@ -11,7 +11,7 @@ export interface Props {
 }
 
 const { 
-  title = "useOSM",
+  title = "UseOSM",
   description = "Showcase the use of OpenStreetMap Data",
   lang = "en"
 } = Astro.props;
@@ -25,26 +25,26 @@ const {
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
       {description && <meta name="description" content={description} />}
-    <title>useOSM - {title}</title>
+    <title>UseOSM - {title}</title>
     
     <!-- Core SEO Meta Tags -->
     {description && <meta name="description" content={description} />}
-    <meta name="keywords" content="useOSM, OpenStreetMap, mapping, geospatial, open source maps" />
+    <meta name="keywords" content="UseOSM, OpenStreetMap, mapping, geospatial, open source maps" />
     <meta name="author" content="Unpatterned" />
     <meta name="robots" content="index, follow" />
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content={Astro.url} />
-    <meta property="og:title" content={`useOSM - ${title}`} />
+    <meta property="og:title" content={`UseOSM - ${title}`} />
     {description && <meta property="og:description" content={description} />}
     <meta property="og:image" content="/og-image.png" />
-    <meta property="og:site_name" content="useOSM" />
+    <meta property="og:site_name" content="UseOSM" />
     
     <!-- Twitter Card -->
     <!-- <meta name="twitter:card" content="summary_large_image" /> -->
     <meta name="twitter:url" content={Astro.url} />
-    <meta name="twitter:title" content={`useOSM - ${title}`} />
+    <meta name="twitter:title" content={`UseOSM - ${title}`} />
     {description && <meta name="twitter:description" content={description} />}
     <!-- <meta name="twitter:image" content="/twitter-image.jpg" /> -->
     
@@ -66,12 +66,12 @@ const {
       {JSON.stringify({
         "@context": "https://schema.org",
         "@type": "WebSite",
-        "name": "useOSM",
+        "name": "UseOSM",
         "url": Astro.url,
         "description": description,
         "publisher": {
           "@type": "Organization",
-          "name": "useOSM"
+          "name": "UseOSM"
         }
       })}
     </script>
@@ -91,7 +91,6 @@ const {
         <slot />
       <Footer />
     </main>
-    
   </body>
 </html>
 

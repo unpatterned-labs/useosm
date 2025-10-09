@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 
 const Resources = ({
   list,
-  searchPlaceholder
+  searchPlaceholder,
 }: {
   list: ResourceItem[];
   searchPlaceholder: string;
@@ -24,10 +24,8 @@ const Resources = ({
     filterResources(categoryParam, searchParam);
   }, [list]);
 
-
   // Update filtered list when active category changes
   const filterResources = (category: string, searchText: string) => {
-    
     const filtered = list.filter((item) => {
       const matchesCategory =
         category === ResourceCategory.ALL || item.category === category;
@@ -63,7 +61,9 @@ const Resources = ({
         }
         searchText={searchText}
         searchPlaceholder={searchPlaceholder}
-        handleSearch={(text: string) => filterResources(ResourceCategory.ALL, text)}
+        handleSearch={(text: string) =>
+          filterResources(ResourceCategory.ALL, text)
+        }
       />
       <ResourceList list={filteredList} />
     </main>

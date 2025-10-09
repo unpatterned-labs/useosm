@@ -8,7 +8,7 @@
     "baseUrl": ".",
     "paths": {
       "@/components/*": ["src/components/*"],
-      "@/helper/*": ["src/helper/*"],
+      "@/helper/*": ["src/helpers/*"],
       "@/content/*": ["src/content/*"],
       "@/assets/*": ["src/assets/*"],
       "@/styles/*": ["src/styles/*"],

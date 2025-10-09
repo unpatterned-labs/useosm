@@ -8,7 +8,7 @@ export const XIcon = (props: TSVGProps) => {
       viewBox="0 0 24 24"
       {...props}
     >
-      <g clip-path="url(#clip0_2824_7429)">
+      <g clipPath="url(#clip0_2824_7429)">
         <path
           d="M18.75 5.25L5.25 18.75"
           stroke="currentColor"

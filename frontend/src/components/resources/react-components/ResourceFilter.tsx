@@ -9,14 +9,14 @@ const ResourceFilter = ({
   handleCategorySelect,
   handleSearch,
   searchPlaceholder = "Search resources...",
-  searchText
+  searchText,
 }: {
   list: ResourceItem[];
   activeCategory: string;
   handleCategorySelect: (category: string) => void;
   handleSearch: (text: string) => void;
-  searchPlaceholder: string
-  searchText: string
+  searchPlaceholder: string;
+  searchText: string;
 }) => {
   // Memoized category statistics
   const CategoryStats = useMemo(() => {

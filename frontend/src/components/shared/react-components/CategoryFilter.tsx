@@ -23,10 +23,10 @@ const CategoryFilter = ({
   return (
     <section
       className={cn(
-        "mt-6 mb-4 flex w-full md:flex-wrap flex-nowrap  items-center gap-2",
+        "mt-6 mb-4 flex w-full flex-nowrap items-center gap-2 md:flex-wrap",
         categories.length > 5
-          ? "justify-start md:overflow-x-auto overflow-scroll"
-          : "md:justify-center justify-start",
+          ? "justify-start overflow-scroll md:overflow-x-auto"
+          : "justify-start md:justify-center",
       )}
     >
       {categories.map((category) => (
@@ -38,7 +38,7 @@ const CategoryFilter = ({
             "",
             category.title === activeCategory
               ? "bg-grey-50 text-grey-300 hover:bg-grey-50 hover:text-grey-300"
-              : "bg-white text-grey-100 hover:bg-grey-50 hover:text-grey-300",
+              : "text-grey-100 hover:bg-grey-50 hover:text-grey-300 bg-white",
           )}
           key={category.title}
           onClick={() => handleCategorySelect(category.title)}
