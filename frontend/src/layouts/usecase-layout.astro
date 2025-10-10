@@ -1,0 +1,42 @@
+---
+import Thumbnail from "@/assets/images/thumbnail.jpg";
+// ResourceLayout with Tailwind CSS
+interface Props {
+  title: string;
+  thumbnail: string;
+  slug: string;
+  description: string;
+}
+
+const { title, thumbnail, slug, description } = Astro.props;
+---
+
+<main class="mx-auto w-full max-w-[60rem] px-4 py-8 md:px-12 lg:px-24">
+  <div
+    class="relative mb-[2rem] h-[14rem] min-w-full overflow-hidden rounded-3xl sm:h-[25.44rem] md:mb-[5.5rem]"
+  >
+    <img
+      src={Thumbnail.src}
+      alt={`thumbnail-${slug}`}
+      class="w-full object-cover"
+    />
+    <img
+      src={thumbnail}
+      alt={`thumbnail-${slug}`}
+      class="absolute bottom-10 left-8 h-[5rem] w-auto object-contain sm:h-[10rem] md:bottom-10"
+    />
+  </div>
+  <header class="mb-8 space-y-8">
+    <h1
+      class="mb-4 text-center text-xl font-semibold text-gray-900 md:text-4xl"
+    >
+      {title}
+    </h1>
+    <p class="text-grey-200 text-justify text-base leading-7 font-light">
+      {description}
+    </p>
+  </header>
+  <article class="markdown-content">
+    <slot />
+  </article>
+</main>

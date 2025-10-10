@@ -79,6 +79,7 @@ export enum ResourceCategory {
   MOBILE = "Mobile",
 }
 
+
 export type ResourceItem = {
   title: string;
   category: ResourceCategory;
