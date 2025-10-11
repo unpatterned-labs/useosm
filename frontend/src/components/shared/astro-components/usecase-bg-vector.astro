@@ -1,0 +1,18 @@
+---
+import cn from "src/utils/cn";
+
+export interface Props {
+  className: string;
+}
+
+const { className } = Astro.props;
+---
+
+<section
+  class={cn(
+    "w-full flex flex-col items-center justify-center bg-[url('../assets/background/usecase_vector.svg')] bg-no-repeat bg-cover",
+    className,
+  )}
+>
+  <slot />
+</section>

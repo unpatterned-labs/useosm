@@ -1,6 +1,9 @@
 import { ResourceCategory, type AppConfigType } from "src/types/content";
 import { APP_ROUTES } from "./Routes";
-import { generateResourcePath } from "src/helpers/generatePath";
+import {
+  generateResourcePath,
+  generateUsecasePath,
+} from "src/helpers/generatePath";
 import OsmStep1 from "@/assets/images/osm_step_1.jpg";
 import OsmStep2 from "@/assets/images/osm_step_2.jpg";
 import OsmStep3 from "@/assets/images/osm_step_3.jpg";
@@ -14,37 +17,43 @@ export const APP_CONTENT: AppConfigType = {
         title: "Disaster Response & Humanitarian Aid",
         description:
           "How HOT, Missing Maps, and NGOs use OSM to respond to emergencies, map vulnerable areas, and plan logistics.",
-        route: APP_ROUTES.USECASES("disaster-response-and-humanitarian-aid"), // we need to review how we want to handle these routes.
+        route: generateUsecasePath("Disaster Response & Humanitarian Aid"),
+        active: true,
       },
       {
         title: "Urban Planning",
         description:
           "City governments and researchers using OSM for planning, zoning, or policy analysis.",
-        route: APP_ROUTES.USECASES("urban-planning"),
+        route: generateUsecasePath("Urban Planning"),
+        active: false,
       },
       {
         title: "Education & Research",
         description:
           "How universities and students use OSM in classrooms, thesis work, and citizen science.",
-        route: APP_ROUTES.USECASES("education"),
+        route: generateUsecasePath("Education & Research"),
+        active: false,
       },
       {
         title: "Mobility & Transport",
         description:
           "Ride-sharing, routing, bike networks, accessibility, and how tools like GraphHopper, Valhalla, and OsmAnd power them.",
-        route: APP_ROUTES.USECASES("mobility"),
+        route: generateUsecasePath("Mobility & Transport"),
+        active: false,
       },
       {
         title: "Environment & Climate",
         description:
           "Deforestation, climate monitoring, biodiversity tracking. Show examples using OSM + satellite imagery.",
-        route: APP_ROUTES.USECASES("environment-and-climate"),
+        route: generateUsecasePath("Environment & Climate"),
+        active: false,
       },
       {
         title: "Navigation & Location Services",
         description:
           "Tech companies building navigation apps or local services using OSM data.",
-        route: APP_ROUTES.USECASES("environment-and-climate"),
+        route: generateUsecasePath("Navigation & Location Services"),
+        active: false,
       },
     ],
   },

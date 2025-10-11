@@ -103,26 +103,5 @@ const {
     font-family: 'Geist', sans-serif;
     overflow-x: hidden; /* Prevent horizontal scroll during animations */
   }
-
-  /* Initial states for slide-in animations */
-  .slide-in-container {
-    opacity: 0;
-    transform: translateX(-80px);
-  }
 </style>
 
-<script>
-  import gsap from "@/utils/gsap";
-  // Wait for DOM to be ready
-  document.addEventListener('DOMContentLoaded', () => {
-    // Initial page load animations
-    const tl = gsap.timeline();
-    // Animate the main container
-    tl.to(".slide-in-container", {
-      opacity: 1,
-      x: 0,
-      duration: 0.9,
-      ease: "power2.out"
-    })
-  });
-</script>

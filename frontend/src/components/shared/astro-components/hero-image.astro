@@ -1,0 +1,13 @@
+---
+const { imagePath, title } = Astro.props;
+---
+
+<div
+  class="border-grey-50 relative z-30 flex h-[20rem] w-[calc(100vw-2.5rem)] translate-y-[-7.125rem] items-center justify-center rounded-2xl border bg-white shadow-2xl sm:rounded-4xl md:h-[30rem] md:translate-y-[-10.125rem] lg:h-[47.5rem] lg:w-[calc(100vw-5rem)] xl:w-[calc(100vw-12rem)] 2xl:w-[calc(100vw-22rem)]"
+>
+  <img
+    class="aspect-auto h-full w-full rounded-3xl"
+    src={imagePath}
+    title={title}
+  />
+</div>
