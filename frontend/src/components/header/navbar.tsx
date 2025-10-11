@@ -198,18 +198,20 @@ const MobileDropdownMenu = ({
         id={`mobile-menu-${route}`}
         className="flex flex-col items-start justify-start space-y-1"
       >
-        {config.children.map((child) => (
-          <Button
-            variant="navlink"
-            key={child.title}
-            href={child.route}
-            id={child.title}
-            onClick={onItemClick}
-            className="text-grey-200 w-full justify-start px-2 py-2 text-base font-medium text-wrap"
-          >
-            <h3>{child.title}</h3>
-          </Button>
-        ))}
+        {config.children
+          .filter((e) => e.active)
+          .map((child) => (
+            <Button
+              variant="navlink"
+              key={child.title}
+              href={child.route}
+              id={child.title}
+              onClick={onItemClick}
+              className="text-grey-200 w-full justify-start px-2 py-2 text-base font-medium text-wrap"
+            >
+              <h3>{child.title}</h3>
+            </Button>
+          ))}
       </div>
     </div>
   );
@@ -357,30 +359,32 @@ const DropdownMenu = ({ config }: { config: NavItem }) => {
           style={{ top: "100%" }}
           onKeyDown={handleMenuKeyDown}
         >
-          {config.children.map((child, index) => (
-            <a
-              key={child.title}
-              ref={(el) => {
-                itemRefs.current[index] = el;
-              }}
-              href={child.route}
-              role="menuitem"
-              tabIndex={focusedIndex === index ? 0 : -1}
-              className={`${
-                focusedIndex === index ? "bg-white-2" : ""
-              } hover:bg-white-2 focus:bg-white-2 flex flex-col gap-2 rounded-2xl p-4 transition-colors duration-300 focus:outline-none`}
-              onMouseEnter={() => setFocusedIndex(index)}
-              onClick={() => {
-                setIsOpen(false);
-                setFocusedIndex(-1);
-              }}
-            >
-              <h2 className="text-grey-200 text-sm font-semibold">
-                {child.title}
-              </h2>
-              <p className="text-grey-100 text-xs">{child.description}</p>
-            </a>
-          ))}
+          {config.children
+            .filter((e) => e.active)
+            .map((child, index) => (
+              <a
+                key={child.title}
+                ref={(el) => {
+                  itemRefs.current[index] = el;
+                }}
+                href={child.route}
+                role="menuitem"
+                tabIndex={focusedIndex === index ? 0 : -1}
+                className={`${
+                  focusedIndex === index ? "bg-white-2" : ""
+                } hover:bg-white-2 focus:bg-white-2 flex flex-col gap-2 rounded-2xl p-4 transition-colors duration-300 focus:outline-none`}
+                onMouseEnter={() => setFocusedIndex(index)}
+                onClick={() => {
+                  setIsOpen(false);
+                  setFocusedIndex(-1);
+                }}
+              >
+                <h2 className="text-grey-200 text-sm font-semibold">
+                  {child.title}
+                </h2>
+                <p className="text-grey-100 text-xs">{child.description}</p>
+              </a>
+            ))}
         </div>
       )}
     </div>

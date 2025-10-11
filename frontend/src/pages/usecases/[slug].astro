@@ -2,32 +2,22 @@
 import type { GetStaticPaths } from "astro";
 import { getCollection } from "astro:content";
 import Layout from "@/layouts/page-layout.astro";
-import ResourceLayout from "@/layouts/resource-layout.astro";
-import Button from "@/components/ui/astro-ui/button.astro";
-import ImageContainer from "@/components/ui/astro-ui/image-container.astro";
+import UsecaseLayout from "@/layouts/usecase-layout.astro";
+import { slugify } from "@/utils/slugify";
 
 export const getStaticPaths = (async () => {
-  const resourceEntries = await getCollection("resources");
-
-  return resourceEntries.map((entry) => ({
-    params: { slug: entry.slug },
+  const usecaseEntries = await getCollection("usecases");
+  return usecaseEntries.map((entry) => ({
+    // Slugify the usecase name because it's slugified in the config/Content file. This ensure we get the same slug even if the name of the
+    // markdown file is different.
+    params: { slug: slugify(entry.data.usecase) },
     props: { entry },
   }));
 }) satisfies GetStaticPaths;
 
 const { entry } = Astro.props;
-const { Content } = await entry.render();
 ---
 
-<Layout title={entry.data.title} description={entry.data.description}>
-  <ResourceLayout
-    title={entry.data.title}
-    slug={entry.data.slug}
-    thumbnail={entry.data.thumbnail}
-    description={entry.data.description}
-    publishDate={new Date(entry.data.date)}
-    author={entry.data.author}
-  >
-    <Content components={{ Button, ImageContainer }} />
-  </ResourceLayout>
+<Layout title={entry.data.usecase} description={entry.data.description}>
+  <UsecaseLayout data={entry.data} />
 </Layout>

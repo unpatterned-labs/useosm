@@ -5,7 +5,6 @@ export const generateResourcePath = (category: string) => {
   return `/${APP_ROUTES.RESOURCES}?category=${encodeURIComponent(category)}`;
 };
 
-
 export const generateUsecasePath = (usecase: string) => {
   return `/${APP_ROUTES.USECASES(slugify(usecase))}`;
 };

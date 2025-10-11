@@ -4,6 +4,7 @@ export type NavChild = {
   route?: string;
   isHref?: boolean;
   href?: string;
+  active?: boolean;
 };
 
 export type NavItem = {
@@ -78,7 +79,6 @@ export enum ResourceCategory {
   NAVIGATION = "Navigation",
   MOBILE = "Mobile",
 }
-
 
 export type ResourceItem = {
   title: string;
