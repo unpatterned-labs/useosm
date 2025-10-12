@@ -1,0 +1,16 @@
+---
+import { APP_CONTENT } from "@/config/Content";
+import OrganizationsCarousel from "../react-components/orgs_carousel";
+---
+
+<section class="bg-surface-30 bg-[url('../assets/background/orgs_using_osm_vector.svg')]  bg-no-repeat bg-right md:py-[6.69rem] py-6 pl-4 md:pl-12 lg:pl-24 space-y-14 relative">
+  <div class="lg:max-w-[55.4rem] md:max-w-[36.4rem] max-w-[21.4rem] space-y-4 text-start">
+    <h3 class="lg:text-6xl md:text-4xl text-2xl text-grey-300 font-semibold md:font-bold">
+      {APP_CONTENT.HOME_PAGE.OrgsUsingOSM.title}
+    </h3>
+    <p class="lg:text-2xl md:text-lg text-sm font-light text-grey-200">
+      {APP_CONTENT.HOME_PAGE.OrgsUsingOSM.description}
+    </p>
+  </div>
+  <OrganizationsCarousel client:load organizations={APP_CONTENT.HOME_PAGE.OrgsUsingOSM.Organizations} />
+</section>

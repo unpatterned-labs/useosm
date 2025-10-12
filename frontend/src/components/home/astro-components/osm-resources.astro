@@ -1,0 +1,29 @@
+---
+import { APP_CONTENT } from "@/config/Content";
+import  OSMResources from "@/components/home/react-components/osm-resources";
+import { Button } from "@/components/ui/react/button";
+---
+
+
+<section class="bg-surface-30 space-y-14 py-6 px-4 md:px-12 lg:px-24">
+    <div class="flex flex-col lg:flex-row lg:items-center justify-between">
+        <h3 class="md:text-4xl md:w-[32rem] text-2xl text-grey-400 font-semibold">
+        {APP_CONTENT.HOME_PAGE.OSMResources.title}
+        </h3>
+        <p class="md:text-xl md:max-w-[32rem] flex-auto text-sm font-light text-grey-300 md:pt-6 max-w-3xl">
+        {APP_CONTENT.HOME_PAGE.OSMResources.description}
+        </p>
+    </div>
+    <OSMResources client:load/>
+    <div class="flex justify-center mt-12">
+        <Button
+            size="lg"
+            className="w-fit text-center text-xs"
+            id="start-contributing-button"
+            href={APP_CONTENT.HOME_PAGE.OSMResources.cta.link}
+            client:load
+        >
+         {APP_CONTENT.HOME_PAGE.OSMResources.cta.title}
+        </Button>
+    </div>
+</section>

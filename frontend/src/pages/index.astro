@@ -5,6 +5,8 @@ import Layout from "@/layouts/page-layout.astro";
 import { APP_CONTENT } from "@/config/Content";
 import HowOsmWorks from "@/components/home/astro-components/how-osm-works.astro";
 import { OSMStats } from "@/components/home/react-components/osm-stats";
+import OrgsUsingOsm from "@/components/home/astro-components/orgs_using_osm.astro";
+import OsmResources from "@/components/home/astro-components/osm-resources.astro";
 ---
 
 <Layout
@@ -14,5 +16,8 @@ import { OSMStats } from "@/components/home/react-components/osm-stats";
   <Hero />
   <AboutOSM />
   <OSMStats client:load />
+  <OrgsUsingOsm />
+  <OsmResources />
   <HowOsmWorks />
+
 </Layout>

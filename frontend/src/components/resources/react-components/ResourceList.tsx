@@ -2,8 +2,21 @@ import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import ResourceCard from "./ResourceCard";
 import type { ResourceItem } from "src/types/content";
+import cn from "@/utils/cn";
 
-const ResourceList = ({ list }: { list: ResourceItem[] }) => {
+const ResourceList = ({
+  list,
+  className,
+  resourceClassName,
+  imageClassName,
+  emptyText,
+}: {
+  list: ResourceItem[];
+  className?: string;
+  resourceClassName?: string;
+  imageClassName?: string;
+  emptyText?: string;
+}) => {
   const cardsRef = useRef<HTMLAnchorElement[]>([]);
 
   // Animation on list change
@@ -23,7 +36,12 @@ const ResourceList = ({ list }: { list: ResourceItem[] }) => {
   }, [list]);
 
   return (
-    <div className="mx-auto grid max-w-[1328px] grid-cols-1 gap-4 px-4 sm:grid-cols-2 md:gap-6 lg:grid-cols-3 xl:grid-cols-4">
+    <div
+      className={cn(
+        "grid grid-cols-1 gap-4 px-4 sm:grid-cols-2 md:gap-6 lg:grid-cols-3 xl:grid-cols-4",
+        className,
+      )}
+    >
       {list.length > 0 ? (
         list.map((item, index) => (
           <ResourceCard
@@ -34,13 +52,15 @@ const ResourceList = ({ list }: { list: ResourceItem[] }) => {
             title={item.title}
             image={item.image}
             href={item.slug}
+            className={resourceClassName}
+            imageClassName={imageClassName}
           />
         ))
       ) : (
         <div className="col-span-full flex h-[10rem] items-center justify-center">
           <p className="w-xs text-center text-red-100">
-            Oops! 😥 We couldn’t find any resources. Try refining your search or
-            exploring other categories.
+            {emptyText ||
+              "Oops! 😥 We couldn’t find any resources. Try refining your search or exploring other categories."}
           </p>
         </div>
       )}

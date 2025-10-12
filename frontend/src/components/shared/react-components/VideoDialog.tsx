@@ -7,7 +7,7 @@ const VideoDialog = ({ id }: { id: string }) => {
       <iframe
         id="video-iframe"
         className="aspect-auto h-[20rem] w-full rounded-2xl sm:rounded-4xl md:h-[40rem]"
-        src="https://www.youtube.com/embed/Phwrgb16oEM?autoplay=1&mute"
+        src="https://www.youtube.com/embed/Phwrgb16oEM?"
         title="New"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;"
         allowFullScreen

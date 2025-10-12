@@ -23,10 +23,10 @@ const CategoryFilter = ({
   return (
     <section
       className={cn(
-        "mt-6 mb-4 flex w-full flex-nowrap items-center gap-2 md:flex-wrap",
+        "mt-6 mb-4 flex w-full items-center gap-2 flex-wrap",
         categories.length > 5
           ? "justify-start overflow-scroll md:overflow-x-auto"
-          : "justify-start md:justify-center",
+          : "justify-center",
       )}
     >
       {categories.map((category) => (

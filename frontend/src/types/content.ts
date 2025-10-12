@@ -30,6 +30,23 @@ export type HomePageContent = {
   OSMStats: {
     title: string;
   };
+  OSMResources: {
+    title: string;
+    description: string;
+    cta: {
+      title: string;
+      link: string;
+    };
+  }
+  OrgsUsingOSM: {
+    title: string;
+    description: string;
+    Organizations: Array<{
+      name: string;
+      image: string;
+      link: string;
+    }>;
+  }
   HowOSMWorks: {
     title: string;
     tagline: string;
@@ -54,6 +71,7 @@ export type HomePageContent = {
       };
     };
   };
+
 };
 
 export type ResourcesPageContent = {
