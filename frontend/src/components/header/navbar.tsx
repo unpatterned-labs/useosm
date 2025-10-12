@@ -15,7 +15,7 @@ export const NavBar = () => {
   // Detect scroll and toggle blur background
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50); // adjust threshold if needed
+      setIsScrolled(window.scrollY > 5); // adjust threshold if needed
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
@@ -50,9 +50,9 @@ export const NavBar = () => {
     <>
       <nav
         className={cn(
-          "sticky top-11 z-50 flex items-center justify-between px-6 py-4 md:top-14 lg:px-14",
+          "sticky top-11 z-50 flex items-center justify-between px-6 py-4 transition-all duration-300 ease-in-out md:top-14 lg:px-14",
           isScrolled
-            ? "bg-opacity-90 shadow-dialog backdrop-blur-xs backdrop-filter"
+            ? "shadow-dialog bg-white backdrop-blur-xs backdrop-filter"
             : "",
         )}
         aria-label="Main navigation"

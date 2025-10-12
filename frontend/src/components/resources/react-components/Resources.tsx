@@ -65,7 +65,7 @@ const Resources = ({
           filterResources(ResourceCategory.ALL, text)
         }
       />
-      <ResourceList list={filteredList} />
+      <ResourceList className="mx-auto grid max-w-[1328px]" list={filteredList} />
     </main>
   );
 };

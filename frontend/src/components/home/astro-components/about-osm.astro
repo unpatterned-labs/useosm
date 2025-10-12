@@ -28,20 +28,3 @@ import { APP_CONTENT } from "@/config/Content";
   >
   </div>
 </section>
-
-<script>
-  import gsap from "@/utils/gsap";
-
-  const about = document.getElementById("about");
-
-  gsap.from(about, {
-    opacity: 0,
-    y: 100, // starts below
-    duration: 1.5,
-    scrollTrigger: {
-      trigger: about,
-      start: "top 90%", // when box enters 80% of viewport
-      toggleActions: "play none none reverse",
-    },
-  });
-</script>

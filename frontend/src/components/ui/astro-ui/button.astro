@@ -55,10 +55,10 @@ const variantClasses = {
 
 // Combine all classes
 const buttonClasses = cn(
+  className,
   baseClasses,
   sizeClasses[size],
   variantClasses[variant],
-  className,
 );
 
 const Component = href ? "a" : "button";

@@ -12,7 +12,7 @@ import cn from "@/utils/cn";
     "w-full py-34 px-4 md:px-6 lg:px-0 bg-no-repeat bg-right-bottom flex flex-col md:items-center",
     "bg-[url('../assets/background/sm_how_osm_works_vector.svg')]",
     "sm:bg-[url('../assets/background/sm_how_osm_works_vector.svg')]",
-    " bg-[position:20%_85%] sm:bg-[position:95%_80%] lg:bg-[position:98%_2010%]",
+    " bg-[position:20%_85%] sm:bg-[position:95%_80%] lg:bg-[position:98%_980%]",
   )}
 >
   <div class="mb-12 flex max-w-full flex-col items-center justify-center gap-2">
@@ -119,21 +119,3 @@ import cn from "@/utils/cn";
     </div>
   </div>
 </section>
-
-<script>
-  import gsap from "@/utils/gsap";
-
-  const steps = document.getElementById("steps");
-
-  gsap.from(steps, {
-    opacity: 0,
-    y: 50, // starts below
-    duration: 2,
-    ease: "elastic.out(1, 0.3)",
-    scrollTrigger: {
-      trigger: steps,
-      start: "top 80%", // when box enters 60% of viewport
-      toggleActions: "play none none reverse",
-    },
-  });
-</script>
