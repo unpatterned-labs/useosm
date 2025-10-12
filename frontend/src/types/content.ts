@@ -4,6 +4,7 @@ export type NavChild = {
   route?: string;
   isHref?: boolean;
   href?: string;
+  active?: boolean;
 };
 
 export type NavItem = {

@@ -1,0 +1,183 @@
+---
+import UsecaseBgVector from "@/components/shared/astro-components/usecase-bg-vector.astro";
+import UsecaseContentBgVector from "@/components/shared/astro-components/usecase-content-bg-vector.astro";
+import Button from "@/components/ui/astro-ui/button.astro";
+import Tag from "@/components/ui/astro-ui/tag.astro";
+import HeroImage from "@/components/shared/astro-components/hero-image.astro";
+import { parseHeroText } from "@/utils/text-formatter";
+interface Props {
+  data: Record<string, string>;
+}
+
+const { data } = Astro.props;
+const heroText = parseHeroText(data.title);
+
+const usecases = Object.keys(data)
+  .filter((key) => key.startsWith("usecase") && key.endsWith("Title"))
+  .map((key) => {
+    const index = key.match(/\d+/)?.[0];
+    return {
+      title: data[`usecase${index}Title`],
+      description: data[`usecase${index}Description`],
+      imagePath: data[`usecase${index}ImagePath`],
+      articleLink: data[`usecase${index}CTALink`],
+    };
+  })
+  .filter((item) => item.title && item.description);
+
+const callToActionCards = Object.keys(data)
+  .filter((key) => key.startsWith("CTACard") && key.endsWith("Title"))
+  .map((key) => {
+    const index = key.match(/\d+/)?.[0];
+    return {
+      title: data[`CTACard${index}Title`],
+      description: data[`CTACard${index}Description`],
+      buttonText: data[`CTACard${index}ButtonText`],
+      buttonLink: data[`CTACard${index}ButtonLink`],
+    };
+  })
+  .filter((item) => item.title && item.description);
+---
+
+<main class="h-full w-full">
+  <UsecaseBgVector
+    className="h-screen w-full gap-12 px-4 transition-all delay-200 ease-in-out md:px-6 lg:p-0"
+  >
+    <div class="max-w-[45.219rem] space-y-6 text-center" id="box">
+      <div class="space-y-6">
+        <Tag>
+          {data.usecase}
+        </Tag>
+      </div>
+      <h1 class="text-3xl font-semibold sm:text-6xl" set:html={heroText} />
+      <p id="typingBox" class="text-grey-300 text-sm font-normal sm:text-lg">
+        {data.description}
+      </p>
+    </div>
+    <div class="flex max-w-fit flex-col">
+      <Button
+        size="lg"
+        icon_name="arrow_right"
+        class="w-full"
+        id="start-contributing-button"
+        href={data.CTALink}
+        target="_blank"
+      >
+        {data.CTAText}
+      </Button>
+    </div>
+  </UsecaseBgVector>
+  <UsecaseContentBgVector className="h-full w-full bg-green-50">
+    <section
+      class="flex h-[20rem] w-full flex-col items-center justify-center md:h-[40rem] lg:h-[53.5rem]"
+    >
+      <HeroImage imagePath={data.heroImagePath} title={data.tagline} />
+    </section>
+    <!-- Description -->
+    <div
+      class="flex h-full w-full flex-col items-center justify-end p-[1rem] sm:p-[2rem]"
+    >
+      <div class="text-grey-300 max-w-[59.125rem] space-y-4 text-center">
+        <h2 class="text-3xl font-semibold lg:text-5xl">
+          {data.descriptionSectionHeader}
+        </h2>
+        <h3 class="text-xl font-medium lg:text-3xl">
+          {data.descriptionSectionSubHeader}
+        </h3>
+        <p class="text-sm font-normal lg:text-2xl">
+          {data.descriptionSectionContent}
+        </p>
+      </div>
+    </div>
+    <!-- Use cases -->
+    <div class="text-grey-300 mt-40 max-w-[39.125rem] space-y-4 text-center">
+      <h2 class="text-2xl font-semibold lg:text-4xl">
+        {data.usecaseSectionTitle}
+      </h2>
+    </div>
+    <section class="my-20 flex flex-col gap-16 px-4 md:px-8 lg:px-16">
+      {
+        usecases.map((usecase, index) => (
+          <article
+            class={`flex flex-col-reverse items-center justify-between gap-4 md:flex-row md:gap-18 ${
+              index % 2 === 1 ? "md:flex-row-reverse" : ""
+            }`}
+          >
+            <div class="text-grey-300 basis-1/2 space-y-4 text-left">
+              <h3 class="text-xl font-semibold lg:text-3xl">
+                <a
+                  href={usecase.articleLink}
+                  class="transition-colors hover:text-green-200"
+                  target="_blank"
+                >
+                  {usecase.title}
+                </a>
+              </h3>
+              <p class="text-base lg:text-2xl">{usecase.description}</p>
+            </div>
+            <div class="flex basis-1/2 justify-center">
+              <img
+                src={usecase.imagePath}
+                alt={usecase.title}
+                class="w-full rounded-xl border border-gray-200 object-cover shadow-sm"
+                loading="lazy"
+              />
+            </div>
+          </article>
+        ))
+      }
+    </section>
+  </UsecaseContentBgVector>
+
+  <!-- CTAs -->
+  <div
+    class="text-grey-300 mt-40 flex w-full flex-col items-center justify-center space-y-4 text-center"
+  >
+    <h2 class="text-2xl font-semibold lg:text-4xl">
+      {data.callToActionSectionTitle}
+    </h2>
+    <p class="max-w-xl text-sm font-normal lg:text-2xl">
+      {data.callToActionSectionDescription}
+    </p>
+  </div>
+
+  <section
+    class="my-12 grid grid-cols-1 gap-6 px-4 md:grid-cols-2 md:px-8 lg:grid-cols-3 lg:px-24"
+  >
+    {
+      callToActionCards.map((card, index) => (
+        <div
+          class={`relative flex h-60 flex-col justify-between overflow-hidden rounded-lg border border-gray-200 p-6 text-left ${
+            index === 0
+              ? "bg-green-50 bg-[url('../assets/background/usecase_cta_green_vector.svg')] bg-cover bg-no-repeat"
+              : index === 1
+                ? "bg-grey-50 bg-[url('../assets/background/usecase_cta_grey_vector.svg')] bg-cover bg-no-repeat"
+                : "bg-red-50 bg-[url('../assets/background/usecase_cta_red_vector.svg')] bg-cover bg-no-repeat"
+          }`}
+        >
+          <div class="flex w-full items-center">
+            <div class="bg-grey-400 h-[1px] w-full" />
+            <span class="text-xs">●</span>
+          </div>
+
+          <div class="mt-4 space-y-2">
+            <h3 class="text-lg font-semibold">{card.title}</h3>
+            <p class="text-sm text-gray-700">{card.description}</p>
+          </div>
+
+          <a
+            href={card.buttonLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            class={`mt-6 inline-flex items-center gap-2 text-base font-medium text-red-200`}
+          >
+            {card.buttonText}
+            <span class="flex size-6 items-center justify-center rounded-full bg-red-200 text-white">
+              →
+            </span>
+          </a>
+        </div>
+      ))
+    }
+  </section>
+</main>
