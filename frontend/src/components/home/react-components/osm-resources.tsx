@@ -59,6 +59,7 @@ const OSMResources = () => {
       <ul className="flex flex-col gap-8 lg:max-w-[22.56rem]">
         {ResourcesCategory.map((category) => (
           <li
+            key={category.id}
             className={cn(
               "",
               activeCategory === category.category
@@ -67,7 +68,7 @@ const OSMResources = () => {
             )}
             onClick={() => handleCategorySelect(category.category)}
           >
-            <button className="flex gap-4 text-start">
+            <button className="flex gap-3 text-start">
               <hr
                 className={cn(
                   "border-grey-200 h-3 rounded border-[3px] border-l",

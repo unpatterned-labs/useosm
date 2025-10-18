@@ -44,17 +44,17 @@ const OrganizationsCarousel = ({
         className="scrollbar-hide relative flex w-full items-center gap-6 overflow-x-auto scroll-smooth py-2 pr-6"
       >
         {organizations.map((org, index) => (
-          <li key={index}>
+          <li key={index} className="size-full">
             <a
               href={org.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex h-[6.4rem] w-[8.125rem] flex-shrink-0 flex-col items-center justify-between gap-4 rounded-3xl bg-white p-2.5 md:h-[11.4rem] md:w-[14rem] md:p-4"
+              className="flex h-[6.4rem] w-[8.125rem] flex-shrink-0 flex-col items-center gap-2 rounded-3xl bg-white p-2.5 md:h-[11.4rem] md:w-[14rem] md:gap-4 md:p-4"
             >
               <img
                 src={org.image}
                 alt={org.name}
-                className="w-auto object-cover object-center hover:scale-110 md:h-[6.39rem]"
+                className="h-[3.37rem] w-auto object-cover object-center hover:scale-110 md:h-[6.39rem]"
               />
               <span className="text-grey-200 text-xs font-normal md:text-xl">
                 {org.name}

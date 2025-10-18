@@ -50,10 +50,8 @@ export const NavBar = () => {
     <>
       <nav
         className={cn(
-          "sticky top-11 z-50 flex items-center justify-between px-6 py-4 transition-all duration-300 ease-in-out md:top-14 lg:px-14",
-          isScrolled
-            ? "shadow-dialog bg-white backdrop-blur-xs backdrop-filter"
-            : "",
+          "sticky top-0 z-50 flex items-center justify-between px-6 py-4 transition-all duration-150 ease-in-out lg:px-14",
+          isScrolled ? "shadow-dialog bg-white" : "",
         )}
         aria-label="Main navigation"
       >
