@@ -8,7 +8,7 @@ const ResourceCard = ({
   image = Thumbnail.src,
   ref,
   className,
-  imageClassName
+  imageClassName,
 }: {
   title?: string;
   href: string;
@@ -21,26 +21,30 @@ const ResourceCard = ({
     <a
       ref={ref}
       href={`/resources/${href}`}
-      className={cn("group border-grey-50 shadow-card block h-auto w-full cursor-pointer rounded-3xl border p-4 transition-shadow duration-200 hover:shadow-xs md:p-6", className)}
+      className={cn(
+        "group border-grey-50 shadow-card flex h-[16rem] w-full cursor-pointer flex-col justify-between rounded-3xl border p-4 transition-shadow duration-200 hover:shadow-xs md:p-6",
+        className,
+      )}
     >
-      <div className="mb-3 overflow-hidden rounded-md">
+      <div className="mb-3 flex flex-1 items-center justify-center overflow-hidden rounded-md">
         <img
           src={image}
           alt="Resource Thumbnail"
-          className={cn(" w-full object-contain transition-transform duration-300 ease-in-out group-hover:scale-120",
-            imageClassName ? imageClassName : "h-32"
+          className={cn(
+            "w-full object-contain transition-transform duration-300 ease-in-out group-hover:scale-120",
+            imageClassName ? imageClassName : "h-19",
           )}
         />
       </div>
       <div className="flex items-center gap-2">
         <h3
-          className="text-grey-300 flex-auto truncate text-base font-medium text-ellipsis"
+          className="text-grey-300 flex-auto truncate text-sm font-medium text-ellipsis md:text-base"
           title={title}
         >
           {title}
         </h3>
-        <div className="bg-surface-30 text-grey-75 flex size-8 items-center justify-center rounded-full transition-colors duration-200 group-hover:bg-green-300 group-hover:text-green-50">
-          <Plus />
+        <div className="bg-surface-30 text-grey-75 flex size-6 items-center justify-center rounded-full transition-colors duration-200 group-hover:bg-green-300 group-hover:text-green-50 md:size-8">
+          <Plus className="size-3.5 md:size-4" />
         </div>
       </div>
     </a>
