@@ -74,10 +74,15 @@ export const APP_CONTENT: AppConfigType = {
         ),
         isHref: true,
       },
+         {
+        title: "Libraries",
+        route: generateResourcePath(ResourceCategory.LIBRARIES),
+        isHref: true,
+      },
       {
         title: "Map Visualization Stack",
         route: generateResourcePath(ResourceCategory.MAP_VISUALIZATION_STACK),
-        isHref: true,
+        isHref: false,
       },
       {
         title: "Navigation & Mobile Framework",
