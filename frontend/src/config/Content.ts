@@ -74,7 +74,7 @@ export const APP_CONTENT: AppConfigType = {
         ),
         isHref: true,
       },
-         {
+      {
         title: "Libraries",
         route: generateResourcePath(ResourceCategory.LIBRARIES),
         isHref: true,
@@ -245,6 +245,26 @@ export const APP_CONTENT: AppConfigType = {
         },
       },
     },
+    OSMCommunities: {
+      title: "OpenStreetMap community around the world",
+      map: {
+        title: "OSM Communities:",
+        interactiveLayerIds: ["osm-communities-layer"],
+        source: {
+          id: "osm-communities",
+          type: "geojson",
+          data: "https://raw.githubusercontent.com/osmlab/osm-community-index/v5.9.0/dist/completeFeatureCollection.json",
+        },
+        layer: {
+          id: "osm-communities-layer",
+          type: "fill", // better for point-based community data
+          paint: {
+            "fill-color": "#2860c9",
+            "fill-opacity": 0.2,
+          },
+        },
+      },
+    },
   },
 
   RESOURCES_PAGE: {
@@ -376,5 +396,16 @@ export const APP_CONTENT: AppConfigType = {
   },
   SOCIALS: {
     GitHub: "https://github.com/unpatterned-labs/useosm",
+  },
+  MAP_CONFIG: {
+    style: "https://basemaps.cartocdn.com/gl/voyager-gl-style/style.json",
+    maxZoomLevel: 14,
+    minZoomLevel: 3,
+    control: {
+      layout: {
+        minimizeLabel: "Minimize Map",
+         maximizeLabel: "Expand Map"
+      }
+    }
   },
 };

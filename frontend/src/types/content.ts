@@ -1,3 +1,5 @@
+import type { LayerProps, SourceProps } from "@vis.gl/react-maplibre";
+
 export type NavChild = {
   title: string;
   description?: string;
@@ -37,7 +39,7 @@ export type HomePageContent = {
       title: string;
       link: string;
     };
-  }
+  };
   OrgsUsingOSM: {
     title: string;
     description: string;
@@ -46,7 +48,7 @@ export type HomePageContent = {
       image: string;
       link: string;
     }>;
-  }
+  };
   HowOSMWorks: {
     title: string;
     tagline: string;
@@ -71,7 +73,15 @@ export type HomePageContent = {
       };
     };
   };
-
+  OSMCommunities: {
+    title: string;
+    map: {
+      interactiveLayerIds: string[] | undefined;
+      source: SourceProps;
+      layer: LayerProps;
+      title: string
+    };
+  };
 };
 
 export type ResourcesPageContent = {
@@ -141,6 +151,17 @@ export type AppConfigType = {
   };
   SOCIALS: {
     GitHub: string;
+  };
+  MAP_CONFIG: {
+    style: string;
+    maxZoomLevel: number;
+    minZoomLevel: number;
+    control: {
+      layout: {
+        minimizeLabel: string;
+        maximizeLabel: string;
+      };
+    };
   };
 };
 

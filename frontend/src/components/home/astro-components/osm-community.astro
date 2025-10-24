@@ -1,0 +1,13 @@
+---
+import { APP_CONTENT } from "@/config/Content";
+import CommunityMap from "@/components/home/react-components/community-map";
+---
+<section class="bg-white space-y-14 pt-32 pb-16 px-4 md:px-12 lg:px-24 flex items-center justify-center flex-col">
+  <h3 class="md:text-4xl text-2xl text-grey-300 font-semibold max-w-[37.87rem] text-center">
+    {APP_CONTENT.HOME_PAGE.OSMCommunities.title}
+   </h3>
+  <div class="h-full min-w-full">
+      <CommunityMap client:only />
+  </div>
+</section>
+
