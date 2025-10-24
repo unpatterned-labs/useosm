@@ -92,6 +92,8 @@
   /* Box Shadow */
   --shadow-dialog: 8px -8px 56px 0px #2c303814;
   --shadow-card: 0px 8px 24px 0px #2c303805;
+  --shadow-xs: 0px 1px 8px 0px #18002C14;
+
 }
 
 .scrollbar-hide {
