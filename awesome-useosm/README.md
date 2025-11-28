@@ -24,7 +24,6 @@ Inspired by the spirit of the *awesome* community and built to celebrate the **r
   - [Developer Tools & Infrastructure](#-developer-tools--infrastructure)
 - [Referencing & Sources](#-referencing--sources)
 - [How to Contribute](#-how-to-contribute)
-- [Final Words](#-final-words)
 - [License](#-license)
 
 ---
