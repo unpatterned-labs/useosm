@@ -10,15 +10,15 @@
     "format": "prettier . --write"
   },
   "dependencies": {
-    "@astrojs/mdx": "^4.3.6",
-    "@astrojs/react": "^4.4.0",
+    "@astrojs/mdx": "^4.3.12",
+    "@astrojs/react": "^4.4.2",
     "@fontsource-variable/geist": "^5.2.8",
     "@headlessui/react": "^2.2.9",
     "@tailwindcss/vite": "^4.1.12",
     "@types/react": "^19.1.11",
     "@types/react-dom": "^19.1.7",
     "@vis.gl/react-maplibre": "^8.1.0",
-    "astro": "^5.14.1",
+    "astro": "^5.16.2",
     "clsx": "^2.1.1",
     "gsap": "^3.13.0",
     "maplibre-gl": "^5.9.0",
