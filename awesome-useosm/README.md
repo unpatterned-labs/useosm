@@ -124,6 +124,10 @@ OpenStreetMap is chosen because it is:
 - **Uses OSM for:** Emergency field operations , logistics, end emergency response. Mapping where maps do not exist.
  https://www.msf.org
 
+#### **Youthmappers***
+- A global community of students, researchers, educators, and scholars that use public geospatial technologies to highlight and directly address development and environmental challenges worldwide.
+https://www.youthmappers.org/
+
 ---
 
 ### Platfrom and  Search Engines
