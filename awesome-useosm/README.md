@@ -1,9 +1,9 @@
 # 🌍 Awesome UseOSM [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-A curated list of **companies, organizations, and platforms** that use, support, and contribute to **OpenStreetMap (OSM)**.
+A curated list of companies, organizations, and platforms that use, support, and contribute to OpenStreetMap (OSM).
 
 🌐 Project Website: https://useosm.org  
-🏷️ Hashtag: **#useosm**
+🏷️ Hashtag: #useosm
 
 ---
 
@@ -30,10 +30,10 @@ A curated list of **companies, organizations, and platforms** that use, support,
 
 OpenStreetMap (OSM) is one of the largest and most important open-source projects in the world.
 
-It is a **global, community-built geographic database**, maintained by millions of contributors who map roads, buildings, paths, land use, and places—often in regions where no other reliable map exists.
+It is a global, community-built geographic database, maintained by millions of contributors who map roads, buildings, paths, land use, and places—often in regions where no other reliable map exists.
 
-Just as **Wikipedia democratized knowledge**,  
-**OpenStreetMap democratized geography**.
+Just as Wikipedia democratized knowledge,  
+OpenStreetMap democratized geography.
 
 Today, OSM powers:
 - Navigation and routing
@@ -46,7 +46,7 @@ Today, OSM powers:
 
 ## What Is UseOSM?
 
-**UseOSM** is about visibility and appreciation.
+UseOSM is about visibility and appreciation.
 
 It exists to highlight:
 - **Companies** using OSM data in production
@@ -64,8 +64,8 @@ OpenStreetMap is chosen because it is:
 
 - **Truly global** and community-verified
 - **Rapidly updated**, often faster than proprietary datasets
-- Rich in **local, on-the-ground knowledge**
-- Governed by an **open license**
+- Rich in local, on-the-ground knowledge
+- Governed by an open license
 - Designed so improvements benefit everyone
 
 ---
