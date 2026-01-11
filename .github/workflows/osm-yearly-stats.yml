@@ -1,0 +1,72 @@
+name: Build OSM yearly stats
+
+on:
+  schedule:
+    - cron: "0 6 1 * *"   # monthly: 06:00 UTC on the 1st
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Verify AWS CLI
+        run: |
+          aws --version
+
+      - name: Install Python deps
+        run: |
+          python -m pip install -U pip
+          python -m pip install duckdb pyarrow pandas tzdata argparse pandas
+
+      - name: Sync ORC from osm-pds
+        run: |
+          mkdir -p data/osm_changesets_orc
+          aws s3 sync --no-sign-request s3://osm-pds/changesets/ data/osm_changesets_orc
+
+      # Optional but strongly recommended for speed:
+      - name: Convert ORC -> PyArrow DuckDB (single file)
+        run: |
+          python - << 'PY'
+          import pyarrow.dataset as ds
+          import duckdb
+          dataset = ds.dataset("data/osm_changesets_orc", format="orc")
+          con = duckdb.connect()
+          con.register("changesets", dataset)
+          print(con.execute("SELECT COUNT(*) FROM changesets").fetchone())
+          print("Wrote Syncing ORC -> DuckDB")         
+          PY
+
+      - name: Build yearly stats JSON
+        run: |
+          python scripts/build_yearly_stats.py -y -v
+
+      - name: Publish stats to frontend
+        run: |
+          mkdir -p frontend/src/content
+          cp -f data/osm_yearly_stats.json frontend/src/content/osm_stats.json
+
+      - name: Verify outputs exist
+        run: |
+          test -f data/osm_yearly_stats.json
+          test -f frontend/src/content/osm_stats.json
+          test -f data/osm_changesets_summary.json
+
+      - name: Commit outputs
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git status
+          git add data/osm_yearly_stats.json data/osm_changesets_summary.json frontend/src/content/osm_stats.json || true
+          git commit -m "Update OSM yearly stats" || exit 0
+          git push
