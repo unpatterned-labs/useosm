@@ -113,12 +113,12 @@ export const APP_CONTENT: AppConfigType = {
         "OpenStreetMap is utilized by leading sectors across the globe, enhancing navigation, logistics, and urban planning, humanitarian response.",
       Organizations: [
         {
-          name: "DHL",
+          name: "HOT",
           image: HOT.src,
           link: "https://www.dhl.com",
         },
         {
-          name: "ABC News",
+          name: "HOT",
           image: HOT.src,
           link: "https://www.abcnews.com",
         },
@@ -128,69 +128,14 @@ export const APP_CONTENT: AppConfigType = {
           link: "https://www.hotosm.org",
         },
         {
-          name: "lyft",
+          name: "HOT",
           image: HOT.src,
           link: "https://www.lyft.com",
-        },
-        {
-          name: "DHL",
-          image: HOT.src,
-          link: "https://www.dhl.com",
-        },
-        {
-          name: "ABC News",
-          image: HOT.src,
-          link: "https://www.abcnews.com",
         },
         {
           name: "HOT",
           image: HOT.src,
-          link: "https://www.hotosm.org",
-        },
-        {
-          name: "lyft",
-          image: HOT.src,
-          link: "https://www.lyft.com",
-        },
-        {
-          name: "DHL",
-          image: HOT.src,
           link: "https://www.dhl.com",
-        },
-        {
-          name: "ABC News",
-          image: HOT.src,
-          link: "https://www.abcnews.com",
-        },
-        {
-          name: "HOT",
-          image: HOT.src,
-          link: "https://www.hotosm.org",
-        },
-        {
-          name: "lyft",
-          image: HOT.src,
-          link: "https://www.lyft.com",
-        },
-        {
-          name: "DHL",
-          image: HOT.src,
-          link: "https://www.dhl.com",
-        },
-        {
-          name: "ABC News",
-          image: HOT.src,
-          link: "https://www.abcnews.com",
-        },
-        {
-          name: "HOT",
-          image: HOT.src,
-          link: "https://www.hotosm.org",
-        },
-        {
-          name: "lyft",
-          image: HOT.src,
-          link: "https://www.lyft.com",
         },
       ],
     },
@@ -344,22 +289,7 @@ export const APP_CONTENT: AppConfigType = {
     </defs>aboutOSMContentaboutOSMContentaboutOSMContent
     </svg>
     </span>
-    Join State of the Map 2025. Celebrate mapping, tech, and community with OSM lovers worldwide. 👉
-    <a href="https://2025.stateofthemap.org/tickets/" target="_blank" rel="noopener noreferrer" class="underline font-bold">Register Now.</a> for early bird pricing! <span class="inline-block align-middle mx-2"> <svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <circle cx="3" cy="3" r="3" fill="#50683C"/>
-    </svg>
-    </span>  Connect with global mappers <span class="inline-block align-middle mx-2"> <svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <circle cx="3" cy="3" r="3" fill="#50683C"/>
-    </svg>
-    </span>  Learn cutting-edge techniques <span class="inline-block align-middle mx-2"> <svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <circle cx="3" cy="3" r="3" fill="#50683C"/>
-    </svg>
-    </span> 
-    Experience the future of open mapping <span class="inline-block align-middle mx-2"> <svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <circle cx="3" cy="3" r="3" fill="#50683C"/>
-    </svg>
-    </span> Don't miss out on the biggest OSM event of the year!
-    <a href="https://2025.stateofthemap.org/tickets/" target="_blank" rel="noopener noreferrer" class="underline font-bold">Register Now.</a>
+    NOTE: This website is still a work in progress, please check back.
     `,
   ],
   EXPLORE_OSM: {

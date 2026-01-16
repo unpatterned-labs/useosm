@@ -4,7 +4,6 @@ import OSMStatistics from "@/content/osm_stats.json";
 import type { TOSMStats } from "src/types/content";
 import { BezierCurveIcon } from "@/assets/icons/react/BezierCurveIcon";
 import { CommandIcon } from "@/assets/icons/react/CommandIcon";
-import { GlobeIcon } from "@/assets/icons/react/GlobeIcon";
 import { LineSegmentIcon } from "@/assets/icons/react/LineSegment";
 import { UsersIcon } from "@/assets/icons/react/UsersIcon";
 import { formatNumber } from "@/utils/number-utils";
@@ -145,9 +144,9 @@ const OSMStatsInsights = ({ activeYear }: { activeYear: number }) => {
           icon: LineSegmentIcon,
         },
         {
-          title: "Countries Mapped",
-          value: stats?.countries,
-          icon: GlobeIcon,
+          title: "New Contributors",
+          value: stats?.newcontributors,
+          icon: UsersIcon,
         },
         {
           title: "Apps using OSM",
