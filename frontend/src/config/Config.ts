@@ -1,4 +1,4 @@
 export const APP_CONFIG = {
-  enableBuyMeACoffee: true,
+  enableBuyMeACoffee: false,
   OSMFoundingYear: 2005,
 };
