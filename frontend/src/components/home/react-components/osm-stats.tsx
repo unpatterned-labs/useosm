@@ -149,7 +149,7 @@ const OSMStatsInsights = ({ activeYear }: { activeYear: number }) => {
           icon: UsersIcon,
         },
         {
-          title: "Apps using OSM",
+          title: "Mapping Editors",
           value: stats?.apps,
           icon: CommandIcon,
         },

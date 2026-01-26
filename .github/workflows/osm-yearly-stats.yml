@@ -49,7 +49,7 @@ jobs:
 
       - name: Build yearly stats JSON
         run: |
-          python scripts/build_yearly_stats.py -y -v
+          python scripts/build_cummulative_yearly_stats.py -y -v
 
       - name: Publish stats to frontend
         run: |
