@@ -20,4 +20,4 @@ const Minus = (props: SVGProps<SVGSVGElement>) => {
   );
 };
 
-export default Minus
+export default Minus;

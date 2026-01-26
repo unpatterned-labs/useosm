@@ -22,5 +22,4 @@ const ArrowsOut = (props: SVGProps<SVGSVGElement>) => {
   );
 };
 
-
-export default ArrowsOut
+export default ArrowsOut;

@@ -7,7 +7,18 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "format": "prettier . --write"
+    "format": "prettier . --write",
+    "lint": "eslint .",
+    "format:check": "prettier --check 'src/**/*.{js,jsx,ts,tsx,json,css,scss,md}'",
+    "precommit": "lint-staged",
+    "prepare": "husky"
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx,astro,json,css,scss,md,mdx,test.ts}": [
+      "pnpm format",
+      "pnpm test",
+      "pnpm lint"
+    ]
   },
   "dependencies": {
     "@astrojs/mdx": "^4.3.12",
@@ -20,7 +31,10 @@
     "@vis.gl/react-maplibre": "^8.1.0",
     "astro": "^5.16.2",
     "clsx": "^2.1.1",
+    "eslint": "^9.39.2",
     "gsap": "^3.13.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.2.7",
     "maplibre-gl": "^5.9.0",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
@@ -31,8 +45,11 @@
     "tailwindcss": "^4.1.12"
   },
   "devDependencies": {
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-astro": "^1.5.0",
     "prettier": "3.6.2",
     "prettier-plugin-astro": "0.14.1",
-    "prettier-plugin-tailwindcss": "0.6.14"
+    "prettier-plugin-tailwindcss": "0.6.14",
+    "typescript-eslint": "^8.53.0"
   }
 }

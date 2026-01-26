@@ -3,14 +3,23 @@ import { APP_CONTENT } from "@/config/Content";
 import OrganizationsCarousel from "../react-components/orgs_carousel";
 ---
 
-<section class="bg-surface-30 bg-[url('../assets/background/orgs_using_osm_vector.svg')]  bg-no-repeat bg-right md:py-[6.69rem] py-6 pl-4 md:pl-12 lg:pl-24 space-y-14 relative">
-  <div class="lg:max-w-[55.4rem] md:max-w-[36.4rem] max-w-[21.4rem] space-y-4 text-start">
-    <h3 class="lg:text-6xl md:text-4xl text-2xl text-grey-300 font-semibold md:font-bold">
+<section
+  class="bg-surface-30 relative space-y-14 bg-[url('../assets/background/orgs_using_osm_vector.svg')] bg-right bg-no-repeat py-6 pl-4 md:py-[6.69rem] md:pl-12 lg:pl-24"
+>
+  <div
+    class="max-w-[21.4rem] space-y-4 text-start md:max-w-[36.4rem] lg:max-w-[55.4rem]"
+  >
+    <h3
+      class="text-grey-300 text-2xl font-semibold md:text-4xl md:font-bold lg:text-6xl"
+    >
       {APP_CONTENT.HOME_PAGE.OrgsUsingOSM.title}
     </h3>
-    <p class="lg:text-2xl md:text-lg text-sm font-light text-grey-200">
+    <p class="text-grey-200 text-sm font-light md:text-lg lg:text-2xl">
       {APP_CONTENT.HOME_PAGE.OrgsUsingOSM.description}
     </p>
   </div>
-  <OrganizationsCarousel client:load organizations={APP_CONTENT.HOME_PAGE.OrgsUsingOSM.Organizations} />
+  <OrganizationsCarousel
+    client:load
+    organizations={APP_CONTENT.HOME_PAGE.OrgsUsingOSM.Organizations}
+  />
 </section>

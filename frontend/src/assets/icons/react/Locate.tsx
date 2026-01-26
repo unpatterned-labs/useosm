@@ -20,4 +20,4 @@ const Locate = (props: SVGProps<SVGSVGElement>) => {
     </svg>
   );
 };
-export default Locate
+export default Locate;

@@ -34,13 +34,30 @@ const CommunityMap = () => {
       setCommunityInfo(null);
       return;
     }
-
     setCommunityInfo({
       longitude: event.lngLat?.lng ?? 0,
       latitude: event.lngLat?.lat ?? 0,
       resolvedKeys: information.resolvedKeys,
     });
   }, []);
+
+  const handleHover = (event: any) => {
+    const features = event?.features;
+    if (features && features.length > 0) {
+      event.target.getCanvas().style.cursor = "pointer";
+      const info = generateCommunityMapInfo(features);
+      if (info) {
+        setCommunityInfo({
+          longitude: event.lngLat?.lng ?? 0,
+          latitude: event.lngLat?.lat ?? 0,
+          resolvedKeys: info.resolvedKeys,
+        });
+      }
+    } else {
+      event.target.getCanvas().style.cursor = "default";
+      setCommunityInfo(null);
+    }
+  };
 
   return (
     <div
@@ -55,6 +72,7 @@ const CommunityMap = () => {
           APP_CONTENT.HOME_PAGE.OSMCommunities.map.interactiveLayerIds
         } // enable layer click
         handleMapClick={handleMapClick}
+        handleMapHover={handleHover}
       >
         {/* OSM Communities Layer */}
         <Source {...APP_CONTENT.HOME_PAGE.OSMCommunities.map.source}>

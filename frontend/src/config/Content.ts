@@ -334,8 +334,8 @@ export const APP_CONTENT: AppConfigType = {
     control: {
       layout: {
         minimizeLabel: "Minimize Map",
-         maximizeLabel: "Expand Map"
-      }
-    }
+        maximizeLabel: "Expand Map",
+      },
+    },
   },
 };

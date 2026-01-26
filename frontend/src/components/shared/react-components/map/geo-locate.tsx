@@ -34,7 +34,7 @@ const GeoLocate = () => {
       id="geo-locate"
       title="geo-locate"
       variant="outline"
-      className="bg-surface-10 hover:bg-grey-500 hover:text-surface-10 absolute right-25 bottom-5 rounded-lg p-2 shadow-xs"
+      className="bg-surface-10 hover:bg-grey-500 hover:text-surface-10 absolute right-25 bottom-10 rounded-lg p-2 shadow-xs"
       onClick={handleGeoLocate}
     >
       <Locate />
