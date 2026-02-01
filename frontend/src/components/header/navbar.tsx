@@ -57,9 +57,7 @@ export const NavBar = () => {
       >
         <div className="flex items-center gap-x-40">
           <a href={APP_ROUTES.HOME}>
-           <UseOSMLogoIcon 
-            className="text-green-500 hover:text-green-400 h-[31px] w-[161px] ease-in-out duration-150"
-           />
+            <UseOSMLogoIcon className="h-[24px] w-[97.64px] text-green-500 duration-150 ease-in-out hover:text-green-400 md:h-[31px] md:w-[161px]" />
           </a>
           <ul className="hidden gap-x-10 lg:flex" role="menubar">
             {[APP_CONTENT.USECASES, APP_CONTENT.RESOURCES].map((config) => {
@@ -98,7 +96,7 @@ export const NavBar = () => {
               href="https://openstreetmap.org"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex md:hidden"
+              className="flex rounded-4xl text-sm md:hidden"
             >
               Get Started
             </Button>

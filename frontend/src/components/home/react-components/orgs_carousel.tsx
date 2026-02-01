@@ -27,14 +27,14 @@ const OrganizationsCarousel = ({
           id="scroll-left"
           onClick={() => scroll("left")}
           variant="outline"
-          className="text-grey-300 size-12 rounded-full bg-white p-0 hover:bg-red-300 hover:text-white disabled:cursor-not-allowed disabled:opacity-50"
+          className="text-grey-300 size-12 rounded-full bg-white p-0 hover:bg-green-400 hover:text-white disabled:cursor-not-allowed disabled:opacity-50"
         >
           <ArrowLeft className="h-6 w-6" />
         </Button>
         <Button
           id="scroll-right"
           onClick={() => scroll("right")}
-          className="text-grey-300 size-12 rounded-full bg-white p-0 hover:bg-red-300 hover:text-white disabled:cursor-not-allowed disabled:opacity-50"
+          className="text-grey-300 size-12 rounded-full bg-white p-0 hover:bg-green-400 hover:text-white disabled:cursor-not-allowed disabled:opacity-50"
         >
           <ArrowRight className="h-6 w-6" />
         </Button>
@@ -55,7 +55,7 @@ const OrganizationsCarousel = ({
                 <img
                   src={org.image}
                   alt={org.name}
-                  className="w-auto object-center transition-transform duration-300 group-hover:scale-110 max-h-[3.37rem] md:max-h-[4.50rem]"
+                  className="max-h-[3.37rem] w-auto object-center transition-transform duration-300 group-hover:scale-110 md:max-h-[4.50rem]"
                 />
               </div>
 

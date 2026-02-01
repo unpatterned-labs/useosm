@@ -4,7 +4,7 @@ import { APP_CONTENT } from "@/config/Content";
 ---
 
 <section
-  class="bg-grey-500 flex h-[30rem] w-full flex-col items-center justify-center md:h-[50rem] lg:h-[63.5rem]"
+  class="bg-grey-500 relative flex h-[30rem] w-full flex-col items-center justify-center md:h-[50rem] lg:h-[63.5rem]"
 >
   <VideoDialog client:load id="video" />
 
@@ -18,7 +18,7 @@ import { APP_CONTENT } from "@/config/Content";
       <h2 class="text-xl font-semibold sm:text-4xl">
         {APP_CONTENT.HOME_PAGE.AboutOSM.title}
       </h2>
-      <p class="text-sm font-normal md:text-xl">
+      <p class="px-4 text-sm font-normal md:px-0 md:text-xl">
         {APP_CONTENT.HOME_PAGE.AboutOSM.description}
       </p>
     </div>
