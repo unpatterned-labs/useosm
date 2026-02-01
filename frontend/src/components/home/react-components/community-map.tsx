@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { useCallback, useRef, useState } from "react";
 import { type ViewState, Source, Layer } from "@vis.gl/react-maplibre";
 import { APP_CONTENT } from "@/config/Content";

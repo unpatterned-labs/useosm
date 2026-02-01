@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 type FeatureClick = any; // the type returned from MapLibre click
 interface ParsedFeatureInfo {
   name: string;

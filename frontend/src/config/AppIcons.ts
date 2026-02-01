@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import ArrowRight from "@/assets/icons/astro/ArrowRight.astro";
 import ArrowLeft from "@/assets/icons/astro/ArrowLeft.astro";
 import ArrowRightUp from "@/assets/icons/astro/ArrowRightUp.astro";
