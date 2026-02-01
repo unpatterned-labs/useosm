@@ -15,6 +15,7 @@
       "@/config/*": ["./src/config/*"],
       "@/utils/*": ["./src/utils/*"],
       "@/types/*": ["./src/types/*"],
+      "*": ["./*"]
     }
   }
 }
