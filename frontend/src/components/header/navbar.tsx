@@ -1,5 +1,4 @@
 import { APP_CONTENT } from "@/config/Content";
-import UseOSMLogo from "@/assets/useosm_logo.svg";
 import { APP_ROUTES } from "@/config/Routes";
 import { Button } from "@/components/ui/react/button";
 import { useState, useRef, useEffect } from "react";
@@ -7,6 +6,7 @@ import type { NavItem } from "src/types/content";
 import { HamburgerIcon } from "@/assets/icons/react/HamburgerIcon";
 import { XIcon } from "@/assets/icons/react/XIcon";
 import cn from "@/utils/cn";
+import { UseOSMLogoIcon } from "@/assets/icons/react/UseOSMLogoIcon";
 
 export const NavBar = () => {
   const [mobileMenuIsOpened, setMobileMenuIsOpened] = useState<boolean>(false);
@@ -50,20 +50,16 @@ export const NavBar = () => {
     <>
       <nav
         className={cn(
-          "sticky top-0 z-50 flex items-center justify-between px-6 py-4 transition-all duration-150 ease-in-out lg:px-14",
+          "sticky top-0 z-50 flex items-center justify-between px-6 py-4 transition-transform duration-150 ease-in-out lg:px-14",
           isScrolled ? "shadow-dialog bg-white" : "",
         )}
         aria-label="Main navigation"
       >
         <div className="flex items-center gap-x-40">
           <a href={APP_ROUTES.HOME}>
-            <img
-              src={UseOSMLogo.src}
-              alt="UseOSM home"
-              loading="lazy"
-              decoding="async"
-              className="h-[23px] w-[97px] md:h-[31px] md:w-[161px]"
-            />
+           <UseOSMLogoIcon 
+            className="text-green-500 hover:text-green-400 h-[31px] w-[161px] ease-in-out duration-150"
+           />
           </a>
           <ul className="hidden gap-x-10 lg:flex" role="menubar">
             {[APP_CONTENT.USECASES, APP_CONTENT.RESOURCES].map((config) => {
