@@ -79,7 +79,7 @@ export type HomePageContent = {
       interactiveLayerIds: string[] | undefined;
       source: SourceProps;
       layer: LayerProps;
-      title: string
+      title: string;
     };
   };
 };

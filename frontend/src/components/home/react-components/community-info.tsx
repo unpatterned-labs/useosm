@@ -13,7 +13,11 @@ const CommunityInfo = ({
     latitude: number;
     resolvedKeys: { name: string; url: string }[];
   } | null;
-  setCommunityInfo: Dispatch<any>;
+  setCommunityInfo: Dispatch<React.SetStateAction<{
+    longitude: number;
+    latitude: number;
+    resolvedKeys: { name: string; url: string }[];
+  } | null>>;
 }) => {
   // Clear Community Info
   const handleClearInfo = () => {

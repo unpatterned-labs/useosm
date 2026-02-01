@@ -2,7 +2,7 @@
 // AnnouncementBanner.astro
 import cn from "src/utils/cn";
 import { APP_CONTENT } from "@/config/Content";
-export interface Props {
+export type  Props = {
   bgColor?: string;
   textColor?: string;
   height?: string;
@@ -115,7 +115,7 @@ const {
     setTimeout(startAnimation, 100);
 
     // Handle window resize
-    let resizeTimeout: any;
+    let resizeTimeout: number | NodeJS.Timeout;
     window.addEventListener("resize", () => {
       clearTimeout(resizeTimeout);
       resizeTimeout = setTimeout(() => {

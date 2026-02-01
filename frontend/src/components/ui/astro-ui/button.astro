@@ -1,6 +1,6 @@
 ---
 import AppIcons from "src/config/AppIcons";
-import { type IconNameType } from "src/config/AppIcons";
+import type { IconNameType } from "src/config/AppIcons";
 import cn from "src/utils/cn";
 
 export interface Props {
@@ -12,7 +12,7 @@ export interface Props {
   disabled?: boolean;
   icon_name?: IconNameType;
   class?: string;
-  [key: string]: any; // For additional HTML attributes
+  [key: string]: unknown; // For additional HTML attributes
 }
 
 const {
@@ -74,5 +74,5 @@ const Icon = icon_name ? AppIcons[icon_name] : null;
   {...rest}
 >
   <slot />
-  {icon_name && <Icon />}
+  {icon_name && Icon && <Icon />}
 </Component>

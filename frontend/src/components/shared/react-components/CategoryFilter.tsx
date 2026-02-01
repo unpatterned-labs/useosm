@@ -23,7 +23,7 @@ const CategoryFilter = ({
   return (
     <section
       className={cn(
-        "mt-6 mb-4 flex w-full items-center gap-2 flex-wrap",
+        "mt-6 mb-4 flex w-full flex-wrap items-center gap-2",
         categories.length > 5
           ? "justify-start overflow-scroll md:overflow-x-auto"
           : "justify-center",
