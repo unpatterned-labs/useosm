@@ -2,7 +2,7 @@
 import "@/styles/global.css";
 import AnnouncementBanner from "@/components/shared/astro-components/announcement-banner.astro";
 import NavBar from "@/components/header";
-import Footer from "@/components/footer/footer.astro"
+import Footer from "@/components/footer/footer.astro";
 export interface Props {
   title?: string;
   description?: string;
@@ -10,10 +10,10 @@ export interface Props {
   lang?: string;
 }
 
-const { 
+const {
   title = "UseOSM",
   description = "Showcase the use of OpenStreetMap Data",
-  lang = "en"
+  lang = "en",
 } = Astro.props;
 ---
 
@@ -24,15 +24,18 @@ const {
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
-      {description && <meta name="description" content={description} />}
+    {description && <meta name="description" content={description} />}
     <title>UseOSM - {title}</title>
-    
+
     <!-- Core SEO Meta Tags -->
     {description && <meta name="description" content={description} />}
-    <meta name="keywords" content="UseOSM, OpenStreetMap, mapping, geospatial, open source maps" />
+    <meta
+      name="keywords"
+      content="UseOSM, OpenStreetMap, mapping, geospatial, open source maps"
+    />
     <meta name="author" content="Unpatterned" />
     <meta name="robots" content="index, follow" />
-    
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content={Astro.url} />
@@ -40,45 +43,39 @@ const {
     {description && <meta property="og:description" content={description} />}
     <meta property="og:image" content="/og-image.png" />
     <meta property="og:site_name" content="UseOSM" />
-    
+
     <!-- Twitter Card -->
     <!-- <meta name="twitter:card" content="summary_large_image" /> -->
     <meta name="twitter:url" content={Astro.url} />
     <meta name="twitter:title" content={`UseOSM - ${title}`} />
     {description && <meta name="twitter:description" content={description} />}
     <!-- <meta name="twitter:image" content="/twitter-image.jpg" /> -->
-    
+
     <!-- Canonical URL -->
     <link rel="canonical" href={Astro.url} />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- Additional Favicons -->
     <!-- <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" /> -->
     <link rel="manifest" href="/site.webmanifest" />
     <meta name="theme-color" content="#ffffff" />
-    
-    <!-- Structured Data (JSON-LD) -->
-    <script type="application/ld+json">
-      {JSON.stringify({
-        "@context": "https://schema.org",
-        "@type": "WebSite",
-        "name": "UseOSM",
-        "url": Astro.url,
-        "description": description,
-        "publisher": {
-          "@type": "Organization",
-          "name": "UseOSM"
-        }
-      })}
-    </script>
-    
+
     <!-- Preload Critical Resources -->
-    <link rel="preload" href="/fonts/your-font.woff2" as="font" type="font/woff2" crossorigin />
-    
+    <link
+      rel="preload"
+      href="/fonts/your-font.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+
     <!-- DNS Prefetch for External Domains -->
     <link rel="dns-prefetch" href="//fonts.googleapis.com" />
     <link rel="dns-prefetch" href="//www.google-analytics.com" />
@@ -87,8 +84,8 @@ const {
     <!-- Wrapper for slide-in animation -->
     <main class="slide-in-container">
       <AnnouncementBanner />
-      <NavBar client:load/>
-        <slot />
+      <NavBar client:load />
+      <slot />
       <Footer />
     </main>
   </body>
@@ -100,8 +97,7 @@ const {
     margin: 0;
     width: 100%;
     height: 100%;
-    font-family: 'Geist', sans-serif;
+    font-family: "Geist", sans-serif;
     overflow-x: hidden; /* Prevent horizontal scroll during animations */
   }
 </style>
-
