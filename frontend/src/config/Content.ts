@@ -7,7 +7,15 @@ import {
 import OsmStep1 from "@/assets/images/osm_step_1.jpg";
 import OsmStep2 from "@/assets/images/osm_step_2.jpg";
 import OsmStep3 from "@/assets/images/osm_step_3.jpg";
-import HOT from "@/assets/images/hot.svg";
+import HOT from "@/assets/images/organizations/hot.svg";
+import DHL from "@/assets/images/organizations/dhl.png";
+import Amazon from "@/assets/images/organizations/amazon.webp";
+import Lyft from "@/assets/images/organizations/lyft.png";
+import ABC from "@/assets/images/organizations/abc.svg";
+import Apple from "@/assets/images/organizations/apple.svg";
+import Meta from "@/assets/images/organizations/meta.webp";
+import Microsoft from "@/assets/images/organizations/microsoft.png";
+import Uber from "@/assets/images/organizations/uber.png";
 
 export const APP_CONTENT: AppConfigType = {
   USECASES: {
@@ -115,27 +123,48 @@ export const APP_CONTENT: AppConfigType = {
         {
           name: "HOT",
           image: HOT.src,
-          link: "https://www.dhl.com",
-        },
-        {
-          name: "HOT",
-          image: HOT.src,
-          link: "https://www.abcnews.com",
-        },
-        {
-          name: "HOT",
-          image: HOT.src,
           link: "https://www.hotosm.org",
         },
         {
-          name: "HOT",
-          image: HOT.src,
+          name: "DHL",
+          image: DHL.src,
+          link: "https://www.dhl.com",
+        },
+        {
+          name: "Amazon",
+          image: Amazon.src,
+          link: "https://www.amazon.com/",
+        },
+
+        {
+          name: "Lyft",
+          image: Lyft.src,
           link: "https://www.lyft.com",
         },
         {
-          name: "HOT",
-          image: HOT.src,
-          link: "https://www.dhl.com",
+          name: "ABC News",
+          image: ABC.src,
+          link: "https://abc.com",
+        },
+          {
+          name: "Apple",
+          image: Apple.src,
+          link: "https://maps.apple.com/",
+        },
+        {
+          name: "Microsoft",
+          image: Microsoft.src,
+          link: "https://www.microsoft.com",
+        },
+         {
+          name: "Meta",
+          image: Meta.src,
+          link: "https://developers.meta.com/maps/",
+        },
+        {
+          name: "Uber",
+          image: Uber.src,
+          link: "https://www.uber.com/",
         },
       ],
     },

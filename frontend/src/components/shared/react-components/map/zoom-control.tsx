@@ -18,7 +18,7 @@ const ZoomControl = () => {
   };
 
   return (
-    <div className="absolute right-5 bottom-5 flex items-center shadow-xs">
+    <div className="absolute right-5 bottom-10 flex items-center shadow-xs">
       <Button
         id="zoom-out"
         title="zoom-out"
