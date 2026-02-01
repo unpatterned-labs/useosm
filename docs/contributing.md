@@ -50,7 +50,7 @@ To contribute content:
 
 ## Translating
 
-We want `useosm` to be accessible to everyone. You can help by reviewing or submitting [language translations](translations.md).
+We want `useosm` to be accessible to everyone. You can help by reviewing or submitting.
 
 We specifically need help translating:
 *   **Articles:** Blog posts and news updates.
