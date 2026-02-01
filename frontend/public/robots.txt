@@ -1,0 +1,9 @@
+# /public/robots.txt
+User-agent: *
+Allow: /
+
+# Disallow specific paths if needed
+# Disallow: /admin/
+# Disallow: /api/
+
+Sitemap: https://useosm.org/sitemap.xml

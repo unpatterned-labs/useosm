@@ -27,14 +27,14 @@ const OrganizationsCarousel = ({
           id="scroll-left"
           onClick={() => scroll("left")}
           variant="outline"
-          className="text-grey-300 size-12 rounded-full bg-white p-0 hover:bg-red-300 hover:text-white disabled:cursor-not-allowed disabled:opacity-50"
+          className="text-grey-300 size-12 rounded-full bg-white p-0 hover:bg-green-400 hover:text-white disabled:cursor-not-allowed disabled:opacity-50"
         >
           <ArrowLeft className="h-6 w-6" />
         </Button>
         <Button
           id="scroll-right"
           onClick={() => scroll("right")}
-          className="text-grey-300 size-12 rounded-full bg-white p-0 hover:bg-red-300 hover:text-white disabled:cursor-not-allowed disabled:opacity-50"
+          className="text-grey-300 size-12 rounded-full bg-white p-0 hover:bg-green-400 hover:text-white disabled:cursor-not-allowed disabled:opacity-50"
         >
           <ArrowRight className="h-6 w-6" />
         </Button>
@@ -49,13 +49,16 @@ const OrganizationsCarousel = ({
               href={org.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex h-[6.4rem] w-[8.125rem] flex-shrink-0 flex-col items-center gap-2 rounded-3xl bg-white p-2.5 md:h-[11.4rem] md:w-[14rem] md:gap-4 md:p-4"
+              className="group flex h-[6.4rem] w-[8.125rem] flex-shrink-0 flex-col items-center gap-2 rounded-3xl bg-white p-2.5 md:h-[11.4rem] md:w-[14rem] md:gap-4 md:p-4"
             >
-              <img
-                src={org.image}
-                alt={org.name}
-                className="h-[3.37rem] w-auto object-cover object-center hover:scale-110 md:h-[6.39rem]"
-              />
+              <div className="flex h-[3.37rem] items-center justify-center md:h-[6.39rem]">
+                <img
+                  src={org.image}
+                  alt={org.name}
+                  className="max-h-[3.37rem] w-auto object-center transition-transform duration-300 group-hover:scale-110 md:max-h-[4.50rem]"
+                />
+              </div>
+
               <span className="text-grey-200 text-xs font-normal md:text-xl">
                 {org.name}
               </span>
