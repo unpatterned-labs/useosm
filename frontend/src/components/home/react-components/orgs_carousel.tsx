@@ -108,7 +108,7 @@ const OrganizationsCarousel = ({
             >
               <div className="flex h-[3.37rem] items-center justify-center md:h-[6.39rem]">
                 <img
-                  src={`/src/assets/images/organizations/${org.image}`}
+                  src={`/images/organizations/${org.image}`}
                   alt={org.name}
                   draggable={false}
                   className="max-h-[3.37rem] w-auto object-center transition-transform duration-300 group-hover:scale-110 md:max-h-[4.50rem]"
