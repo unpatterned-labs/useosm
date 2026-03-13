@@ -110,7 +110,7 @@ export enum ResourceCategory {
 
 export type ResourceItem = {
   title: string;
-  category: ResourceCategory;
+  category: string;
   slug: string;
   image: string;
   description?: string;
@@ -193,3 +193,154 @@ export type OSMUsecaseContentsType = {
     "use-cases": UseCaseItemType[];
   };
 };
+
+export type OSMResourcesListType = {
+  name: string;
+  unmaintained: boolean;
+  lastRelease: string;
+  description: string;
+  images: string[];
+  logos: string[];
+  imageWiki: string;
+  website: string;
+  documentation: string;
+  source: {
+    name: string;
+    wiki?: string;
+    url: string;
+    id?: string;
+    language?: string;
+    lastChange: string;
+    firstCrawled: string;
+  }[];
+  author: string;
+  sourceCode: string;
+  programmingLanguages: string[];
+  gratis: boolean;
+  libre: boolean;
+  price: string;
+  license: string[];
+  languages: string[];
+  languagesUrl: string;
+  genre: string[];
+  topics: string[];
+  platform: string[];
+  coverage: string[];
+
+  install: {
+    fDroidID: string;
+    obtainiumLink: string;
+    googlePlayID: string;
+    huaweiAppGalleryID: string;
+    appleStoreID: string;
+    macAppStoreID: string;
+  };
+
+  map: {
+    map: string[];
+    mapData: string[];
+    datasource: string[];
+    rotateMap: string[];
+    "3D": string[];
+    showWebsite: string[];
+    showPhoneNumber: string[];
+    showOpeningHours: string[];
+  };
+
+  routing: {
+    routing: string[];
+    createRouteManually: string[];
+    calculateRoute: string[];
+    createRouteViaWaypoints: string[];
+    profiles: string[];
+    turnRestrictions: string[];
+    calculateRouteOffline: string[];
+    routingProviders: string[];
+    avoidTraffic: string[];
+    trafficProvider: string[];
+  };
+
+  navigating: {
+    navigating: string[];
+    findLocation: string[];
+    findNearbyPOI: string[];
+    navToPoint: string[];
+    voice: string[];
+    keepOnRoad: string[];
+    turnLanes: string[];
+    withoutGPS: string[];
+    predefinedRoute: string[];
+  };
+
+  tracking: {
+    tracking: string[];
+    customInterval: string[];
+    trackFormats: string[];
+    geotagging: string[];
+    fastWayPointAdding: string[];
+    uploadGPX: string[];
+  };
+
+  monitoring: {
+    monitoring: string[];
+    showTrack: string[];
+    showExistingTrack: string[];
+    showAltitudeDiagram: string[];
+    showDOP: string[];
+    showSatellites: string[];
+    showNMEAlive: string[];
+    showSpeed: string[];
+    sendPosition: string[];
+  };
+
+  editing: {
+    addPOI: string[];
+    editPOI: string[];
+    addWay: string[];
+    editGeom: string[];
+    editTags: string[];
+    editRelations: string[];
+    viewNotes: string[];
+    createNotes: string[];
+    editNotes: string[];
+    editSource: string[];
+    offsetDBsupport: string[];
+    uploadOSMData: string[];
+  };
+
+  rendering: {
+    rendererOutputFormats: string[];
+  };
+
+  accessibility: {
+    accessibility: string[];
+    textOnlyUI: string[];
+    brailleUI: string[];
+    explorerMode: string[];
+    publicTransportMode: string[];
+    dangerWarnings: string[];
+    screenReader: string[];
+    screenReaderLang: string[];
+  };
+
+  community: {
+    matrix: string;
+    bluesky: string;
+    mastodon: string;
+    issueTracker: string;
+    githubDiscussions: string;
+    telegram: string;
+    lemmy: string;
+    reddit: string;
+  };
+
+  commons: string[];
+  videos: string[];
+
+  hasGoal: Record<string, unknown>;
+
+  id: number;
+  score: number;
+  lastFocus: string;
+  lastSpotlight: string;
+}[];
