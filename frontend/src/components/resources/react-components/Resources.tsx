@@ -52,7 +52,7 @@ const Resources = ({
   };
 
   return (
-    <main className="space-y-20">
+    <main className="w-full space-y-20">
       <ResourceFilter
         list={list}
         activeCategory={activeCategory}
