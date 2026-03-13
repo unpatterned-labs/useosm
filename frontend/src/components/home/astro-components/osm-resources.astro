@@ -15,7 +15,7 @@ import { Button } from "@/components/ui/react/button";
       {APP_CONTENT.HOME_PAGE.OSMResources.description}
     </p>
   </div>
-  <OSMResources client:load />
+  <OSMResources client:load disablePagination={true} />
   <div class="mt-12 flex justify-center">
     <Button
       size="lg"

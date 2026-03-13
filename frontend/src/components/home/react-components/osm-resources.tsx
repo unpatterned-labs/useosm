@@ -4,7 +4,11 @@ import ResourceList from "@/components/resources/react-components/ResourceList";
 import { useState } from "react";
 import cn from "@/utils/cn";
 
-const OSMResources = () => {
+const OSMResources = ({
+  disablePagination = false,
+}: {
+  disablePagination?: boolean;
+}) => {
   const [activeCategory, setActiveCategory] = useState<string>(
     ResourceCategory.EDITORS,
   );
@@ -93,6 +97,7 @@ const OSMResources = () => {
                 imageClassName="h-18"
                 list={resourcesList}
                 emptyText="No resources found in this category."
+                disablePagination={disablePagination}
               />
             )}
           </li>
@@ -104,6 +109,7 @@ const OSMResources = () => {
           className="hidden flex-1 flex-wrap gap-6 lg:flex"
           list={resourcesList}
           emptyText="No resources found in this category."
+          disablePagination={disablePagination}
         />
       </div>
     </div>

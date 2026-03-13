@@ -1,8 +1,9 @@
-import { useEffect, useRef } from "react";
-import { gsap } from "gsap";
+import { useRef, useState, useCallback } from "react";
 import ResourceCard from "./ResourceCard";
 import type { ResourceItem } from "src/types/content";
 import cn from "@/utils/cn";
+
+const PAGE_SIZE = 12;
 
 const ResourceList = ({
   list,
@@ -10,30 +11,48 @@ const ResourceList = ({
   resourceClassName,
   imageClassName,
   emptyText,
+  disablePagination = false,
 }: {
   list: ResourceItem[];
   className?: string;
   resourceClassName?: string;
   imageClassName?: string;
   emptyText?: string;
+  disablePagination?: boolean;
 }) => {
-  const cardsRef = useRef<HTMLAnchorElement[]>([]);
+  const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
+  const [loading, setLoading] = useState(false);
+  const observerRef = useRef<IntersectionObserver | null>(null);
 
-  // Animation on list change
-  useEffect(() => {
-    if (list.length > 0) {
-      gsap.fromTo(
-        cardsRef.current,
-        { opacity: 0, y: 30 },
-        {
-          opacity: 1,
-          y: 0,
-          duration: 0.3,
-          ease: "power2.out",
-        },
-      );
-    }
-  }, [list]);
+  const visibleList = list.slice(0, visibleCount);
+  const hasMore = visibleCount < list.length;
+
+  // loads more item when user scrolls to the end
+  const loadMore = useCallback(() => {
+    if (loading || !hasMore || disablePagination) return;
+
+    setLoading(true);
+
+    setTimeout(() => {
+      setVisibleCount((prev) => prev + PAGE_SIZE);
+      setLoading(false);
+    }, 1000);
+  }, [loading, hasMore]);
+
+  // Infinite scroll using Intersection Observer
+  const lastElementRef = useCallback(
+    (node: HTMLAnchorElement | null) => {
+      if (observerRef.current) observerRef.current.disconnect();
+
+      observerRef.current = new IntersectionObserver((entries) => {
+        if (entries[0].isIntersecting && !disablePagination) {
+          loadMore();
+        }
+      });
+      if (node) observerRef.current.observe(node);
+    },
+    [loadMore],
+  );
 
   return (
     <div
@@ -42,13 +61,11 @@ const ResourceList = ({
         className,
       )}
     >
-      {list.length > 0 ? (
-        list.map((item, index) => (
+      {visibleList.length > 0 ? (
+        visibleList.map((item, index) => (
           <ResourceCard
-            ref={(el) => {
-              if (el) cardsRef.current[index] = el;
-            }}
-            key={item.title}
+            ref={lastElementRef}
+            key={`${item.title}-${index}`}
             title={item.title}
             image={item.image}
             href={item.slug}
@@ -58,10 +75,18 @@ const ResourceList = ({
         ))
       ) : (
         <div className="col-span-full flex h-[10rem] items-center justify-center">
-          <p className="w-xs text-center text-red-100">
-            {emptyText ||
-              "Oops! 😥 We couldn’t find any resources. Try refining your search or exploring other categories."}
+          <p className="text-center text-red-100">
+            {emptyText || "No resources found"}
           </p>
+        </div>
+      )}
+
+      {loading && (
+        <div className="col-span-full flex justify-center py-6">
+          <div className="text-grey-300 flex items-center gap-2 text-base font-medium">
+            Loading
+            <div className="h-6 w-6 animate-spin rounded-full border-[2.5px] border-green-50 border-r-green-500" />
+          </div>
         </div>
       )}
     </div>

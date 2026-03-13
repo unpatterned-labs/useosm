@@ -1,0 +1,658 @@
+[
+    {
+        "title": "iD Editor",
+        "category": "Editors",
+        "slug": "id-editor",
+        "image": "https://wiki.openstreetmap.org/w/images/3/3e/ID.svg",
+        "description": "A user-friendly, web-based map editor for OpenStreetMap, designed for beginners and experienced mappers alike.",
+        "lastUpdated": "2024-01-15"
+    },
+    {
+        "title": "JOSM",
+        "category": "Editors",
+        "slug": "josm",
+        "image": "https://josm.openstreetmap.de/logo.png",
+        "description": "Java OpenStreetMap Editor (JOSM) is a powerful desktop application for editing OpenStreetMap data.",
+        "lastUpdated": "2024-01-15"
+    },
+    {
+        "title": "MapWithAI",
+        "category": "Libraries",
+        "slug": "mapwithai",
+        "image": "https://mapwith.ai/img/mapwithai-logo.png",
+        "description": "MapWithAI is a web-based tool that leverages artificial intelligence to assist in the editing and enhancement of OpenStreetMap data.",
+        "lastUpdated": "2024-01-15"
+    },
+    {
+        "title": "OsmAnd",
+        "category": "Navigation",
+        "slug": "osmand",
+        "image": "https://osmand.net/img/logo.svg",
+        "description": "OsmAnd is a map and navigation application for Android and iOS that uses OpenStreetMap data.",
+        "lastUpdated": "2024-01-15"
+    },
+    {
+        "title": "OSMCha",
+        "category": "Data Extraction and Analysis",
+        "slug": "osmcha",
+        "image": "https://osmcha.org/static/img/logo.png",
+        "description": "OSMCha is a web-based tool for reviewing changes in OpenStreetMap data, helping to ensure data quality and integrity.",
+        "lastUpdated": "2024-01-15"
+    },
+    {
+        "title": "Vespucci",
+        "category": "Editors",
+        "slug": "vespucci",
+        "image": "https://vespucci.io/vespucci-512.png",
+        "description": "Vespucci is an advanced OpenStreetMap editor for Android, offering a wide range of features suitable for experienced mappers.",
+        "lastUpdated": "2024-03-01"
+    },
+    {
+        "title": "Go Map!!",
+        "category": "Editors",
+        "slug": "go-map",
+        "image": "https://gomaposm.com/img/gomap-icon.png",
+        "description": "Go Map!! is a feature-rich OpenStreetMap editor for iOS, allowing users to add and edit map data directly from their iPhone or iPad.",
+        "lastUpdated": "2024-03-01"
+    },
+    {
+        "title": "RapiD",
+        "category": "Editors",
+        "slug": "rapid",
+        "image": "https://mapwith.ai/rapid/img/rapid_logo_3.svg",
+        "description": "RapiD is an enhanced version of the iD editor that integrates AI-suggested map features to accelerate OpenStreetMap contributions.",
+        "lastUpdated": "2024-03-01"
+    },
+    {
+        "title": "Overpass API",
+        "category": "Data Extraction and Analysis",
+        "slug": "overpass-api",
+        "image": "https://overpass-api.de/favicon.ico",
+        "description": "Overpass API is a powerful read-only API that lets you query and retrieve specific OpenStreetMap data using a custom query language.",
+        "lastUpdated": "2024-03-01"
+    },
+    {
+        "title": "Overpass Turbo",
+        "category": "Data Extraction and Analysis",
+        "slug": "overpass-turbo",
+        "image": "https://overpass-turbo.eu/img/turbo.png",
+        "description": "Overpass Turbo is a web-based data filtering and extraction tool for OpenStreetMap, running Overpass API queries and visualising results on a map.",
+        "lastUpdated": "2024-03-01"
+    },
+    {
+        "title": "Taginfo",
+        "category": "Data Extraction and Analysis",
+        "slug": "taginfo",
+        "image": "https://taginfo.openstreetmap.org/img/logo512.png",
+        "description": "Taginfo provides statistics and documentation about the keys and tags used in OpenStreetMap, helping mappers understand tagging conventions.",
+        "lastUpdated": "2024-03-01"
+    },
+    {
+        "title": "OSM Inspector",
+        "category": "Data Extraction and Analysis",
+        "slug": "osm-inspector",
+        "image": "https://tools.geofabrik.de/favicon.ico",
+        "description": "OSM Inspector is a web-based data quality analysis tool maintained by Geofabrik that highlights potential errors and inconsistencies in OpenStreetMap data.",
+        "lastUpdated": "2024-03-01"
+    },
+    {
+        "title": "ohsome API",
+        "category": "Data Extraction and Analysis",
+        "slug": "ohsome-api",
+        "image": "https://heigit.org/wp-content/uploads/2020/09/ohsome-API-Logo-300x300.png",
+        "description": "The ohsome API enables users to analyse the evolution of OpenStreetMap history data, providing aggregation endpoints for temporal and spatial analysis.",
+        "lastUpdated": "2024-03-01"
+    },
+    {
+        "title": "Maputnik",
+        "category": "Map Visualization",
+        "slug": "maputnik",
+        "image": "https://maputnik.github.io/editor/img/maputnik-logos/logo.png",
+        "description": "Maputnik is a free and open source visual map designer and editor for the Mapbox GL Style Specification, supporting OSM-based tile sources.",
+        "lastUpdated": "2024-03-01"
+    },
+    {
+        "title": "MapLibre GL JS",
+        "category": "Map Visualization",
+        "slug": "maplibre-gl-js",
+        "image": "https://maplibre.org/img/maplibre-logo-big.svg",
+        "description": "MapLibre GL JS is a community-led open source fork of Mapbox GL JS that renders interactive vector tile maps using WebGL.",
+        "lastUpdated": "2024-03-01"
+    },
+    {
+        "title": "OpenLayers",
+        "category": "Map Visualization",
+        "slug": "openlayers",
+        "image": "https://openlayers.org/theme/img/logo.svg",
+        "description": "OpenLayers is a high-performance open source library for rendering interactive maps in web browsers, supporting OpenStreetMap tile layers.",
+        "lastUpdated": "2024-03-01"
+    },
+    {
+        "title": "Leaflet",
+        "category": "Map Visualization",
+        "slug": "leaflet",
+        "image": "https://leafletjs.com/docs/images/logo.png",
+        "description": "Leaflet is a lightweight, mobile-friendly JavaScript library for building interactive maps, widely used with OpenStreetMap tile layers.",
+        "lastUpdated": "2024-03-01"
+    },
+    {
+        "title": "Mapnik",
+        "category": "Map Visualization",
+        "slug": "mapnik",
+        "image": "https://mapnik.org/images/mapnik-logo.png",
+        "description": "Mapnik is an open source toolkit for developing mapping applications that renders the standard OpenStreetMap tile layer used on openstreetmap.org.",
+        "lastUpdated": "2024-03-01"
+    },
+    {
+        "title": "Osmium Tool",
+        "category": "Libraries",
+        "slug": "osmium-tool",
+        "image": "https://osmcode.org/img/osmium-tool-logo.png",
+        "description": "Osmium Tool is a versatile command-line tool based on the Osmium library for processing OSM files, supporting merge, filter, extract, and export operations.",
+        "lastUpdated": "2024-03-01"
+    },
+    {
+        "title": "pyosmium",
+        "category": "Libraries",
+        "slug": "pyosmium",
+        "image": "https://pypi.org/static/images/logo-small.8998e9d1.svg",
+        "description": "pyosmium is a Python library providing bindings to the Osmium library, enabling efficient processing of OpenStreetMap data files in Python.",
+        "lastUpdated": "2024-03-01"
+    },
+    {
+        "title": "Osmosis",
+        "category": "Libraries",
+        "slug": "osmosis",
+        "image": "https://wiki.openstreetmap.org/w/images/8/8c/Osmosis.svg",
+        "description": "Osmosis is a Java command-line application and library for processing OSM data, capable of filtering, transforming, and loading data into databases.",
+        "lastUpdated": "2024-03-01"
+    },
+    {
+        "title": "osmtogeojson",
+        "category": "Libraries",
+        "slug": "osmtogeojson",
+        "image": "https://raw.githubusercontent.com/tyrasd/osmtogeojson/master/logo.png",
+        "description": "osmtogeojson converts OpenStreetMap data to GeoJSON, making it easy to use OSM data in web mapping applications and data analysis workflows.",
+        "lastUpdated": "2024-03-01"
+    },
+    {
+        "title": "OSRM",
+        "category": "Navigation",
+        "slug": "osrm",
+        "image": "https://project-osrm.org/img/osrm_logo.png",
+        "description": "Open Source Routing Machine (OSRM) is a high-performance routing engine for shortest paths in road networks, built on OpenStreetMap data.",
+        "lastUpdated": "2024-03-01"
+    },
+    {
+        "title": "Valhalla",
+        "category": "Navigation",
+        "slug": "valhalla",
+        "image": "https://valhalla.github.io/valhalla/images/valhalla.svg",
+        "description": "Valhalla is an open source routing engine and accompanying libraries for creating turn-by-turn navigation applications using OpenStreetMap data.",
+        "lastUpdated": "2024-03-01"
+    },
+    {
+        "title": "OpenRouteService",
+        "category": "Navigation",
+        "slug": "openrouteservice",
+        "image": "https://openrouteservice.org/wp-content/uploads/2017/09/ors_logo_2017.png",
+        "description": "OpenRouteService is an open source route planner offering directions, isochrones, and matrix services based on OpenStreetMap data.",
+        "lastUpdated": "2024-03-01"
+    },
+    {
+        "title": "Organic Maps",
+        "category": "Navigation",
+        "slug": "organic-maps",
+        "image": "https://organicmaps.app/images/logo.svg",
+        "description": "Organic Maps is a privacy-focused, ad-free offline maps app for Android and iOS built on OpenStreetMap data, ideal for hiking, cycling, and navigation.",
+        "lastUpdated": "2024-03-01"
+    },
+    {
+        "title": "Maps.me",
+        "category": "Navigation",
+        "slug": "maps-me",
+        "image": "https://maps.me/img/logo.svg",
+        "description": "Maps.me is an offline maps and navigation app for Android and iOS that uses OpenStreetMap data, allowing navigation without an internet connection.",
+        "lastUpdated": "2024-03-01"
+    },
+    {
+        "title": "GeoServer",
+        "category": "Map Visualization",
+        "slug": "geoserver",
+        "image": "https://geoserver.org/img/geoserver-logo.png",
+        "description": "GeoServer is an open source server for sharing, processing, and editing geospatial data, supporting OpenStreetMap data via PostGIS and WMS/WFS services.",
+        "lastUpdated": "2024-03-01"
+    },
+    {
+        "title": "QGIS",
+        "category": "Data Extraction and Analysis",
+        "slug": "qgis",
+        "image": "https://qgis.org/en/_downloads/qgis-icon.svg",
+        "description": "QGIS is a free and open source geographic information system that supports OSM data import, editing, and analysis via its QuickOSM plugin and native data sources.",
+        "lastUpdated": "2024-03-01"
+    },
+    {
+        "title": "Geofabrik Download Server",
+        "category": "Data Extraction and Analysis",
+        "slug": "geofabrik-download",
+        "image": "https://download.geofabrik.de/favicon.ico",
+        "description": "Geofabrik's download server provides regularly updated regional extracts of OpenStreetMap data in PBF and OSM XML formats for easy download.",
+        "lastUpdated": "2024-03-01"
+    },
+    {
+        "title": "BBBike Extract",
+        "category": "Data Extraction and Analysis",
+        "slug": "bbbike-extract",
+        "image": "https://extract.bbbike.org/img/logo.png",
+        "description": "BBBike's OSM extract service lets users download custom-area OpenStreetMap data in various formats including Shapefile, GeoJSON, CSV, and more.",
+        "lastUpdated": "2024-03-01"
+    },
+    {
+        "title": "Nominatim",
+        "category": "Data Extraction and Analysis",
+        "slug": "nominatim",
+        "image": "https://nominatim.openstreetmap.org/favicon.ico",
+        "description": "Nominatim is the official geocoding and reverse geocoding service for OpenStreetMap, allowing structured address searches and coordinate lookups.",
+        "lastUpdated": "2024-03-01"
+    },
+    {
+        "title": "Photon",
+        "category": "Libraries",
+        "slug": "photon",
+        "image": "https://komoot.com/img/favicons/favicon-32x32.png",
+        "description": "Photon is an open source geocoder built for OpenStreetMap data, powered by Elasticsearch and offering fast, typo-tolerant address and place-name search.",
+        "lastUpdated": "2024-03-01"
+    },
+    {
+        "title": "OpenMapTiles",
+        "category": "Map Visualization",
+        "slug": "openmaptiles",
+        "image": "https://openmaptiles.org/img/logo.svg",
+        "description": "OpenMapTiles provides an open source solution for self-hosting vector tiles derived from OpenStreetMap data, compatible with MapLibre and other renderers.",
+        "lastUpdated": "2024-03-01"
+    },
+    {
+        "title": "GraphHopper",
+        "category": "Navigation",
+        "slug": "graphhopper",
+        "image": "https://raw.githubusercontent.com/graphhopper/graphhopper/master/docs/logo/graphhopper_logo.png",
+        "description": "A fast, open source routing engine and web service that builds customizable route networks directly from OpenStreetMap data.",
+        "lastUpdated": "2024-03-10"
+    },
+    {
+        "title": "BRouter",
+        "category": "Navigation",
+        "slug": "brouter",
+        "image": "https://brouter.de/brouter-web/images/logo.png",
+        "description": "An advanced routing engine primarily designed for cyclists and hikers, utilizing elevation profiles alongside OSM data.",
+        "lastUpdated": "2024-03-10"
+    },
+    {
+        "title": "uMap",
+        "category": "Map Visualization",
+        "slug": "umap",
+        "image": "https://umap.openstreetmap.fr/static/umap/img/logo.png",
+        "description": "An open source web tool that allows users to create custom, interactive maps with OpenStreetMap layers and data overlays.",
+        "lastUpdated": "2024-03-10"
+    },
+    {
+        "title": "Osmose",
+        "category": "Data Extraction and Analysis",
+        "slug": "osmose",
+        "image": "https://osmose.openstreetmap.fr/logo.png",
+        "description": "A quality assurance tool for OpenStreetMap that detects spatial and logical issues to assist mappers in fixing data errors.",
+        "lastUpdated": "2024-03-10"
+    },
+    {
+        "title": "Keep Right",
+        "category": "Data Extraction and Analysis",
+        "slug": "keep-right",
+        "image": "https://keepright.at/keepright_logo.png",
+        "description": "A data consistency checker for OpenStreetMap that highlights potential geometry and tagging errors on a live map interface.",
+        "lastUpdated": "2024-03-15"
+    },
+    {
+        "title": "Mapillary",
+        "category": "Data Extraction and Analysis",
+        "slug": "mapillary",
+        "image": "https://www.mapillary.com/assets/favicon.ico",
+        "description": "A street-level imagery platform that captures, shares, and extracts map data using computer vision, heavily integrated with OSM editing.",
+        "lastUpdated": "2024-03-15"
+    },
+    {
+        "title": "KartaView",
+        "category": "Data Extraction and Analysis",
+        "slug": "kartaview",
+        "image": "https://kartaview.org/assets/images/logo/kartaview-logo.svg",
+        "description": "A free and open source street-level imagery platform aimed at improving OpenStreetMap by providing crowdsourced visual reference data.",
+        "lastUpdated": "2024-03-15"
+    },
+    {
+        "title": "Level0",
+        "category": "Editors",
+        "slug": "level0",
+        "image": "https://wiki.openstreetmap.org/w/images/0/01/Level0_logo.png",
+        "description": "A web-based OpenStreetMap editor that lets users manipulate raw OSM data quickly using a lightweight, text-based interface.",
+        "lastUpdated": "2024-03-15"
+    },
+    {
+        "title": "Merkaartor",
+        "category": "Editors",
+        "slug": "merkaartor",
+        "image": "https://wiki.openstreetmap.org/w/images/a/a2/Merkaartor_logo.png",
+        "description": "An open source OpenStreetMap desktop editor built using the Qt framework, providing robust tools for tracking and editing offline.",
+        "lastUpdated": "2024-03-20"
+    },
+    {
+        "title": "Pelias",
+        "category": "Libraries",
+        "slug": "pelias",
+        "image": "https://pelias.io/images/logo.png",
+        "description": "A modular, open source geocoder built on Elasticsearch that works natively with OpenStreetMap data and other open spatial datasets.",
+        "lastUpdated": "2024-03-20"
+    },
+    {
+        "title": "osm2pgsql",
+        "category": "Libraries",
+        "slug": "osm2pgsql",
+        "image": "https://osm2pgsql.org/assets/images/logo.png",
+        "description": "A standard command-line utility for importing OpenStreetMap data into a PostgreSQL/PostGIS database for rendering and advanced analysis.",
+        "lastUpdated": "2024-03-20"
+    },
+    {
+        "title": "Imposm",
+        "category": "Libraries",
+        "slug": "imposm",
+        "image": "https://imposm.org/static/img/logo.png",
+        "description": "A fast and efficient tool to import OpenStreetMap data into PostGIS databases, highly optimized for web map rendering environments.",
+        "lastUpdated": "2024-03-20"
+    },
+    {
+        "title": "Protomaps",
+        "category": "Map Visualization",
+        "slug": "protomaps",
+        "image": "https://protomaps.com/favicon.ico",
+        "description": "A system for self-hosted interactive vector maps using a single file (PMTiles), working seamlessly with OpenStreetMap derived datasets.",
+        "lastUpdated": "2024-03-25"
+    },
+    {
+        "title": "Magic Earth",
+        "category": "Navigation",
+        "slug": "magic-earth",
+        "image": "https://www.magicearth.com/wp-content/uploads/2018/02/icon-magic-earth.png",
+        "description": "A privacy-focused mobile navigation app providing turn-by-turn routing, 3D maps, and offline support powered by OpenStreetMap.",
+        "lastUpdated": "2024-03-25"
+    },
+    {
+        "title": "Komoot",
+        "category": "Navigation",
+        "slug": "komoot",
+        "image": "https://www.komoot.com/favicon.ico",
+        "description": "A popular route planning and navigation app for outdoor activities, utilizing OpenStreetMap data for detailed trail and topography routing.",
+        "lastUpdated": "2024-03-25"
+    },
+    {
+        "title": "Field Papers",
+        "category": "Data Extraction and Analysis",
+        "slug": "field-papers",
+        "image": "https://fieldpapers.org/assets/fp-logo.png",
+        "description": "A web-based tool allowing users to print paper maps, annotate them in the field, and upload them back for tracing into OSM.",
+        "lastUpdated": "2024-03-25"
+    },
+    {
+        "title": "OSM Buildings",
+        "category": "Map Visualization",
+        "slug": "osm-buildings",
+        "image": "https://osmbuildings.org/logo.png",
+        "description": "A web library and viewer for visualizing 3D building geometry derived from OpenStreetMap data on interactive web maps.",
+        "lastUpdated": "2024-04-01"
+    },
+    {
+        "title": "F4Map",
+        "category": "Map Visualization",
+        "slug": "f4map",
+        "image": "https://demo.f4map.com/favicon.ico",
+        "description": "A 3D interactive map utilizing OpenStreetMap data, WebGL, and weather effects to render cities, buildings, and topography globally.",
+        "lastUpdated": "2024-04-01"
+    },
+    {
+        "title": "Show Me The Way",
+        "category": "Map Visualization",
+        "slug": "show-me-the-way",
+        "image": "https://osmlab.github.io/show-me-the-way/img/logo.png",
+        "description": "A real-time visualization tool that displays the latest OpenStreetMap edits from around the world as they happen on an interactive map.",
+        "lastUpdated": "2024-04-01"
+    },
+    {
+        "title": "WhoDidIt",
+        "category": "Data Extraction and Analysis",
+        "slug": "whodidit",
+        "image": "https://simon04.dev.openstreetmap.org/whodidit/favicon.ico",
+        "description": "A quality assurance and history tool that allows users to analyze edits within a specific bounding box and identify active contributors.",
+        "lastUpdated": "2024-04-01"
+    },
+    {
+        "title": "Bounding Box Tool",
+        "category": "Data Extraction and Analysis",
+        "slug": "bounding-box-tool",
+        "image": "https://boundingbox.klokantech.com/favicon.ico",
+        "description": "A simple web utility for retrieving the bounding box coordinates of an area, essential for constructing OSM queries and API requests.",
+        "lastUpdated": "2024-04-05"
+    },
+    {
+        "title": "Traccar",
+        "category": "Navigation",
+        "slug": "traccar",
+        "image": "https://www.traccar.org/images/logo.svg",
+        "description": "A modern open source GPS tracking system that supports real-time location tracking and integrates OpenStreetMap for its mapping interface.",
+        "lastUpdated": "2024-04-05"
+    },
+    {
+        "title": "Kurviger",
+        "category": "Navigation",
+        "slug": "kurviger",
+        "image": "https://kurviger.de/images/logo.png",
+        "description": "A motorcycle route planner that prefers curvy and scenic roads, powered by OpenStreetMap data and tailored specifically for riders.",
+        "lastUpdated": "2024-04-05"
+    },
+    {
+        "title": "GeoDesk",
+        "category": "Libraries",
+        "slug": "geodesk",
+        "image": "https://docs.geodesk.com/img/geodesk_logo.svg",
+        "description": "A fast and lightweight spatial database toolkit specifically built for querying and analyzing OpenStreetMap data natively.",
+        "lastUpdated": "2024-04-05"
+    },
+    {
+        "title": "Waymarked Trails",
+        "category": "Map Visualization",
+        "slug": "waymarked-trails",
+        "image": "https://hiking.waymarkedtrails.org/favicon.ico",
+        "description": "A thematic map viewer that displays hiking, cycling, riding, and skating route networks worldwide directly generated from OSM data.",
+        "lastUpdated": "2024-04-05"
+    },
+    {
+        "title": "Potlatch",
+        "category": "Editors",
+        "slug": "potlatch",
+        "image": "https://wiki.openstreetmap.org/w/images/8/8c/Potlatch_3_logo.png",
+        "description": "A classic desktop editor for OpenStreetMap, previously built as a web app but now available as a standalone desktop application for Mac and Windows.",
+        "lastUpdated": "2024-04-10"
+    },
+    {
+        "title": "OpenSeaMap",
+        "category": "Map Visualization",
+        "slug": "openseamap",
+        "image": "https://openseamap.org/favicon.ico",
+        "description": "An open source project providing free nautical charts, beacons, and maritime information globally, functioning as a specialized layer built on OpenStreetMap data.",
+        "lastUpdated": "2024-04-10"
+    },
+    {
+        "title": "OpenCycleMap",
+        "category": "Map Visualization",
+        "slug": "opencyclemap",
+        "image": "https://www.opencyclemap.org/favicon.ico",
+        "description": "A specialized global map layer tailored for cyclists, highlighting cycle routes, dedicated lanes, elevation contours, and bicycle-friendly amenities using OSM data.",
+        "lastUpdated": "2024-04-10"
+    },
+    {
+        "title": "OpenRailwayMap",
+        "category": "Map Visualization",
+        "slug": "openrailwaymap",
+        "image": "https://www.openrailwaymap.org/favicon.ico",
+        "description": "A detailed, interactive map of the world's railway infrastructure, visualizing tracks, signals, maximum speeds, and stations natively derived from OpenStreetMap.",
+        "lastUpdated": "2024-04-15"
+    },
+    {
+        "title": "OpenInfraMap",
+        "category": "Map Visualization",
+        "slug": "openinframap",
+        "image": "https://openinframap.org/favicon.ico",
+        "description": "A visual representation of global infrastructure, illustrating power lines, sub-stations, telecommunications, and petroleum networks mapped within the OSM database.",
+        "lastUpdated": "2024-04-15"
+    },
+    {
+        "title": "Thunderforest",
+        "category": "Map Visualization",
+        "slug": "thunderforest",
+        "image": "https://www.thunderforest.com/favicon.ico",
+        "description": "A commercial provider offering a suite of specialized OpenStreetMap tile layers, including Outdoors, Transport, and Landscape maps tailored for developers.",
+        "lastUpdated": "2024-04-15"
+    },
+    {
+        "title": "MapTiler",
+        "category": "Map Visualization",
+        "slug": "maptiler",
+        "image": "https://www.maptiler.com/favicon.ico",
+        "description": "A mapping platform offering scalable vector tiles, map hosting, and highly customizable map styles powered by OpenStreetMap and other open datasets.",
+        "lastUpdated": "2024-04-15"
+    },
+    {
+        "title": "OpenCage Geocoder",
+        "category": "Data Extraction and Analysis",
+        "slug": "opencage-geocoder",
+        "image": "https://opencagedata.com/favicon.ico",
+        "description": "An enterprise-grade geocoding API that aggregates OpenStreetMap and other open geo-datasets to provide reliable forward and reverse geocoding worldwide.",
+        "lastUpdated": "2024-04-20"
+    },
+    {
+        "title": "How Did You Contribute (HDYC)",
+        "category": "Data Extraction and Analysis",
+        "slug": "hdyc",
+        "image": "https://hdyc.neis-one.org/favicon.ico",
+        "description": "A widely used profiling tool that provides comprehensive statistics, heatmaps, and visual activity charts for any registered OpenStreetMap user account.",
+        "lastUpdated": "2024-04-20"
+    },
+    {
+        "title": "OSMStats",
+        "category": "Data Extraction and Analysis",
+        "slug": "osmstats",
+        "image": "https://osmstats.neis-one.org/favicon.ico",
+        "description": "A daily updated statistics dashboard that tracks overall database growth, active contributors, and editing trends across the global OpenStreetMap community.",
+        "lastUpdated": "2024-04-20"
+    },
+    {
+        "title": "ResultMaps",
+        "category": "Data Extraction and Analysis",
+        "slug": "resultmaps",
+        "image": "https://resultmaps.neis-one.org/favicon.ico",
+        "description": "A QA toolset by Pascal Neis that visualizes unmapped places, recent community activity, and OpenStreetMap data quality issues on interactive maps.",
+        "lastUpdated": "2024-04-20"
+    },
+    {
+        "title": "Maperitive",
+        "category": "Map Visualization",
+        "slug": "maperitive",
+        "image": "https://maperitive.net/favicon.ico",
+        "description": "A desktop application used to draw customizable maps in real-time from raw OSM data, frequently used for creating high-quality print maps and SVG exports.",
+        "lastUpdated": "2024-04-25"
+    },
+    {
+        "title": "Tangram",
+        "category": "Map Visualization",
+        "slug": "tangram",
+        "image": "https://raw.githubusercontent.com/tangrams/tangram/master/logo.png",
+        "description": "An open source WebGL map rendering engine originally created by Mapzen, capable of rendering highly styled 2D and 3D maps from OpenStreetMap vector tiles.",
+        "lastUpdated": "2024-04-25"
+    },
+    {
+        "title": "OpenSnowMap",
+        "category": "Map Visualization",
+        "slug": "opensnowmap",
+        "image": "https://www.opensnowmap.org/favicon.ico",
+        "description": "A dedicated web map for winter sports enthusiasts, displaying ski pistes, cross-country trails, and ski lift networks using crowd-sourced OSM data.",
+        "lastUpdated": "2024-04-25"
+    },
+    {
+        "title": "Navit",
+        "category": "Navigation",
+        "slug": "navit",
+        "image": "https://www.navit-project.org/favicon.ico",
+        "description": "An open source car navigation system with a routing engine that dynamically renders vector maps from OpenStreetMap data without requiring an internet connection.",
+        "lastUpdated": "2024-04-25"
+    },
+    {
+        "title": "CycleStreets",
+        "category": "Navigation",
+        "slug": "cyclestreets",
+        "image": "https://www.cyclestreets.net/favicon.ico",
+        "description": "A UK-centric bicycle journey planning system utilizing OpenStreetMap data to provide tailored routing options for cyclists of all experience levels.",
+        "lastUpdated": "2024-05-01"
+    },
+    {
+        "title": "Pic4Carto",
+        "category": "Data Extraction and Analysis",
+        "slug": "pic4carto",
+        "image": "https://pic4carto.pavie.info/favicon.ico",
+        "description": "A web-based tool that aggregates open street-level imagery from multiple platforms to seamlessly assist remote mappers in OpenStreetMap tracing.",
+        "lastUpdated": "2024-05-05"
+    },
+    {
+        "title": "osm2po",
+        "category": "Libraries",
+        "slug": "osm2po",
+        "image": "https://osm2po.de/favicon.ico",
+        "description": "A routing engine and converter that processes OpenStreetMap data into topology-aware routing graphs suitable for pgRouting and standalone navigation servers.",
+        "lastUpdated": "2024-05-10"
+    },
+    {
+        "title": "Addok",
+        "category": "Libraries",
+        "slug": "addok",
+        "image": "https://raw.githubusercontent.com/addok/addok/master/logo.png",
+        "description": "A fast, customizable search engine primarily designed for geocoding, backed by Redis and built specifically to natively support OpenStreetMap data imports.",
+        "lastUpdated": "2024-05-10"
+    },
+    {
+        "title": "MapProxy",
+        "category": "Map Visualization",
+        "slug": "mapproxy",
+        "image": "https://mapproxy.org/static/img/logo_mapproxy.png",
+        "description": "An open source tile caching proxy for geospatial data that accelerates map delivery, capable of serving OpenStreetMap tiles to desktop and web GIS applications.",
+        "lastUpdated": "2024-05-10"
+    },
+    {
+        "title": "Turf.js",
+        "category": "Libraries",
+        "slug": "turf-js",
+        "image": "https://turfjs.org/images/logo.png",
+        "description": "An advanced geospatial analysis library for browsers and Node.js, heavily used within the OpenStreetMap ecosystem for processing GeoJSON data on the fly.",
+        "lastUpdated": "2024-05-15"
+    },
+    {
+        "title": "RouteXL",
+        "category": "Navigation",
+        "slug": "routexl",
+        "image": "https://www.routexl.com/favicon.ico",
+        "description": "A multi-stop route planner utilizing OpenStreetMap data and advanced traveling salesperson algorithms to find the most optimal itinerary for deliveries and logistics.",
+        "lastUpdated": "2024-05-15"
+    },
+    {
+        "title": "OpenHistoricalMap",
+        "category": "Editors",
+        "slug": "openhistoricalmap",
+        "image": "https://www.openhistoricalmap.org/favicon.ico",
+        "description": "A sister project to OpenStreetMap dedicated to creating a universal, crowd-sourced map of the world's history across different time periods using the OSM software stack.",
+        "lastUpdated": "2024-05-15"
+    }
+]
