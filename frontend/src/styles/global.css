@@ -13,7 +13,7 @@
   --text-xs--line-height: clamp(0.75);
 
   --text-sm: 0.875rem; /* 14px */
-  --text-sm--line-height: clamp(0.875);
+  --text-sm--line-height: clamp(1.575);
 
   --text-base: 1rem; /* 16px */
   --text-base--line-height: clamp(1);
@@ -93,6 +93,11 @@
   --shadow-dialog: 8px -8px 56px 0px #2c303814;
   --shadow-card: 0px 8px 24px 0px #2c303805;
   --shadow-xs: 0px 1px 8px 0px #18002c14;
+  --shadow-thumbnail: 0px 0px 37.52px 0px #2c30380a;
+}
+
+.page-width {
+  @apply lg:mx-auto lg:max-w-7xl sm:px-0 md:px-[2rem] px-[1rem];
 }
 
 .scrollbar-hide {
