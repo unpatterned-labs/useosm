@@ -77,8 +77,12 @@
 
   /* Red */
   --color-red-50: #fce8e7;
+  --color-red-75: #f2a29e;
+  --color-red-100: #ec7b76;
   --color-red-200: #e4423a;
   --color-red-300: #df1b12;
+  --color-red-400: #9c130d;
+  --color-red-500: #88100b;
 
   /* Green */
   --color-green-50: #f3f7ef;
@@ -96,8 +100,8 @@
   --shadow-thumbnail: 0px 0px 37.52px 0px #2c30380a;
 }
 
-.page-width {
-  @apply lg:mx-auto lg:max-w-7xl sm:px-0 md:px-[2rem] px-[1rem];
+.page-container {
+  @apply mx-auto w-full max-w-screen-xl px-4 sm:px-6 md:px-8 lg:px-10 xl:px-0;
 }
 
 .scrollbar-hide {

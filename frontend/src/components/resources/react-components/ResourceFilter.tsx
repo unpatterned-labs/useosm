@@ -38,7 +38,7 @@ const ResourceFilter = ({
   }, []);
 
   return (
-    <section className="mx-auto max-w-[1328px] space-y-8 px-4">
+    <section className="page-container space-y-8">
       <div className="flex w-full items-center justify-center">
         <Search
           placeholder={searchPlaceholder}

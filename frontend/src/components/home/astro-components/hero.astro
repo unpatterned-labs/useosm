@@ -9,7 +9,8 @@ const heroText = parseHeroText(APP_CONTENT.HOME_PAGE.Hero.title);
 ---
 
 <HeroBgVector
-  className="h-screen w-full gap-12 px-4 transition-all delay-200 ease-in-out md:px-6 lg:p-0"
+  contentClassName="gap-12 px-4 transition-all delay-200 ease-in-out md:px-6 lg:p-0"
+  wrapperClassName="h-[calc(100vh-7rem)]"
 >
   <div class="max-w-[45.219rem] space-y-6 text-center" id="box">
     <div class="space-y-6">
@@ -57,7 +58,7 @@ const heroText = parseHeroText(APP_CONTENT.HOME_PAGE.Hero.title);
     ease: "bounce.out",
     scrollTrigger: {
       trigger: box,
-      start: "top 60%", // when box enters 60% of viewport
+      start: "top 70%", // when box enters 60% of viewport
       toggleActions: "play none none reverse",
     },
   });

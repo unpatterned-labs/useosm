@@ -52,7 +52,7 @@ const Resources = ({
   };
 
   return (
-    <main className="w-full space-y-20">
+    <main className="w-full space-y-8 md:space-y-20">
       <ResourceFilter
         list={list}
         activeCategory={activeCategory}
@@ -66,7 +66,7 @@ const Resources = ({
         }
       />
       <ResourceList
-        className="mx-auto grid max-w-[1328px]"
+        className="page-container mx-auto grid"
         list={filteredList}
       />
     </main>

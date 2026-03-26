@@ -50,14 +50,14 @@ export const NavBar = () => {
     <>
       <nav
         className={cn(
-          "sticky top-0 z-50 flex items-center justify-between px-6 py-4 transition-transform duration-150 ease-in-out lg:px-14",
+          "sticky top-0 z-50 flex items-center justify-between px-4 py-4 transition-transform duration-150 ease-in-out md:px-12 lg:px-24",
           isScrolled ? "shadow-dialog bg-white" : "",
         )}
         aria-label="Main navigation"
       >
         <div className="flex items-center gap-x-40">
           <a href={APP_ROUTES.HOME}>
-            <UseOSMLogoIcon className="h-[24px] w-[97.64px] text-green-500 duration-150 ease-in-out hover:text-green-400 md:h-[31px] md:w-[161px]" />
+            <UseOSMLogoIcon className="h-6 w-30 text-green-500 duration-150 ease-in-out hover:text-green-400 md:h-7 md:w-40" />
           </a>
           <ul className="hidden gap-x-10 lg:flex" role="menubar">
             {[APP_CONTENT.USECASES, APP_CONTENT.RESOURCES].map((config) => {

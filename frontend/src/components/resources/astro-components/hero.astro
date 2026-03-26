@@ -2,20 +2,18 @@
 import { APP_CONTENT } from "@/config/Content";
 import cn from "src/utils/cn";
 import HeroBgVector from "@/components/shared/astro-components/hero-bg-vector.astro";
-
-const { class: className } = Astro.props;
 ---
 
 <HeroBgVector
-  className={cn(
-    "h-[calc(100vh-20rem)] w-full gap-12",
+  wrapperClassName={cn(
+    "w-full gap-12 bg-[position:-60%_78%] xl:bg-[position:-60%_98%] bg-no-repeat",
     "bg-[url('../assets/background/sm_resources_vector.svg')]",
-    "bg-[url('../assets/background/resources_vector.svg')]",
-    className,
+    "md:bg-[url('../assets/background/resources_vector.svg')]",
   )}
+  contentClassName="h-[20rem] md:h-[30rem]"
 >
-  <div class="w-full bg-contain text-center md:w-[36rem]" id="box">
-    <h1 class="text-grey-300 text-3xl font-semibold sm:text-4xl">
+  <div class="w-full bg-contain px-6 text-center md:w-[36rem]" id="box">
+    <h1 class="text-grey-300 text-2xl font-semibold sm:text-4xl">
       {APP_CONTENT.RESOURCES_PAGE.Hero.title}
     </h1>
   </div>

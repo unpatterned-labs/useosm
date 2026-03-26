@@ -6,6 +6,7 @@ import Tag from "@/components/ui/astro-ui/tag.astro";
 import { parseHeroText } from "@/utils/text-formatter";
 import OSMUsecaseContents from "@/content/osm_usecases.json";
 import type { OSMUsecaseContentsType } from "@/types/content";
+import { ArrowRight } from "@/assets/icons/react/ArrowRight";
 interface Props {
   data: Record<string, string>;
   slug: string;
@@ -59,7 +60,7 @@ const callToActionCards = Object.keys(data)
 
 <main class="h-full w-full">
   <UsecaseBgVector
-    className="h-screen w-full gap-12 px-4 transition-all delay-200 ease-in-out md:px-6 lg:p-0"
+    className="w-full gap-12 px-4 transition-all delay-200 ease-in-out md:px-6 lg:p-0"
   >
     <div class="max-w-[45.219rem] space-y-6 text-center" id="box">
       <div class="space-y-6">
@@ -86,10 +87,10 @@ const callToActionCards = Object.keys(data)
     </div>
   </UsecaseBgVector>
   <UsecaseContentBgVector
-    className="h-full w-full bg-green-50 bg-[position:400%_0%] md:bg-[position:100%_6rem]"
+    className="h-full w-full bg-green-50 bg-[position:10.8rem_0%] md:bg-[position:100%_6rem]"
   >
     <div
-      class="page-width flex h-full w-full flex-col items-center justify-end py-[6.8rem] sm:py-[11.125rem]"
+      class="page-container flex h-full w-full flex-col items-center justify-end py-[6.8rem] sm:py-[11.125rem]"
     >
       <div class="text-grey-300 max-w-[59.125rem] space-y-14 text-center">
         <h2 class="text-3xl font-semibold lg:text-5xl">
@@ -106,16 +107,18 @@ const callToActionCards = Object.keys(data)
       </div>
     </div>
     <!-- Use cases -->
-    <div class="text-grey-300 mt-40 max-w-[39.125rem] space-y-4 text-center">
+    <div
+      class="page-container text-grey-300 mt-40 max-w-[39.125rem] space-y-4 text-center"
+    >
       <h2 class="text-2xl font-semibold lg:text-4xl">
         {data.usecaseSectionTitle}
       </h2>
     </div>
     <div
-      class="w-full bg-[url('../assets/background/usecase_container_vector.svg')] bg-[length:100%_100%] bg-center bg-no-repeat"
+      class="w-full bg-[url('../assets/background/usecase_container_vector.svg')] bg-center bg-no-repeat md:bg-[length:100%_100%]"
     >
       <section
-        class="page-width my-20 flex flex-col gap-24 px-4 md:px-8 lg:px-16"
+        class="page-container my-20 flex flex-col gap-16 px-4 md:gap-24 md:px-8 lg:px-16"
       >
         {
           usecases.map((usecase, index) => (
@@ -125,7 +128,7 @@ const callToActionCards = Object.keys(data)
               }`}
             >
               <div class="text-grey-300 basis-1/2 space-y-4 text-left">
-                <h3 class="text-xl font-semibold lg:text-3xl">
+                <h3 class="text-xl font-medium lg:text-3xl">
                   <a
                     href={usecase.articleLink}
                     class="transition-colors hover:text-green-200"
@@ -143,21 +146,22 @@ const callToActionCards = Object.keys(data)
                   <img
                     src={usecase.imagePath}
                     alt={usecase.title}
-                    class="shadow-thumbnail h-101 w-full rounded-[2.2rem] border border-gray-200 object-cover sm:w-[38rem]"
+                    class="shadow-thumbnail h-[18.71rem] w-full rounded-[2.2rem] border border-gray-200 object-cover sm:w-[38rem] md:h-101"
                     loading="lazy"
                   />
                 </div>
-                <div class="text-grey-100 flex items-start gap-4">
+                <div class="text-grey-100 flex items-center gap-2">
                   {usecase.authors && (
-                    <span class="text-sm sm:text-base">
+                    <span class="max-w-56 overflow-hidden text-xs text-ellipsis whitespace-nowrap md:text-sm">
                       {`${usecase.authors.join(", ")}`}
                     </span>
                   )}
+                  <span class="text-grey-50 text-sm">•</span>
                   {usecase.sourceName && (
                     <a
                       href={usecase.sourceLink}
                       target="_blank"
-                      class="text-sm underline transition-colors delay-150 ease-in-out hover:text-green-200 sm:text-base"
+                      class="text-xs underline transition-colors delay-150 ease-in-out hover:text-green-200 sm:text-base md:text-sm"
                     >
                       Source link
                     </a>
@@ -172,7 +176,7 @@ const callToActionCards = Object.keys(data)
   </UsecaseContentBgVector>
 
   <!-- CTAs -->
-  <section class="page-width my-28 space-y-14">
+  <section class="page-container my-28 space-y-14">
     <div
       class="text-grey-300 flex w-full flex-col items-center justify-center space-y-4 text-center"
     >
@@ -198,7 +202,7 @@ const callToActionCards = Object.keys(data)
           >
             <div class="space-y-4">
               <div class="flex w-full items-center">
-                <div class="bg-grey-400 h-[1px] w-full" />
+                <div class="bg-grey-400 h-[0.063rem] w-full" />
                 <span class="text-xs">●</span>
               </div>
 
@@ -212,11 +216,12 @@ const callToActionCards = Object.keys(data)
               href={card.buttonLink}
               target="_blank"
               rel="noopener noreferrer"
-              class={`mt-6 inline-flex items-center gap-2 text-base font-medium text-red-200`}
+              class="group mt-6 inline-flex items-center gap-2 text-base font-medium text-red-200 hover:underline"
             >
               {card.buttonText}
-              <span class="flex size-6 items-center justify-center rounded-full bg-red-200 text-white">
-                →
+
+              <span class="flex size-6 items-center justify-center rounded-full bg-red-200 text-white transition-transform duration-300 ease-out group-hover:translate-x-1">
+                <ArrowRight className="size-3" />
               </span>
             </a>
           </li>
