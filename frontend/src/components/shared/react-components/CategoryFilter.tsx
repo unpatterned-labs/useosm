@@ -60,6 +60,7 @@ const CategoryFilter = ({
       <button
         onClick={() => scroll("left")}
         aria-label="Scroll left"
+        type="button"
         className={cn(
           "border-grey-50 text-grey-300 hover:bg-grey-50 flex h-8 w-8 shrink-0 items-center justify-center rounded-xl border bg-white shadow-xs transition-all duration-200",
           canScrollLeft ? "opacity-100" : "pointer-events-none opacity-0",
@@ -98,6 +99,7 @@ const CategoryFilter = ({
       <button
         onClick={() => scroll("right")}
         aria-label="Scroll right"
+        type="button"
         className={cn(
           "border-grey-50 text-grey-300 hover:bg-grey-50 flex h-8 w-8 shrink-0 items-center justify-center rounded-xl border bg-white shadow-xs transition-all duration-200",
           canScrollRight ? "opacity-100" : "pointer-events-none opacity-0",

@@ -40,7 +40,7 @@ const ResourceList = ({
       setVisibleCount((prev) => prev + PAGE_SIZE);
       setLoading(false);
     }, 1000);
-  }, [loading, hasMore]);
+  }, [loading, hasMore, disablePagination]);
 
   const lastElementRef = useCallback(
     (node: HTMLAnchorElement | null) => {

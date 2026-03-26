@@ -25,8 +25,9 @@ const OrganizationsCarousel = ({
 
   const getCurrentX = (): number => {
     if (!trackRef.current) return 0;
-    const matrix = window.getComputedStyle(trackRef.current).transform;
-    return matrix !== "none" ? parseFloat(matrix.split(",")[4]) : 0;
+    const x = gsap.getProperty(trackRef.current, "x");
+    const value = typeof x === "number" ? x : parseFloat(String(x));
+    return Number.isNaN(value) ? 0 : value;
   };
 
   const updateArrows = (x: number) => {

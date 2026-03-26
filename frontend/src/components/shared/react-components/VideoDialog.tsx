@@ -19,7 +19,6 @@ const VideoDialog = ({ id }: { id: string }) => {
           className="absolute inset-0 z-10 flex cursor-pointer items-center justify-center bg-white"
           onClick={() => setIsPlaying(true)}
           aria-label="Play video"
-          role="button"
           tabIndex={0}
           onKeyDown={(e) => e.key === "Enter" && setIsPlaying(true)}
         >
@@ -53,7 +52,7 @@ const VideoDialog = ({ id }: { id: string }) => {
             ? "https://www.youtube.com/embed/Phwrgb16oEM?autoplay=1"
             : "about:blank"
         }
-        title="New"
+        title="OpenStreetMap introduction video"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;"
         allowFullScreen
       />
