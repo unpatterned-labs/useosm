@@ -1,7 +1,7 @@
 import { ResourceCategory, type ResourceItem } from "src/types/content";
 import { APP_CONTENT } from "@/config/Content";
 import ResourceList from "@/components/resources/react-components/ResourceList";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import cn from "@/utils/cn";
 
 const OSMResources = ({
@@ -9,6 +9,7 @@ const OSMResources = ({
 }: {
   disablePagination?: boolean;
 }) => {
+  const [isPaused, setIsPaused] = useState(false);
   const [activeCategory, setActiveCategory] = useState<string>(
     ResourceCategory.EDITORS,
   );
@@ -28,12 +29,12 @@ const OSMResources = ({
       description:
         "Utilities and libraries to query, extract, and analyze raw OpenStreetMap data at scale.",
     },
-    {
-      id: 3,
-      category: ResourceCategory.MAP_VISUALIZATION_STACK,
-      description:
-        "Utilities and libraries to query, extract, and analyze raw OpenStreetMap data at scale.",
-    },
+    // {
+    //   id: 3,
+    //   category: ResourceCategory.MAP_VISUALIZATION_STACK,
+    //   description:
+    //     "Utilities and libraries to query, extract, and analyze raw OpenStreetMap data at scale.",
+    // },
     {
       id: 4,
       category: ResourceCategory.LIBRARIES,
@@ -48,15 +49,44 @@ const OSMResources = ({
     },
   ];
 
-  const handleCategorySelect = (category: string) => {
-    setActiveCategory(category);
+  const handleCategorySelect = (
+    category: string,
+    autoAdvance: boolean = false,
+  ) => {
+    let nextCategory = category;
+
+    if (autoAdvance) {
+      const currentIndex = ResourcesCategory.findIndex(
+        (cat) => cat.category === category,
+      );
+      const nextIndex =
+        currentIndex === ResourcesCategory.length - 1 ? 0 : currentIndex + 1;
+      nextCategory = ResourcesCategory[nextIndex].category;
+    }
+
+    // set the active category
+    setActiveCategory(nextCategory);
+
+    // filter resource list based on the selected category
     const filtered = APP_CONTENT.RESOURCES_PAGE.resourcesList.filter((item) => {
       return (
-        category === ResourceCategory.EDITORS || item.category === category
+        nextCategory === ResourceCategory.EDITORS ||
+        item.category === nextCategory
       );
     });
+
     setResourcesList(filtered);
   };
+
+  useEffect(() => {
+    if (isPaused) return;
+
+    const interval = setInterval(() => {
+      handleCategorySelect(activeCategory, true);
+    }, 4500);
+
+    return () => clearInterval(interval);
+  }, [activeCategory, isPaused]);
 
   return (
     <div className="flex md:gap-10">
@@ -72,17 +102,36 @@ const OSMResources = ({
             )}
             onClick={() => handleCategorySelect(category.category)}
           >
-            <button className="flex gap-3 text-start">
-              <hr
+            <button className="flex cursor-pointer gap-3 text-start">
+              <div
                 className={cn(
-                  "border-grey-200 h-3 rounded border-[3px] border-l",
+                  "min-h-full rounded bg-red-50",
                   activeCategory === category.category
-                    ? "border-green-400 opacity-100"
+                    ? "border-red-50 opacity-100"
                     : "opacity-0",
                 )}
-              />
+              >
+                <div
+                  className={cn(
+                    "rounded border-3",
+                    isPaused
+                      ? "[transition:height_0ms_linear,border-color_200ms_ease]"
+                      : "[transition:height_4500ms_linear,border-color_200ms_ease]",
+                    activeCategory === category.category
+                      ? "h-full border-red-300"
+                      : "h-0 border-transparent",
+                  )}
+                />
+              </div>
               <div className="space-y-2">
-                <h4 className="text-grey-300 text-base font-medium md:text-2xl">
+                <h4
+                  className={cn(
+                    "text-grey-300 text-base md:text-2xl",
+                    activeCategory === category.category
+                      ? "font-medium"
+                      : "font-normal",
+                  )}
+                >
                   {category.category}
                 </h4>
                 <p className="text-grey-200 text-sm font-light md:text-base">
@@ -92,26 +141,25 @@ const OSMResources = ({
             </button>
             {activeCategory === category.category && (
               <ResourceList
-                resourceClassName="bg-white w-[163px] h-[148px]"
-                className="mt-6 flex flex-1 flex-wrap gap-4 px-0 md:gap-6 lg:hidden"
-                imageClassName="h-18"
+                className="mt-6 grid grid-cols-1 px-0 md:grid-cols-2 md:gap-6 lg:hidden"
                 list={resourcesList}
                 emptyText="No resources found in this category."
                 disablePagination={disablePagination}
+                onMouseEnter={() => setIsPaused(true)}
+                onMouseLeave={() => setIsPaused(false)}
               />
             )}
           </li>
         ))}
       </ul>
-      <div>
-        <ResourceList
-          resourceClassName="bg-white w-[262px] h-[234px]"
-          className="hidden flex-1 flex-wrap gap-6 lg:flex"
-          list={resourcesList}
-          emptyText="No resources found in this category."
-          disablePagination={disablePagination}
-        />
-      </div>
+      <ResourceList
+        className="hidden h-fit flex-1 gap-4 px-0 md:gap-6 lg:grid lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4"
+        list={resourcesList}
+        emptyText="No resources found in this category."
+        disablePagination={disablePagination}
+        onMouseEnter={() => setIsPaused(true)}
+        onMouseLeave={() => setIsPaused(false)}
+      />
     </div>
   );
 };

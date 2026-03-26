@@ -26,7 +26,7 @@ import cn from "@/utils/cn";
   <div>
     <ul
       id="steps"
-      class="mx-auto mb-20 grid w-full max-w-[1248px] grid-cols-1 gap-6 px-4 sm:grid-cols-2 sm:px-6 md:gap-8 lg:grid-cols-3 lg:px-8"
+      class="page-container mb-20 grid w-full grid-cols-1 gap-6 sm:grid-cols-2 md:gap-8 lg:grid-cols-3"
     >
       {
         APP_CONTENT.HOME_PAGE.HowOSMWorks.steps.map((step, index) => (
@@ -84,11 +84,11 @@ import cn from "@/utils/cn";
         size="xl"
         id="get-started-button"
         href={APP_CONTENT.HOME_PAGE.HowOSMWorks.actions.getStarted.link}
-        class="w-full gap-8 md:w-fit"
+        class="w-fit"
       >
         {APP_CONTENT.HOME_PAGE.HowOSMWorks.actions.getStarted.text}
         <div
-          class="flex size-10 items-center justify-center rounded-full bg-white"
+          class="flex size-8 items-center justify-center rounded-full bg-white md:size-10"
         >
           <ArrowRight class="text-green-300" size={20} />
         </div>

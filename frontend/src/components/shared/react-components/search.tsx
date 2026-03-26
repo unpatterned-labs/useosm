@@ -12,10 +12,10 @@ const Search = ({
   value: string;
 }) => {
   return (
-    <div className="bg-surface-30 flex w-full items-center gap-2 rounded-4xl border border-gray-300 p-3.5 md:w-[25rem]">
+    <div className="bg-surface-30 flex min-w-[20rem] items-center gap-2 rounded-4xl border border-gray-300 p-2.5 md:w-[25rem] md:p-3.5">
       <SearchIcon
         className={cn(
-          "transition-all delay-150 ease-in-out",
+          "size-4 h-6 transition-all delay-150 ease-in-out md:size-6",
           value.length > 0 ? "text-grey-300" : "text-grey-50",
         )}
       />
@@ -30,7 +30,7 @@ const Search = ({
       {/* Clear input button */}
       {value.length > 0 && (
         <XIcon
-          className="size-6 cursor-pointer text-red-200 transition-all delay-150 ease-in-out hover:text-red-100"
+          className="size-4.5 cursor-pointer text-red-200 transition-all delay-150 ease-in-out hover:text-red-100 md:size-6"
           onClick={() => onChange("")}
         />
       )}
