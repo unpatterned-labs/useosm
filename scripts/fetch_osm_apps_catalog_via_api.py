@@ -107,6 +107,8 @@ FIRST_SENTENCE_RE = re.compile(r"^(.+?[.!?])(?:\s|$)")
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Fetch and transform OSM apps catalog from API.")
+    parser.add_argument("-y", "--yes", action="store_true", help="Compatibility flag (no prompt in this script).")
+    parser.add_argument("-v", "--verbose", action="store_true", help="Enable verbose debug logging.")
     parser.add_argument("--api-url", default="https://osm-apps.org/api/apps/all.json", help="Source API URL.")
     parser.add_argument(
         "--output",
@@ -345,7 +347,8 @@ def write_json_atomic(path: Path, data: list[dict[str, Any]], indent: int) -> No
 
 def main() -> None:
     args = parse_args()
-    logging.basicConfig(level=logging.INFO, format="%(asctime)s %(name)s %(levelname)s: %(message)s")
+    log_level = logging.DEBUG if args.verbose else logging.INFO
+    logging.basicConfig(level=log_level, format="%(asctime)s %(name)s %(levelname)s: %(message)s")
 
     output_path = resolve_output_path(args.output)
     LOGGER.info("Fetching OSM apps from %s", args.api_url)
