@@ -271,10 +271,11 @@ def extract_website(app: dict[str, Any]) -> str:
 
 
 def build_description(app: dict[str, Any]) -> str:
+    long = normalize_text(app.get("description"))
     short = normalize_text(app.get("descriptionShort"))
-    if short:
-        return short
-    return first_sentence(normalize_text(app.get("description")))
+    if long:
+        return long
+    return short
 
 
 def unique_slug(base_slug: str, app: dict[str, Any], index: int, used: set[str]) -> str:

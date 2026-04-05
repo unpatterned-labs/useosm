@@ -45,7 +45,7 @@
     "slug": "brouter",
     "image": "https://brouter.de/brouter/favicon.ico",
     "website": "https://brouter.de/brouter",
-    "description": "configurable OSM offline router with elevation awareness, Java + Android",
+    "description": "Configurable OSM offline router with elevation awareness, Java + Android – Routing engine designed for cycling.",
     "score": 4.25,
     "lastUpdated": "2025-07-12"
   },
@@ -55,7 +55,7 @@
     "slug": "cartotype",
     "image": "https://wiki.openstreetmap.org/w/images/thumb/e/e8/Cartotype-with-routes.PNG/250px-Cartotype-with-routes.PNG",
     "website": "https://www.cartotype.com/",
-    "description": "CartoType is an ultra-portable library.",
+    "description": "CartoType is an ultra-portable library. It runs on any system with a C++ compiler, from Raspberry Pi up to servers, and on mobile devices, tablets and desktop machines. A consistent API is available in several languages : C++, C#, VB.NETJava, Swift and Objective C.",
     "score": 4.5,
     "lastUpdated": "2024-11-07"
   },
@@ -65,7 +65,7 @@
     "slug": "cityzen",
     "image": "https://wiki.openstreetmap.org/w/images/thumb/9/9c/CityZen_logo.png/250px-CityZen_logo.png",
     "website": "http://cityzenapp.co/",
-    "description": "CityZen Android App, OpenStreetMap base-map",
+    "description": "Display, navigation, search, OSM display, submit OSM POI, mark favorites. Active development status since 2017. Keywords: GPS navigator, GPS navigation, navigation system, OpenStreetMap, OSM viewer, map viewer, OSM mapping, outdoor.",
     "score": 7.25,
     "lastUpdated": "2019-07-02"
   },
@@ -75,7 +75,7 @@
     "slug": "comaps",
     "image": "https://wiki.openstreetmap.org/w/images/thumb/2/22/CoMaps_logotype.jpg/250px-CoMaps_logotype.jpg",
     "website": "https://www.comaps.app/",
-    "description": "free and open source map & navigation app; community fork of Organic Maps",
+    "description": "Privacy-focused, open-source, free and fast offline maps without ads, developed by the community for the community.",
     "score": 9.0,
     "lastUpdated": "2026-03-23"
   },
@@ -105,7 +105,7 @@
     "slug": "deriviste",
     "image": "https://wiki.openstreetmap.org/w/images/thumb/e/e8/Deriviste.png/250px-Deriviste.png",
     "website": "https://osm.cycle.travel/deriviste/",
-    "description": "Street-level OpenStreetMap editor",
+    "description": "Deriviste is a editor for adding POI s directly from street-level imagery ( Mapillary ).",
     "score": 5.25,
     "lastUpdated": "2020-05-09"
   },
@@ -125,7 +125,7 @@
     "slug": "facilmap",
     "image": "https://wiki.openstreetmap.org/w/images/thumb/7/7a/FacilMap.png/250px-FacilMap.png",
     "website": "https://facilmap.org/",
-    "description": "Different OSM renderings, search and draggable routes, create custom maps with live collaboration where markers, lines, routes and GPX/KML/GeoJSON/OSM files can be added.",
+    "description": "A privacy-friendly, open-source versatile online map that combines different services based on OpenStreetMap and makes it easy to find places, plan trips and add markers, lines and routes to custom maps with live collaboration.",
     "score": 6.375,
     "lastUpdated": "2024-07-05"
   },
@@ -145,7 +145,7 @@
     "slug": "field-papers",
     "image": "https://commons.wikimedia.org/wiki/Special:FilePath/ItWikiCon%202018%20-%20Field%20papers.jpg",
     "website": "https://fieldpapers.org/",
-    "description": "Field Papers umbrella project",
+    "description": "tool for printing maps for data collection during field surveys for OpenStreetMap",
     "score": 4.875,
     "lastUpdated": "2026-02-18"
   },
@@ -165,7 +165,7 @@
     "slug": "freemap-slovakia",
     "image": "https://raw.githubusercontent.com/FreemapSlovakia/freemap-v3-react/refs/heads/main/src/images/freemap-logo-small.png",
     "website": "https://www.freemap.sk/",
-    "description": "Freemap Slovakia web application ( www.freemap.sk )",
+    "description": "Feature-rich map including distance and area measurement, fullscreen mode, bicycle and hiking routes, POIs, elevation details, downloadable maps for multiple devices, diverse export options, routing, and search functionalities. While some features focus on the Slovak region, there are more to explore.",
     "score": 4.125,
     "lastUpdated": "2026-03-19"
   },
@@ -175,7 +175,7 @@
     "slug": "geopaparazzi",
     "image": "https://wiki.openstreetmap.org/w/images/thumb/f/fc/Android-geopaparazzi-cycle.png/250px-Android-geopaparazzi-cycle.png",
     "website": "http://geopaparazzi.github.io/geopaparazzi/",
-    "description": "Because not all paparazzis are evil!",
+    "description": "Navigation offline and online, OSM and custom map display (vector data or tiles, offline, cached or online), field mapping, mark POI. Actively being developed. Keywords: GPS, field mapping, GPS navigation, navigation system, satellite navigation, sat nav, satnav, GPS tracker, GPS tracking, GPS map, OpenStreetMap, OSM viewer, map viewer, OSM mapping, outdoor.",
     "score": 6.625,
     "lastUpdated": "2022-01-20"
   },
@@ -195,7 +195,7 @@
     "slug": "go-map",
     "image": "https://wiki.openstreetmap.org/w/images/thumb/d/d8/Go_Map!!_App_Icon.svg/250px-Go_Map!!_App_Icon.svg.png",
     "website": "",
-    "description": "OpenStreetMap editor for iPhone/iPad",
+    "description": "Easy to use iOS/iPadOS/macOS/visionOS editor for OSM, OHM, and OGF.",
     "score": 8.25,
     "lastUpdated": "2025-11-09"
   },
@@ -215,7 +215,7 @@
     "slug": "gpxstudio",
     "image": "https://repository-images.githubusercontent.com/783722229/5bd1b100-aafb-42d5-87a0-9b9dc0e41117",
     "website": "https://gpx.studio/app",
-    "description": "the online GPX file editor",
+    "description": "an free and open source online tool for creating and editing GPX files",
     "score": 5.375,
     "lastUpdated": "2026-03-24"
   },
@@ -235,7 +235,7 @@
     "slug": "gpxviewer",
     "image": "https://wiki.openstreetmap.org/w/images/thumb/0/0a/Gpxviewer.png/250px-Gpxviewer.png",
     "website": "http://andrewgee.org/blog/projects/gpxviewer",
-    "description": "GPXViewer GPS trace viewer",
+    "description": "Allow users to easily view GPS traces they have created in the GPX file format.",
     "score": 4.5,
     "lastUpdated": "2024-09-17"
   },
@@ -335,7 +335,7 @@
     "slug": "magic-earth",
     "image": "https://wiki.openstreetmap.org/w/images/thumb/7/75/2_iPhone_6_Navigation_imperial_uk.PNG/250px-2_iPhone_6_Navigation_imperial_uk.PNG",
     "website": "https://www.magicearth.com/",
-    "description": "mobile navigation app",
+    "description": "Magic Earth is a closed-source mobile app providing worldwide navigation based on OpenStreetMap data and speed cameras in 59 countries.",
     "score": 6.125,
     "lastUpdated": "2024-11-01"
   },
@@ -395,7 +395,7 @@
     "slug": "mapsme",
     "image": "https://wiki.openstreetmap.org/w/images/thumb/c/cc/MAPS.ME_Logo.svg/250px-MAPS.ME_Logo.svg.png",
     "website": "https://maps.me/",
-    "description": "🗺️ MAPS.ME — Offline OpenStreetMap maps for iOS and Android",
+    "description": "Offline maps of all countries, fast renderer, offline search, whole planet fits to 27Gb.",
     "score": 6.5,
     "lastUpdated": "2025-10-28"
   },
@@ -405,7 +405,7 @@
     "slug": "mapserver",
     "image": "https://wiki.openstreetmap.org/w/images/thumb/b/b7/FI_HKI_bus_stops_Mapserver.jpg/250px-FI_HKI_bus_stops_Mapserver.jpg",
     "website": "https://mapserver.org/",
-    "description": "Source code of the MapServer project. Please submit pull requests to the 'main' branch.",
+    "description": "MapServer is an Open Source platform for publishing spatial data and interactive mapping applications to the web.",
     "score": 4.625,
     "lastUpdated": "2026-03-23"
   },
@@ -435,7 +435,7 @@
     "slug": "marble",
     "image": "https://wiki.openstreetmap.org/w/images/thumb/e/e6/Marble-logo.svg/250px-Marble-logo.svg.png",
     "website": "http://marble.kde.org/",
-    "description": "virtual globe and atlas software",
+    "description": "Virtual globe with multiple projections, tiles and vector data, routing and POI search.",
     "score": 4.5,
     "lastUpdated": "2025-09-09"
   },
@@ -455,7 +455,7 @@
     "slug": "missing-streets",
     "image": "https://wiki.openstreetmap.org/w/images/thumb/0/07/NZ_missing_streets.png/250px-NZ_missing_streets.png",
     "website": "https://osm-nz.github.io/missing-streets",
-    "description": "Finds streets that are missing in OpenStreetMap using government datasets from various countries",
+    "description": "Identifies street names that are missing in OpenStreetMap, using various regions' government data.",
     "score": 5.75,
     "lastUpdated": "2026-02-05"
   },
@@ -465,7 +465,7 @@
     "slug": "navit",
     "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Navit%20logoV2%20squircle.svg",
     "website": "https://www.navit-project.org/",
-    "description": "navigation software",
+    "description": "Most popular open source car navigation tool; maps (offline-\"custom\"), vector-rendered.",
     "score": 5.625,
     "lastUpdated": "2026-02-08"
   },
@@ -535,7 +535,7 @@
     "slug": "open-gpx-tracker",
     "image": "https://wiki.openstreetmap.org/w/images/thumb/c/c9/Open_GPX_Tracker_App_Icon.png/250px-Open_GPX_Tracker_App_Icon.png",
     "website": "http://www.merlos.org/iOS-Open-GPX-Tracker/",
-    "description": "Open Source GPS Logger for iOS.",
+    "description": "Open Source GPS Logger for iOS. Track your location, add Waypoints and send them as GPX files by email.",
     "score": 6.625,
     "lastUpdated": "2025-12-21"
   },
@@ -545,7 +545,7 @@
     "slug": "open-infrastructure-map",
     "image": "https://wiki.openstreetmap.org/w/images/thumb/8/88/openinframap-world.png/250px-openinframap-world.png",
     "website": "https://openinframap.org/",
-    "description": "Map of infrastructure in OSM",
+    "description": "Open Infrastructure Map is a view of the world's hidden infrastructure mapped in the OpenStreetMap database.",
     "score": 5.5,
     "lastUpdated": "2026-02-08"
   },
@@ -555,7 +555,7 @@
     "slug": "open-nederlands-wegenbestand-opennwb",
     "image": "https://raw.githubusercontent.com/FileradarBV/OpenNWB/master/logo.svg",
     "website": "https://github.com/FileradarBV/OpenNWB/blob/master/README.md",
-    "description": "Interactieve kaartstijl met wegkenmerken voor de Lage Landen",
+    "description": "Interactive map style with road attributes for the Low Countries.",
     "score": 6.25,
     "lastUpdated": "2025-08-08"
   },
@@ -565,7 +565,7 @@
     "slug": "openbeermap",
     "image": "http://openbeermap.github.io/assets/img/application/ffos-16.png",
     "website": "https://openbeermap.github.io/",
-    "description": "The free and editable map of draft beers",
+    "description": "This application was created to help people find their favourite beers.",
     "score": 6.625,
     "lastUpdated": "2026-03-23"
   },
@@ -575,7 +575,7 @@
     "slug": "openclimbingorg",
     "image": "https://wiki.openstreetmap.org/w/images/thumb/5/59/Openclimbing.org_-_logo.png/250px-Openclimbing.org_-_logo.png",
     "website": "https://openclimbing.org/",
-    "description": "Lets make a universal app for OpenStreetMap",
+    "description": "Application for mapping climbing areas and creating interactive climbing guides. All data is open and anyone can edit it – similar to Wikipedia.",
     "score": 7.0,
     "lastUpdated": "2025-06-26"
   },
@@ -625,7 +625,7 @@
     "slug": "openseamap",
     "image": "https://wiki.openstreetmap.org/w/images/thumb/5/58/OpenSeaMap_Icon_1024.png/250px-OpenSeaMap_Icon_1024.png",
     "website": "https://wiki.openseamap.org/wiki/Hauptseite:en",
-    "description": "software project",
+    "description": "Display of navigation marks, waterways, restricted areas & route planning functions with waypoints.",
     "score": 4.375,
     "lastUpdated": "2025-07-08"
   },
@@ -635,7 +635,7 @@
     "slug": "openstop",
     "image": "https://wiki.openstreetmap.org/w/images/thumb/0/0f/OpenStop_Logo.png/250px-OpenStop_Logo.png",
     "website": "https://openstop.app/",
-    "description": "App for collecting OpenStreetMap-compliant accessibility data in public transport",
+    "description": "App for collecting OpenStreetMap-compliant accessibility data in public transport.",
     "score": 7.375,
     "lastUpdated": "2025-12-16"
   },
@@ -665,7 +665,7 @@
     "slug": "openstreetmap-tags-editor",
     "image": "https://wiki.openstreetmap.org/w/images/thumb/0/00/OpenStreetMap_Tags_Editor_v1.1_Firefox.png/250px-OpenStreetMap_Tags_Editor_v1.1_Firefox.png",
     "website": "",
-    "description": "Simple editor implemented as a browser extension",
+    "description": "An extension that adds an \"edit tags\" button to every object on osm.org.",
     "score": 4.5,
     "lastUpdated": "2024-03-16"
   },
@@ -675,7 +675,7 @@
     "slug": "openstreetmap-ng",
     "image": "https://wiki.openstreetmap.org/w/images/thumb/0/0e/OpenStreetMap-NG.webp/250px-OpenStreetMap-NG.webp",
     "website": "https://osm.ng/",
-    "description": "🗺️ The Next Generation of OpenStreetMap — in Python!",
+    "description": "OpenStreetMap-NG is an unofficial Python fork of openstreetmap.org. It's on a mission to push the boundaries of OpenStreetMap and provide a better experience for all users.",
     "score": 6.75,
     "lastUpdated": "2026-03-01"
   },
@@ -695,7 +695,7 @@
     "slug": "oruxmaps",
     "image": "https://wiki.openstreetmap.org/w/images/thumb/5/57/Oruxmaps.jpg/250px-Oruxmaps.jpg",
     "website": "http://www.oruxmaps.com/",
-    "description": "OruxMaps is a map viewer.",
+    "description": "OruxMaps is a map viewer. It can work in two modes: online with Google, Microsoft, Yandex,... maps, and offline, with calibrated maps for OruxMaps, or online maps which have been saved.",
     "score": 5.0,
     "lastUpdated": "2024-04-05"
   },
@@ -705,7 +705,7 @@
     "slug": "osm-accessibility-map",
     "image": "https://wiki.openstreetmap.org/w/images/thumb/8/85/Osmaccessibilitymap_screenshot.jpg/250px-Osmaccessibilitymap_screenshot.jpg",
     "website": "https://yopaseopor.github.io/osmaccessibilitymap",
-    "description": "Map of info in OSM about accessibility for people with disabilities",
+    "description": "Watch any key=value about accessibility, wheelchair, incline and kerbs in and outside OpenStreetMap.",
     "score": 6.625,
     "lastUpdated": "2017-11-12"
   },
@@ -775,7 +775,7 @@
     "slug": "osm-traffic-signs-map",
     "image": "https://wiki.openstreetmap.org/w/images/thumb/5/5f/osmtrafficsignsmap_screenshot.jpg/250px-osmtrafficsignsmap_screenshot.jpg",
     "website": "https://yopaseopor.github.io/osmtrafficsignsmap",
-    "description": "See traffic signs in OSM.",
+    "description": "Watch any key=value about traffic signs (maxspeed,maxheight,maxaleload,maxweight,maxwidth...), in and outside OpenStreetMap.",
     "score": 4.125,
     "lastUpdated": "2025-03-23"
   },
@@ -785,7 +785,7 @@
     "slug": "osm-utils",
     "image": "https://wiki.openstreetmap.org/w/images/thumb/d/df/Osmutils_screenshot.jpg/250px-Osmutils_screenshot.jpg",
     "website": "https://yopaseopor.github.io/osmutils",
-    "description": "A map mixing OSM ecosystem and vibe coding",
+    "description": "Watch +15000 brands in OpenStreetMap. A map mixing OSM ecosystem and vibe coding.",
     "score": 4.375,
     "lastUpdated": "2025-07-12"
   },
@@ -825,7 +825,7 @@
     "slug": "osmand",
     "image": "https://wiki.openstreetmap.org/w/images/thumb/c/cd/Osmand-icon.png/250px-Osmand-icon.png",
     "website": "https://osmand.net/",
-    "description": "OsmAnd Maps & Navigation",
+    "description": "Navigation (routing) offline and online, OSM and custom map display (vector data or tiles, offline, cached or online), POI and address search (offline or online Nominatim), submit OSM bugs and POI, mark favorites, public transport info. Actively being developed. Keywords: GPS navigator, GPS navigation, navigation system, satellite navigation, sat nav, satnav, GPS tracker, GPS tracking, GPS map, OpenStreetMap, OSM viewer, map viewer, OSM mapping, offline routing, offline world map, global offline country maps, outdoor.",
     "score": 9.25,
     "lastUpdated": "2026-03-31"
   },
@@ -905,7 +905,7 @@
     "slug": "osmtracker-for-android",
     "image": "https://wiki.openstreetmap.org/w/images/thumb/7/7a/OSMTracker_for_Android.png/250px-OSMTracker_for_Android.png",
     "website": "https://github.com/labexp/osmtracker-android/wiki",
-    "description": "GPS tracking tool for OpenStreetMap",
+    "description": "Offline GPS tracker with fast POI placement shortcuts. Exports in GPX format with waypoints, suitable for editing in JOSM.",
     "score": 7.25,
     "lastUpdated": "2025-09-12"
   },
@@ -915,7 +915,7 @@
     "slug": "overmatch",
     "image": "https://whubsch.github.io/overmatch/favicon.ico",
     "website": "https://whubsch.github.io/overmatch/",
-    "description": "🗺️ Enrich OpenStreetMap with Overture Maps data",
+    "description": "Tool for matching Overture Maps data with OpenStreetMap elements and applying enriched tags.",
     "score": 4.25,
     "lastUpdated": "2026-03-23"
   },
@@ -925,7 +925,7 @@
     "slug": "overpass-turbo",
     "image": "https://wiki.openstreetmap.org/w/images/thumb/c/c3/Overpass-turbo.svg/250px-Overpass-turbo.svg.png",
     "website": "https://overpass-turbo.eu/",
-    "description": "A web based data mining tool for OpenStreetMap using the Overpass API.",
+    "description": "A web-based data filtering tool for OpenStreetMap using the Overpass API.",
     "score": 4.25,
     "lastUpdated": "2025-04-09"
   },
@@ -945,7 +945,7 @@
     "slug": "panoramax",
     "image": "https://wiki.openstreetmap.org/w/images/thumb/a/a9/Panoramax.svg/250px-Panoramax.svg.png",
     "website": "https://panoramax.fr/",
-    "description": "collaborative database of street-level imagery",
+    "description": "\"The free alternative to photo-mapping territories\" https://panoramax.fr .",
     "score": 5.5,
     "lastUpdated": "2025-12-12"
   },
@@ -965,7 +965,7 @@
     "slug": "peaknav",
     "image": "https://peaknav.com/favicon.ico",
     "website": "https://peaknav.com/",
-    "description": "PeakNav app for viewing earth mountains and paths in 3D",
+    "description": "3D mountain viewer for offline usage. Keywords: 3D, hiking, outdoor, map viewer, OSM viewer, OpenStreetMap.",
     "score": 4.125,
     "lastUpdated": "2025-10-21"
   },
@@ -975,7 +975,7 @@
     "slug": "pic4review",
     "image": "https://wiki.openstreetmap.org/w/images/thumb/f/f7/Pic4Review_logo.svg/250px-Pic4Review_logo.svg.png",
     "website": "https://pic4review.pavie.info/",
-    "description": "Easy to use OpenStreetMap Editor based on Street Level Images.",
+    "description": "Simple OpenStreetMap editor for contributing on missions using pictures.",
     "score": 5.375,
     "lastUpdated": "2024-03-04"
   },
@@ -995,7 +995,7 @@
     "slug": "potlatch",
     "image": "https://wiki.openstreetmap.org/w/images/thumb/e/e9/P3_logo_128x128.png/250px-P3_logo_128x128.png",
     "website": "https://www.systemed.net/potlatch",
-    "description": "editor for OpenStreetMap data",
+    "description": "OpenStreetMap intermediate-level editing software for desktop.",
     "score": 6.5,
     "lastUpdated": "2024-06-12"
   },
@@ -1005,7 +1005,7 @@
     "slug": "priceless-map",
     "image": "https://priceless.zottelig.ch/icons/favicon.ico",
     "website": "https://priceless.zottelig.ch/",
-    "description": "This is a map showing public and free facilities and offers.",
+    "description": "A map showing public and free facilities and offers near you.",
     "score": 6.75,
     "lastUpdated": "2025-07-06"
   },
@@ -1025,7 +1025,7 @@
     "slug": "pure-maps",
     "image": "https://rinigus.github.io/pure-maps/favicon.ico",
     "website": "https://rinigus.github.io/pure-maps/",
-    "description": "Maps and navigation",
+    "description": "Maps and Navigation - using either offline OSM Scout Server or online service providers The Slim version does only include PicoTTS for voice output while the Full version also includes Mimic.",
     "score": 5.75,
     "lastUpdated": "2026-01-08"
   },
@@ -1035,7 +1035,7 @@
     "slug": "qgis",
     "image": "https://wiki.openstreetmap.org/w/images/thumb/3/3e/QGIS_logo_minimal.svg/250px-QGIS_logo_minimal.svg.png",
     "website": "https://qgis.org/",
-    "description": "open source desktop geographic information system software",
+    "description": "QGIS is a free, open source, cross platform (lin/win/mac) geographical information system (GIS).",
     "score": 7.25,
     "lastUpdated": "2026-04-03"
   },
@@ -1065,7 +1065,7 @@
     "slug": "rack-finder",
     "image": "https://rackfinder.app/favicon.ico",
     "website": "https://rackfinder.app/",
-    "description": "Easily find nearby bike racks",
+    "description": "Easily find bike racks in the nearby area and add unmapped ones.",
     "score": 6.625,
     "lastUpdated": "2025-11-18"
   },
@@ -1075,7 +1075,7 @@
     "slug": "rapid",
     "image": "https://wiki.openstreetmap.org/w/images/thumb/8/87/Rapid_logo_64_Pixel.svg/250px-Rapid_logo_64_Pixel.svg.png",
     "website": "https://rapideditor.org/",
-    "description": "OpenStreetMap editor for mass building imports",
+    "description": "Fast PixiJS based renderer developed and maintained by a professional team featuring AI-generated data and authoritative open map dataset catalog for users to validate.",
     "score": 7.625,
     "lastUpdated": "2026-02-04"
   },
@@ -1095,7 +1095,7 @@
     "slug": "routeconverter",
     "image": "https://wiki.openstreetmap.org/w/images/thumb/f/f0/Routeconverter_screenshot.png/250px-Routeconverter_screenshot.png",
     "website": "http://www.routeconverter.com/",
-    "description": "The popular GPS conversion and editing tool",
+    "description": "GPS routes analyser with an experimental branch for offline routing with mapsforge maps.",
     "score": 6.625,
     "lastUpdated": "2022-09-10"
   },
@@ -1125,7 +1125,7 @@
     "slug": "shareish",
     "image": "https://shareish.org/favicon.ico",
     "website": "https://shareish.org/",
-    "description": "Main code of the Shareish platform (backend & frontend)",
+    "description": "Shareish is an open-source web platform to facilitate diverse solidarity practices.",
     "score": 5.0,
     "lastUpdated": "2026-03-17"
   },
@@ -1135,7 +1135,7 @@
     "slug": "simpletaskmanager",
     "image": "https://wiki.openstreetmap.org/w/images/thumb/f/f1/simple-task-manager_v1-6-0.webp/250px-simple-task-manager_v1-6-0.webp",
     "website": "https://stm.hauke-stieler.de/",
-    "description": "A simple tasking manager made for OpenStreetMap.",
+    "description": "Simple and easy to use task manager for collaborative mapping in OpenStreetMap.",
     "score": 4.625,
     "lastUpdated": "2026-04-03"
   },
@@ -1155,7 +1155,7 @@
     "slug": "smash",
     "image": "https://wiki.openstreetmap.org/w/images/thumb/6/6f/SMASH-logo.png/250px-SMASH-logo.png",
     "website": "https://www.geopaparazzi.org/smash/",
-    "description": "Source code of the SMASH Android/iOS digital field mapping app.",
+    "description": "An easy-to-use app for your phone that helps you quickly map and collect information about the world, with tools for taking notes, photos, and GPS tracking.",
     "score": 5.625,
     "lastUpdated": "2026-03-31"
   },
@@ -1175,7 +1175,7 @@
     "slug": "streetcritic",
     "image": "https://streetcritic.org/favicon.ico",
     "website": "https://streetcritic.org/",
-    "description": "We collect subjective data on traffic routes.",
+    "description": "Web platform for subjective ratings of streets for sustainable mobility.",
     "score": 5.25,
     "lastUpdated": ""
   },
@@ -1185,7 +1185,7 @@
     "slug": "sustainable-map",
     "image": "https://sustainable.zottelig.ch/icons/favicon.ico",
     "website": "https://sustainable.zottelig.ch/",
-    "description": "Experience the world sustainably.",
+    "description": "A map that shows facilities and services in your area that are environmentally, socially and economically sustainable.",
     "score": 7.375,
     "lastUpdated": "2026-03-02"
   },
@@ -1195,7 +1195,7 @@
     "slug": "tasking-manager",
     "image": "https://wiki.openstreetmap.org/w/images/thumb/d/df/HOT_Tasking_Server_Job.png/250px-HOT_Tasking_Server_Job.png",
     "website": "https://github.com/hotosm/tasking-manager/",
-    "description": "Tasking Manager - The tool to team up for mapping in OpenStreetMap",
+    "description": "Tool for teams to coordinate mapping on OpenStreetMap. The screenshot shows a project progress overview of the Tasking Manager.",
     "score": 5.25,
     "lastUpdated": "2026-03-31"
   },
@@ -1205,7 +1205,7 @@
     "slug": "tiger-king",
     "image": "https://raw.githubusercontent.com/whubsch/tigerking/refs/heads/main/public/icons/tiger_512.png",
     "website": "https://whubsch.github.io/tigerking/",
-    "description": "A simple web UI to fix 🐅 imported road data in OpenStreetMap",
+    "description": "Web interface to edit and clean up imported highways in the US.",
     "score": 4.25,
     "lastUpdated": "2025-12-20"
   },
@@ -1215,7 +1215,7 @@
     "slug": "touch-mapper",
     "image": "https://wiki.openstreetmap.org/w/images/thumb/2/22/Touch_Mapper_Kartta_kasissa.jpg/250px-Touch_Mapper_Kartta_kasissa.jpg",
     "website": "https://touch-mapper.org/",
-    "description": "Tactile maps easily.",
+    "description": "Tactile maps easily. Enter an address, and order a map or 3D print it yourself.",
     "score": 4.375,
     "lastUpdated": "2026-03-25"
   },
@@ -1225,7 +1225,7 @@
     "slug": "tracks-editor",
     "image": "https://wiki.openstreetmap.org/w/images/thumb/2/27/Tracks_Editor.png/250px-Tracks_Editor.png",
     "website": "http://editor.osmsurround.org/",
-    "description": "OSM Quality Assurance Editor",
+    "description": "Simple JavaScript Editor which allows you to correct specific problems on the OSM map.",
     "score": 4.5,
     "lastUpdated": "2015-05-03"
   },
@@ -1235,7 +1235,7 @@
     "slug": "transportr",
     "image": "https://transportr.app/favicon.ico",
     "website": "https://transportr.app/",
-    "description": "Free Public Transport Assistant without Ads or Tracking",
+    "description": "Transportr make using public transport as easy as possible wherever you are.",
     "score": 4.625,
     "lastUpdated": "2025-12-03"
   },
@@ -1245,7 +1245,7 @@
     "slug": "trekarta",
     "image": "https://wiki.openstreetmap.org/w/images/thumb/3/31/Trekarta.png/250px-Trekarta.png",
     "website": "https://trekarta.info/",
-    "description": "Simple, responsive map for your trek. You decide how to journey today, not the application!",
+    "description": "Trekarta is designed for hiking, geocaching, off-roading, cycling, boating and all other outdoor activities.",
     "score": 4.375,
     "lastUpdated": "2024-03-28"
   },
@@ -1265,7 +1265,7 @@
     "slug": "unroll",
     "image": "https://raw.githubusercontent.com/Jungle-Bus/unroll/master/img/Logo_Unroll.png",
     "website": "https://jungle-bus.github.io/unroll/",
-    "description": "A public transport route explorer",
+    "description": "Unroll is a tool for viewing transport routes in OpenStreetMap. It allows you to search for transport routes and to display their details: attributes, trips, timetables, stops, shapes, etc.",
     "score": 5.625,
     "lastUpdated": "2026-01-09"
   },
@@ -1275,7 +1275,7 @@
     "slug": "veggiekarte",
     "image": "https://codeberg.org/piratenpanda/veggiekarte/raw/branch/main/favicon/favicon-16x16.png",
     "website": "https://veggiekarte.de/",
-    "description": "A map to find vegetarian/vegan POIs in your area.",
+    "description": "Veggiekarte is a web map that filters OpenStreetMap data to show only places with vegetarian or vegan food options.",
     "score": 4.5,
     "lastUpdated": "2026-01-26"
   },
@@ -1315,7 +1315,7 @@
     "slug": "waymarked-trails",
     "image": "https://wiki.openstreetmap.org/w/images/thumb/6/68/Kullaberg_Waymarked_Trails_1.png/250px-Kullaberg_Waymarked_Trails_1.png",
     "website": "https://waymarkedtrails.org/",
-    "description": "website",
+    "description": "website that shows waymarked trails for hiking, cycling, mtb, riding, skating and winter sport slopes.",
     "score": 5.75,
     "lastUpdated": "2026-03-18"
   },
@@ -1325,7 +1325,7 @@
     "slug": "wheelmap-app",
     "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Wheelmap-logo.webp",
     "website": "https://www.wheelmap.org/",
-    "description": "Browsing for wheelchair accessible places.",
+    "description": "Showing/setting which places are suitable for wheelchair users.",
     "score": 7.25,
     "lastUpdated": "2024-12-16"
   },
@@ -1335,7 +1335,7 @@
     "slug": "yaac-yet-another-aprs-client",
     "image": "https://wiki.openstreetmap.org/w/images/thumb/a/aa/Yaac.png/250px-Yaac.png",
     "website": "https://www.ka2ddo.org/ka2ddo/YAAC.html",
-    "description": "Amateur Radio Automatic Packet Reporting System client written in Java that uses OSM data to render maps on the fly.",
+    "description": "Amateur Radio Automatic Packet Reporting System client written in Java that uses OSM data to render maps on the fly. Under active development with rapid development release cycle.",
     "score": 4.375,
     "lastUpdated": "2025-10-25"
   }
