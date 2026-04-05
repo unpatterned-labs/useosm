@@ -1,0 +1,1342 @@
+[
+  {
+    "title": "A Photo Manager",
+    "category": "Map Visualization",
+    "slug": "a-photo-manager",
+    "image": "https://wiki.openstreetmap.org/w/images/thumb/9/9d/APhotoManager-Gallery.png/250px-APhotoManager-Gallery.png",
+    "website": "https://github.com/k3b/APhotoManager/wiki",
+    "description": "Android gallery app that can show/edit geotags of photos through a map.",
+    "score": 5.0,
+    "lastUpdated": "2020-03-12"
+  },
+  {
+    "title": "Alpi Maps",
+    "category": "Navigation",
+    "slug": "alpi-maps",
+    "image": "https://repository-images.githubusercontent.com/179635396/434a9d18-03a0-4051-abad-ea242d2cce1b",
+    "website": "https://www.akylas.fr/",
+    "description": "Offline hiking map app.",
+    "score": 4.5,
+    "lastUpdated": "2026-03-20"
+  },
+  {
+    "title": "ArcGIS Editor for OSM",
+    "category": "Editors",
+    "slug": "arcgis-editor-for-osm",
+    "image": "https://wiki.openstreetmap.org/w/images/thumb/c/c8/tools20b.png/250px-tools20b.png",
+    "website": "https://github.com/Esri/arcgis-osm-editor",
+    "description": "Allows users to download, edit, and upload OSM data in ArcMap, and/or create feature services based on OSM data in ArcGIS Server.",
+    "score": 6.0,
+    "lastUpdated": "2022-05-05"
+  },
+  {
+    "title": "better-osm-org",
+    "category": "Editors",
+    "slug": "better-osm-org",
+    "image": "https://github.com/deevroman/better-osm-org/favicon.ico",
+    "website": "https://github.com/deevroman/better-osm-org",
+    "description": "A userscript that adds several useful features to osm.org.",
+    "score": 4.5,
+    "lastUpdated": "2026-02-02"
+  },
+  {
+    "title": "BRouter",
+    "category": "Navigation",
+    "slug": "brouter",
+    "image": "https://brouter.de/brouter/favicon.ico",
+    "website": "https://brouter.de/brouter",
+    "description": "configurable OSM offline router with elevation awareness, Java + Android",
+    "score": 4.25,
+    "lastUpdated": "2025-07-12"
+  },
+  {
+    "title": "CartoType",
+    "category": "Navigation",
+    "slug": "cartotype",
+    "image": "https://wiki.openstreetmap.org/w/images/thumb/e/e8/Cartotype-with-routes.PNG/250px-Cartotype-with-routes.PNG",
+    "website": "https://www.cartotype.com/",
+    "description": "CartoType is an ultra-portable library.",
+    "score": 4.5,
+    "lastUpdated": "2024-11-07"
+  },
+  {
+    "title": "CityZen",
+    "category": "Navigation",
+    "slug": "cityzen",
+    "image": "https://wiki.openstreetmap.org/w/images/thumb/9/9c/CityZen_logo.png/250px-CityZen_logo.png",
+    "website": "http://cityzenapp.co/",
+    "description": "CityZen Android App, OpenStreetMap base-map",
+    "score": 7.25,
+    "lastUpdated": "2019-07-02"
+  },
+  {
+    "title": "CoMaps",
+    "category": "Navigation",
+    "slug": "comaps",
+    "image": "https://wiki.openstreetmap.org/w/images/thumb/2/22/CoMaps_logotype.jpg/250px-CoMaps_logotype.jpg",
+    "website": "https://www.comaps.app/",
+    "description": "free and open source map & navigation app; community fork of Organic Maps",
+    "score": 9.0,
+    "lastUpdated": "2026-03-23"
+  },
+  {
+    "title": "Commons mobile app",
+    "category": "Navigation",
+    "slug": "commons-mobile-app",
+    "image": "https://wiki.openstreetmap.org/w/images/thumb/d/d4/Commons_app_upload_process_1.jpg/250px-Commons_app_upload_process_1.jpg",
+    "website": "https://commons-app.github.io/",
+    "description": "mobile application of Wikimedia Commons",
+    "score": 4.125,
+    "lastUpdated": "2026-04-04"
+  },
+  {
+    "title": "delta.map",
+    "category": "Mobile",
+    "slug": "deltamap",
+    "image": "https://wiki.openstreetmap.org/w/images/thumb/5/55/OpenStreetMap_DeltaMapExample.png/250px-OpenStreetMap_DeltaMapExample.png",
+    "website": "https://github.com/Delta-Applications/delta.map",
+    "description": "delta.map is a local offline and online caching client for viewing OSM data, weather, utilities, STRAVA Heatmap, and more coming soon.",
+    "score": 5.125,
+    "lastUpdated": "2021-08-12"
+  },
+  {
+    "title": "Deriviste",
+    "category": "Editors",
+    "slug": "deriviste",
+    "image": "https://wiki.openstreetmap.org/w/images/thumb/e/e8/Deriviste.png/250px-Deriviste.png",
+    "website": "https://osm.cycle.travel/deriviste/",
+    "description": "Street-level OpenStreetMap editor",
+    "score": 5.25,
+    "lastUpdated": "2020-05-09"
+  },
+  {
+    "title": "Every Door",
+    "category": "Navigation",
+    "slug": "every-door",
+    "image": "https://wiki.openstreetmap.org/w/images/thumb/1/19/Every_Door_0.3.0_Logo.png/250px-Every_Door_0.3.0_Logo.png",
+    "website": "https://every-door.app/",
+    "description": "Power mapper's mobile editor for maintaining amenities on OSM.",
+    "score": 8.75,
+    "lastUpdated": "2025-10-24"
+  },
+  {
+    "title": "FacilMap",
+    "category": "Navigation",
+    "slug": "facilmap",
+    "image": "https://wiki.openstreetmap.org/w/images/thumb/7/7a/FacilMap.png/250px-FacilMap.png",
+    "website": "https://facilmap.org/",
+    "description": "Different OSM renderings, search and draggable routes, create custom maps with live collaboration where markers, lines, routes and GPX/KML/GeoJSON/OSM files can be added.",
+    "score": 6.375,
+    "lastUpdated": "2024-07-05"
+  },
+  {
+    "title": "fediphoto",
+    "category": "Mobile",
+    "slug": "fediphoto",
+    "image": "https://silkevicious.codeberg.page/fediphoto-lineage.html/favicon.ico",
+    "website": "https://silkevicious.codeberg.page/fediphoto-lineage.html",
+    "description": "Post a photo quickly to the Fediverse and reference it on an OSM note.",
+    "score": 4.125,
+    "lastUpdated": "2023-03-07"
+  },
+  {
+    "title": "Field Papers",
+    "category": "Editors",
+    "slug": "field-papers",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/ItWikiCon%202018%20-%20Field%20papers.jpg",
+    "website": "https://fieldpapers.org/",
+    "description": "Field Papers umbrella project",
+    "score": 4.875,
+    "lastUpdated": "2026-02-18"
+  },
+  {
+    "title": "FitoTrack",
+    "category": "Data Extraction and Analysis",
+    "slug": "fitotrack",
+    "image": "https://codeberg.org/jannis/FitoTrack/favicon.ico",
+    "website": "https://codeberg.org/jannis/FitoTrack",
+    "description": "sports tracking.",
+    "score": 5.0,
+    "lastUpdated": "2024-07-29"
+  },
+  {
+    "title": "Freemap Slovakia",
+    "category": "Navigation",
+    "slug": "freemap-slovakia",
+    "image": "https://raw.githubusercontent.com/FreemapSlovakia/freemap-v3-react/refs/heads/main/src/images/freemap-logo-small.png",
+    "website": "https://www.freemap.sk/",
+    "description": "Freemap Slovakia web application ( www.freemap.sk )",
+    "score": 4.125,
+    "lastUpdated": "2026-03-19"
+  },
+  {
+    "title": "Geopaparazzi",
+    "category": "Editors",
+    "slug": "geopaparazzi",
+    "image": "https://wiki.openstreetmap.org/w/images/thumb/f/fc/Android-geopaparazzi-cycle.png/250px-Android-geopaparazzi-cycle.png",
+    "website": "http://geopaparazzi.github.io/geopaparazzi/",
+    "description": "Because not all paparazzis are evil!",
+    "score": 6.625,
+    "lastUpdated": "2022-01-20"
+  },
+  {
+    "title": "GNOME Maps",
+    "category": "Navigation",
+    "slug": "gnome-maps",
+    "image": "https://wiki.openstreetmap.org/w/images/thumb/a/a5/GNOME_Maps_logo.svg/250px-GNOME_Maps_logo.svg.png",
+    "website": "https://apps.gnome.org/Maps/",
+    "description": "A simple map client for GNOME.",
+    "score": 8.5,
+    "lastUpdated": "2026-03-13"
+  },
+  {
+    "title": "Go Map!!",
+    "category": "Navigation",
+    "slug": "go-map",
+    "image": "https://wiki.openstreetmap.org/w/images/thumb/d/d8/Go_Map!!_App_Icon.svg/250px-Go_Map!!_App_Icon.svg.png",
+    "website": "",
+    "description": "OpenStreetMap editor for iPhone/iPad",
+    "score": 8.25,
+    "lastUpdated": "2025-11-09"
+  },
+  {
+    "title": "GpsPrune",
+    "category": "Navigation",
+    "slug": "gpsprune",
+    "image": "https://wiki.openstreetmap.org/w/images/thumb/3/38/Prune_screenshot_aletsch.png/250px-Prune_screenshot_aletsch.png",
+    "website": "http://gpsprune.activityworkshop.net/",
+    "description": "Track editor, analyser, creator and converter.",
+    "score": 7.0,
+    "lastUpdated": "2023-09-24"
+  },
+  {
+    "title": "gpx.studio",
+    "category": "Editors",
+    "slug": "gpxstudio",
+    "image": "https://repository-images.githubusercontent.com/783722229/5bd1b100-aafb-42d5-87a0-9b9dc0e41117",
+    "website": "https://gpx.studio/app",
+    "description": "the online GPX file editor",
+    "score": 5.375,
+    "lastUpdated": "2026-03-24"
+  },
+  {
+    "title": "GPXSee",
+    "category": "Map Visualization",
+    "slug": "gpxsee",
+    "image": "https://wiki.openstreetmap.org/w/images/thumb/e/ee/GPXSee_screenshot.png/250px-GPXSee_screenshot.png",
+    "website": "https://www.gpxsee.org/",
+    "description": "GPS log file viewer and analyzer.",
+    "score": 5.5,
+    "lastUpdated": "2026-04-04"
+  },
+  {
+    "title": "GPXViewer",
+    "category": "Map Visualization",
+    "slug": "gpxviewer",
+    "image": "https://wiki.openstreetmap.org/w/images/thumb/0/0a/Gpxviewer.png/250px-Gpxviewer.png",
+    "website": "http://andrewgee.org/blog/projects/gpxviewer",
+    "description": "GPXViewer GPS trace viewer",
+    "score": 4.5,
+    "lastUpdated": "2024-09-17"
+  },
+  {
+    "title": "GraphHopper",
+    "category": "Navigation",
+    "slug": "graphhopper",
+    "image": "https://wiki.openstreetmap.org/w/images/thumb/a/ad/GraphHopper-Maps-Example.png/250px-GraphHopper-Maps-Example.png",
+    "website": "https://www.graphhopper.com/",
+    "description": "Routing server and Java library.",
+    "score": 4.875,
+    "lastUpdated": "2025-10-14"
+  },
+  {
+    "title": "healthsites.io",
+    "category": "Editors",
+    "slug": "healthsitesio",
+    "image": "https://wiki.openstreetmap.org/w/images/thumb/b/bb/Healthsites.io.png/250px-Healthsites.io.png",
+    "website": "https://healthsites.io/",
+    "description": "OSM editor focused on health facilities.",
+    "score": 6.25,
+    "lastUpdated": "2020-09-24"
+  },
+  {
+    "title": "Historical Objects",
+    "category": "Map Visualization",
+    "slug": "historical-objects",
+    "image": "https://wiki.openstreetmap.org/w/images/thumb/0/06/Aquaeduct.png/250px-Aquaeduct.png",
+    "website": "https://gk.historic.place/",
+    "description": "Show POI with historical background on an OSM map.",
+    "score": 4.5,
+    "lastUpdated": ""
+  },
+  {
+    "title": "HistoryRestorer",
+    "category": "Editors",
+    "slug": "historyrestorer",
+    "image": "https://wiki.openstreetmap.org/w/images/thumb/7/7f/HistoryRestorer.png/250px-HistoryRestorer.png",
+    "website": "https://osm-nz.github.io/#/restore-history",
+    "description": "A tool to easily restore deleted OSM features.",
+    "score": 4.25,
+    "lastUpdated": "2022-09-13"
+  },
+  {
+    "title": "iD",
+    "category": "Editors",
+    "slug": "id",
+    "image": "https://wiki.openstreetmap.org/w/images/thumb/3/34/ID.svg/250px-ID.svg.png",
+    "website": "http://ideditor.com/",
+    "description": "The easy-to-use OpenStreetMap editor in JavaScript.",
+    "score": 7.875,
+    "lastUpdated": "2026-03-23"
+  },
+  {
+    "title": "indoor=",
+    "category": "Map Visualization",
+    "slug": "indoor",
+    "image": "https://raw.githubusercontent.com/indoorequal/indoorequal.org/master/icons/favicon.png",
+    "website": "https://indoorequal.org/",
+    "description": "Display indoor data.",
+    "score": 5.125,
+    "lastUpdated": "2024-04-15"
+  },
+  {
+    "title": "JOSM",
+    "category": "Editors",
+    "slug": "josm",
+    "image": "https://wiki.openstreetmap.org/w/images/thumb/c/c0/JOSM_Logotype_2019.svg/250px-JOSM_Logotype_2019.svg.png",
+    "website": "https://josm.openstreetmap.de/",
+    "description": "Offline highly expandable map editor.",
+    "score": 8.75,
+    "lastUpdated": "2026-03-30"
+  },
+  {
+    "title": "Level0",
+    "category": "Editors",
+    "slug": "level0",
+    "image": "https://wiki.openstreetmap.org/w/images/thumb/d/d1/Level0_Screenshot.png/250px-Level0_Screenshot.png",
+    "website": "https://level0.osmz.ru/",
+    "description": "Web-based OSM data editor.",
+    "score": 6.0,
+    "lastUpdated": "2025-05-24"
+  },
+  {
+    "title": "LINZ Address Update",
+    "category": "Editors",
+    "slug": "linz-address-update",
+    "image": "https://osm-nz.github.io/img/logo.png",
+    "website": "https://osm-nz.github.io/RapiD",
+    "description": "Modification of RapiD to compare and update OSM data based on LINZ data.",
+    "score": 6.375,
+    "lastUpdated": "2023-12-29"
+  },
+  {
+    "title": "Magic Earth",
+    "category": "Navigation",
+    "slug": "magic-earth",
+    "image": "https://wiki.openstreetmap.org/w/images/thumb/7/75/2_iPhone_6_Navigation_imperial_uk.PNG/250px-2_iPhone_6_Navigation_imperial_uk.PNG",
+    "website": "https://www.magicearth.com/",
+    "description": "mobile navigation app",
+    "score": 6.125,
+    "lastUpdated": "2024-11-01"
+  },
+  {
+    "title": "Mapbox Maps SDK",
+    "category": "Map Visualization",
+    "slug": "mapbox-maps-sdk",
+    "image": "https://wiki.openstreetmap.org/w/images/thumb/c/c4/Mapbox_logo_2017.svg/250px-Mapbox_logo_2017.svg.png",
+    "website": "https://www.mapbox.com/maps/",
+    "description": "Embed customizable, interactive vector maps in Web, mobile, and desktop applications.",
+    "score": 4.375,
+    "lastUpdated": "2026-04-02"
+  },
+  {
+    "title": "Mapcarta",
+    "category": "Navigation",
+    "slug": "mapcarta",
+    "image": "https://wiki.openstreetmap.org/w/images/thumb/c/c6/Mapcarta-logo.png/250px-Mapcarta-logo.png",
+    "website": "https://www.mapcarta.com/",
+    "description": "An open map with interactive POIs.",
+    "score": 6.125,
+    "lastUpdated": "2026-03-08"
+  },
+  {
+    "title": "MapComplete",
+    "category": "Editors",
+    "slug": "mapcomplete",
+    "image": "https://wiki.openstreetmap.org/w/images/thumb/9/9a/MapComplete.svg/250px-MapComplete.svg.png",
+    "website": "https://mapcomplete.org/",
+    "description": "An easy-to-use webapp to edit OpenStreetMap.",
+    "score": 8.625,
+    "lastUpdated": "2026-02-05"
+  },
+  {
+    "title": "Mapforge",
+    "category": "Navigation",
+    "slug": "mapforge",
+    "image": "https://repository-images.githubusercontent.com/729304206/466b4f5f-1168-4e97-9ead-cc509b3ebcf3",
+    "website": "https://mapforge.org/",
+    "description": "Vector layer editor for maps",
+    "score": 4.5,
+    "lastUpdated": "2026-03-08"
+  },
+  {
+    "title": "MapRoulette",
+    "category": "Editors",
+    "slug": "maproulette",
+    "image": "https://wiki.openstreetmap.org/w/images/thumb/1/1a/Maproulette3_screenshot.png/250px-Maproulette3_screenshot.png",
+    "website": "https://maproulette.org/",
+    "description": "Micro-task platform for OpenStreetMap.",
+    "score": 7.5,
+    "lastUpdated": "2026-03-19"
+  },
+  {
+    "title": "MAPS.ME",
+    "category": "Navigation",
+    "slug": "mapsme",
+    "image": "https://wiki.openstreetmap.org/w/images/thumb/c/cc/MAPS.ME_Logo.svg/250px-MAPS.ME_Logo.svg.png",
+    "website": "https://maps.me/",
+    "description": "🗺️ MAPS.ME — Offline OpenStreetMap maps for iOS and Android",
+    "score": 6.5,
+    "lastUpdated": "2025-10-28"
+  },
+  {
+    "title": "MapServer",
+    "category": "Map Visualization",
+    "slug": "mapserver",
+    "image": "https://wiki.openstreetmap.org/w/images/thumb/b/b7/FI_HKI_bus_stops_Mapserver.jpg/250px-FI_HKI_bus_stops_Mapserver.jpg",
+    "website": "https://mapserver.org/",
+    "description": "Source code of the MapServer project. Please submit pull requests to the 'main' branch.",
+    "score": 4.625,
+    "lastUpdated": "2026-03-23"
+  },
+  {
+    "title": "mapsforge",
+    "category": "Libraries",
+    "slug": "mapsforge",
+    "image": "https://wiki.openstreetmap.org/w/images/thumb/2/27/mapsforge.png/250px-mapsforge.png",
+    "website": "https://mapsforge.org/",
+    "description": "map application library.",
+    "score": 4.75,
+    "lastUpdated": "2026-01-12"
+  },
+  {
+    "title": "Maptitude Mapping Software",
+    "category": "Navigation",
+    "slug": "maptitude-mapping-software",
+    "image": "https://wiki.openstreetmap.org/w/images/thumb/5/53/MaptitudeMapOfJapan.png/250px-MaptitudeMapOfJapan.png",
+    "website": "https://www.caliper.com/maptitude/mapping-software.htm",
+    "description": "Easy to use, nice UI, Allows users to download, and edit, OSM data in Maptitude.",
+    "score": 4.25,
+    "lastUpdated": "2023-04-01"
+  },
+  {
+    "title": "Marble",
+    "category": "Navigation",
+    "slug": "marble",
+    "image": "https://wiki.openstreetmap.org/w/images/thumb/e/e6/Marble-logo.svg/250px-Marble-logo.svg.png",
+    "website": "http://marble.kde.org/",
+    "description": "virtual globe and atlas software",
+    "score": 4.5,
+    "lastUpdated": "2025-09-09"
+  },
+  {
+    "title": "Merkaartor",
+    "category": "Editors",
+    "slug": "merkaartor",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Merkaartor%20Icon.png",
+    "website": "http://merkaartor.be/",
+    "description": "Good editor with styling.",
+    "score": 6.875,
+    "lastUpdated": "2024-09-08"
+  },
+  {
+    "title": "Missing Streets",
+    "category": "Editors",
+    "slug": "missing-streets",
+    "image": "https://wiki.openstreetmap.org/w/images/thumb/0/07/NZ_missing_streets.png/250px-NZ_missing_streets.png",
+    "website": "https://osm-nz.github.io/missing-streets",
+    "description": "Finds streets that are missing in OpenStreetMap using government datasets from various countries",
+    "score": 5.75,
+    "lastUpdated": "2026-02-05"
+  },
+  {
+    "title": "Navit",
+    "category": "Navigation",
+    "slug": "navit",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Navit%20logoV2%20squircle.svg",
+    "website": "https://www.navit-project.org/",
+    "description": "navigation software",
+    "score": 5.625,
+    "lastUpdated": "2026-02-08"
+  },
+  {
+    "title": "New Zealand Place Names",
+    "category": "Editors",
+    "slug": "new-zealand-place-names",
+    "image": "https://osm-nz.github.io/img/logo.png",
+    "website": "https://osm-nz.github.io/place-name-conflation",
+    "description": "Compares place names with the NZGB, and reports missing places and names.",
+    "score": 5.25,
+    "lastUpdated": "2024-06-08"
+  },
+  {
+    "title": "OLMap",
+    "category": "Editors",
+    "slug": "olmap",
+    "image": "https://olmap.org/favicon.ico",
+    "website": "https://olmap.org/",
+    "description": "Web site to collect and discuss data to map entrances and their accessibility.",
+    "score": 5.5,
+    "lastUpdated": "2026-02-03"
+  },
+  {
+    "title": "On Wheels",
+    "category": "Navigation",
+    "slug": "on-wheels",
+    "image": "https://wiki.openstreetmap.org/w/images/thumb/3/34/Logo_On_Wheels.svg/250px-Logo_On_Wheels.svg.png",
+    "website": "https://www.onwheelsapp.com/",
+    "description": "",
+    "score": 5.5,
+    "lastUpdated": "2025-04-13"
+  },
+  {
+    "title": "Open Architect Map",
+    "category": "Map Visualization",
+    "slug": "open-architect-map",
+    "image": "https://architect.dsantini.it/favicon.ico",
+    "website": "https://architect.dsantini.it/",
+    "description": "Interactive map showing the architects who created buildings and structures, based on OpenStreetMap and Wikidata.",
+    "score": 4.75,
+    "lastUpdated": "2025-12-22"
+  },
+  {
+    "title": "Open Artist Map",
+    "category": "Map Visualization",
+    "slug": "open-artist-map",
+    "image": "https://artist.dsantini.it/favicon.ico",
+    "website": "https://artist.dsantini.it/",
+    "description": "Interactive map showing the artists who created artworks and memorials, based on OpenStreetMap and Wikidata.",
+    "score": 4.625,
+    "lastUpdated": "2025-12-22"
+  },
+  {
+    "title": "Open Burial Map",
+    "category": "Map Visualization",
+    "slug": "open-burial-map",
+    "image": "https://burial.dsantini.it/favicon.ico",
+    "website": "https://burial.dsantini.it/",
+    "description": "Interactive map showing the details of burial places, based on OpenStreetMap and Wikidata.",
+    "score": 4.625,
+    "lastUpdated": "2025-12-22"
+  },
+  {
+    "title": "Open GPX Tracker",
+    "category": "Editors",
+    "slug": "open-gpx-tracker",
+    "image": "https://wiki.openstreetmap.org/w/images/thumb/c/c9/Open_GPX_Tracker_App_Icon.png/250px-Open_GPX_Tracker_App_Icon.png",
+    "website": "http://www.merlos.org/iOS-Open-GPX-Tracker/",
+    "description": "Open Source GPS Logger for iOS.",
+    "score": 6.625,
+    "lastUpdated": "2025-12-21"
+  },
+  {
+    "title": "Open Infrastructure Map",
+    "category": "Map Visualization",
+    "slug": "open-infrastructure-map",
+    "image": "https://wiki.openstreetmap.org/w/images/thumb/8/88/openinframap-world.png/250px-openinframap-world.png",
+    "website": "https://openinframap.org/",
+    "description": "Map of infrastructure in OSM",
+    "score": 5.5,
+    "lastUpdated": "2026-02-08"
+  },
+  {
+    "title": "Open Nederlands Wegenbestand (OpenNWB)",
+    "category": "Editors",
+    "slug": "open-nederlands-wegenbestand-opennwb",
+    "image": "https://raw.githubusercontent.com/FileradarBV/OpenNWB/master/logo.svg",
+    "website": "https://github.com/FileradarBV/OpenNWB/blob/master/README.md",
+    "description": "Interactieve kaartstijl met wegkenmerken voor de Lage Landen",
+    "score": 6.25,
+    "lastUpdated": "2025-08-08"
+  },
+  {
+    "title": "OpenBeerMap",
+    "category": "Editors",
+    "slug": "openbeermap",
+    "image": "http://openbeermap.github.io/assets/img/application/ffos-16.png",
+    "website": "https://openbeermap.github.io/",
+    "description": "The free and editable map of draft beers",
+    "score": 6.625,
+    "lastUpdated": "2026-03-23"
+  },
+  {
+    "title": "openclimbing.org",
+    "category": "Navigation",
+    "slug": "openclimbingorg",
+    "image": "https://wiki.openstreetmap.org/w/images/thumb/5/59/Openclimbing.org_-_logo.png/250px-Openclimbing.org_-_logo.png",
+    "website": "https://openclimbing.org/",
+    "description": "Lets make a universal app for OpenStreetMap",
+    "score": 7.0,
+    "lastUpdated": "2025-06-26"
+  },
+  {
+    "title": "OpenLocalMap",
+    "category": "Editors",
+    "slug": "openlocalmap",
+    "image": "https://wiki.openstreetmap.org/w/images/thumb/2/23/Olm_2018_01_27.jpg/250px-Olm_2018_01_27.jpg",
+    "website": "https://osm-catalan.github.io/openlocalmap/",
+    "description": "Configurable and customizable OSM based map.",
+    "score": 6.375,
+    "lastUpdated": "2018-01-27"
+  },
+  {
+    "title": "OpenRailwayMap",
+    "category": "Map Visualization",
+    "slug": "openrailwaymap",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/OpenRailwayMap%20Logo.svg",
+    "website": "https://www.openrailwaymap.org/",
+    "description": "railway map based on OpenStreetMap data",
+    "score": 5.5,
+    "lastUpdated": "2026-03-08"
+  },
+  {
+    "title": "OpenRailwayMap-vector",
+    "category": "Map Visualization",
+    "slug": "openrailwaymap-vector",
+    "image": "https://openrailwaymap.app/image/apple-touch-icon.png",
+    "website": "https://openrailwaymap.app/",
+    "description": "OpenRailwayMap with vector tiles.",
+    "score": 4.25,
+    "lastUpdated": "2026-01-25"
+  },
+  {
+    "title": "openrouteservice",
+    "category": "Navigation",
+    "slug": "openrouteservice",
+    "image": "https://wiki.openstreetmap.org/w/images/thumb/c/cc/open_route_service.png/250px-open_route_service.png",
+    "website": "https://openrouteservice.org/",
+    "description": "routing services offered by University of Heidelberg",
+    "score": 6.0,
+    "lastUpdated": "2026-03-30"
+  },
+  {
+    "title": "OpenSeaMap",
+    "category": "Navigation",
+    "slug": "openseamap",
+    "image": "https://wiki.openstreetmap.org/w/images/thumb/5/58/OpenSeaMap_Icon_1024.png/250px-OpenSeaMap_Icon_1024.png",
+    "website": "https://wiki.openseamap.org/wiki/Hauptseite:en",
+    "description": "software project",
+    "score": 4.375,
+    "lastUpdated": "2025-07-08"
+  },
+  {
+    "title": "OpenStop",
+    "category": "Editors",
+    "slug": "openstop",
+    "image": "https://wiki.openstreetmap.org/w/images/thumb/0/0f/OpenStop_Logo.png/250px-OpenStop_Logo.png",
+    "website": "https://openstop.app/",
+    "description": "App for collecting OpenStreetMap-compliant accessibility data in public transport",
+    "score": 7.375,
+    "lastUpdated": "2025-12-16"
+  },
+  {
+    "title": "OpenStreetBrowser",
+    "category": "Map Visualization",
+    "slug": "openstreetbrowser",
+    "image": "https://wiki.openstreetmap.org/w/images/thumb/4/48/Openstreetbrowser_logo.svg/250px-Openstreetbrowser_logo.svg.png",
+    "website": "https://openstreetbrowser.org/",
+    "description": "Interactively browse not only the map but also the contained information.",
+    "score": 5.125,
+    "lastUpdated": "2024-07-23"
+  },
+  {
+    "title": "OpenStreetMap Calendar",
+    "category": "Map Visualization",
+    "slug": "openstreetmap-calendar",
+    "image": "https://osmcal.org/favicon.ico",
+    "website": "https://osmcal.org/",
+    "description": "Web calendar editable with an OSM account .",
+    "score": 4.125,
+    "lastUpdated": "2021-11-07"
+  },
+  {
+    "title": "OpenStreetMap Tags Editor",
+    "category": "Editors",
+    "slug": "openstreetmap-tags-editor",
+    "image": "https://wiki.openstreetmap.org/w/images/thumb/0/00/OpenStreetMap_Tags_Editor_v1.1_Firefox.png/250px-OpenStreetMap_Tags_Editor_v1.1_Firefox.png",
+    "website": "",
+    "description": "Simple editor implemented as a browser extension",
+    "score": 4.5,
+    "lastUpdated": "2024-03-16"
+  },
+  {
+    "title": "OpenStreetMap-NG",
+    "category": "Navigation",
+    "slug": "openstreetmap-ng",
+    "image": "https://wiki.openstreetmap.org/w/images/thumb/0/0e/OpenStreetMap-NG.webp/250px-OpenStreetMap-NG.webp",
+    "website": "https://osm.ng/",
+    "description": "🗺️ The Next Generation of OpenStreetMap — in Python!",
+    "score": 6.75,
+    "lastUpdated": "2026-03-01"
+  },
+  {
+    "title": "Organic Maps",
+    "category": "Navigation",
+    "slug": "organic-maps",
+    "image": "https://wiki.openstreetmap.org/w/images/thumb/5/54/Organic-map.png/250px-Organic-map.png",
+    "website": "https://organicmaps.app/",
+    "description": "Privacy-focused, open-source, free and fast offline maps without ads.",
+    "score": 9.0,
+    "lastUpdated": "2026-03-11"
+  },
+  {
+    "title": "OruxMaps",
+    "category": "Navigation",
+    "slug": "oruxmaps",
+    "image": "https://wiki.openstreetmap.org/w/images/thumb/5/57/Oruxmaps.jpg/250px-Oruxmaps.jpg",
+    "website": "http://www.oruxmaps.com/",
+    "description": "OruxMaps is a map viewer.",
+    "score": 5.0,
+    "lastUpdated": "2024-04-05"
+  },
+  {
+    "title": "OSM Accessibility Map",
+    "category": "Editors",
+    "slug": "osm-accessibility-map",
+    "image": "https://wiki.openstreetmap.org/w/images/thumb/8/85/Osmaccessibilitymap_screenshot.jpg/250px-Osmaccessibilitymap_screenshot.jpg",
+    "website": "https://yopaseopor.github.io/osmaccessibilitymap",
+    "description": "Map of info in OSM about accessibility for people with disabilities",
+    "score": 6.625,
+    "lastUpdated": "2017-11-12"
+  },
+  {
+    "title": "OSM address editor",
+    "category": "Editors",
+    "slug": "osm-address-editor",
+    "image": "https://yuiseki.github.io/osm-address-editor-vite/favicon.ico",
+    "website": "https://yuiseki.github.io/osm-address-editor-vite/",
+    "description": "This web app make editing addresses in OpenStreetMap fun and easy.",
+    "score": 6.0,
+    "lastUpdated": "2026-02-25"
+  },
+  {
+    "title": "OSM Community Index",
+    "category": "Editors",
+    "slug": "osm-community-index",
+    "image": "https://wiki.openstreetmap.org/w/images/thumb/7/72/MapComplete_Screenshot.png/250px-MapComplete_Screenshot.png",
+    "website": "https://openstreetmap.community/",
+    "description": "An index of community resources for OpenStreetMap.",
+    "score": 4.75,
+    "lastUpdated": "2025-10-28"
+  },
+  {
+    "title": "OSM CSV Appender",
+    "category": "Editors",
+    "slug": "osm-csv-appender",
+    "image": "https://wiki.openstreetmap.org/w/images/thumb/c/ca/OSM_CSV_Appender_v1.0_-_main_page.png/250px-OSM_CSV_Appender_v1.0_-_main_page.png",
+    "website": "https://github.com/santamariense/osmcsvappender",
+    "description": "Join CSV data into OSM file.",
+    "score": 4.25,
+    "lastUpdated": ""
+  },
+  {
+    "title": "Osm Go!",
+    "category": "Editors",
+    "slug": "osm-go",
+    "image": "https://wiki.openstreetmap.org/w/images/thumb/8/82/Osm_Go!.png/250px-Osm_Go!.png",
+    "website": "https://github.com/OsmTravel/OsmGo/wiki",
+    "description": "Simple POI editor app for Android.",
+    "score": 7.625,
+    "lastUpdated": "2024-08-29"
+  },
+  {
+    "title": "OSM POIs Map",
+    "category": "User Interaction",
+    "slug": "osm-pois-map",
+    "image": "https://yopaseopor.github.io/osmpoismap/src/img/icones_web/osmpoismap_logo.svg",
+    "website": "https://yopaseopor.github.io/osmpoismap",
+    "description": "Watch any key=value in and outside OpenStreetMap.",
+    "score": 4.125,
+    "lastUpdated": "2024-02-12"
+  },
+  {
+    "title": "OSM SIdewalKreator",
+    "category": "Data Extraction and Analysis",
+    "slug": "osm-sidewalkreator",
+    "image": "https://repository-images.githubusercontent.com/411724666/2b7c867e-3e78-4a19-b9e8-69766e1d506e",
+    "website": "https://github.com/kauevestena/osm_sidewalkreator",
+    "description": "Plugin designated to create the Geometries of Sidewalks (separated from streets) based on OpenStreetMap Streets, given a bounding polygon, outputting to JOSM format.",
+    "score": 4.5,
+    "lastUpdated": "2025-09-14"
+  },
+  {
+    "title": "OSM Traffic signs Map",
+    "category": "User Interaction",
+    "slug": "osm-traffic-signs-map",
+    "image": "https://wiki.openstreetmap.org/w/images/thumb/5/5f/osmtrafficsignsmap_screenshot.jpg/250px-osmtrafficsignsmap_screenshot.jpg",
+    "website": "https://yopaseopor.github.io/osmtrafficsignsmap",
+    "description": "See traffic signs in OSM.",
+    "score": 4.125,
+    "lastUpdated": "2025-03-23"
+  },
+  {
+    "title": "OSM Utils",
+    "category": "Navigation",
+    "slug": "osm-utils",
+    "image": "https://wiki.openstreetmap.org/w/images/thumb/d/df/Osmutils_screenshot.jpg/250px-Osmutils_screenshot.jpg",
+    "website": "https://yopaseopor.github.io/osmutils",
+    "description": "A map mixing OSM ecosystem and vibe coding",
+    "score": 4.375,
+    "lastUpdated": "2025-07-12"
+  },
+  {
+    "title": "OSM-Wikidata Map",
+    "category": "Map Visualization",
+    "slug": "osm-wikidata-map",
+    "image": "https://osmwd.dsantini.it/favicon.ico",
+    "website": "https://osmwd.dsantini.it/",
+    "description": "Map combining elements from OpenStreetMap and Wikidata",
+    "score": 4.625,
+    "lastUpdated": ""
+  },
+  {
+    "title": "OSM-Wikidata Map Framework",
+    "category": "Map Visualization",
+    "slug": "osm-wikidata-map-framework",
+    "image": "https://wiki.openstreetmap.org/w/images/thumb/6/68/Wikiraduno_Bologna_marzo_2023_-_Screenshot_Certosa_di_Bologna_-_Open_Burial_Map_-_nodo_Tomba_Borghi-Mamo_abc2.png/250px-Wikiraduno_Bologna_marzo_2023_-_Screenshot_Certosa_di_Bologna_-_Open_Burial_Map_-_nodo_Tomba_Borghi-Mamo_abc2.png",
+    "website": "https://wiki.openstreetmap.org/wiki/OSM-Wikidata_Map_Framework",
+    "description": "Merge data from OpenStreetMap and Wikidata to map information about entities and points of interest.",
+    "score": 5.125,
+    "lastUpdated": ""
+  },
+  {
+    "title": "OSM2Go",
+    "category": "Editors",
+    "slug": "osm2go",
+    "image": "https://wiki.openstreetmap.org/w/images/thumb/d/de/Maemo5-0.7.23-mainscreen.png/250px-Maemo5-0.7.23-mainscreen.png",
+    "website": "http://www.harbaum.org/till/maemo/index.shtml#osm2go",
+    "description": "Mobile, touchscreen based editor.",
+    "score": 6.5,
+    "lastUpdated": "2020-12-06"
+  },
+  {
+    "title": "OsmAnd",
+    "category": "Navigation",
+    "slug": "osmand",
+    "image": "https://wiki.openstreetmap.org/w/images/thumb/c/cd/Osmand-icon.png/250px-Osmand-icon.png",
+    "website": "https://osmand.net/",
+    "description": "OsmAnd Maps & Navigation",
+    "score": 9.25,
+    "lastUpdated": "2026-03-31"
+  },
+  {
+    "title": "osmapiR",
+    "category": "Editors",
+    "slug": "osmapir",
+    "image": "https://wiki.openstreetmap.org/w/images/thumb/9/9b/OsmapiR_logo.svg/250px-OsmapiR_logo.svg.png",
+    "website": "https://docs.ropensci.org/osmapiR/",
+    "description": "Openstreetmap API implementation for R.",
+    "score": 4.75,
+    "lastUpdated": "2026-02-15"
+  },
+  {
+    "title": "OsmAPP",
+    "category": "Navigation",
+    "slug": "osmapp",
+    "image": "https://wiki.openstreetmap.org/w/images/thumb/c/cc/Osmapp-logo-cc-by-sa.svg/250px-Osmapp-logo-cc-by-sa.svg.png",
+    "website": "https://osmapp.org/",
+    "description": "A universal web map and editor for OSM ecosystem.",
+    "score": 8.5,
+    "lastUpdated": "2025-06-26"
+  },
+  {
+    "title": "Osmapy",
+    "category": "Editors",
+    "slug": "osmapy",
+    "image": "https://wiki.openstreetmap.org/w/images/thumb/2/25/Osmapy_-_Uploading_data.png/250px-Osmapy_-_Uploading_data.png",
+    "website": "https://github.com/PhilippRigoll/osmapy",
+    "description": "Osmapy - Python Editor for OpenStreetMap",
+    "score": 5.5,
+    "lastUpdated": "2020-06-21"
+  },
+  {
+    "title": "OSMBugs",
+    "category": "Data Extraction and Analysis",
+    "slug": "osmbugs",
+    "image": "https://wiki.openstreetmap.org/w/images/thumb/4/4b/OSMBugs.0.2.5.map.png/250px-OSMBugs.0.2.5.map.png",
+    "website": "https://github.com/Gittner/OSMBugs",
+    "description": "Display and edit Bugs from Notes, Keepright and Osmose.",
+    "score": 5.125,
+    "lastUpdated": "2024-11-17"
+  },
+  {
+    "title": "OsmInEdit",
+    "category": "Editors",
+    "slug": "osminedit",
+    "image": "https://wiki.openstreetmap.org/w/images/thumb/5/56/OsmInEdit_feature_edit.png/250px-OsmInEdit_feature_edit.png",
+    "website": "https://osminedit.pavie.info/",
+    "description": "Simple indoor editor.",
+    "score": 6.875,
+    "lastUpdated": "2024-03-19"
+  },
+  {
+    "title": "OsmoTagger",
+    "category": "Editors",
+    "slug": "osmotagger",
+    "image": "https://wiki.openstreetmap.org/w/images/thumb/a/a3/OsmoTagger-Logo.png/250px-OsmoTagger-Logo.png",
+    "website": "",
+    "description": "A OpenStreetMap editor for iOS, based on JOSM presets.",
+    "score": 7.25,
+    "lastUpdated": "2024-04-13"
+  },
+  {
+    "title": "OSMPIE",
+    "category": "Editors",
+    "slug": "osmpie",
+    "image": "https://wiki.openstreetmap.org/w/images/thumb/b/bb/OSMPIE_Intersection.png/250px-OSMPIE_Intersection.png",
+    "website": "https://osmpie.org/",
+    "description": "Intersection editor and renderer.",
+    "score": 4.5,
+    "lastUpdated": "2025-11-19"
+  },
+  {
+    "title": "OSMTracker for Android",
+    "category": "Editors",
+    "slug": "osmtracker-for-android",
+    "image": "https://wiki.openstreetmap.org/w/images/thumb/7/7a/OSMTracker_for_Android.png/250px-OSMTracker_for_Android.png",
+    "website": "https://github.com/labexp/osmtracker-android/wiki",
+    "description": "GPS tracking tool for OpenStreetMap",
+    "score": 7.25,
+    "lastUpdated": "2025-09-12"
+  },
+  {
+    "title": "Overmatch",
+    "category": "Editors",
+    "slug": "overmatch",
+    "image": "https://whubsch.github.io/overmatch/favicon.ico",
+    "website": "https://whubsch.github.io/overmatch/",
+    "description": "🗺️ Enrich OpenStreetMap with Overture Maps data",
+    "score": 4.25,
+    "lastUpdated": "2026-03-23"
+  },
+  {
+    "title": "Overpass turbo",
+    "category": "Map Visualization",
+    "slug": "overpass-turbo",
+    "image": "https://wiki.openstreetmap.org/w/images/thumb/c/c3/Overpass-turbo.svg/250px-Overpass-turbo.svg.png",
+    "website": "https://overpass-turbo.eu/",
+    "description": "A web based data mining tool for OpenStreetMap using the Overpass API.",
+    "score": 4.25,
+    "lastUpdated": "2025-04-09"
+  },
+  {
+    "title": "OWL Map",
+    "category": "Editors",
+    "slug": "owl-map",
+    "image": "https://map.osm.wikidata.link/favicon.ico",
+    "website": "https://map.osm.wikidata.link/",
+    "description": "Matches geolacated Wikidata items with OSM objects.",
+    "score": 5.75,
+    "lastUpdated": ""
+  },
+  {
+    "title": "Panoramax",
+    "category": "Mobile",
+    "slug": "panoramax",
+    "image": "https://wiki.openstreetmap.org/w/images/thumb/a/a9/Panoramax.svg/250px-Panoramax.svg.png",
+    "website": "https://panoramax.fr/",
+    "description": "collaborative database of street-level imagery",
+    "score": 5.5,
+    "lastUpdated": "2025-12-12"
+  },
+  {
+    "title": "Parking Lanes",
+    "category": "Editors",
+    "slug": "parking-lanes",
+    "image": "https://zlant.github.io/parking-lanes/assets/free_parking/free_parking_russia.svg",
+    "website": "https://zlant.github.io/parking-lanes/",
+    "description": "Parking lanes viewer from OpenStreetMap",
+    "score": 4.25,
+    "lastUpdated": "2026-02-14"
+  },
+  {
+    "title": "PeakNav",
+    "category": "Navigation",
+    "slug": "peaknav",
+    "image": "https://peaknav.com/favicon.ico",
+    "website": "https://peaknav.com/",
+    "description": "PeakNav app for viewing earth mountains and paths in 3D",
+    "score": 4.125,
+    "lastUpdated": "2025-10-21"
+  },
+  {
+    "title": "Pic4Review",
+    "category": "Editors",
+    "slug": "pic4review",
+    "image": "https://wiki.openstreetmap.org/w/images/thumb/f/f7/Pic4Review_logo.svg/250px-Pic4Review_logo.svg.png",
+    "website": "https://pic4review.pavie.info/",
+    "description": "Easy to use OpenStreetMap Editor based on Street Level Images.",
+    "score": 5.375,
+    "lastUpdated": "2024-03-04"
+  },
+  {
+    "title": "Podoma",
+    "category": "Editors",
+    "slug": "podoma",
+    "image": "https://wiki.openstreetmap.org/w/images/thumb/3/34/ProjetDuMois_web_interface.png/250px-ProjetDuMois_web_interface.png",
+    "website": "https://github.com/osm-fr/podoma",
+    "description": "The OpenStreetMap statistics engine for thematic contributions!",
+    "score": 7.0,
+    "lastUpdated": "2026-04-05"
+  },
+  {
+    "title": "Potlatch",
+    "category": "Editors",
+    "slug": "potlatch",
+    "image": "https://wiki.openstreetmap.org/w/images/thumb/e/e9/P3_logo_128x128.png/250px-P3_logo_128x128.png",
+    "website": "https://www.systemed.net/potlatch",
+    "description": "editor for OpenStreetMap data",
+    "score": 6.5,
+    "lastUpdated": "2024-06-12"
+  },
+  {
+    "title": "Priceless Map",
+    "category": "Navigation",
+    "slug": "priceless-map",
+    "image": "https://priceless.zottelig.ch/icons/favicon.ico",
+    "website": "https://priceless.zottelig.ch/",
+    "description": "This is a map showing public and free facilities and offers.",
+    "score": 6.75,
+    "lastUpdated": "2025-07-06"
+  },
+  {
+    "title": "Public bookcase map",
+    "category": "Editors",
+    "slug": "public-bookcase-map",
+    "image": "https://book-exchange.zottelig.ch/icons/favicon.ico",
+    "website": "https://book-exchange.zottelig.ch/",
+    "description": "A map shows public bookcases near you.",
+    "score": 6.75,
+    "lastUpdated": "2025-07-06"
+  },
+  {
+    "title": "Pure Maps",
+    "category": "Navigation",
+    "slug": "pure-maps",
+    "image": "https://rinigus.github.io/pure-maps/favicon.ico",
+    "website": "https://rinigus.github.io/pure-maps/",
+    "description": "Maps and navigation",
+    "score": 5.75,
+    "lastUpdated": "2026-01-08"
+  },
+  {
+    "title": "QGIS",
+    "category": "Editors",
+    "slug": "qgis",
+    "image": "https://wiki.openstreetmap.org/w/images/thumb/3/3e/QGIS_logo_minimal.svg/250px-QGIS_logo_minimal.svg.png",
+    "website": "https://qgis.org/",
+    "description": "open source desktop geographic information system software",
+    "score": 7.25,
+    "lastUpdated": "2026-04-03"
+  },
+  {
+    "title": "QueerMap by qiekub",
+    "category": "Editors",
+    "slug": "queermap-by-qiekub",
+    "image": "https://repository-images.githubusercontent.com/256574351/247b4000-8108-11ea-93b4-56c4de30a435",
+    "website": "https://map.qiekub.org/",
+    "description": "🏳️‍🌈🗺 A map of community centers and other helpful information for queer (LGBTQ) people.",
+    "score": 5.5,
+    "lastUpdated": "2026-02-27"
+  },
+  {
+    "title": "QuoVadis",
+    "category": "Navigation",
+    "slug": "quovadis",
+    "image": "https://wiki.openstreetmap.org/w/images/thumb/6/6b/Qv-screenshot.png/250px-Qv-screenshot.png",
+    "website": "http://www.quovadis-gps.com/",
+    "description": "",
+    "score": 4.125,
+    "lastUpdated": "2013-12-10"
+  },
+  {
+    "title": "Rack Finder",
+    "category": "Navigation",
+    "slug": "rack-finder",
+    "image": "https://rackfinder.app/favicon.ico",
+    "website": "https://rackfinder.app/",
+    "description": "Easily find nearby bike racks",
+    "score": 6.625,
+    "lastUpdated": "2025-11-18"
+  },
+  {
+    "title": "Rapid",
+    "category": "Editors",
+    "slug": "rapid",
+    "image": "https://wiki.openstreetmap.org/w/images/thumb/8/87/Rapid_logo_64_Pixel.svg/250px-Rapid_logo_64_Pixel.svg.png",
+    "website": "https://rapideditor.org/",
+    "description": "OpenStreetMap editor for mass building imports",
+    "score": 7.625,
+    "lastUpdated": "2026-02-04"
+  },
+  {
+    "title": "RoofMapper",
+    "category": "Editors",
+    "slug": "roofmapper",
+    "image": "https://wiki.openstreetmap.org/w/images/thumb/9/9a/RoofMapper.png/250px-RoofMapper.png",
+    "website": "http://www.roofmapper.eu/",
+    "description": "Pick the correct roof material.",
+    "score": 5.25,
+    "lastUpdated": "2017-11-13"
+  },
+  {
+    "title": "RouteConverter",
+    "category": "Navigation",
+    "slug": "routeconverter",
+    "image": "https://wiki.openstreetmap.org/w/images/thumb/f/f0/Routeconverter_screenshot.png/250px-Routeconverter_screenshot.png",
+    "website": "http://www.routeconverter.com/",
+    "description": "The popular GPS conversion and editing tool",
+    "score": 6.625,
+    "lastUpdated": "2022-09-10"
+  },
+  {
+    "title": "S60Maps",
+    "category": "Navigation",
+    "slug": "s60maps",
+    "image": "https://wiki.openstreetmap.org/w/images/thumb/a/af/S60Maps_menu.png/250px-S60Maps_menu.png",
+    "website": "",
+    "description": "Yet another maps for Symbian OS",
+    "score": 4.125,
+    "lastUpdated": "2026-03-20"
+  },
+  {
+    "title": "SCEE",
+    "category": "Editors",
+    "slug": "scee",
+    "image": "https://wiki.openstreetmap.org/w/images/thumb/9/9f/SCEE_logo.png/250px-SCEE_logo.png",
+    "website": "",
+    "description": "OpenStreetMap surveyor app for experienced OSM contributors.",
+    "score": 6.75,
+    "lastUpdated": "2025-05-27"
+  },
+  {
+    "title": "Shareish",
+    "category": "Map Visualization",
+    "slug": "shareish",
+    "image": "https://shareish.org/favicon.ico",
+    "website": "https://shareish.org/",
+    "description": "Main code of the Shareish platform (backend & frontend)",
+    "score": 5.0,
+    "lastUpdated": "2026-03-17"
+  },
+  {
+    "title": "SimpleTaskManager",
+    "category": "Data Extraction and Analysis",
+    "slug": "simpletaskmanager",
+    "image": "https://wiki.openstreetmap.org/w/images/thumb/f/f1/simple-task-manager_v1-6-0.webp/250px-simple-task-manager_v1-6-0.webp",
+    "website": "https://stm.hauke-stieler.de/",
+    "description": "A simple tasking manager made for OpenStreetMap.",
+    "score": 4.625,
+    "lastUpdated": "2026-04-03"
+  },
+  {
+    "title": "Sketch Map Tool",
+    "category": "Editors",
+    "slug": "sketch-map-tool",
+    "image": "https://sketch-map-tool.heigit.org/favicon.ico",
+    "website": "https://sketch-map-tool.heigit.org/",
+    "description": "Re-digitizable paper maps for offline data collection in the field.",
+    "score": 6.625,
+    "lastUpdated": "2025-11-28"
+  },
+  {
+    "title": "SMASH",
+    "category": "Map Visualization",
+    "slug": "smash",
+    "image": "https://wiki.openstreetmap.org/w/images/thumb/6/6f/SMASH-logo.png/250px-SMASH-logo.png",
+    "website": "https://www.geopaparazzi.org/smash/",
+    "description": "Source code of the SMASH Android/iOS digital field mapping app.",
+    "score": 5.625,
+    "lastUpdated": "2026-03-31"
+  },
+  {
+    "title": "StreetComplete",
+    "category": "Editors",
+    "slug": "streetcomplete",
+    "image": "https://wiki.openstreetmap.org/w/images/thumb/e/eb/Streetcomplete.png/250px-Streetcomplete.png",
+    "website": "https://streetcomplete.app/",
+    "description": "Surveyor app for Android.",
+    "score": 8.75,
+    "lastUpdated": "2026-03-01"
+  },
+  {
+    "title": "StreetCritic",
+    "category": "Navigation",
+    "slug": "streetcritic",
+    "image": "https://streetcritic.org/favicon.ico",
+    "website": "https://streetcritic.org/",
+    "description": "We collect subjective data on traffic routes.",
+    "score": 5.25,
+    "lastUpdated": ""
+  },
+  {
+    "title": "Sustainable map",
+    "category": "Navigation",
+    "slug": "sustainable-map",
+    "image": "https://sustainable.zottelig.ch/icons/favicon.ico",
+    "website": "https://sustainable.zottelig.ch/",
+    "description": "Experience the world sustainably.",
+    "score": 7.375,
+    "lastUpdated": "2026-03-02"
+  },
+  {
+    "title": "Tasking Manager",
+    "category": "Editors",
+    "slug": "tasking-manager",
+    "image": "https://wiki.openstreetmap.org/w/images/thumb/d/df/HOT_Tasking_Server_Job.png/250px-HOT_Tasking_Server_Job.png",
+    "website": "https://github.com/hotosm/tasking-manager/",
+    "description": "Tasking Manager - The tool to team up for mapping in OpenStreetMap",
+    "score": 5.25,
+    "lastUpdated": "2026-03-31"
+  },
+  {
+    "title": "TIGER King",
+    "category": "Editors",
+    "slug": "tiger-king",
+    "image": "https://raw.githubusercontent.com/whubsch/tigerking/refs/heads/main/public/icons/tiger_512.png",
+    "website": "https://whubsch.github.io/tigerking/",
+    "description": "A simple web UI to fix 🐅 imported road data in OpenStreetMap",
+    "score": 4.25,
+    "lastUpdated": "2025-12-20"
+  },
+  {
+    "title": "Touch Mapper",
+    "category": "Map Visualization",
+    "slug": "touch-mapper",
+    "image": "https://wiki.openstreetmap.org/w/images/thumb/2/22/Touch_Mapper_Kartta_kasissa.jpg/250px-Touch_Mapper_Kartta_kasissa.jpg",
+    "website": "https://touch-mapper.org/",
+    "description": "Tactile maps easily.",
+    "score": 4.375,
+    "lastUpdated": "2026-03-25"
+  },
+  {
+    "title": "Tracks Editor",
+    "category": "Editors",
+    "slug": "tracks-editor",
+    "image": "https://wiki.openstreetmap.org/w/images/thumb/2/27/Tracks_Editor.png/250px-Tracks_Editor.png",
+    "website": "http://editor.osmsurround.org/",
+    "description": "OSM Quality Assurance Editor",
+    "score": 4.5,
+    "lastUpdated": "2015-05-03"
+  },
+  {
+    "title": "Transportr",
+    "category": "Navigation",
+    "slug": "transportr",
+    "image": "https://transportr.app/favicon.ico",
+    "website": "https://transportr.app/",
+    "description": "Free Public Transport Assistant without Ads or Tracking",
+    "score": 4.625,
+    "lastUpdated": "2025-12-03"
+  },
+  {
+    "title": "Trekarta",
+    "category": "Navigation",
+    "slug": "trekarta",
+    "image": "https://wiki.openstreetmap.org/w/images/thumb/3/31/Trekarta.png/250px-Trekarta.png",
+    "website": "https://trekarta.info/",
+    "description": "Simple, responsive map for your trek. You decide how to journey today, not the application!",
+    "score": 4.375,
+    "lastUpdated": "2024-03-28"
+  },
+  {
+    "title": "uMap",
+    "category": "Map Visualization",
+    "slug": "umap",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Logo%20uMap%2001.jpg",
+    "website": "https://umap-project.org/",
+    "description": "Create your own map, add marker and much more.",
+    "score": 6.375,
+    "lastUpdated": "2026-04-02"
+  },
+  {
+    "title": "Unroll",
+    "category": "Map Visualization",
+    "slug": "unroll",
+    "image": "https://raw.githubusercontent.com/Jungle-Bus/unroll/master/img/Logo_Unroll.png",
+    "website": "https://jungle-bus.github.io/unroll/",
+    "description": "A public transport route explorer",
+    "score": 5.625,
+    "lastUpdated": "2026-01-09"
+  },
+  {
+    "title": "Veggiekarte",
+    "category": "Map Visualization",
+    "slug": "veggiekarte",
+    "image": "https://codeberg.org/piratenpanda/veggiekarte/raw/branch/main/favicon/favicon-16x16.png",
+    "website": "https://veggiekarte.de/",
+    "description": "A map to find vegetarian/vegan POIs in your area.",
+    "score": 4.5,
+    "lastUpdated": "2026-01-26"
+  },
+  {
+    "title": "Vespucci",
+    "category": "Editors",
+    "slug": "vespucci",
+    "image": "https://wiki.openstreetmap.org/w/images/thumb/5/52/Vespucci-logo.svg/250px-Vespucci-logo.svg.png",
+    "website": "https://vespucci.io/",
+    "description": "OpenStreetMap editor for Android.",
+    "score": 8.5,
+    "lastUpdated": "2026-03-09"
+  },
+  {
+    "title": "Viking",
+    "category": "Navigation",
+    "slug": "viking",
+    "image": "https://wiki.openstreetmap.org/w/images/thumb/1/19/Viking-0.9.8-fr-track_win-castellar.png/250px-Viking-0.9.8-fr-track_win-castellar.png",
+    "website": "https://sourceforge.net/projects/viking/",
+    "description": "GTK+3 application to manage GPS data.",
+    "score": 4.75,
+    "lastUpdated": "2026-01-11"
+  },
+  {
+    "title": "WalkersGuide",
+    "category": "Navigation",
+    "slug": "walkersguide",
+    "image": "https://www.walkersguide.org/favicon.ico",
+    "website": "https://www.walkersguide.org/",
+    "description": "A navi for blind people.",
+    "score": 4.625,
+    "lastUpdated": "2026-02-10"
+  },
+  {
+    "title": "Waymarked Trails",
+    "category": "Map Visualization",
+    "slug": "waymarked-trails",
+    "image": "https://wiki.openstreetmap.org/w/images/thumb/6/68/Kullaberg_Waymarked_Trails_1.png/250px-Kullaberg_Waymarked_Trails_1.png",
+    "website": "https://waymarkedtrails.org/",
+    "description": "website",
+    "score": 5.75,
+    "lastUpdated": "2026-03-18"
+  },
+  {
+    "title": "Wheelmap App",
+    "category": "Navigation",
+    "slug": "wheelmap-app",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Wheelmap-logo.webp",
+    "website": "https://www.wheelmap.org/",
+    "description": "Browsing for wheelchair accessible places.",
+    "score": 7.25,
+    "lastUpdated": "2024-12-16"
+  },
+  {
+    "title": "YAAC (Yet Another APRS Client)",
+    "category": "Map Visualization",
+    "slug": "yaac-yet-another-aprs-client",
+    "image": "https://wiki.openstreetmap.org/w/images/thumb/a/aa/Yaac.png/250px-Yaac.png",
+    "website": "https://www.ka2ddo.org/ka2ddo/YAAC.html",
+    "description": "Amateur Radio Automatic Packet Reporting System client written in Java that uses OSM data to render maps on the fly.",
+    "score": 4.375,
+    "lastUpdated": "2025-10-25"
+  }
+]
