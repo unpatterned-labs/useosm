@@ -2,17 +2,25 @@
 import cn from "src/utils/cn";
 
 export interface Props {
-  className: string;
+  wrapperClassName: string;
+  contentClassName?: string;
 }
 
-const { className } = Astro.props;
+const { wrapperClassName, contentClassName } = Astro.props;
 ---
 
 <section
   class={cn(
-    "w-full flex flex-col items-center justify-center sm:bg-[url('../assets/background/home_vector.svg')] bg-[url('../assets/background/sm_home_vector.svg')] bg-no-repeat bg-cover",
-    className,
+    "w-full sm:bg-[url('../assets/background/home_vector.svg')] bg-[url('../assets/background/sm_home_vector.svg')] bg-no-repeat bg-cover",
+    wrapperClassName,
   )}
 >
-  <slot />
+  <div
+    class={cn(
+      "flex flex-col h-[calc(100vh-14.5rem)] items-center justify-center",
+      contentClassName,
+    )}
+  >
+    <slot />
+  </div>
 </section>

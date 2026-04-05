@@ -1,0 +1,49 @@
+name: Fetch OSM Apps Catalog via API 
+
+on:
+  schedule:
+    - cron: "0 6 1 * *"   # monthly: 06:00 UTC on the 1st
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install Python deps
+        run: |
+          python -m pip install -U pip
+          python -m pip install  tzdata argparse pandas
+
+
+      - name: Build yearly stats JSON
+        run: |
+          python scripts/fetch_osm_apps_catalog_via_api.py -y -v
+
+      - name: Publish stats to frontend
+        run: |
+          cp -f data/osm_resources.json frontend/src/content/osm_resources.json
+
+      - name: Verify outputs exist
+        run: |
+          test -f data/osm_resources.json
+          test -f frontend/src/content/osm_resources.json
+
+      - name: Commit outputs
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git status
+          git add data/osm_resources.json frontend/src/content/osm_resources.json || true
+          git commit -m "Update OSM Apps" || exit 0
+          git push

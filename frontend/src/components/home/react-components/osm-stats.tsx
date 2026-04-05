@@ -179,7 +179,7 @@ export const OSMStats = () => {
   return (
     <section className="flex h-full w-full items-center justify-center bg-white px-4 py-32 md:px-12 lg:px-24">
       <div
-        className="text-grey-300 flex w-full flex-col items-center justify-center gap-y-12 text-center"
+        className="page-container text-grey-300 flex w-full flex-col items-center justify-center gap-y-12 text-center"
         id="osm-stats"
       >
         <h2 className="max-w-[38.125rem] text-xl font-semibold sm:text-3xl">

@@ -8,13 +8,14 @@ import GeoLocate from "@/components/shared/react-components/map/geo-locate";
 import ExpandControl from "@/components/shared/react-components/map/expand-control";
 import generateCommunityMapInfo from "@/helper/generateCommunityMapInfo";
 import CommunityInfo from "./community-info";
+import cn from "@/utils/cn";
 
 const CommunityMap = () => {
   const container = useRef<HTMLDivElement>(null);
   const [viewState, setViewState] = useState<Partial<ViewState>>({
     latitude: 0,
     longitude: 0,
-    zoom: 2,
+    zoom: 2.5,
   });
   const [communityInfo, setCommunityInfo] = useState<{
     longitude: number;
@@ -43,7 +44,10 @@ const CommunityMap = () => {
   return (
     <div
       ref={container}
-      className="bg-surface-30 relative h-[22rem] min-w-full overflow-clip rounded-4xl shadow-md md:h-[43.75rem]"
+      className={cn(
+        "bg-surface-30 relative h-[22rem] overflow-clip rounded-4xl shadow-md md:h-[43.75rem]",
+        "mx-auto w-full max-w-screen-xl",
+      )}
     >
       <MapContainer
         mapStyle={APP_CONTENT.MAP_CONFIG.style}

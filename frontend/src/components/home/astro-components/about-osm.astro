@@ -4,10 +4,11 @@ import { APP_CONTENT } from "@/config/Content";
 ---
 
 <section
-  class="bg-grey-500 relative flex h-[30rem] w-full flex-col items-center justify-center md:h-[50rem] lg:h-[63.5rem]"
+  class="bg-grey-500 relative flex h-[30rem] w-full flex-col items-center justify-center px-4 sm:px-6 md:h-[45rem] md:px-8 lg:h-[65.5rem] lg:px-10 xl:px-0"
 >
-  <VideoDialog client:load id="video" />
-
+  <div class="relative flex w-full items-center justify-center">
+    <VideoDialog client:load id="video" />
+  </div>
   <div
     class="flex h-full w-full flex-col items-center justify-end pb-[3.1rem] sm:pb-[5.56rem]"
     id="about"
