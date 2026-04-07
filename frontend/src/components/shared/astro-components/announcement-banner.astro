@@ -18,11 +18,7 @@ const {
 ---
 
 <section
-  class={cn(
-    "sticky top-0 z-50 md:py-4 py-2.5 overflow-hidden",
-    bgColor,
-    height,
-  )}
+  class={cn("md:py-4 py-2.5 overflow-hidden", bgColor, height)}
   id="announcement-banner"
   data-speed={speed}
 >
@@ -34,21 +30,6 @@ const {
       )}
       id="scroll-content"
     >
-      <!-- First instance of content -->
-      <span
-        class="mr-8 inline-block"
-        set:html={APP_CONTENT.announcementContent.join("")}
-      />
-      <!-- Second instance for seamless loop -->
-      <span
-        class="mr-8 inline-block"
-        set:html={APP_CONTENT.announcementContent.join("")}
-      />
-
-      <span
-        class="mr-8 inline-block"
-        set:html={APP_CONTENT.announcementContent.join("")}
-      />
       <span
         class="mr-8 inline-block"
         set:html={APP_CONTENT.announcementContent.join("")}

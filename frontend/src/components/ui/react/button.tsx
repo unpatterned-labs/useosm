@@ -46,9 +46,9 @@ export const Button = React.forwardRef<
 
     // Size variants
     const sizeClasses = {
-      sm: "h-8 px-3 sm:text-sm rounded-2xl",
+      sm: "h-8 px-3 sm:text-sm text-xs rounded-2xl",
       md: "h-10 px-4 sm:text-base rounded-2xl",
-      lg: "h-[3.131rem] px-6 sm:text-lg text-sm rounded-3xl",
+      lg: "h-11 px-6 sm:text-base text-sm rounded-3xl",
     };
 
     // Color variants

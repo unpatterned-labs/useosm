@@ -50,86 +50,86 @@ export const NavBar = () => {
     <>
       <nav
         className={cn(
-          "sticky top-0 z-50 flex items-center justify-between px-4 py-4 transition-transform duration-150 ease-in-out md:px-12 lg:px-24",
+          "sticky top-0 z-50 py-4 transition-transform duration-150 ease-in-out md:px-12 lg:px-24",
           isScrolled ? "shadow-dialog bg-white" : "",
         )}
         aria-label="Main navigation"
       >
-        <div className="flex items-center gap-x-40">
-          <a href={APP_ROUTES.HOME}>
-            <UseOSMLogoIcon className="h-6 w-30 text-green-500 duration-150 ease-in-out hover:text-green-400 md:h-7 md:w-40" />
-          </a>
-          <ul className="hidden gap-x-10 lg:flex" role="menubar">
-            {[APP_CONTENT.USECASES, APP_CONTENT.RESOURCES].map((config) => {
-              const hasRoute = config.route.length > 0;
-              return (
-                <li
-                  key={`route-${config.title}`}
-                  role="none"
-                  className="relative"
-                >
-                  {!hasRoute ? (
-                    <DropdownMenu config={config} />
-                  ) : (
-                    <Button
-                      href={config.route}
-                      size="lg"
-                      variant="navlink"
-                      role="menuitem"
-                      id={`nav-link-${config.route}`}
-                    >
-                      {config.title}
-                    </Button>
-                  )}
-                </li>
-              );
-            })}
-          </ul>
-        </div>
-
-        <div className="flex items-center gap-x-4">
-          <div>
-            {/* This is a hack to show different button sizes on mobile and desktop. Another alternative is to use javascript to get the screen width, but I decided to go with this for now. */}
-            <Button
-              id="nav-cta-button-mobile"
-              size="md"
-              href="https://openstreetmap.org"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex rounded-4xl text-sm md:hidden"
-            >
-              Get Started
-            </Button>
-            <Button
-              id="nav-cta-button-desktop"
-              size="lg"
-              href="https://openstreetmap.org"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hidden md:flex"
-            >
-              Get Started
-            </Button>
+        <div className="page-container flex items-center justify-between">
+          <div className="flex items-center gap-x-40">
+            <a href={APP_ROUTES.HOME}>
+              <UseOSMLogoIcon className="h-6 w-30 text-green-500 duration-150 ease-in-out hover:text-green-400 md:h-7 md:w-40" />
+            </a>
+            <ul className="hidden gap-x-10 lg:flex" role="menubar">
+              {[APP_CONTENT.USECASES, APP_CONTENT.RESOURCES].map((config) => {
+                const hasRoute = config.route.length > 0;
+                return (
+                  <li
+                    key={`route-${config.title}`}
+                    role="none"
+                    className="relative"
+                  >
+                    {!hasRoute ? (
+                      <DropdownMenu config={config} />
+                    ) : (
+                      <Button
+                        href={config.route}
+                        size="lg"
+                        variant="navlink"
+                        role="menuitem"
+                        id={`nav-link-${config.route}`}
+                      >
+                        {config.title}
+                      </Button>
+                    )}
+                  </li>
+                );
+              })}
+            </ul>
           </div>
-          <button
-            className="relative z-50 inline-flex cursor-pointer lg:hidden"
-            onClick={() => setMobileMenuIsOpened(!mobileMenuIsOpened)}
-            aria-label={mobileMenuIsOpened ? "Close menu" : "Open menu"}
-            aria-expanded={mobileMenuIsOpened}
-          >
-            {mobileMenuIsOpened ? (
-              <XIcon className="h-8 w-8 text-black" />
-            ) : (
-              <HamburgerIcon className="h-8 w-8 text-black" />
-            )}
-          </button>
+          <div className="flex items-center gap-x-4">
+            <div>
+              {/* This is a hack to show different button sizes on mobile and desktop. Another alternative is to use javascript to get the screen width, but I decided to go with this for now. */}
+              <Button
+                id="nav-cta-button-mobile"
+                size="md"
+                href="https://openstreetmap.org"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex rounded-4xl text-sm md:hidden"
+              >
+                Get Started
+              </Button>
+              <Button
+                id="nav-cta-button-desktop"
+                size="lg"
+                href="https://openstreetmap.org"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hidden md:flex"
+              >
+                Get Started
+              </Button>
+            </div>
+            <button
+              className="relative z-50 inline-flex cursor-pointer lg:hidden"
+              onClick={() => setMobileMenuIsOpened(!mobileMenuIsOpened)}
+              aria-label={mobileMenuIsOpened ? "Close menu" : "Open menu"}
+              aria-expanded={mobileMenuIsOpened}
+            >
+              {mobileMenuIsOpened ? (
+                <XIcon className="h-8 w-8 text-black" />
+              ) : (
+                <HamburgerIcon className="h-8 w-8 text-black" />
+              )}
+            </button>
+          </div>
         </div>
       </nav>
-
       {/* Mobile Menu */}
       <div
         className={`fixed top-0 right-0 z-40 h-full w-full transform bg-white transition-transform duration-300 ease-in-out lg:hidden ${
-          mobileMenuIsOpened ? "translate-x-0" : "hidden translate-x-full"
+          mobileMenuIsOpened ? "translate-x-0" : "translate-x-full"
         }`}
       >
         <div className="px-4 pt-36">
@@ -199,7 +199,7 @@ const MobileDropdownMenu = ({
               href={child.route}
               id={child.title}
               onClick={onItemClick}
-              className="text-grey-200 w-full justify-start px-2 py-2 text-base font-medium text-wrap"
+              className="text-grey-200 w-full justify-start px-2 py-2 text-sm font-medium text-wrap"
             >
               <h3>{child.title}</h3>
             </Button>
@@ -348,7 +348,7 @@ const DropdownMenu = ({ config }: { config: NavItem }) => {
           role="menu"
           aria-labelledby={`nav-link-${config.title}`}
           className="border-grey-50 absolute z-10 grid w-3xl origin-top-right -translate-x-1/3 grid-cols-2 gap-x-2 rounded-2xl border bg-white p-4 shadow-2xl focus:outline-none"
-          style={{ top: "100%" }}
+          style={{ top: "108%" }}
           onKeyDown={handleMenuKeyDown}
         >
           {config.children

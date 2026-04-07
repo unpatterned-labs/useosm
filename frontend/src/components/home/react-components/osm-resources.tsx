@@ -29,12 +29,12 @@ const OSMResources = ({
       description:
         "Utilities and libraries to query, extract, and analyze raw OpenStreetMap data at scale.",
     },
-    // {
-    //   id: 3,
-    //   category: ResourceCategory.MAP_VISUALIZATION_STACK,
-    //   description:
-    //     "Utilities and libraries to query, extract, and analyze raw OpenStreetMap data at scale.",
-    // },
+    {
+      id: 3,
+      category: ResourceCategory.MAP_VISUALIZATION_STACK,
+      description:
+        "Utilities and libraries to query, extract, and analyze raw OpenStreetMap data at scale.",
+    },
     {
       id: 4,
       category: ResourceCategory.LIBRARIES,
@@ -105,20 +105,20 @@ const OSMResources = ({
             <button className="flex cursor-pointer gap-3 text-start">
               <div
                 className={cn(
-                  "min-h-full rounded bg-red-50",
+                  "bg-green-75 min-h-full rounded",
                   activeCategory === category.category
-                    ? "border-red-50 opacity-100"
+                    ? "border-green-75 opacity-100"
                     : "opacity-0",
                 )}
               >
                 <div
                   className={cn(
-                    "rounded border-3",
+                    "rounded border-2",
                     isPaused
                       ? "[transition:height_0ms_linear,border-color_200ms_ease]"
                       : "[transition:height_4500ms_linear,border-color_200ms_ease]",
                     activeCategory === category.category
-                      ? "h-full border-red-300"
+                      ? "h-full border-green-300"
                       : "h-0 border-transparent",
                   )}
                 />
@@ -153,7 +153,7 @@ const OSMResources = ({
         ))}
       </ul>
       <ResourceList
-        className="hidden h-fit flex-1 gap-4 px-0 md:gap-6 lg:grid lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4"
+        className="hidden h-fit flex-1 gap-4 px-0 md:gap-6 lg:grid lg:grid-cols-2 xl:grid-cols-3"
         list={resourcesList}
         emptyText="No resources found in this category."
         disablePagination={disablePagination}

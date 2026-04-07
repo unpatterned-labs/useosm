@@ -53,7 +53,8 @@ CATEGORY_KEYWORDS: list[tuple[str, tuple[str, ...]]] = [
             "3d viewer",
         ),
     ),
-    ("Data Analytics", ("analytics", "data analytics", "business intelligence", "data science", "dashboard")),
+    ("Data Analytics", ("analytics", "data analytics",
+     "business intelligence", "data science", "dashboard")),
     (
         "Data Extraction and Analysis",
         (
@@ -78,8 +79,10 @@ CATEGORY_KEYWORDS: list[tuple[str, tuple[str, ...]]] = [
             "postgis",
         ),
     ),
-    ("Libraries", ("library", "sdk", "framework", "module", "plugin", "bindings", "api", "cli tool")),
-    ("User Interaction", ("interaction", "collaboration", "community", "social", "chat", "welcoming tool")),
+    ("Libraries", ("library", "sdk", "framework",
+     "module", "plugin", "bindings", "api", "cli tool")),
+    ("User Interaction", ("interaction", "collaboration",
+     "community", "social", "chat", "welcoming tool")),
     (
         "Mobile",
         (
@@ -97,7 +100,8 @@ CATEGORY_KEYWORDS: list[tuple[str, tuple[str, ...]]] = [
     ),
 ]
 
-MOBILE_INSTALL_FIELDS = ("fDroidID", "googlePlayID", "huaweiAppGalleryID", "appleStoreID")
+MOBILE_INSTALL_FIELDS = ("fDroidID", "googlePlayID",
+                         "huaweiAppGalleryID", "appleStoreID")
 
 ISO_DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 HTML_TAG_RE = re.compile(r"<[^>]+>")
@@ -106,17 +110,23 @@ FIRST_SENTENCE_RE = re.compile(r"^(.+?[.!?])(?:\s|$)")
 
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Fetch and transform OSM apps catalog from API.")
-    parser.add_argument("-y", "--yes", action="store_true", help="Compatibility flag (no prompt in this script).")
-    parser.add_argument("-v", "--verbose", action="store_true", help="Enable verbose debug logging.")
-    parser.add_argument("--api-url", default="https://osm-apps.org/api/apps/all.json", help="Source API URL.")
+    parser = argparse.ArgumentParser(
+        description="Fetch and transform OSM apps catalog from API.")
+    parser.add_argument("-y", "--yes", action="store_true",
+                        help="Compatibility flag (no prompt in this script).")
+    parser.add_argument("-v", "--verbose", action="store_true",
+                        help="Enable verbose debug logging.")
+    parser.add_argument(
+        "--api-url", default="https://osm-apps.org/api/apps/all.json", help="Source API URL.")
     parser.add_argument(
         "--output",
         default="data/osm_resources.json",
         help="Output JSON path (relative paths resolve from repository root).",
     )
-    parser.add_argument("--timeout", default=30, type=int, help="HTTP timeout in seconds.")
-    parser.add_argument("--indent", default=2, type=int, help="JSON indent size.")
+    parser.add_argument("--timeout", default=30, type=int,
+                        help="HTTP timeout in seconds.")
+    parser.add_argument("--indent", default=2, type=int,
+                        help="JSON indent size.")
     return parser.parse_args()
 
 
@@ -222,7 +232,8 @@ def map_category(app: dict[str, Any]) -> str:
 
     for category, keywords in CATEGORY_KEYWORDS:
         if category == "Mobile":
-            matches[category] = any(keyword in signal_text for keyword in keywords) or has_mobile_install_ids(app)
+            matches[category] = any(
+                keyword in signal_text for keyword in keywords) or has_mobile_install_ids(app)
             continue
         matches[category] = any(keyword in signal_text for keyword in keywords)
 
@@ -238,7 +249,8 @@ def map_category(app: dict[str, Any]) -> str:
 
 
 def fetch_apps(api_url: str, timeout: int) -> list[dict[str, Any]]:
-    request = Request(api_url, headers={"User-Agent": "useosm-osm-apps-catalog-fetcher/1.0"})
+    request = Request(api_url, headers={
+                      "User-Agent": "useosm-osm-apps-catalog-fetcher/1.0"})
     with urlopen(request, timeout=timeout) as response:
         payload = response.read()
     decoded = json.loads(payload)
@@ -249,6 +261,10 @@ def fetch_apps(api_url: str, timeout: int) -> list[dict[str, Any]]:
 
 def safe_title(app: dict[str, Any]) -> str:
     return normalize_text(app.get("name"))
+
+
+def get_app_catalog_id(app: dict[str, Any]) -> int:
+    return app.get("id")
 
 
 def extract_score(app: dict[str, Any]) -> float:
@@ -322,6 +338,7 @@ def transform_apps(apps: list[dict[str, Any]]) -> list[dict[str, Any]]:
         slug = unique_slug(slugify(title), app, index, used_slugs)
         transformed.append(
             {
+                "id": get_app_catalog_id(app),
                 "title": title,
                 "category": category,
                 "slug": slug,
@@ -349,7 +366,8 @@ def write_json_atomic(path: Path, data: list[dict[str, Any]], indent: int) -> No
 def main() -> None:
     args = parse_args()
     log_level = logging.DEBUG if args.verbose else logging.INFO
-    logging.basicConfig(level=log_level, format="%(asctime)s %(name)s %(levelname)s: %(message)s")
+    logging.basicConfig(
+        level=log_level, format="%(asctime)s %(name)s %(levelname)s: %(message)s")
 
     output_path = resolve_output_path(args.output)
     LOGGER.info("Fetching OSM apps from %s", args.api_url)
