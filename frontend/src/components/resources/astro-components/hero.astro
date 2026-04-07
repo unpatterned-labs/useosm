@@ -12,10 +12,16 @@ import HeroBgVector from "@/components/shared/astro-components/hero-bg-vector.as
   )}
   contentClassName="h-[20rem] md:h-[30rem]"
 >
-  <div class="w-full bg-contain px-6 text-center md:w-[36rem]" id="box">
+  <div
+    class="w-full space-y-4 bg-contain px-6 text-center md:w-[36rem]"
+    id="box"
+  >
     <h1 class="text-grey-300 text-2xl font-semibold sm:text-4xl">
       {APP_CONTENT.RESOURCES_PAGE.Hero.title}
     </h1>
+    <p class="text-grey-100 text-lg">
+      {APP_CONTENT.RESOURCES_PAGE.Hero.description}
+    </p>
   </div>
 </HeroBgVector>
 
@@ -26,12 +32,12 @@ import HeroBgVector from "@/components/shared/astro-components/hero-bg-vector.as
 
   gsap.from(box, {
     opacity: 0,
-    y: 70, // starts below
-    duration: 2,
-    ease: "bounce.out",
+    y: 70,
+    duration: 1,
+    ease: "power2.out", // smooth deceleration, no bounce
     scrollTrigger: {
       trigger: box,
-      start: "top 60%", // when box enters 60% of viewport
+      start: "top 60%",
       toggleActions: "play none none reverse",
     },
   });

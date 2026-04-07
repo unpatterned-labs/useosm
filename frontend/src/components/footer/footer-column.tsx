@@ -15,6 +15,7 @@ export const FooterColumn = ({
     const typedLink = link as NavChild;
     return isUsecaseSection ? typedLink.active : true;
   });
+
   return (
     <div
       className={`flex w-full flex-col gap-y-4 md:col-span-2 ${isWide ? "md:col-span-3" : ""}`}

@@ -43,7 +43,7 @@ const ResourceList = ({
   }, [loading, hasMore, disablePagination]);
 
   const lastElementRef = useCallback(
-    (node: HTMLAnchorElement | null) => {
+    (node: HTMLDivElement | null) => {
       if (observerRef.current) observerRef.current.disconnect();
 
       observerRef.current = new IntersectionObserver((entries) => {
@@ -69,6 +69,7 @@ const ResourceList = ({
         visibleList.map((item, index) => (
           <ResourceCard
             ref={lastElementRef}
+            id={item.id}
             key={`${item.title}-${index}`}
             title={item.title}
             image={item.image}
