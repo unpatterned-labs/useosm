@@ -4,27 +4,31 @@ import OSMResources from "@/components/home/react-components/osm-resources";
 import { Button } from "@/components/ui/react/button";
 ---
 
-<section class="bg-surface-30 space-y-14 px-4 py-6 md:px-12 lg:px-24">
-  <div class="flex flex-col justify-between lg:flex-row lg:items-center">
-    <h3 class="text-grey-400 text-2xl font-semibold md:w-[32rem] md:text-4xl">
-      {APP_CONTENT.HOME_PAGE.OSMResources.title}
-    </h3>
-    <p
-      class="text-grey-300 max-w-3xl flex-auto text-sm font-light md:max-w-[32rem] md:pt-6 md:text-xl"
-    >
-      {APP_CONTENT.HOME_PAGE.OSMResources.description}
-    </p>
-  </div>
-  <OSMResources client:load disablePagination={true} />
-  <div class="mt-12 flex justify-center">
-    <Button
-      size="lg"
-      className="w-fit text-center text-xs"
-      id="start-contributing-button"
-      href={APP_CONTENT.HOME_PAGE.OSMResources.cta.link}
-      client:load
-    >
-      {APP_CONTENT.HOME_PAGE.OSMResources.cta.title}
-    </Button>
+<section class="bg-surface-30 py-12 md:px-12 lg:px-24">
+  <div class="page-container space-y-14">
+    <div class="flex flex-col justify-between lg:flex-row lg:items-center">
+      <h3 class="text-grey-400 text-2xl font-semibold md:w-[32rem] md:text-4xl">
+        {APP_CONTENT.HOME_PAGE.OSMResources.title}
+      </h3>
+      <p
+        class="text-grey-300 max-w-3xl flex-auto text-sm font-light md:max-w-[32rem] md:pt-6 md:text-xl"
+      >
+        {APP_CONTENT.HOME_PAGE.OSMResources.description}
+      </p>
+    </div>
+    <div class="h-full md:h-[40rem]">
+      <OSMResources client:load disablePagination={true} />
+    </div>
+    <div class="mt-20 mb-12 flex justify-center">
+      <Button
+        size="lg"
+        className="w-fit text-center text-xs"
+        id="start-contributing-button"
+        href={APP_CONTENT.HOME_PAGE.OSMResources.cta.link}
+        client:load
+      >
+        {APP_CONTENT.HOME_PAGE.OSMResources.cta.title}
+      </Button>
+    </div>
   </div>
 </section>

@@ -113,9 +113,10 @@ export type ResourceItem = {
   category: string;
   slug: string;
   image: string;
-  description?: string;
-  lastUpdated?: string;
-  content?: string;
+  website: string;
+  description: string;
+  score: number;
+  lastUpdated: string;
 };
 
 export type ExploreOSMItem = {

@@ -3,7 +3,7 @@ import ResourceCard from "./ResourceCard";
 import type { ResourceItem } from "src/types/content";
 import cn from "@/utils/cn";
 
-const PAGE_SIZE = 12;
+const PAGE_SIZE = 9;
 
 const ResourceList = ({
   list,
@@ -72,7 +72,7 @@ const ResourceList = ({
             key={`${item.title}-${index}`}
             title={item.title}
             image={item.image}
-            href={item.slug}
+            href={item.website}
             className={resourceClassName}
             imageClassName={imageClassName}
           />

@@ -215,7 +215,7 @@ const OrganizationsCarousel = ({
                     className="max-h-[3.37rem] w-auto transition-transform duration-300 group-hover:scale-110 md:max-h-[4.5rem]"
                   />
                 </div>
-                <span className="text-grey-200 text-xs md:text-xl">
+                <span className="text-grey-200 text-xs text-nowrap md:text-lg">
                   {org.name}
                 </span>
               </a>
