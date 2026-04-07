@@ -192,11 +192,13 @@ export const APP_CONTENT: AppConfigType = {
     description: "Discover Tools Built With and For OpenStreetMap",
     Hero: {
       title: "Discover Tools Built With and For OpenStreetMap",
+      description: "Data from OSM Apps Catalog",
     },
     search: {
       placeholder: "Search...",
     },
     resourcesList: AllResources,
+    osm_app_catalog_url: "https://osm-apps.org/?page=app&app=",
   },
   announcementContent: [
     // State of the Map 2026 Announcement

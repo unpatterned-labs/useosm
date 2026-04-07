@@ -89,11 +89,13 @@ export type ResourcesPageContent = {
   description: string;
   Hero: {
     title: string;
+    description: string;
   };
   search: {
     placeholder: string;
   };
   resourcesList: ResourceItem[];
+  osm_app_catalog_url: string;
 };
 
 export enum ResourceCategory {

@@ -2,8 +2,10 @@ import ArrowUpRight from "@/assets/icons/react/ArrowUpRight";
 import { Button } from "@/components/ui/react/button";
 import DefaultIcon from "@/assets/images/default-icon.svg";
 import cn from "@/utils/cn";
+import { APP_CONTENT } from "@/config/Content";
 
 const ResourceCard = ({
+  id,
   title = "Resource Title",
   href,
   image,
@@ -11,20 +13,19 @@ const ResourceCard = ({
   className,
   imageClassName,
 }: {
+  id: number;
   title?: string;
   href: string;
   image?: string;
-  ref?: React.Ref<HTMLAnchorElement>;
+  ref?: React.Ref<HTMLDivElement>;
   className?: string;
   imageClassName?: string;
 }) => {
   return (
-    <a
+    <div
       ref={ref}
-      href={href}
-      target="_blank"
       className={cn(
-        "group border-surface-30 shadow-card flex h-51.5 min-w-65.5 cursor-pointer flex-col justify-between rounded-3xl border bg-white p-1.5 transition-shadow duration-200 hover:shadow-xs",
+        "group border-surface-30 shadow-card flex h-51.5 min-w-65.5 flex-col justify-between rounded-3xl border bg-white p-1.5 transition-shadow duration-200 hover:shadow-xs",
         className,
       )}
     >
@@ -51,12 +52,18 @@ const ResourceCard = ({
                 id={`${title}-visit-site`}
                 variant="navlink"
                 className="text-grey-300 bg-white font-normal hover:bg-green-300 hover:text-white"
+                href={href}
+                target="_blank"
               >
                 Visit Site
               </Button>
-              <div className="text-grey-300 flex size-7 items-center justify-center rounded-full bg-white transition-colors duration-200 hover:bg-green-300 hover:text-white md:size-8">
+              <a
+                href={`${APP_CONTENT.RESOURCES_PAGE.osm_app_catalog_url}${id}`}
+                target="_blank"
+                className="text-grey-300 flex size-7 items-center justify-center rounded-full bg-white transition-colors duration-200 hover:bg-green-300 hover:text-white md:size-8"
+              >
                 <ArrowUpRight className="size-4" />
-              </div>
+              </a>
             </div>
           </div>
         </div>
@@ -69,7 +76,7 @@ const ResourceCard = ({
           {title}
         </h3>
       </div>
-    </a>
+    </div>
   );
 };
 

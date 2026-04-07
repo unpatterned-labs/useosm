@@ -12,7 +12,7 @@ const heroText = parseHeroText(APP_CONTENT.HOME_PAGE.Hero.title);
   contentClassName="gap-12 px-4 transition-all delay-200 ease-in-out md:px-6 lg:p-0"
   wrapperClassName="h-[calc(100vh-7rem)]"
 >
-  <div class="max-w-[45.219rem] space-y-6 text-center" id="box">
+  <div class="max-w-[45.219rem] space-y-6 text-center" id="hero-text">
     <div class="space-y-6">
       <Tag>
         {APP_CONTENT.HOME_PAGE.Hero.tagline}
@@ -24,7 +24,10 @@ const heroText = parseHeroText(APP_CONTENT.HOME_PAGE.Hero.title);
     </p>
   </div>
 
-  <div class="flex w-full max-w-sm flex-col gap-4 md:flex-row md:gap-9">
+  <div
+    class="flex w-full max-w-sm flex-col gap-4 md:flex-row md:gap-9"
+    id="hero-buttons"
+  >
     <Button
       size="lg"
       icon_name="arrow_right"
@@ -49,16 +52,14 @@ const heroText = parseHeroText(APP_CONTENT.HOME_PAGE.Hero.title);
 <script>
   import gsap from "@/utils/gsap";
 
-  const box = document.getElementById("box");
-
-  gsap.from(box, {
+  gsap.from(["#hero-text", "#hero-buttons"], {
     opacity: 0,
-    y: -70, // starts below
-    duration: 2,
-    ease: "bounce.out",
+    y: 70,
+    duration: 1,
+    ease: "power2.out",
     scrollTrigger: {
-      trigger: box,
-      start: "top 70%", // when box enters 60% of viewport
+      trigger: "#hero-text",
+      start: "top 60%",
       toggleActions: "play none none reverse",
     },
   });
