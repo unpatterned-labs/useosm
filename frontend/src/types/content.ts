@@ -109,6 +109,7 @@ export enum ResourceCategory {
 }
 
 export type ResourceItem = {
+  id: number;
   title: string;
   category: string;
   slug: string;
