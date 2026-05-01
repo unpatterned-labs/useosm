@@ -51,8 +51,8 @@
     "image": "https://brouter.de/brouter/favicon.ico",
     "website": "https://brouter.de/brouter",
     "description": "Configurable OSM offline router with elevation awareness, Java + Android – Routing engine designed for cycling.",
-    "score": 4.25,
-    "lastUpdated": "2025-07-12"
+    "score": 4.5,
+    "lastUpdated": "2026-04-20"
   },
   {
     "id": 2076478006,
@@ -85,7 +85,7 @@
     "website": "https://www.comaps.app/",
     "description": "Privacy-focused, open-source, free and fast offline maps without ads, developed by the community for the community.",
     "score": 9.0,
-    "lastUpdated": "2026-03-23"
+    "lastUpdated": "2026-04-23"
   },
   {
     "id": 894563760,
@@ -96,7 +96,7 @@
     "website": "https://commons-app.github.io/",
     "description": "mobile application of Wikimedia Commons",
     "score": 4.125,
-    "lastUpdated": "2026-04-04"
+    "lastUpdated": "2026-04-11"
   },
   {
     "id": 573395048,
@@ -216,8 +216,8 @@
     "image": "https://wiki.openstreetmap.org/w/images/thumb/d/d8/Go_Map!!_App_Icon.svg/250px-Go_Map!!_App_Icon.svg.png",
     "website": "",
     "description": "Easy to use iOS/iPadOS/macOS/visionOS editor for OSM, OHM, and OGF.",
-    "score": 8.25,
-    "lastUpdated": "2025-11-09"
+    "score": 8.5,
+    "lastUpdated": "2026-04-03"
   },
   {
     "id": 87944540,
@@ -250,7 +250,7 @@
     "website": "https://www.gpxsee.org/",
     "description": "GPS log file viewer and analyzer.",
     "score": 5.5,
-    "lastUpdated": "2026-04-05"
+    "lastUpdated": "2026-04-24"
   },
   {
     "id": 411233702,
@@ -316,7 +316,7 @@
     "website": "http://ideditor.com/",
     "description": "The easy-to-use OpenStreetMap editor in JavaScript.",
     "score": 7.875,
-    "lastUpdated": "2026-03-23"
+    "lastUpdated": "2026-04-07"
   },
   {
     "id": 2110319320,
@@ -382,7 +382,7 @@
     "website": "https://www.mapbox.com/maps/",
     "description": "Embed customizable, interactive vector maps in Web, mobile, and desktop applications.",
     "score": 4.375,
-    "lastUpdated": "2026-04-02"
+    "lastUpdated": "2026-04-29"
   },
   {
     "id": 638634592,
@@ -426,7 +426,7 @@
     "website": "https://maproulette.org/",
     "description": "Micro-task platform for OpenStreetMap.",
     "score": 7.5,
-    "lastUpdated": "2026-03-19"
+    "lastUpdated": "2026-04-08"
   },
   {
     "id": 195457472,
@@ -448,7 +448,7 @@
     "website": "https://mapserver.org/",
     "description": "MapServer is an Open Source platform for publishing spatial data and interactive mapping applications to the web.",
     "score": 4.625,
-    "lastUpdated": "2026-03-23"
+    "lastUpdated": "2026-04-19"
   },
   {
     "id": 1535780407,
@@ -459,7 +459,7 @@
     "website": "https://mapsforge.org/",
     "description": "map application library.",
     "score": 4.75,
-    "lastUpdated": "2026-01-12"
+    "lastUpdated": "2026-04-30"
   },
   {
     "id": 1164302394,
@@ -546,7 +546,7 @@
     "image": "https://wiki.openstreetmap.org/w/images/thumb/3/34/Logo_On_Wheels.svg/250px-Logo_On_Wheels.svg.png",
     "website": "https://www.onwheelsapp.com/",
     "description": "",
-    "score": 5.5,
+    "score": 5.25,
     "lastUpdated": "2025-04-13"
   },
   {
@@ -602,7 +602,7 @@
     "website": "https://openinframap.org/",
     "description": "Open Infrastructure Map is a view of the world's hidden infrastructure mapped in the OpenStreetMap database.",
     "score": 5.5,
-    "lastUpdated": "2026-02-08"
+    "lastUpdated": "2026-04-15"
   },
   {
     "id": 1942374798,
@@ -614,6 +614,17 @@
     "description": "Interactive map style with road attributes for the Low Countries.",
     "score": 6.25,
     "lastUpdated": "2025-08-08"
+  },
+  {
+    "id": 196923002,
+    "title": "Open Source Routing Machine",
+    "category": "Navigation",
+    "slug": "open-source-routing-machine",
+    "image": "http://project-osrm.org/images/osrm_icon.png",
+    "website": "http://project-osrm.org/",
+    "description": "High-performance routing and map-matching server.",
+    "score": 4.25,
+    "lastUpdated": "2026-04-18"
   },
   {
     "id": 833903862,
@@ -679,7 +690,7 @@
     "website": "https://openrouteservice.org/",
     "description": "routing services offered by University of Heidelberg",
     "score": 6.0,
-    "lastUpdated": "2026-03-30"
+    "lastUpdated": "2026-04-29"
   },
   {
     "id": 1626583424,
@@ -756,7 +767,7 @@
     "website": "https://organicmaps.app/",
     "description": "Privacy-focused, open-source, free and fast offline maps without ads.",
     "score": 9.0,
-    "lastUpdated": "2026-03-11"
+    "lastUpdated": "2026-04-07"
   },
   {
     "id": 2069984600,
@@ -888,7 +899,7 @@
     "website": "https://wiki.openstreetmap.org/wiki/OSM-Wikidata_Map_Framework",
     "description": "Merge data from OpenStreetMap and Wikidata to map information about entities and points of interest.",
     "score": 5.125,
-    "lastUpdated": ""
+    "lastUpdated": "2026-04-18"
   },
   {
     "id": 1121804532,
@@ -910,7 +921,7 @@
     "website": "https://osmand.net/",
     "description": "Navigation (routing) offline and online, OSM and custom map display (vector data or tiles, offline, cached or online), POI and address search (offline or online Nominatim), submit OSM bugs and POI, mark favorites, public transport info. Actively being developed. Keywords: GPS navigator, GPS navigation, navigation system, satellite navigation, sat nav, satnav, GPS tracker, GPS tracking, GPS map, OpenStreetMap, OSM viewer, map viewer, OSM mapping, offline routing, offline world map, global offline country maps, outdoor.",
     "score": 9.25,
-    "lastUpdated": "2026-03-31"
+    "lastUpdated": "2026-04-24"
   },
   {
     "id": 2103923465,
@@ -1010,17 +1021,6 @@
     "description": "Tool for matching Overture Maps data with OpenStreetMap elements and applying enriched tags.",
     "score": 4.25,
     "lastUpdated": "2026-03-23"
-  },
-  {
-    "id": 909172537,
-    "title": "Overpass turbo",
-    "category": "Map Visualization",
-    "slug": "overpass-turbo",
-    "image": "https://wiki.openstreetmap.org/w/images/thumb/c/c3/Overpass-turbo.svg/250px-Overpass-turbo.svg.png",
-    "website": "https://overpass-turbo.eu/",
-    "description": "A web-based data filtering tool for OpenStreetMap using the Overpass API.",
-    "score": 4.25,
-    "lastUpdated": "2025-04-09"
   },
   {
     "id": 668091192,
@@ -1129,7 +1129,7 @@
     "image": "https://rinigus.github.io/pure-maps/favicon.ico",
     "website": "https://rinigus.github.io/pure-maps/",
     "description": "Maps and Navigation - using either offline OSM Scout Server or online service providers The Slim version does only include PicoTTS for voice output while the Full version also includes Mimic.",
-    "score": 5.75,
+    "score": 5.5,
     "lastUpdated": "2026-01-08"
   },
   {
@@ -1142,6 +1142,17 @@
     "description": "QGIS is a free, open source, cross platform (lin/win/mac) geographical information system (GIS).",
     "score": 7.25,
     "lastUpdated": "2026-04-03"
+  },
+  {
+    "id": 445195879,
+    "title": "QMapShack",
+    "category": "Navigation",
+    "slug": "qmapshack",
+    "image": "https://wiki.openstreetmap.org/w/images/thumb/5/5e/Qmapshack_1.20.1_brouter.png/250px-Qmapshack_1.20.1_brouter.png",
+    "website": "https://github.com/Maproom/qmapshack/wiki",
+    "description": "Consumer grade GIS software, synchronization with Garmin devices.",
+    "score": 5.125,
+    "lastUpdated": "2026-04-24"
   },
   {
     "id": 1058305148,
@@ -1218,7 +1229,7 @@
     "website": "https://github.com/artem78/s60-maps/blob/master/docs/README.md",
     "description": "Map viewer and navigation for Simbian OS.",
     "score": 7.25,
-    "lastUpdated": "2026-04-06"
+    "lastUpdated": "2026-04-16"
   },
   {
     "id": 2539248,
@@ -1228,8 +1239,8 @@
     "image": "https://wiki.openstreetmap.org/w/images/thumb/9/9f/SCEE_logo.png/250px-SCEE_logo.png",
     "website": "",
     "description": "OpenStreetMap surveyor app for experienced OSM contributors.",
-    "score": 6.75,
-    "lastUpdated": "2025-05-27"
+    "score": 7.0,
+    "lastUpdated": "2026-04-24"
   },
   {
     "id": 174026266,
@@ -1284,7 +1295,7 @@
     "website": "https://streetcomplete.app/",
     "description": "Surveyor app for Android.",
     "score": 8.75,
-    "lastUpdated": "2026-03-01"
+    "lastUpdated": "2026-04-24"
   },
   {
     "id": 970492126,
@@ -1328,7 +1339,7 @@
     "website": "https://whubsch.github.io/tigerking/",
     "description": "Web interface to edit and clean up imported highways in the US.",
     "score": 4.25,
-    "lastUpdated": "2025-12-20"
+    "lastUpdated": "2026-04-20"
   },
   {
     "id": 293899318,
@@ -1383,7 +1394,7 @@
     "website": "https://umap-project.org/",
     "description": "Create your own map, add marker and much more.",
     "score": 6.375,
-    "lastUpdated": "2026-04-02"
+    "lastUpdated": "2026-04-08"
   },
   {
     "id": 698660445,
@@ -1395,6 +1406,17 @@
     "description": "Unroll is a tool for viewing transport routes in OpenStreetMap. It allows you to search for transport routes and to display their details: attributes, trips, timetables, stops, shapes, etc.",
     "score": 5.625,
     "lastUpdated": "2026-01-09"
+  },
+  {
+    "id": 869493396,
+    "title": "Urban Eye 3D",
+    "category": "Libraries",
+    "slug": "urban-eye-3d",
+    "image": "https://raw.githubusercontent.com/Zkir/UrbanEye3D/refs/heads/master/docs/images/urbaneye3d.svg",
+    "website": "https://github.com/Zkir/UrbanEye3D",
+    "description": "Displays 3D world directly in JOSM.",
+    "score": 4.25,
+    "lastUpdated": "2026-04-24"
   },
   {
     "id": 1197063454,
@@ -1416,7 +1438,7 @@
     "website": "https://vespucci.io/",
     "description": "OpenStreetMap editor for Android.",
     "score": 8.5,
-    "lastUpdated": "2026-03-09"
+    "lastUpdated": "2026-04-22"
   },
   {
     "id": 815544004,
@@ -1426,7 +1448,7 @@
     "image": "https://wiki.openstreetmap.org/w/images/thumb/1/19/Viking-0.9.8-fr-track_win-castellar.png/250px-Viking-0.9.8-fr-track_win-castellar.png",
     "website": "https://sourceforge.net/projects/viking/",
     "description": "GTK+3 application to manage GPS data.",
-    "score": 4.75,
+    "score": 4.5,
     "lastUpdated": "2026-01-11"
   },
   {
@@ -1470,7 +1492,7 @@
     "image": "https://wiki.openstreetmap.org/w/images/thumb/a/aa/Yaac.png/250px-Yaac.png",
     "website": "https://www.ka2ddo.org/ka2ddo/YAAC.html",
     "description": "Amateur Radio Automatic Packet Reporting System client written in Java that uses OSM data to render maps on the fly. Under active development with rapid development release cycle.",
-    "score": 4.375,
-    "lastUpdated": "2025-10-25"
+    "score": 4.625,
+    "lastUpdated": "2026-04-23"
   }
 ]
