@@ -17,31 +17,31 @@
   },
   "2007": {
     "changesets": 156273,
-    "contributors": 7382,
+    "contributors": 7380,
     "mappedFeatures": 226035519,
     "countries": 0,
     "apps": 0,
-    "newcontributors": 6060
+    "newcontributors": 6058
   },
   "2008": {
     "changesets": 661516,
-    "contributors": 32214,
+    "contributors": 32213,
     "mappedFeatures": 462567205,
     "countries": 0,
     "apps": 0,
-    "newcontributors": 24832
+    "newcontributors": 24833
   },
   "2009": {
     "changesets": 3504414,
-    "contributors": 93575,
+    "contributors": 93576,
     "mappedFeatures": 1066971022,
     "countries": 0,
     "apps": 7,
-    "newcontributors": 61361
+    "newcontributors": 61363
   },
   "2010": {
     "changesets": 6823774,
-    "contributors": 152122,
+    "contributors": 152123,
     "mappedFeatures": 1705594076,
     "countries": 0,
     "apps": 10,
@@ -49,7 +49,7 @@
   },
   "2011": {
     "changesets": 10257503,
-    "contributors": 217638,
+    "contributors": 217639,
     "mappedFeatures": 2375208789,
     "countries": 0,
     "apps": 12,
@@ -57,7 +57,7 @@
   },
   "2012": {
     "changesets": 14481373,
-    "contributors": 305220,
+    "contributors": 305221,
     "mappedFeatures": 3108141867,
     "countries": 0,
     "apps": 17,
@@ -65,7 +65,7 @@
   },
   "2013": {
     "changesets": 19735893,
-    "contributors": 391539,
+    "contributors": 391540,
     "mappedFeatures": 3812383599,
     "countries": 0,
     "apps": 20,
@@ -73,7 +73,7 @@
   },
   "2014": {
     "changesets": 27814911,
-    "contributors": 497881,
+    "contributors": 497882,
     "mappedFeatures": 4681306084,
     "countries": 0,
     "apps": 20,
@@ -81,7 +81,7 @@
   },
   "2015": {
     "changesets": 36269385,
-    "contributors": 605020,
+    "contributors": 605021,
     "mappedFeatures": 5545461440,
     "countries": 0,
     "apps": 23,
@@ -89,7 +89,7 @@
   },
   "2016": {
     "changesets": 44791522,
-    "contributors": 805121,
+    "contributors": 805122,
     "mappedFeatures": 6428389439,
     "countries": 0,
     "apps": 26,
@@ -97,7 +97,7 @@
   },
   "2017": {
     "changesets": 55039891,
-    "contributors": 1036082,
+    "contributors": 1036083,
     "mappedFeatures": 7417936661,
     "countries": 0,
     "apps": 28,
@@ -105,7 +105,7 @@
   },
   "2018": {
     "changesets": 65895784,
-    "contributors": 1242364,
+    "contributors": 1242365,
     "mappedFeatures": 8578899126,
     "countries": 0,
     "apps": 29,
@@ -113,7 +113,7 @@
   },
   "2019": {
     "changesets": 79042734,
-    "contributors": 1420174,
+    "contributors": 1420175,
     "mappedFeatures": 9812414525,
     "countries": 0,
     "apps": 34,
@@ -121,7 +121,7 @@
   },
   "2020": {
     "changesets": 96725449,
-    "contributors": 1616321,
+    "contributors": 1616322,
     "mappedFeatures": 11371180059,
     "countries": 0,
     "apps": 38,
@@ -129,7 +129,7 @@
   },
   "2021": {
     "changesets": 115595968,
-    "contributors": 1794851,
+    "contributors": 1794852,
     "mappedFeatures": 12910056114,
     "countries": 0,
     "apps": 44,
@@ -137,7 +137,7 @@
   },
   "2022": {
     "changesets": 130706448,
-    "contributors": 1942650,
+    "contributors": 1942651,
     "mappedFeatures": 14196196435,
     "countries": 0,
     "apps": 50,
@@ -145,7 +145,7 @@
   },
   "2023": {
     "changesets": 145719747,
-    "contributors": 2101529,
+    "contributors": 2101530,
     "mappedFeatures": 15524378885,
     "countries": 0,
     "apps": 55,
@@ -153,7 +153,7 @@
   },
   "2024": {
     "changesets": 160821233,
-    "contributors": 2250261,
+    "contributors": 2250262,
     "mappedFeatures": 16818982595,
     "countries": 0,
     "apps": 59,
@@ -161,18 +161,18 @@
   },
   "2025": {
     "changesets": 176659631,
-    "contributors": 2406747,
+    "contributors": 2406748,
     "mappedFeatures": 18098760587,
     "countries": 0,
     "apps": 67,
     "newcontributors": 156486
   },
   "2026": {
-    "changesets": 180247404,
-    "contributors": 2447313,
-    "mappedFeatures": 18394039239,
+    "changesets": 181528743,
+    "contributors": 2462816,
+    "mappedFeatures": 18492853920,
     "countries": 0,
     "apps": 69,
-    "newcontributors": 40566
+    "newcontributors": 56068
   }
 }
