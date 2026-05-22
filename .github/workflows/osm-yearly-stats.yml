@@ -2,7 +2,7 @@ name: Build OSM yearly stats
 
 on:
   schedule:
-    - cron: "0 6 1 * *"   # monthly: 06:00 UTC on the 1st
+    - cron: "0 7 1 * *"   # monthly  : runs at 07:00, on day 1st of the month
   workflow_dispatch: {}
 
 permissions:

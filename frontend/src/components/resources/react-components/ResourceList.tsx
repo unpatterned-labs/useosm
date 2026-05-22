@@ -28,7 +28,9 @@ const ResourceList = ({
   const [loading, setLoading] = useState(false);
   const observerRef = useRef<IntersectionObserver | null>(null);
 
-  const visibleList = list.slice(0, visibleCount);
+  const visibleList = list
+    .sort((a, b) => b.score - a.score)
+    .slice(0, visibleCount);
   const hasMore = visibleCount < list.length;
 
   const loadMore = useCallback(() => {
