@@ -173,7 +173,7 @@ export const APP_CONTENT: AppConfigType = {
         source: {
           id: "osm-communities",
           type: "geojson",
-          data: "https://raw.githubusercontent.com/osmlab/osm-community-index/v5.9.0/dist/completeFeatureCollection.json",
+          data: "https://cdn.jsdelivr.net/npm/osm-community-index@latest/dist/json/completeFeatureCollection.json",
         },
         layer: {
           id: "osm-communities-layer",
