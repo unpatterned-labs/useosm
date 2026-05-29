@@ -127,20 +127,18 @@ const callToActionCards = Object.keys(data)
                 index % 2 === 1 ? "md:flex-row-reverse" : ""
               }`}
             >
-              <div class="text-grey-300 basis-1/2 space-y-4 text-left">
-                <h3 class="text-xl font-medium lg:text-3xl">
-                  <a
-                    href={usecase.articleLink}
-                    class="transition-colors hover:text-green-200"
-                    target="_blank"
-                  >
-                    {usecase.title}
-                  </a>
+              <a
+                href={usecase.articleLink}
+                target="_blank"
+                class="text-grey-300 group basis-1/2 cursor-pointer space-y-4 text-left"
+              >
+                <h3 class="text-xl font-medium group-hover:text-green-200 lg:text-3xl">
+                  {usecase.title}
                 </h3>
                 <p class="text-base font-normal lg:text-lg">
                   {usecase.description}
                 </p>
-              </div>
+              </a>
               <div class="space-y-4">
                 <div class="shadow-thumbnail flex h-fit basis-1/2 justify-center rounded-[2.2rem] bg-green-50 p-2">
                   <img
