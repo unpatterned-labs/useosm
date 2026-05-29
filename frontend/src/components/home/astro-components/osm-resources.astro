@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/react/button";
 ---
 
 <section class="bg-surface-30 py-12 md:px-12 lg:px-24">
-  <div class="page-container space-y-14">
+  <div class="mx-auto w-full max-w-screen-xl space-y-14 px-4">
     <div class="flex flex-col justify-between lg:flex-row lg:items-center">
       <h3 class="text-grey-400 text-2xl font-semibold md:w-[32rem] md:text-4xl">
         {APP_CONTENT.HOME_PAGE.OSMResources.title}
@@ -16,7 +16,7 @@ import { Button } from "@/components/ui/react/button";
         {APP_CONTENT.HOME_PAGE.OSMResources.description}
       </p>
     </div>
-    <div class="min-h-[40rem]">
+    <div class="min-h-[40rem] w-full">
       <OSMResources client:load disablePagination={true} />
     </div>
     <div class="mt-20 mb-12 flex justify-center">

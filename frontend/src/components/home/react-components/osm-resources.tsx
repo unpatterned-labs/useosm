@@ -49,6 +49,19 @@ const OSMResources = ({
     },
   ];
 
+  const DESKTOP_BREAKPOINT = 1024;
+
+  useEffect(() => {
+    const checkViewport = () => {
+      setIsPaused(window.innerWidth < DESKTOP_BREAKPOINT);
+    };
+
+    checkViewport();
+
+    window.addEventListener("resize", checkViewport);
+    return () => window.removeEventListener("resize", checkViewport);
+  }, []);
+
   const handleCategorySelect = (
     category: string,
     autoAdvance: boolean = false,
@@ -64,10 +77,8 @@ const OSMResources = ({
       nextCategory = ResourcesCategory[nextIndex].category;
     }
 
-    // set the active category
     setActiveCategory(nextCategory);
 
-    // filter resource list based on the selected category
     const filtered = APP_CONTENT.RESOURCES_PAGE.resourcesList.filter((item) => {
       return (
         nextCategory === ResourceCategory.EDITORS ||
@@ -89,7 +100,7 @@ const OSMResources = ({
   }, [activeCategory, isPaused]);
 
   return (
-    <div className="flex md:gap-10">
+    <div className="flex md:gap-4">
       <ul className="flex flex-col gap-8 lg:max-w-[22.56rem]">
         {ResourcesCategory.map((category) => (
           <li
