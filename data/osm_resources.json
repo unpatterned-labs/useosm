@@ -41,7 +41,7 @@
     "website": "https://github.com/deevroman/better-osm-org",
     "description": "A userscript that adds several useful features to osm.org.",
     "score": 4.5,
-    "lastUpdated": "2026-02-02"
+    "lastUpdated": "2026-05-04"
   },
   {
     "id": 1301389760,
@@ -84,8 +84,8 @@
     "image": "https://wiki.openstreetmap.org/w/images/thumb/2/22/CoMaps_logotype.jpg/250px-CoMaps_logotype.jpg",
     "website": "https://www.comaps.app/",
     "description": "Privacy-focused, open-source, free and fast offline maps without ads, developed by the community for the community.",
-    "score": 9.0,
-    "lastUpdated": "2026-04-23"
+    "score": 9.5,
+    "lastUpdated": "2026-05-06"
   },
   {
     "id": 894563760,
@@ -97,6 +97,17 @@
     "description": "mobile application of Wikimedia Commons",
     "score": 4.125,
     "lastUpdated": "2026-04-11"
+  },
+  {
+    "id": 624994743,
+    "title": "Deflock",
+    "category": "Navigation",
+    "slug": "deflock",
+    "image": "https://deflock.org/favicon.ico",
+    "website": "https://deflock.org/",
+    "description": "Crowdsourced tool for locating and reporting ALPRs",
+    "score": 4.5,
+    "lastUpdated": "2025-04-21"
   },
   {
     "id": 573395048,
@@ -250,7 +261,7 @@
     "website": "https://www.gpxsee.org/",
     "description": "GPS log file viewer and analyzer.",
     "score": 5.5,
-    "lastUpdated": "2026-04-24"
+    "lastUpdated": "2026-05-15"
   },
   {
     "id": 411233702,
@@ -316,7 +327,7 @@
     "website": "http://ideditor.com/",
     "description": "The easy-to-use OpenStreetMap editor in JavaScript.",
     "score": 7.875,
-    "lastUpdated": "2026-04-07"
+    "lastUpdated": "2026-05-07"
   },
   {
     "id": 2110319320,
@@ -382,7 +393,7 @@
     "website": "https://www.mapbox.com/maps/",
     "description": "Embed customizable, interactive vector maps in Web, mobile, and desktop applications.",
     "score": 4.375,
-    "lastUpdated": "2026-04-29"
+    "lastUpdated": "2026-05-18"
   },
   {
     "id": 638634592,
@@ -403,7 +414,7 @@
     "image": "https://wiki.openstreetmap.org/w/images/thumb/9/9a/MapComplete.svg/250px-MapComplete.svg.png",
     "website": "https://mapcomplete.org/",
     "description": "An easy-to-use webapp to edit OpenStreetMap.",
-    "score": 8.625,
+    "score": 8.375,
     "lastUpdated": "2026-02-05"
   },
   {
@@ -415,7 +426,7 @@
     "website": "https://mapforge.org/",
     "description": "Vector layer editor for maps",
     "score": 4.5,
-    "lastUpdated": "2026-03-08"
+    "lastUpdated": "2026-05-31"
   },
   {
     "id": 929510231,
@@ -448,7 +459,7 @@
     "website": "https://mapserver.org/",
     "description": "MapServer is an Open Source platform for publishing spatial data and interactive mapping applications to the web.",
     "score": 4.625,
-    "lastUpdated": "2026-04-19"
+    "lastUpdated": "2026-05-07"
   },
   {
     "id": 1535780407,
@@ -502,7 +513,7 @@
     "image": "https://wiki.openstreetmap.org/w/images/thumb/0/07/NZ_missing_streets.png/250px-NZ_missing_streets.png",
     "website": "https://osm-nz.github.io/missing-streets",
     "description": "Identifies street names that are missing in OpenStreetMap, using various regions' government data.",
-    "score": 5.75,
+    "score": 5.5,
     "lastUpdated": "2026-02-05"
   },
   {
@@ -513,7 +524,7 @@
     "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Navit%20logoV2%20squircle.svg",
     "website": "https://www.navit-project.org/",
     "description": "Most popular open source car navigation tool; maps (offline-\"custom\"), vector-rendered.",
-    "score": 5.625,
+    "score": 5.375,
     "lastUpdated": "2026-02-08"
   },
   {
@@ -535,7 +546,7 @@
     "image": "https://olmap.org/favicon.ico",
     "website": "https://olmap.org/",
     "description": "Web site to collect and discuss data to map entrances and their accessibility.",
-    "score": 5.5,
+    "score": 5.25,
     "lastUpdated": "2026-02-03"
   },
   {
@@ -624,7 +635,7 @@
     "website": "http://project-osrm.org/",
     "description": "High-performance routing and map-matching server.",
     "score": 4.25,
-    "lastUpdated": "2026-04-18"
+    "lastUpdated": "2026-05-05"
   },
   {
     "id": 833903862,
@@ -664,9 +675,9 @@
     "title": "OpenRailwayMap",
     "category": "Map Visualization",
     "slug": "openrailwaymap",
-    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/OpenRailwayMap%20Logo.svg",
+    "image": "https://www.openrailwaymap.org/img/openrailwaymap-16.png",
     "website": "https://www.openrailwaymap.org/",
-    "description": "railway map based on OpenStreetMap data",
+    "description": "Detailed map of the railway network, based on OpenStreetMap. It considers all rail-mounted and automotive vehicles, e.g. railways, subways, trams und miniature railways.",
     "score": 5.5,
     "lastUpdated": "2026-03-08"
   },
@@ -756,7 +767,7 @@
     "website": "https://osm.ng/",
     "description": "OpenStreetMap-NG is an unofficial Python fork of openstreetmap.org. It's on a mission to push the boundaries of OpenStreetMap and provide a better experience for all users.",
     "score": 6.75,
-    "lastUpdated": "2026-03-01"
+    "lastUpdated": "2026-05-17"
   },
   {
     "id": 1401011354,
@@ -767,7 +778,7 @@
     "website": "https://organicmaps.app/",
     "description": "Privacy-focused, open-source, free and fast offline maps without ads.",
     "score": 9.0,
-    "lastUpdated": "2026-04-07"
+    "lastUpdated": "2026-05-27"
   },
   {
     "id": 2069984600,
@@ -834,6 +845,17 @@
     "description": "Simple POI editor app for Android.",
     "score": 7.625,
     "lastUpdated": "2024-08-29"
+  },
+  {
+    "id": 401799167,
+    "title": "OSM Maps",
+    "category": "Navigation",
+    "slug": "osm-maps",
+    "image": "https://www.elbe5.de/de/osmmapsiosapp.html/favicon.ico",
+    "website": "https://www.elbe5.de/de/osmmapsiosapp.html",
+    "description": "",
+    "score": 4.75,
+    "lastUpdated": "2026-05-18"
   },
   {
     "id": 2108186087,
@@ -931,7 +953,7 @@
     "image": "https://wiki.openstreetmap.org/w/images/thumb/9/9b/OsmapiR_logo.svg/250px-OsmapiR_logo.svg.png",
     "website": "https://docs.ropensci.org/osmapiR/",
     "description": "Openstreetmap API implementation for R.",
-    "score": 4.75,
+    "score": 4.5,
     "lastUpdated": "2026-02-15"
   },
   {
@@ -957,14 +979,14 @@
     "lastUpdated": "2020-06-21"
   },
   {
-    "id": 1200074585,
+    "id": 231046316,
     "title": "OSMBugs",
     "category": "Data Extraction and Analysis",
     "slug": "osmbugs",
     "image": "https://wiki.openstreetmap.org/w/images/thumb/4/4b/OSMBugs.0.2.5.map.png/250px-OSMBugs.0.2.5.map.png",
-    "website": "https://github.com/Gittner/OSMBugs",
+    "website": "https://github.com/ChristopherGittner/OSMBugs",
     "description": "Display and edit Bugs from Notes, Keepright and Osmose.",
-    "score": 5.125,
+    "score": 5.5,
     "lastUpdated": "2024-11-17"
   },
   {
@@ -1129,8 +1151,8 @@
     "image": "https://rinigus.github.io/pure-maps/favicon.ico",
     "website": "https://rinigus.github.io/pure-maps/",
     "description": "Maps and Navigation - using either offline OSM Scout Server or online service providers The Slim version does only include PicoTTS for voice output while the Full version also includes Mimic.",
-    "score": 5.5,
-    "lastUpdated": "2026-01-08"
+    "score": 5.75,
+    "lastUpdated": "2026-05-30"
   },
   {
     "id": 1221193415,
@@ -1141,7 +1163,7 @@
     "website": "https://qgis.org/",
     "description": "QGIS is a free, open source, cross platform (lin/win/mac) geographical information system (GIS).",
     "score": 7.25,
-    "lastUpdated": "2026-04-03"
+    "lastUpdated": "2026-05-29"
   },
   {
     "id": 445195879,
@@ -1195,7 +1217,7 @@
     "image": "https://wiki.openstreetmap.org/w/images/thumb/8/87/Rapid_logo_64_Pixel.svg/250px-Rapid_logo_64_Pixel.svg.png",
     "website": "https://rapideditor.org/",
     "description": "Fast PixiJS based renderer developed and maintained by a professional team featuring AI-generated data and authoritative open map dataset catalog for users to validate.",
-    "score": 7.625,
+    "score": 7.375,
     "lastUpdated": "2026-02-04"
   },
   {
@@ -1229,7 +1251,7 @@
     "website": "https://github.com/artem78/s60-maps/blob/master/docs/README.md",
     "description": "Map viewer and navigation for Simbian OS.",
     "score": 7.25,
-    "lastUpdated": "2026-04-16"
+    "lastUpdated": "2026-05-16"
   },
   {
     "id": 2539248,
@@ -1328,7 +1350,7 @@
     "website": "https://github.com/hotosm/tasking-manager/",
     "description": "Tool for teams to coordinate mapping on OpenStreetMap. The screenshot shows a project progress overview of the Tasking Manager.",
     "score": 5.25,
-    "lastUpdated": "2026-03-31"
+    "lastUpdated": "2026-05-23"
   },
   {
     "id": 1751152395,
@@ -1416,7 +1438,7 @@
     "website": "https://github.com/Zkir/UrbanEye3D",
     "description": "Displays 3D world directly in JOSM.",
     "score": 4.25,
-    "lastUpdated": "2026-04-24"
+    "lastUpdated": "2026-05-29"
   },
   {
     "id": 1197063454,
@@ -1438,7 +1460,7 @@
     "website": "https://vespucci.io/",
     "description": "OpenStreetMap editor for Android.",
     "score": 8.5,
-    "lastUpdated": "2026-04-22"
+    "lastUpdated": "2026-05-15"
   },
   {
     "id": 815544004,
@@ -1460,7 +1482,7 @@
     "website": "https://www.walkersguide.org/",
     "description": "A navi for blind people.",
     "score": 4.625,
-    "lastUpdated": "2026-02-10"
+    "lastUpdated": "2026-05-09"
   },
   {
     "id": 74549967,
