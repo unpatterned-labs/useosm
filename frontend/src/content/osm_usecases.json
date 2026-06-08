@@ -2,6 +2,136 @@
   "disaster-response-and-humanitarian-aid": {
     "use-cases": [
       {
+        "title": "Assessing OpenStreetMap Completeness for Management of Natural Disaster by Means of Remote Sensing: A Case Study of Three Small Island States (Haiti, Dominica and St. Lucia)",
+        "description": "Researchers use remote sensing to evaluate OpenStreetMap building-footprint completeness for natural disaster management across three Caribbean small island states. The study quantifies OSM data gaps in Haiti, Dominica, and St. Lucia and demonstrates how coverage and quality directly affect evidence-based disaster risk assessment, humanitarian preparedness, and response planning in vulnerable island contexts.",
+        "link": "https://www.mdpi.com/2072-4292/12/1/118",
+        "image": {
+          "path": "/images/usecase/assessing-openstreetmap-completeness.jpeg",
+          "alt": "Graphical Abstract"
+        },
+        "author": [
+          "Rann Goldblatt",
+          "Nicholas Jones",
+          "Jenny Mannix"
+        ],
+        "source": {
+          "name": "Remote Sensing (MDPI)",
+          "link": "https://www.mdpi.com/"
+        }
+      },
+      {
+        "title": "Mapping for Emergencies: WFP's custom mapping innovation informs humanitarian operations worldwide",
+        "description": "The World Food Programme uses OSM road network and settlement data through its Humanitarian Topographic Atlas to plan food aid delivery routes in crisis and post-disaster settings. OSM supports topographic mapping, logistics infrastructure visualization, and road network verification, while field teams in Syria and Nepal update OSM layers to guide truck drivers, identify access constraints, and coordinate humanitarian operations in remote and vulnerable areas.",
+        "link": "https://wfdinnovation.medium.com/mapping-for-emergencies-wfps-custom-mapping-innovation-informs-humanitarian-operations-worldwide-379d0c64027f",
+        "image": {
+          "path": "/images/usecase/wfp.jpeg",
+          "alt": "One of things humanitarians need during operations is a topographic map of the areas of operations. Photo: WFP/Rein Skullerud."
+        },
+        "author": [
+          "WFP Innovation Accelerator"
+        ],
+        "source": {
+          "name": "WFP Innovation (Medium)",
+          "link": "https://wfpinnovation.medium.com/"
+        }
+      },
+      {
+        "title": "Organised Editing/Activities/Refugee-displaced Site Mapping for UNHCR",
+        "description": "United Nations High Commissioner for Refugees uses OpenStreetMap to map refugee camps, displacement corridors, and border crossings in crisis zones. In Uganda, South Sudan, Bangladesh, and the Sahel, OSM data has been used to map camps like Bidi Bidi and Cox's Bazar, supporting service delivery, planning, and protection monitoring for displaced populations.",
+        "link": "https://wiki.openstreetmap.org/wiki/Organised_Editing/Activities/Refugee-displaced_Site_Mapping_for_UNHCR",
+        "image": {
+          "path": "",
+          "alt": ""
+        },
+        "author": [
+          "OpenStreetMap Wiki contributors"
+        ],
+        "source": {
+          "name": "OpenStreetMap Wiki",
+          "link": "https://wiki.openstreetmap.org"
+        }
+      },
+      {
+        "title": "OpenStreetMap Damage Assessment Review",
+        "description": "The American Red Cross uses OpenStreetMap for disaster damage assessment and field response coordination in crisis settings. During the response to Typhoon Haiyan in the Philippines in 2013, the American Red Cross directly coordinated volunteer mappers on OpenStreetMap, directing them to trace priority areas based on field intelligence.",
+        "link": "https://americanredcross.github.io/OSM-Assessment/",
+        "image": {
+          "path": "/images/usecase/openstreetmap-damage-assessment-analysis.jpg",
+          "alt": "Typhoon Haiyan partially or totally destroyed roughly 1 million homes. Photo Credit: IFRC"
+        },
+        "author": [
+          "Typhoon Haiyan (Yolanda) Interim Report"
+        ],
+        "source": {
+          "name": "American Red Cross",
+          "link": "https://www.redcross.org/"
+        }
+      },
+      {
+        "title": "CartONG provides GIS and mapping support to humanitarian organisations using OSM in crisis settings",
+        "description": "CartONG uses OpenStreetMap to support humanitarian operations such as camp management, needs assessments, and monitoring. It helps partners like UNHCR, Medecins Sans Frontieres, and Action Against Hunger apply OSM data, while building mapping capacity and tools for field teams.",
+        "link": "https://wiki.openstreetmap.org/wiki/CartONG",
+        "image": {
+          "path": "/images/usecase/cartong.jpeg",
+          "alt": "CartONG humanitarian GIS and OpenStreetMap support"
+        },
+        "author": [
+          "CartONG"
+        ],
+        "source": {
+          "name": "OpenStreetMap Wiki",
+          "link": "https://wiki.openstreetmap.org"
+        }
+      },
+      {
+        "title": "NetHope supports NGO connectivity and digital tools including OSM-based mapping in disaster settings",
+        "description": "NetHope is a consortium of international NGOs enabling technology in humanitarian settings. It supports members like Save the Children, World Vision, and IRC with OSM-based mapping and connectivity tools. Through its Digital Humanitarian Network, NetHope integrates OSM into crisis response and builds NGO capacity for faster, higher-quality field operations.",
+        "link": "https://nethope.org/",
+        "image": {
+          "path": "/images/usecase/nethope.jpg",
+          "alt": "NetHope humanitarian technology and OpenStreetMap mapping support"
+        },
+        "author": [
+          "NetHope"
+        ],
+        "source": {
+          "name": "NetHope",
+          "link": "https://nethope.org/"
+        }
+      },
+      {
+        "title": "Missing Maps: How geodata is helping humanitarian aid efforts",
+        "description": "Doctors Without Borders uses Missing Maps and OpenStreetMap to map underserved crisis areas before and during emergencies. Volunteers trace roads, buildings, and settlement features so MSF teams can plan water points, latrines, medical outreach, disease response, and logistics for displaced communities in hard-to-reach locations with faster situational awareness and coordination.",
+        "link": "https://www.doctorswithoutborders.org/latest/missing-maps-how-geodata-helping-humanitarian-aid-efforts",
+        "image": {
+          "path": "/images/usecase/msf-missing-maps-humanitarian-geodata.jpg",
+          "alt": "Doctors Without Borders Missing Maps volunteers creating OpenStreetMap data for humanitarian response"
+        },
+        "author": [
+          "Doctors Without Borders"
+        ],
+        "source": {
+          "name": "Doctors Without Borders",
+          "link": "https://www.doctorswithoutborders.org/latest/missing-maps-how-geodata-helping-humanitarian-aid-efforts"
+        }
+      },
+      {
+        "title": "iMMAP embeds information management specialists in humanitarian operations, using OSM as a core data source",
+        "description": "iMMAP is an international non-profit providing information management support for humanitarian and development work. It embeds specialists in UN agencies, governments, and NGOs to produce maps and analyses. Using OpenStreetMap as a basemap, iMMAP builds dashboards tracking displacement, access constraints, and service availability in real time across global crisis contexts.",
+        "link": "https://immap.org/",
+        "image": {
+          "path": "/images/usecase/immap.jpeg",
+          "alt": "iMMAP humanitarian information management using OpenStreetMap"
+        },
+        "author": [
+          "Not specified"
+        ],
+        "source": {
+          "name": "iMMAP",
+          "link": "https://immap.org/"
+        }
+      },
+      {
         "title": "Mapping as a response to the disaster in Esmeraldas, Ecuador",
         "description": "In response to historic floods in Esmeraldas. Ecuador’s risk management agency and HOT hubs created targeted mapping projects for flooded zones. Volunteers combined river flood-susceptibility layers with populated areas to define priority zones and then traced roads and infrastructure in OSM",
         "link": "https://www.hotosm.org/en/news/mapping-as-a-response-to-the-disaster-in-esmeraldas-ecuador/",
@@ -9,7 +139,9 @@
           "path": "/images/usecase/ecuador-floods.jpg",
           "alt": "Image view of flooded zones"
         },
-        "author": ["Juan Melo Luna and Juan Arellano Valdivia"],
+        "author": [
+          "Juan Melo Luna and Juan Arellano Valdivia"
+        ],
         "source": {
           "name": "Humanitarian OpenStreetMap Team",
           "link": "https://www.hotosm.org"
@@ -23,7 +155,9 @@
           "path": "/images/usecase/haiti-earthquake.jpg",
           "alt": "overlay of Haiti earthquake damage"
         },
-        "author": ["OpenStreetMap contributors"],
+        "author": [
+          "OpenStreetMap contributors"
+        ],
         "source": {
           "name": "OpenStreetMap Wiki",
           "link": "https://wiki.openstreetmap.org"
@@ -37,7 +171,9 @@
           "path": "/images/usecase/Nepal-earthquake.jpg",
           "alt": "overlay of Nepal earthquake damage"
         },
-        "author": ["OpenStreetMap contributors"],
+        "author": [
+          "OpenStreetMap contributors"
+        ],
         "source": {
           "name": "OpenStreetMap Wiki",
           "link": "https://wiki.openstreetmap.org"
@@ -51,7 +187,9 @@
           "path": "/images/usecase/hurricane-otis.jpg",
           "alt": "overlay of Hurricane Otis damage"
         },
-        "author": ["Humanitarian OpenStreetMap Team (HOT)"],
+        "author": [
+          "Humanitarian OpenStreetMap Team (HOT)"
+        ],
         "source": {
           "name": "Humanitarian OpenStreetMap Team",
           "link": "https://www.hotosm.org"
@@ -65,7 +203,9 @@
           "path": "/images/usecase/HOT West Africa.jpg",
           "alt": "Image showing HOT's impact meeting in West Africa"
         },
-        "author": ["Humanitarian OpenStreetMap Team (HOT)"],
+        "author": [
+          "Humanitarian OpenStreetMap Team (HOT)"
+        ],
         "source": {
           "name": "Humanitarian OpenStreetMap Team",
           "link": "https://www.hotosm.org"
@@ -76,6 +216,86 @@
   "mobility-and-transport": {
     "use-cases": [
       {
+        "title": "How Lyft discovered OpenStreetMap is the Freshest Map for Rideshare",
+        "description": "Lyft built its own in-house navigation platform entirely on OSM as its base map, using it to provide drivers and riders with precise ETAs and turn-by-turn directions. Their team has contributed over 330k changesets to OSM, including 45k missing roads in 2023 alone, to keep maps fresh for rideshare operations.",
+        "link": "https://eng.lyft.com/how-lyft-discovered-openstreetmap-is-the-freshest-map-for-rideshare-a7a41bf92ec",
+        "image": {
+          "path": "/images/usecase/lyft.jpeg",
+          "alt": "An example of our sampling plan in Greater New York City. Mapillary dispatched cars to each of the S2 polygons and collected imagery along all driveable roads in each."
+        },
+        "author": [
+          "Clare Corthell"
+        ],
+        "source": {
+          "name": "Lyft Engineering Blog",
+          "link": "https://eng.lyft.com"
+        }
+      },
+      {
+        "title": "OpenStreetMap as an efficient data source for mapping",
+        "description": "Komoot is used by 45 million outdoor enthusiasts to plan cycling, hiking, and mountain biking routes. It is built entirely on OSM data, using it for trail surfaces, access restrictions, and elevation-aware routing across most of Europe and beyond.",
+        "link": "https://komoot.business/en/news-and-stories/online-magazine/20240110-open-street-map",
+        "image": {
+          "path": "/images/usecase/komoot-for-business.jpeg",
+          "alt": "Komoot outdoor cycling and hiking route planner using OpenStreetMap"
+        },
+        "author": [
+          "Komoot For Business"
+        ],
+        "source": {
+          "name": "Komoot Business",
+          "link": "https://komoot.business"
+        }
+      },
+      {
+        "title": "Organic Maps: Offline Hike, Bike, Trails and Navigation",
+        "description": "Organic Maps is a free, open-source offline navigation app powered entirely by OSM data. It provides turn-by-turn navigation for driving, cycling, and walking without any internet connection, data tracking, or ads, and reached 6 million installs by December 2025.",
+        "link": "https://organicmaps.app",
+        "image": {
+          "path": "/images/usecase/organic-map.jpg",
+          "alt": "Organic Maps offline navigation powered by OpenStreetMap"
+        },
+        "author": [
+          "Organic Maps"
+        ],
+        "source": {
+          "name": "Organic Maps",
+          "link": "https://organicmaps.app"
+        }
+      },
+      {
+        "title": "OsmAnd's Faster Offline Navigation with OSM Data",
+        "description": "OsmAnd is a feature-rich offline navigation app powered by OSM, supporting car, cycling, hiking, and boat navigation with contour lines, hillshading, and OSM editing built in. It allows users to contribute fixes back to OSM directly from the app.",
+        "link": "https://osmand.net/blog/fast-routing/",
+        "image": {
+          "path": "/images/usecase/osmand.jpeg",
+          "alt": "OsmAnd offline navigation app powered by OpenStreetMap"
+        },
+        "author": [
+          "OsmAnd"
+        ],
+        "source": {
+          "name": "OsmAnd Blog",
+          "link": "https://osmand.net/blog"
+        }
+      },
+      {
+        "title": "TTrufi Recognized by OSOR for Our Work in Urban Mobility",
+        "description": "Trufi builds open-source public transport apps for cities where informal routes are poorly documented. Its apps rely on OpenStreetMap for mapping data, helping communities collect minibus, bus, and shared mobility routes, convert them into usable transit information, and improve journey planning for daily commuters across underserved urban networks and regions.",
+        "link": "https://www.trufi-association.org/trufi-recognized-by-osor-for-our-work-in-urban-mobility/",
+        "image": {
+          "path": "/images/usecase/trufi-informal-public-transport-osm.jpg",
+          "alt": "Trufi informal public transport routing app using OpenStreetMap data"
+        },
+        "author": [
+          "Ted"
+        ],
+        "source": {
+          "name": "Trufi Association",
+          "link": "https://www.trufi-association.org/trufi-recognized-by-osor-for-our-work-in-urban-mobility/"
+        }
+      },
+      {
         "title": "MGrabMaps for Ride-Hailing (Southeast Asia)",
         "description": "Grab is a ride-share company, built its mapping platform using OpenStreetMap data. GrabMaps integrates hyper-local updates (new roads, one-ways, speed limits) into OSM’s base map, improving route planning and navigation for Grab’s drivers and delivery services across fast-changing Southeast Asian cities and to solve  the challenge of fast-changing road restrictions, new roads appearing overnight, and high traffic congestion.",
         "link": "https://engineering.grab.com/building-hyperlocal-grabmaps#:~:text=Download%20data",
@@ -83,7 +303,9 @@
           "path": "/images/usecase/grabmaps_interface.jpg",
           "alt": "Map showing detections from images and probe data, and hyperlocal data"
         },
-        "author": ["Adriana Lazar"],
+        "author": [
+          "Adriana Lazar"
+        ],
         "source": {
           "name": "Grab Engineering",
           "link": "https://engineering.grab.com/"
@@ -97,7 +319,9 @@
           "path": "/images/usecase/opentraffic.jpg",
           "alt": "OpenTraffic: Process map (Copyright: OpenTraffic.io)"
         },
-        "author": ["Muthu Kumar"],
+        "author": [
+          "Muthu Kumar"
+        ],
         "source": {
           "name": "OpenTraffic Project",
           "link": "https://geoawesome.com/opentraffic-free-global-traffic-speed-data/"
@@ -111,7 +335,9 @@
           "path": "/images/usecase/opentripplanner.jpg",
           "alt": "OpenTripPlanner interface showing multimodal routing"
         },
-        "author": ["OpenStreetMap wiki contributors"],
+        "author": [
+          "OpenStreetMap wiki contributors"
+        ],
         "source": {
           "name": "OpenTripPlanner",
           "link": "https://www.opentripplanner.org/"
@@ -125,7 +351,9 @@
           "path": "/images/usecase/cyclestreets.jpg",
           "alt": "CycleStreets interface showing cycling routes"
         },
-        "author": ["OpenStreetMap UK CIC"],
+        "author": [
+          "OpenStreetMap UK CIC"
+        ],
         "source": {
           "name": "CycleStreets",
           "link": "https://www.cyclestreets.net/"
@@ -139,7 +367,9 @@
           "path": "/images/usecase/Streets.m.jpg",
           "alt": "Streets.mn podcast"
         },
-        "author": ["Ian R Buck"],
+        "author": [
+          "Ian R Buck"
+        ],
         "source": {
           "name": "Streets.mn Podcast",
           "link": "https://streets.mn/"
@@ -153,7 +383,9 @@
           "path": "/images/usecase/cyclefix.jpg",
           "alt": "CycleFix and MapComplete interface showing sustainable transportation mapping"
         },
-        "author": ["OpenStreetMap US Staff"],
+        "author": [
+          "OpenStreetMap US Staff"
+        ],
         "source": {
           "name": "OpenStreetMap US",
           "link": "https://openstreetmap.us/"
@@ -164,6 +396,125 @@
   "urban-planning": {
     "use-cases": [
       {
+        "title": "Urban Form Analysis with OpenStreetMap Data - OSMnx",
+        "description": "OSMnx is a Python package developed by Geoff Boeing at USC that allows planners and researchers to download, model, and analyze street networks for any city in the world using OSM data. It is used for urban form analysis, walkability studies, accessibility modeling, and resilience assessments. It solves the challenge of making OSM street data easily accessible and analyzable for urban planning without writing extensive custom code.",
+        "link": "https://geoffboeing.com/2017/04/urban-form-analysis-openstreetmap/",
+        "image": {
+          "path": "/images/usecase/osmnx.jpg",
+          "alt": "Each image was created with a single line of code. Adding in building footprints, we can see the texture, grain, and percolation of formal circulation networks in cities around the world, including informal settlements"
+        },
+        "author": [
+          ""
+        ],
+        "source": {
+          "name": "Geoff Boeing",
+          "link": "https://geoffboeing.com"
+        }
+      },
+      {
+        "title": "15-Minute City Score Toolkit - Walkability Analytics",
+        "description": "This open-source QGIS and Python tool uses OSM pedestrian network and amenity data to measure how well a city conforms to the 15-minute city concept, where all essential services are reachable on foot within 15 minutes. It queries OSM for walkable streets and points of interest, calculates walking isochrones, and generates a scored walkability map for urban planners and policymakers.",
+        "link": "https://transformtransport.org/research/urban-mobility-metrics/15min-city-score-toolkit-urban-walkability-analytics/",
+        "image": {
+          "path": "/images/usecase/15-minutes-work.jpg",
+          "alt": "Interactive map of 15min City Score results generated with the 15min City Score Toolkit"
+        },
+        "author": [
+          "Transform Transport"
+        ],
+        "source": {
+          "name": "Transform Transport",
+          "link": "https://transformtransport.org"
+        }
+      },
+      {
+        "title": "Know Your City 2.0",
+        "description": "The Know Your City 2.0 project by HOT and Slum Dwellers International uses OSM, drone imagery, and the HOT Tasking Manager to map building footprints in slum and informal urban settlements across cities in Africa, Asia, and Latin America. The data supports community-led urban upgrading, land tenure, and infrastructure planning in areas that are otherwise invisible on official maps.",
+        "link": "https://wiki.openstreetmap.org/wiki/Know_Your_City_2.0",
+        "image": {
+          "path": "/images/usecase/know-your-city.jpeg",
+          "alt": "Know Your City slum mapping project"
+        },
+        "author": [
+          "OpenStreetMap Wiki contributors"
+        ],
+        "source": {
+          "name": "OpenStreetMap Wiki",
+          "link": "https://wiki.openstreetmap.org"
+        }
+      },
+      {
+        "title": "An OpenStreetMap derived building classification dataset for the United States",
+        "description": "Researchers developed a nationwide building classification dataset for the United States covering over 67 million buildings, using OSM building footprints and metadata as the primary data source. The dataset classifies buildings as residential or non-residential and supports urban planning applications including population estimation, energy use modeling, land use mapping, and digital twin construction.",
+        "link": "https://www.nature.com/articles/s41597-024-04046-w",
+        "image": {
+          "path": "/images/usecase/buildingclassification.jpeg",
+          "alt": "OpenStreetMap-derived building classification dataset for the United States"
+        },
+        "author": [
+          "Henrique F. de Arruda",
+          "Sandro M. Reia",
+          "Shiyang Ruan",
+          "Kuldip S. Atwal",
+          "Hamdi Kavak",
+          "Taylor Anderson",
+          "Dieter Pfoser"
+        ],
+        "source": {
+          "name": "Scientific Data (Nature)",
+          "link": "https://www.nature.com/sdata/"
+        }
+      },
+      {
+        "title": "Worldwide Cityscapes Spatial Analysis Using OSM",
+        "description": "A project from the Institute for Advanced Architecture of Catalonia uses OSM data to conduct spatial analysis of urban form across cities worldwide. Using the Grasshopper Elk plugin, OSM road networks, building footprints, and land use data are extracted and analyzed for computational urban design and city comparison studies, addressing challenges of access to consistent global urban datasets.",
+        "link": "https://blog.iaac.net/worldwide-cityscapes-spatial-analysis-using-openstreetmap-data/",
+        "image": {
+          "path": "/images/usecase/worldwide-cityscapes.jpeg",
+          "alt": "Worldwide cityscapes spatial analysis using OpenStreetMap data"
+        },
+        "author": [
+          "Institute for Advanced Architecture of Catalonia"
+        ],
+        "source": {
+          "name": "IAAC Blog",
+          "link": "https://blog.iaac.net"
+        }
+      },
+      {
+        "title": "A/B Street - Citizen-Friendly Street Redesign Simulation",
+        "description": "A/B Street turns OpenStreetMap road, lane, signal, parking, and transit-stop data into interactive traffic simulations. Citizens and planners can test street redesigns, bike lanes, bus priority, parking changes, and intersection edits, then compare how proposals affect drivers, cyclists, pedestrians, transit users, and neighborhood accessibility outcomes before implementation during public consultations.",
+        "link": "https://a-b-street.github.io/docs/software/abstreet.html",
+        "image": {
+          "path": "/images/usecase/ab-street-osm-urban-simulation.jpg",
+          "alt": "A/B Street urban traffic simulation built with OpenStreetMap data"
+        },
+        "author": [
+          "Not specified"
+        ],
+        "source": {
+          "name": "A/B Street Documentation",
+          "link": "https://a-b-street.github.io/docs"
+        }
+      },
+      {
+        "title": "5 Open-Source Tools for Sustainable Multimodal Planning",
+        "description": "An American Planning Association article highlights five open-source tools for multimodal urban planning, including the Overture Maps Foundation platform, which integrates OSM data with additional sources from Esri and TomTom. The article addresses the challenge that incomplete data and lack of affordable planning tools have hampered communities from identifying and analyzing multimodal network improvements.",
+        "link": "https://www.planning.org/planning/2024/jan/5-open-source-tools-for-sustainable-multimodal-planning/",
+        "image": {
+          "path": "/images/usecase/5-open-source-tools.jpg",
+          "alt": "Transit's \"last mile\" radius is widening, thanks to power-assisted scooters and bicycles. Photo by Lisa Nisenson."
+        },
+        "author": [
+          "Lian A. Plass",
+          "Isabel Youngs"
+        ],
+        "source": {
+          "name": "American Planning Association",
+          "link": "https://www.planning.org"
+        }
+      },
+      {
         "title": "Streetlight mapping with OSM in Mexico",
         "description": "Humanitarian OpenStreetMap Team (HOT) documents how Mexican communities use OSM to map streetlights and urban features. By integrating mapped roads, amenities, and green spaces into GIS, planners support local development, simulate urban growth, and identify priority areas for infrastructure and public-service improvements.",
         "link": "https://www.hotosm.org/en/news/openstreetmap-and-municipal-planning-a-reality-in-mexico/",
@@ -171,7 +522,9 @@
           "path": "/images/usecase/streetlight-mapping.jpg",
           "alt": "Streetlight mapping in Mexico using OpenStreetMap"
         },
-        "author": ["Celine Jacquin"],
+        "author": [
+          "Celine Jacquin"
+        ],
         "source": {
           "name": "Humanitarian OpenStreetMap Team",
           "link": "https://www.hotosm.org"
@@ -185,7 +538,9 @@
           "path": "/images/usecase/birmingham-city-council.jpg",
           "alt": "Birmingham City Council OSM collaboration"
         },
-        "author": ["OpenStreetMap UK CIC"],
+        "author": [
+          "OpenStreetMap UK CIC"
+        ],
         "source": {
           "name": "OpenStreetMap UK",
           "link": "https://osmuk.org/author/admin/"
@@ -199,7 +554,9 @@
           "path": "/images/usecase/map-kibera.jpg",
           "alt": "Map Kibera community mapping project interface showing mapped roads and amenities in Kibera, Nairobi"
         },
-        "author": ["Taka"],
+        "author": [
+          "Taka"
+        ],
         "source": {
           "name": "OpenStreetMap Wiki",
           "link": "https://wiki.openstreetmap.org"
@@ -213,7 +570,9 @@
           "path": "/images/usecase/ramani-huria.jpg",
           "alt": "Iddy Chazua conducting a river cross-section survey along the Msimbazi River using a locally made survey tool in RTK mode"
         },
-        "author": ["OpenMap Development Tanzania"],
+        "author": [
+          "OpenMap Development Tanzania"
+        ],
         "source": {
           "name": "OpenMap Development Tanzania",
           "link": "https://omdtanzania.medium.com/"
@@ -227,7 +586,9 @@
           "path": "/images/usecase/open-cities-mapping-project.jpeg",
           "alt": "Planning an Open Cities Mapping Project report cover"
         },
-        "author": ["World Bank group"],
+        "author": [
+          "World Bank group"
+        ],
         "source": {
           "name": "World Bank",
           "link": "https://www.worldbank.org/ext/en/home"
@@ -238,6 +599,105 @@
   "environment-and-climate": {
     "use-cases": [
       {
+        "title": "A Global Effort to Unleash Local Data: How Open Mapping is Shaping Grassroots Climate Resilience Worldwide",
+        "description": "The Humanitarian OpenStreetMap Team uses OSM to support communities in mapping flood-prone areas, tracking deforestation, and building climate resilience. In Malawi in 2022, OSM communities mapped critical infrastructure damaged by Tropical Storm Ana and Cyclone Gombe to guide disaster recovery. In Ecuador in 2023, HOT coordinated with the national Risk Management Secretariat to map high-risk flooding areas ahead of the El Nino climate phenomenon.",
+        "link": "https://nextbillion.net/global-effort-unleash-local-data-open-mapping-shaping-grassroots-climate-resilience-worldwide/",
+        "image": {
+          "path": "/images/usecase/grassroots-climate-resilience.jpg",
+          "alt": "Grassroots climate resilience mapping using OpenStreetMap"
+        },
+        "author": [
+          "Not specified"
+        ],
+        "source": {
+          "name": "NextBillion",
+          "link": "https://nextbillion.net"
+        }
+      },
+      {
+        "title": "CLIMADA + OSM-flex - Multi-Faceted Climate Risk Assessment",
+        "description": "Researchers at ETH Zurich developed OSM-flex, a Python tool that extracts features from OSM, including forests, railways, airports, UNESCO heritage sites, and healthcare facilities, and feeds them into the open-source CLIMADA climate risk platform. The tool was used to compute winter storm risk and event impacts from the severe 1999 storm Lothar across Switzerland, solving the challenge that most climate risk models only assess buildings and roads due to lack of open exposure data.",
+        "link": "https://eartharxiv.org/repository/view/5615/",
+        "image": {
+          "path": "/images/usecase/climada-osm-flex.jpeg",
+          "alt": "Esri Basemap"
+        },
+        "author": [
+          "ETH Zurich researchers"
+        ],
+        "source": {
+          "name": "EarthArXiv",
+          "link": "https://eartharxiv.org"
+        }
+      },
+      {
+        "title": "Analysis of renewable energy infrastructure representations in OpenStreetMap",
+        "description": "Researchers evaluated the accuracy and completeness of wind and solar energy infrastructure data in OSM for Belgium and Ireland. By combining OSM power-tagged data with CORINE Land Cover inventory, they studied land use patterns around renewable energy installations to support environmental planning and the clean energy transition, addressing the challenge of scarce, reliable open-access data on renewable energy locations.",
+        "link": "https://2024.stateofthemap.org/sessions/MKPJFW/",
+        "image": {
+          "path": "",
+          "alt": ""
+        },
+        "author": [
+          "State of the Map 2024"
+        ],
+        "source": {
+          "name": "State of the Map 2024",
+          "link": "https://2024.stateofthemap.org"
+        }
+      },
+      {
+        "title": "Built Environment Mapping for Urban Heat Island Analysis",
+        "description": "OpenStreetMap US launched a 2022 community mapping campaign to improve OSM data on impervious surfaces, including buildings, roads, and parking lots, for climate change analysis and urban heat island assessment in New Orleans, which ranked as the US city with the highest urban heat island index in 2021. The mapped data supports population risk assessments for sea level rise and extreme heat events.",
+        "link": "https://openstreetmap.us/news/2022/03/12months_Built_Environment/",
+        "image": {
+          "path": "/images/usecase/builtup.jpeg",
+          "alt": "Built environment mapping for urban heat island analysis in New Orleans"
+        },
+        "author": [
+          "OpenStreetMap US"
+        ],
+        "source": {
+          "name": "OpenStreetMap US",
+          "link": "https://openstreetmap.us"
+        }
+      },
+      {
+        "title": "Open land cover from OpenStreetMap and remote sensing",
+        "description": "Researchers combined OpenStreetMap land-use data with remote sensing to build open land-cover products for environmental analysis. A Heidelberg case study filled OSM data gaps with satellite information, supporting land-use monitoring, ecological assessment, resource management, urban planning, and climate-change research workflows at local and regional scales across landscapes for policy decisions.",
+        "link": "https://www.sciencedirect.com/science/article/pii/S0303243417301605",
+        "image": {
+          "path": "/images/usecase/open-land-cover-osm-remote-sensing.jpg",
+          "alt": "Open land cover mapping using OpenStreetMap and remote sensing data"
+        },
+        "author": [
+          "Not specified"
+        ],
+        "source": {
+          "name": "Computers, Environment and Urban Systems (ScienceDirect)",
+          "link": "https://www.sciencedirect.com/science/article/pii/S0303243417301605"
+        }
+      },
+      {
+        "title": "Using OpenStreetMap (OSM) to enhance the classification of local climate zones in the framework of WUDAPT",
+        "description": "Researchers developed a method to enhance Local Climate Zone classification, a system used in urban heat island studies and climate modeling, using OSM building and land use data. OSM data was integrated within the WUDAPT framework to improve characterization of urban thermal environments globally, supporting more accurate urban climate models such as WRF.",
+        "link": "https://www.sciencedirect.com/science/article/abs/pii/S221209551930094X",
+        "image": {
+          "path": "",
+          "alt": ""
+        },
+        "author": [
+          "Cidália C. Fonte",
+          "Patrícia Lopes",
+          "Linda See",
+          "Benjamin Bechtel"
+        ],
+        "source": {
+          "name": "Urban Climate (ScienceDirect / Elsevier)",
+          "link": "https://www.sciencedirect.com/journal/urban-climate"
+        }
+      },
+      {
         "title": "Mikel Maron: Crowdsourcing satellite imagery to document deforestation",
         "description": "An investigative article (ExposingTheInvisible) interviews OSM founder Mikel Maron about the Logging Roads project. Volunteers mapped 30,532 logging roads in the Congo Basin using satellite imagery.",
         "link": "https://exposingtheinvisible.org/en/articles/logging-roads-mikel-maron/",
@@ -245,7 +705,9 @@
           "path": "/images/usecase/logging-roads.jpg",
           "alt": "logging roads in the Congo Basin"
         },
-        "author": ["Mikel Maron"],
+        "author": [
+          "Mikel Maron"
+        ],
         "source": {
           "name": "ExposingTheInvisible",
           "link": "https://exposingtheinvisible.org/"
@@ -259,7 +721,9 @@
           "path": "/images/usecase/map4mangrove.jpg",
           "alt": "The Blue Carbon Program's mangrove rehabilitation sites, each managed by local community groups"
         },
-        "author": ["Humanitarian OpenStreetMap Team (HOT)"],
+        "author": [
+          "Humanitarian OpenStreetMap Team (HOT)"
+        ],
         "source": {
           "name": "Humanitarian OpenStreetMap Team (HOT)",
           "link": "https://www.hotosm.org/"
@@ -322,6 +786,107 @@
   "education-and-research": {
     "use-cases": [
       {
+        "title": "Mapathons: OpenSource Mapping by GW Students",
+        "description": "Purdue University Libraries integrated OSM mapathons into undergraduate health sciences and data science learning communities as a tool for critical data literacy instruction. Since 2017, students have traced satellite imagery in OSM to create humanitarian maps, learning to evaluate data quality, geospatial ethics, and visual representation while contributing to meaningful real-world data creation within coursework.",
+        "link": "https://geography.columbian.gwu.edu/mapathons-opensource-mapping-gw-students",
+        "image": {
+          "path": "",
+          "alt": "University OSM mapathons for data and visual literacy"
+        },
+        "author": [
+          "Not specified"
+        ],
+        "source": {
+          "name": "Journal of the Medical Library Association (PMC)",
+          "link": "https://pmc.ncbi.nlm.nih.gov"
+        }
+      },
+      {
+        "title": "Disastermappers Heidelberg - Training University Students in Humanitarian OSM Mapping",
+        "description": "The Disastermappers Heidelberg, hosted at Heidelberg University's GIScience Research Group, trains geography students in OSM-based humanitarian mapping for disaster preparedness and relief. The group organizes regular mapathons, contributes to Missing Maps, and conducts science-driven research on identifying poorly mapped vulnerable regions, embedding open mapping directly into university geoscience education.",
+        "link": "https://disastermappers.wordpress.com",
+        "image": {
+          "path": "/images/usecase/disastermappers-heidelberg.jpeg",
+          "alt": ""
+        },
+        "author": [
+          "Disastermappers Heidelberg"
+        ],
+        "source": {
+          "name": "Disastermappers Heidelberg",
+          "link": "https://disastermappers.wordpress.com"
+        }
+      },
+      {
+        "title": "The sweet spot for research and Missing Maps collaborations",
+        "description": "Missing Maps published a 2022 guide on how universities and research institutions can go beyond hosting mapathons to build deeper collaborations with humanitarian organizations using OSM. It highlights how academic research into OSM contributor behavior, data quality, and community engagement has directly improved humanitarian mapping workflows and outcomes for organizations like HOT and MSF.",
+        "link": "https://missingmaps.org/blog/2022/09/08/the-sweet-spot-for-research-and-Missing-Maps-collaborations",
+        "image": {
+          "path": "/images/usecase/missing-maps-university-research.jpg",
+          "alt": "HOT Summit 2019"
+        },
+        "author": [
+          "Benni Herfort",
+          "Sam Colchester"
+        ],
+        "source": {
+          "name": "Missing Maps Blog",
+          "link": "https://missingmaps.org/blog"
+        }
+      },
+      {
+        "title": "Crowdsourcing missing maps at Geohub's Mapathon",
+        "description": "Central European University's GeoHub hosted a 2022 hybrid Missing Maps mapathon for International Day for Disaster Risk Reduction, gathering nearly 60 students and academics from CEU Vienna and AUCA Bishkek alongside online OSUN members. Participants received OSM training from a University of Maryland instructor and mapped vulnerable communities in the Dominican Republic, integrating disaster risk education with hands-on OSM contribution.",
+        "link": "https://envsci.ceu.edu/article/2022-10-21/crowdsourcing-missing-maps-geohubs-mapathon",
+        "image": {
+          "path": "/images/usecase/ceu-geohub-missing-maps-mapathon.jpg",
+          "alt": "CEU GeoHub Missing Maps mapathon with international students"
+        },
+        "author": [
+          "Central European University"
+        ],
+        "source": {
+          "name": "Central European University",
+          "link": "https://envsci.ceu.edu"
+        }
+      },
+      {
+        "title": "YouthMappers Sri Lanka - Climate Activism and OSM Education",
+        "description": "YouthMappers chapters in Sri Lanka used OpenStreetMap workshops, curriculum integration, a mapping helpdesk, and a research unit to advance climate education. The project strengthened student capacity for open mapping, climate activism, disaster awareness, and locally relevant geospatial research at Eastern University and partner communities nationwide through collaboration and public service.",
+        "link": "https://www.mdpi.com/2673-995X/5/2/61",
+        "image": {
+          "path": "/images/usecase/youthmappers-sri-lanka-climate-education.jpg",
+          "alt": "YouthMappers Sri Lanka climate education and OpenStreetMap workshops"
+        },
+        "author": [
+          "Ibra Lebbe Mohamed Zahir",
+          "Suthakaran Sundaralingam",
+          "Meerasa Lewai Fowzul Ameer",
+          "Sriram Sindhuja",
+          "Atham Lebbe Iyoob"
+        ],
+        "source": {
+          "name": "Youth (MDPI)",
+          "link": "https://www.mdpi.com"
+        }
+      },
+      {
+        "title": "Mapathon @ TU Munich: Mapping At-Risk Regions with Awesome Mappers",
+        "description": "Founded in 2022, the YouthMappers chapter at Technical University of Munich organized a 2024 mapathon in response to the Turkey-Syria earthquake, partnering with the German Red Cross and Geoawesome. In a single session, 25 contributors produced 1,312 map edits and 1,198 building footprints for at-risk regions in Paraguay, demonstrating how university chapters build student OSM capacity for real-world disaster response.",
+        "link": "https://geoawesome.com/mapathon-tu-munich-mapping-at-risk-regions-with-awesome-mappers",
+        "image": {
+          "path": "/images/usecase/tu-munich-youthmappers.jpeg",
+          "alt": "TU Munich YouthMappers mapathon for disaster response"
+        },
+        "author": [
+          "Geoawesome"
+        ],
+        "source": {
+          "name": "Geoawesome",
+          "link": "https://geoawesome.com"
+        }
+      },
+      {
         "title": "Youth Mappers Unite for a Good Cause",
         "description": "Youth Mappers network, a global student mapping movement using OpenStreetMap to support international development projects. University students from places like the U.S. and Bangladesh collaborate to create basemaps of under-mapped regions. These maps are used by USAID for planning food security, disease prevention, disaster response, and more, while students gain GIS and real-world problem-solving experience.",
         "link": "https://www.esri.com/about/newsroom/arcwatch/youth-mappers-unite-for-a-good-cause",
@@ -329,7 +894,9 @@
           "path": "/images/usecase/youthmappers unite.jpg",
           "alt": "George Washington University students map a rural area near Khulna, Bangladesh. The map will be used to support the US government's Feed the Future initiative there. Photo/Heather Blevins"
         },
-        "author": ["Carla Wheeler"],
+        "author": [
+          "Carla Wheeler"
+        ],
         "source": {
           "name": "esri ArcWatch",
           "link": "https://www.esri.com/about/newsroom/arcwatch/"
@@ -343,7 +910,9 @@
           "path": "",
           "alt": " "
         },
-        "author": ["TeachOSM Team"],
+        "author": [
+          "TeachOSM Team"
+        ],
         "source": {
           "name": "TeachOSM",
           "link": "https://teachosm.org"
@@ -373,7 +942,9 @@
           "path": "/images/usecase/high-school-osm.jpg",
           "alt": "APGH Students using OpenStreetMap in the classroom"
         },
-        "author": ["Celeste Reynolds"],
+        "author": [
+          "Celeste Reynolds"
+        ],
         "source": {
           "name": "OpenStreetMap US",
           "link": "https://www.openstreetmap.us"
@@ -387,7 +958,9 @@
           "path": "/images/usecase/redcross-volunteer-maps.jpg",
           "alt": "Red Cross steps"
         },
-        "author": ["Kana Walsh,"],
+        "author": [
+          "Kana Walsh,"
+        ],
         "source": {
           "name": "Red Cross",
           "link": "https://www.redcross.org"
@@ -398,6 +971,118 @@
   "navigation-and-location-services": {
     "use-cases": [
       {
+        "title": "About OsmAnd routing",
+        "description": "OsmAnd is an offline maps and navigation app using OpenStreetMap data for global vector maps, search, points of interest, and voice-guided routing. It supports driving, cycling, walking, public transport, boating, skiing, and hiking profiles, helping users navigate cities and outdoor routes without mobile data across different regions reliably and planning.",
+        "link": "https://osmand.net/docs/user/navigation/routing/osmand-routing/",
+        "image": {
+          "path": "/images/usecase/osmand-offline-navigation.jpg",
+          "alt": "OsmAnd offline maps and turn-by-turn navigation powered by OpenStreetMap data"
+        },
+        "author": [
+          "OsmAnd"
+        ],
+        "source": {
+          "name": "OsmAnd Documentation",
+          "link": "https://osmand.net"
+        }
+      },
+      {
+        "title": "Organic Maps: Offline Hike, Bike, Trails and Navigation",
+        "description": "Organic Maps is a privacy-focused offline GPS app for travelers, hikers, cyclists, and drivers. Powered by OpenStreetMap data, it offers offline maps, search, bookmarks, and voice-guided walking, cycling, and car navigation, helping users plan routes without ads, tracking, or an active internet connection worldwide safely and privately during daily travel.",
+        "link": "https://organicmaps.app/",
+        "image": {
+          "path": "/images/usecase/organic-maps-offline-navigation.jpg",
+          "alt": "Organic Maps offline GPS navigation using OpenStreetMap data"
+        },
+        "author": [
+          "Organic Maps"
+        ],
+        "source": {
+          "name": "Organic Maps",
+          "link": "https://organicmaps.app/"
+        }
+      },
+      {
+        "title": "Komoot - Outdoor Route Planning for Cycling, Hiking, and Running",
+        "description": "Komoot uses OpenStreetMap data for outdoor route planning across hiking, running, road cycling, bike touring, and mountain biking. Its routing profiles, offline maps, voice navigation, tour recording, and trail-focused recommendations help users plan location-aware trips using OSM paths, roads, surfaces, and points of interest during everyday adventures confidently and recreation.",
+        "link": "https://wiki.openstreetmap.org/wiki/Komoot",
+        "image": {
+          "path": "",
+          "alt": ""
+        },
+        "author": [
+          "OpenStreetMap Wiki contributors"
+        ],
+        "source": {
+          "name": "OpenStreetMap Wiki",
+          "link": "https://wiki.openstreetmap.org"
+        }
+      },
+      {
+        "title": "GraphHopper Maps Route Planner",
+        "description": "GraphHopper Maps is a route-planning service for cycling, walking, driving, trucks, and outdoor trips. Built on OpenStreetMap, it provides alternative routes, surface and elevation details, multi-stop planning, GPX export, and mobile-friendly directions for travel, delivery, fieldwork, and logistics planning workflows across changing network conditions worldwide daily across real transport scenarios.",
+        "link": "https://www.graphhopper.com/maps-route-planner/",
+        "image": {
+          "path": "/images/usecase/graphhopper-maps-route-planner.jpg",
+          "alt": "GraphHopper Maps route planner built on OpenStreetMap"
+        },
+        "author": [
+          "GraphHopper"
+        ],
+        "source": {
+          "name": "GraphHopper",
+          "link": "https://www.graphhopper.com"
+        }
+      },
+      {
+        "title": "OpenRouteService - Directions, Geocoding, and Heavy Vehicle Routing",
+        "description": "OpenRouteService uses open geospatial data and OSM-derived street networks for directions, geocoding, isochrones, and route planning. It supports cars, bicycles, walking, hiking, wheelchairs, and heavy vehicles, helping teams plan deliveries, accessibility routes, emergency logistics, and location analysis around road restrictions in diverse operating contexts worldwide effectively and operational field decisions.",
+        "link": "https://openrouteservice.org/services/",
+        "image": {
+          "path": "/images/usecase/openrouteservice-directions-routing.jpg",
+          "alt": "OpenRouteService directions and location planning using OpenStreetMap street networks"
+        },
+        "author": [
+          "OpenRouteService"
+        ],
+        "source": {
+          "name": "OpenRouteService",
+          "link": "https://openrouteservice.org/services/"
+        }
+      },
+      {
+        "title": "Valhalla - Open Source Turn-by-Turn Routing Engine",
+        "description": "Valhalla is an open-source routing engine that uses OpenStreetMap data to power turn-by-turn routing and navigation in web and mobile applications. It supports location inputs, costing models, multimodal routing, and navigation narratives, making OSM practical for custom route planners and location services at production scale worldwide for operational mobility products.",
+        "link": "https://valhalla.github.io/valhalla/valhalla-intro/",
+        "image": {
+          "path": "",
+          "alt": ""
+        },
+        "author": [
+          "Not specified"
+        ],
+        "source": {
+          "name": "Valhalla Documentation",
+          "link": "https://valhalla.github.io/valhalla"
+        }
+      },
+      {
+        "title": "Mapbox Directions - Driving, Walking, and Cycling Route Planning",
+        "description": "Mapbox Directions API supports driving, walking, cycling, and traffic-aware route planning with turn-by-turn instructions. Its navigation tools help web and mobile products calculate routes, plan waypoints, match GPS traces to roads, and build location services using OpenStreetMap-derived map and road data for real-time user experiences reliably across modern navigation platforms.",
+        "link": "https://docs.mapbox.com/api/navigation/directions/",
+        "image": {
+          "path": "",
+          "alt": ""
+        },
+        "author": [
+          "Not specified"
+        ],
+        "source": {
+          "name": "Mapbox Documentation",
+          "link": "https://docs.mapbox.com"
+        }
+      },
+      {
         "title": "Komoot for iPhone",
         "description": "The Komoot iPhone app uses OpenStreetMap (OSM) data for map display and routing. It allows users to plan bike, hiking, and outdoor tours using OSM’s open geospatial database. Users can navigate routes, track activity, and, where supported, upload GPS tracks back into OSM, enhancing the underlying map data.",
         "link": "https://wiki.openstreetmap.org/wiki/Komoot_for_iPhone",
@@ -405,7 +1090,9 @@
           "path": "/images/usecase/komoot-iphone.jpg",
           "alt": "Komoot iPhone app using OpenStreetMap data for navigation and route planning"
         },
-        "author": ["Openstreetmap wiki contributors"],
+        "author": [
+          "Openstreetmap wiki contributors"
+        ],
         "source": {
           "name": "OpenStreetMap Wiki",
           "link": "https://wiki.openstreetmap.org"
@@ -419,7 +1106,9 @@
           "path": "/images/usecase/apple-maps.wiki.jpg",
           "alt": "Apple Maps using OpenStreetMap data for map display and navigation"
         },
-        "author": ["OpenStreetMap Wiki contributors"],
+        "author": [
+          "OpenStreetMap Wiki contributors"
+        ],
         "source": {
           "name": "OpenStreetMap Wiki",
           "link": "https://wiki.openstreetmap.org"
@@ -433,7 +1122,9 @@
           "path": "/images/usecase/facebook-maps.jpg",
           "alt": "The new Facebook Map (map data © OpenStreetMap)"
         },
-        "author": ["Jonah Adkins"],
+        "author": [
+          "Jonah Adkins"
+        ],
         "source": {
           "name": "Stamen Design",
           "link": "https://stamen.com"
@@ -447,7 +1138,9 @@
           "path": "/images/usecase/pokemon-go.jpg",
           "alt": "Pokémon GO game interface"
         },
-        "author": ["Not specified"],
+        "author": [
+          "Not specified"
+        ],
         "source": {
           "name": "GIM International",
           "link": "https://www.gim-international.com"
@@ -461,7 +1154,9 @@
           "path": "/images/usecase/apple-foursquare.jpg",
           "alt": "Apple and Foursquare using OpenStreetMap data for mapping and location services"
         },
-        "author": ["John Rampton,"],
+        "author": [
+          "John Rampton,"
+        ],
         "source": {
           "name": "Red Cross",
           "link": "https://www.redcross.org"
@@ -475,7 +1170,9 @@
           "path": "/images/usecase/craigslist-modernization.jpg",
           "alt": "Craigslist using OpenStreetMap data for improved mapping and location services"
         },
-        "author": ["Ryan Tate,"],
+        "author": [
+          "Ryan Tate,"
+        ],
         "source": {
           "name": "Wired",
           "link": "https://www.wired.com"
