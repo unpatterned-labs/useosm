@@ -128,7 +128,7 @@ export const APP_CONTENT: AppConfigType = {
     },
     HowOSMWorks: {
       tagline: "How OSM Works",
-      title: "How to contribute to Openstreemap",
+      title: "How to contribute to OpenStreetMap",
       steps: [
         {
           title: "Explore",
