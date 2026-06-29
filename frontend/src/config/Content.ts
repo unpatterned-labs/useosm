@@ -1,6 +1,7 @@
 import { ResourceCategory, type AppConfigType } from "src/types/content";
 import { APP_ROUTES } from "./Routes";
 import {
+  generateEventPath,
   generateResourcePath,
   generateUsecasePath,
 } from "src/helpers/generatePath";
@@ -92,7 +93,19 @@ export const APP_CONTENT: AppConfigType = {
       },
     ],
   },
-
+  EVENTS: {
+    route: "",
+    title: "Events",
+    children: [
+      {
+        route: generateEventPath("/mapkaton-2026"),
+        title: "MapKaton 2026",
+        description: "Using OpenStreetMap Data for the community",
+        isHref: false,
+        active: true,
+      },
+    ],
+  },
   HOME_PAGE: {
     title: "Home",
     description: "Showcase the use of OpenStreetMap Data",

@@ -142,6 +142,7 @@ export type LanguageItem = {
 export type AppConfigType = {
   USECASES: NavItem;
   RESOURCES: NavItem;
+  EVENTS: NavItem;
   HOME_PAGE: HomePageContent;
   RESOURCES_PAGE: ResourcesPageContent;
   announcementContent: string[];
