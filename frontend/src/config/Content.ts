@@ -105,6 +105,12 @@ export const APP_CONTENT: AppConfigType = {
         active: true,
       },
     ],
+    announcement: {
+      title: "Map<>Kathon",
+      description:
+        "Participate in the useOSM Map <> Kathon 2026 challenge, happening from July 26 to July 30, 2026!",
+      link: generateEventPath("/mapkaton-2026"),
+    },
   },
   HOME_PAGE: {
     title: "Home",

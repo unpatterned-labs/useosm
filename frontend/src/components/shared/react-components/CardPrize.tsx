@@ -12,15 +12,17 @@ const CardPrize = ({
   totalPrizeText: string;
 }) => {
   return (
-    <div className="my-6 flex w-full flex-col items-center justify-center space-y-4">
-      <h3 className="text-lg font-semibold">{totalPrizeText} </h3>
-      <ul className="grid list-none grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+    <div className="mt-14 mb-6 flex w-full flex-col space-y-4">
+      <h3 className="flex items-center justify-center text-lg font-semibold">
+        {totalPrizeText}{" "}
+      </h3>
+      <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
         {items.map((item, index) => (
-          <li
+          <div
             key={index}
-            className="flex h-[15.8rem] flex-col rounded-3xl border border-gray-300 p-2 transition-all duration-300 hover:shadow-md"
+            className="col-span-1 flex h-[15.8rem] flex-col rounded-3xl border border-gray-300 p-2 transition-all duration-300 hover:shadow-md"
           >
-            <div className="flex flex-col items-start justify-start px-1">
+            <div className="flex flex-col items-start justify-start p-2">
               <span className="text-grey-300 text-lg font-semibold">
                 {item.price}
               </span>
@@ -32,9 +34,9 @@ const CardPrize = ({
                 {item.description}
               </p>
             </div>
-          </li>
+          </div>
         ))}
-      </ul>
+      </div>
     </div>
   );
 };
