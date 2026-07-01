@@ -1,0 +1,19 @@
+import { type SVGProps } from "react";
+
+export const SpinnerGap = (props: SVGProps<SVGSVGElement>) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="16"
+      height="16"
+      fill="none"
+      viewBox="0 0 16 16"
+      {...props}
+    >
+      <path
+        fill="#212A3B"
+        d="M8.5 2v2a.5.5 0 1 1-1 0V2a.5.5 0 1 1 1 0M14 7.5h-2a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1m-2.818 2.975a.5.5 0 0 0-.707.707l1.414 1.414a.5.5 0 1 0 .707-.707zM8 11.5a.5.5 0 0 0-.5.5v2a.5.5 0 0 0 1 0v-2a.5.5 0 0 0-.5-.5m-3.182-1.025-1.414 1.414a.5.5 0 1 0 .707.707l1.414-1.414a.5.5 0 0 0-.707-.707M4.5 8a.5.5 0 0 0-.5-.5H2a.5.5 0 1 0 0 1h2a.5.5 0 0 0 .5-.5m-.389-4.596a.5.5 0 1 0-.707.707l1.414 1.414a.5.5 0 0 0 .707-.707z"
+      />
+    </svg>
+  );
+};

@@ -1,0 +1,10 @@
+---
+import Layout from "@/layouts/page-layout.astro";
+import { APP_CONTENT } from "@/config/Content";
+
+return Astro.redirect(APP_CONTENT.EVENTS.announcement.link);
+---
+
+<Layout title={APP_CONTENT.EVENTS.title} description={APP_CONTENT.EVENTS.title}>
+  <section class="relative pb-20"></section>
+</Layout>

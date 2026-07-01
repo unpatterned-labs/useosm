@@ -12,7 +12,8 @@ export type IconNameType =
   | "arrow_right_up"
   | "map_trifold"
   | "download"
-  | "play";
+  | "play"
+  | "check_mark";
 
 const AppIcons: Record<IconNameType, any> = {
   arrow_right: ArrowRight,

@@ -3,6 +3,7 @@ import mdx from "@astrojs/mdx";
 import { defineConfig } from "astro/config";
 import tailwindcss from "@tailwindcss/vite";
 import rehypeSlug from "rehype-slug";
+import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 import react from "@astrojs/react";
 import sitemap from "@astrojs/sitemap";
 
@@ -10,7 +11,9 @@ import sitemap from "@astrojs/sitemap";
 export default defineConfig({
   site: "https://useosm.org",
   integrations: [
-    mdx(),
+    mdx({
+      remarkPlugins: [rehypeAutolinkHeadings],
+    }),
     react(),
     sitemap({
       // Optional configuration
@@ -26,6 +29,7 @@ export default defineConfig({
   markdown: {
     rehypePlugins: [
       rehypeSlug,
+      rehypeAutolinkHeadings,
       [
         "rehype-class-names",
         {
