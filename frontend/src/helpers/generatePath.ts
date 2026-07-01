@@ -8,3 +8,7 @@ export const generateResourcePath = (category: string) => {
 export const generateUsecasePath = (usecase: string) => {
   return `/${APP_ROUTES.USECASES(slugify(usecase))}`;
 };
+
+export const generateEventPath = (event: string) => {
+  return `/${APP_ROUTES.EVENTS(slugify(event))}`;
+};

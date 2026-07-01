@@ -15,6 +15,14 @@ export type NavItem = {
   children: NavChild[];
 };
 
+export type EventsContentType = NavItem & {
+  announcement: {
+    title: string;
+    description: string;
+    link: string;
+  };
+};
+
 export interface HeroContent {
   title: string;
   tagline?: string;
@@ -142,6 +150,7 @@ export type LanguageItem = {
 export type AppConfigType = {
   USECASES: NavItem;
   RESOURCES: NavItem;
+  EVENTS: EventsContentType;
   HOME_PAGE: HomePageContent;
   RESOURCES_PAGE: ResourcesPageContent;
   announcementContent: string[];

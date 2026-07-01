@@ -8,6 +8,7 @@ import { OSMStats } from "@/components/home/react-components/osm-stats";
 import OrgsUsingOsm from "@/components/home/astro-components/orgs_using_osm.astro";
 import OsmResources from "@/components/home/astro-components/osm-resources.astro";
 import OsmCommunity from "@/components/home/astro-components/osm-community.astro";
+import EventAnnouncement from "@/components/ui/react/event-announcement";
 ---
 
 <Layout
@@ -15,6 +16,7 @@ import OsmCommunity from "@/components/home/astro-components/osm-community.astro
   description={APP_CONTENT.HOME_PAGE.description}
 >
   <Hero />
+  <EventAnnouncement client:load />
   <AboutOSM />
   <OSMStats client:load />
   <OrgsUsingOsm />

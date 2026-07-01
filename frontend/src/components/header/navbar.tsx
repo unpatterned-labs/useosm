@@ -61,7 +61,11 @@ export const NavBar = () => {
               <UseOSMLogoIcon className="h-6 w-30 text-green-500 duration-150 ease-in-out hover:text-green-400 md:h-7 md:w-40" />
             </a>
             <ul className="hidden gap-x-10 lg:flex" role="menubar">
-              {[APP_CONTENT.USECASES, APP_CONTENT.RESOURCES].map((config) => {
+              {[
+                APP_CONTENT.USECASES,
+                APP_CONTENT.RESOURCES,
+                APP_CONTENT.EVENTS,
+              ].map((config) => {
                 const hasRoute = config.route.length > 0;
                 return (
                   <li

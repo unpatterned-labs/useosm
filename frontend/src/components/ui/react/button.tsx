@@ -10,8 +10,9 @@ export interface ButtonProps
     | "tertiary"
     | "outline"
     | "navlink"
-    | "navlinkHovered";
-  size?: "sm" | "md" | "lg";
+    | "navlinkHovered"
+    | "primaryTwo";
+  size?: "sm" | "md" | "lg" | "xl";
   href?: string;
   id: string;
   disabled?: boolean;
@@ -49,12 +50,15 @@ export const Button = React.forwardRef<
       sm: "h-8 px-3 sm:text-sm text-xs rounded-2xl",
       md: "h-10 px-4 sm:text-base rounded-2xl",
       lg: "h-11 px-6 sm:text-base text-sm rounded-3xl",
+      xl: "md:h-[5.18rem] h-[4.5rem] gap-8 px-6 md:text-3xl text-xl rounded-[3.5rem]",
     };
 
     // Color variants
     const variantClasses = {
       primary:
         "bg-grey-400 text-white hover:bg-grey-300 hover:text-surface-10 disabled:text-grey-400 disabled:bg-green-50",
+      primaryTwo:
+        "bg-green-300 text-white hover:bg-green-100 hover:text-white disabled:text-green-100 disabled:bg-green-50",
       secondary:
         "bg-grey-50 text-neutral-200 hover:bg-surface-40 disabled:text-neutral-disabled disabled:bg-surface-elevated",
       tertiary:

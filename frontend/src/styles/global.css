@@ -87,6 +87,7 @@
 
   /* Box Shadow */
   --shadow-dialog: 8px -8px 56px 0px #2c303814;
+  --shadow-alert: 0px 11.63px 23.26px 0px #2C303814;
   --shadow-card: 0px 8px 24px 0px #2c303805;
   --shadow-xs: 0px 1px 8px 0px #18002c14;
   --shadow-thumbnail: 0px 0px 37.52px 0px #2c30380a;
