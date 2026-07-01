@@ -14,11 +14,11 @@ const EventAnnouncement = () => {
   };
 
   return (
-    <aside className="fixed top-34 right-4 z-50 md:right-6">
+    <aside className="fixed top-34 right-6 z-30 md:right-10">
       <div
         role="alert"
         className={cn(
-          "bg-surface-10 border-surface-30 shadow-alert sticky top-0 z-50 overflow-hidden rounded-3xl border p-2 transition-all duration-300",
+          "bg-surface-10 shadow-alert sticky top-0 z-50 overflow-hidden rounded-3xl border border-green-200 p-2 transition-all duration-300",
           isVisible ? "w-[21rem]" : "w-13",
         )}
       >
@@ -33,7 +33,7 @@ const EventAnnouncement = () => {
           <div
             className={cn(
               "flex items-center space-x-2",
-              !isVisible && "animate-pulse justify-center",
+              !isVisible && "animate-pulse space-x-0",
             )}
           >
             <MegaphoneSimple className="size-8" />

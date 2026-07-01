@@ -139,7 +139,11 @@ export const NavBar = () => {
         <div className="px-4 pt-36">
           <nav aria-label="Mobile navigation">
             <ul role="menubar" className="flex flex-col gap-y-6">
-              {[APP_CONTENT.USECASES, APP_CONTENT.RESOURCES].map((config) => {
+              {[
+                APP_CONTENT.USECASES,
+                APP_CONTENT.RESOURCES,
+                APP_CONTENT.EVENTS,
+              ].map((config) => {
                 const hasRoute = config.route.length > 0;
                 return (
                   <li key={`mobile-route-${config.title}`} role="none">
@@ -192,7 +196,7 @@ const MobileDropdownMenu = ({
       </button>
       <div
         id={`mobile-menu-${route}`}
-        className="flex flex-col items-start justify-start space-y-1"
+        className="flex flex-col items-start justify-start space-y-1 pl-4"
       >
         {config.children
           .filter((e) => e.active)
