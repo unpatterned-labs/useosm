@@ -10,7 +10,7 @@ const VideoDialog = ({ id }: { id: string }) => {
   return (
     <div
       id={id}
-      className="border-grey-50 shadow-dialog absolute -top-16 z-30 mx-auto flex h-[20.25rem] w-full max-w-screen-xl -translate-y-[6%] items-center justify-center rounded-2xl border bg-white sm:rounded-4xl md:h-[30rem] md:-translate-y-[10%] lg:h-[45rem]"
+      className="border-grey-50 shadow-dialog absolute -top-16 z-20 mx-auto flex h-[20.25rem] w-full max-w-screen-xl -translate-y-[6%] items-center justify-center rounded-2xl border bg-white sm:rounded-4xl md:h-[30rem] md:-translate-y-[10%] lg:h-[45rem]"
       style={{ overflow: "hidden" }}
     >
       {/* Thumbnail / Play Button Overlay */}

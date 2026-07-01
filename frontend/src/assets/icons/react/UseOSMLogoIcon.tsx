@@ -10,7 +10,7 @@ export const UseOSMLogoIcon = (props: TSVGProps) => {
       xmlns="http://www.w3.org/2000/svg"
       {...props}
     >
-      <g clip-path="url(#clip0_3785_764)">
+      <g clipPath="url(#clip0_3785_764)">
         <path
           d="M8.1694 16.7722L1.55586 21.9508C0.558923 19.9272 0 17.6505 0 15.2414C0 11.9677 1.03572 8.93357 2.79233 6.44922L4.72917 9.2233L8.28803 14.2468L8.96558 15.6452L8.1694 16.7722Z"
           fill="currentColor"
