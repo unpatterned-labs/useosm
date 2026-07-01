@@ -19,7 +19,7 @@
     "website": "https://www.akylas.fr/",
     "description": "Offline hiking map app.",
     "score": 4.5,
-    "lastUpdated": "2026-03-20"
+    "lastUpdated": "2026-06-03"
   },
   {
     "id": 1167581170,
@@ -41,7 +41,7 @@
     "website": "https://github.com/deevroman/better-osm-org",
     "description": "A userscript that adds several useful features to osm.org.",
     "score": 4.5,
-    "lastUpdated": "2026-05-04"
+    "lastUpdated": "2026-06-03"
   },
   {
     "id": 1301389760,
@@ -85,7 +85,7 @@
     "website": "https://www.comaps.app/",
     "description": "Privacy-focused, open-source, free and fast offline maps without ads, developed by the community for the community.",
     "score": 9.5,
-    "lastUpdated": "2026-05-06"
+    "lastUpdated": "2026-06-05"
   },
   {
     "id": 894563760,
@@ -96,7 +96,7 @@
     "website": "https://commons-app.github.io/",
     "description": "mobile application of Wikimedia Commons",
     "score": 4.125,
-    "lastUpdated": "2026-04-11"
+    "lastUpdated": "2026-06-13"
   },
   {
     "id": 624994743,
@@ -173,7 +173,7 @@
     "website": "https://fieldpapers.org/",
     "description": "tool for printing maps for data collection during field surveys for OpenStreetMap",
     "score": 4.875,
-    "lastUpdated": "2026-02-18"
+    "lastUpdated": "2026-06-30"
   },
   {
     "id": 763639443,
@@ -195,7 +195,7 @@
     "website": "https://www.freemap.sk/",
     "description": "Feature-rich map including distance and area measurement, fullscreen mode, bicycle and hiking routes, POIs, elevation details, downloadable maps for multiple devices, diverse export options, routing, and search functionalities. While some features focus on the Slovak region, there are more to explore.",
     "score": 4.125,
-    "lastUpdated": "2026-03-19"
+    "lastUpdated": "2026-06-17"
   },
   {
     "id": 1453110877,
@@ -216,7 +216,7 @@
     "image": "https://wiki.openstreetmap.org/w/images/thumb/a/a5/GNOME_Maps_logo.svg/250px-GNOME_Maps_logo.svg.png",
     "website": "https://apps.gnome.org/Maps/",
     "description": "A simple map client for GNOME.",
-    "score": 8.5,
+    "score": 8.25,
     "lastUpdated": "2026-03-13"
   },
   {
@@ -229,6 +229,17 @@
     "description": "Easy to use iOS/iPadOS/macOS/visionOS editor for OSM, OHM, and OGF.",
     "score": 8.5,
     "lastUpdated": "2026-04-03"
+  },
+  {
+    "id": 2115680030,
+    "title": "GPS Logger for Android",
+    "category": "Navigation",
+    "slug": "gps-logger-for-android",
+    "image": "https://wiki.openstreetmap.org/w/images/thumb/c/c4/GPS_Logger_for_Android_main_screen.png/250px-GPS_Logger_for_Android_main_screen.png",
+    "website": "https://gpslogger.app/",
+    "description": "Battery efficient GPX logger.",
+    "score": 4.5,
+    "lastUpdated": "2025-12-05"
   },
   {
     "id": 87944540,
@@ -250,7 +261,7 @@
     "website": "https://gpx.studio/app",
     "description": "an free and open source online tool for creating and editing GPX files",
     "score": 5.375,
-    "lastUpdated": "2026-03-24"
+    "lastUpdated": "2026-06-20"
   },
   {
     "id": 2076790178,
@@ -261,7 +272,7 @@
     "website": "https://www.gpxsee.org/",
     "description": "GPS log file viewer and analyzer.",
     "score": 5.5,
-    "lastUpdated": "2026-05-15"
+    "lastUpdated": "2026-06-27"
   },
   {
     "id": 411233702,
@@ -305,7 +316,7 @@
     "website": "https://gk.historic.place/",
     "description": "Show POI with historical background on an OSM map.",
     "score": 4.5,
-    "lastUpdated": ""
+    "lastUpdated": "2026-06-14"
   },
   {
     "id": 1560983332,
@@ -327,7 +338,7 @@
     "website": "http://ideditor.com/",
     "description": "The easy-to-use OpenStreetMap editor in JavaScript.",
     "score": 7.875,
-    "lastUpdated": "2026-05-07"
+    "lastUpdated": "2026-06-29"
   },
   {
     "id": 2110319320,
@@ -348,7 +359,7 @@
     "image": "https://wiki.openstreetmap.org/w/images/thumb/c/c0/JOSM_Logotype_2019.svg/250px-JOSM_Logotype_2019.svg.png",
     "website": "https://josm.openstreetmap.de/",
     "description": "Offline highly expandable map editor.",
-    "score": 8.75,
+    "score": 8.5,
     "lastUpdated": "2026-03-30"
   },
   {
@@ -393,7 +404,7 @@
     "website": "https://www.mapbox.com/maps/",
     "description": "Embed customizable, interactive vector maps in Web, mobile, and desktop applications.",
     "score": 4.375,
-    "lastUpdated": "2026-05-18"
+    "lastUpdated": "2026-06-17"
   },
   {
     "id": 638634592,
@@ -404,7 +415,7 @@
     "website": "https://www.mapcarta.com/",
     "description": "An open map with interactive POIs.",
     "score": 6.125,
-    "lastUpdated": "2026-03-08"
+    "lastUpdated": "2026-06-13"
   },
   {
     "id": 258408060,
@@ -422,10 +433,10 @@
     "title": "Mapforge",
     "category": "Navigation",
     "slug": "mapforge",
-    "image": "https://repository-images.githubusercontent.com/729304206/466b4f5f-1168-4e97-9ead-cc509b3ebcf3",
+    "image": "https://repository-images.githubusercontent.com/729304206/691be556-b353-4efb-8c70-f3a32fd01605",
     "website": "https://mapforge.org/",
-    "description": "Vector layer editor for maps",
-    "score": 4.5,
+    "description": "An easy to use map editor to create your own maps.",
+    "score": 5.0,
     "lastUpdated": "2026-05-31"
   },
   {
@@ -437,7 +448,7 @@
     "website": "https://maproulette.org/",
     "description": "Micro-task platform for OpenStreetMap.",
     "score": 7.5,
-    "lastUpdated": "2026-04-08"
+    "lastUpdated": "2026-06-02"
   },
   {
     "id": 195457472,
@@ -459,7 +470,7 @@
     "website": "https://mapserver.org/",
     "description": "MapServer is an Open Source platform for publishing spatial data and interactive mapping applications to the web.",
     "score": 4.625,
-    "lastUpdated": "2026-05-07"
+    "lastUpdated": "2026-06-02"
   },
   {
     "id": 1535780407,
@@ -627,17 +638,6 @@
     "lastUpdated": "2025-08-08"
   },
   {
-    "id": 196923002,
-    "title": "Open Source Routing Machine",
-    "category": "Navigation",
-    "slug": "open-source-routing-machine",
-    "image": "http://project-osrm.org/images/osrm_icon.png",
-    "website": "http://project-osrm.org/",
-    "description": "High-performance routing and map-matching server.",
-    "score": 4.25,
-    "lastUpdated": "2026-05-05"
-  },
-  {
     "id": 833903862,
     "title": "OpenBeerMap",
     "category": "Editors",
@@ -656,7 +656,7 @@
     "image": "https://wiki.openstreetmap.org/w/images/thumb/5/59/Openclimbing.org_-_logo.png/250px-Openclimbing.org_-_logo.png",
     "website": "https://openclimbing.org/",
     "description": "Application for mapping climbing areas and creating interactive climbing guides. All data is open and anyone can edit it – similar to Wikipedia.",
-    "score": 7.0,
+    "score": 6.75,
     "lastUpdated": "2025-06-26"
   },
   {
@@ -679,7 +679,7 @@
     "website": "https://www.openrailwaymap.org/",
     "description": "Detailed map of the railway network, based on OpenStreetMap. It considers all rail-mounted and automotive vehicles, e.g. railways, subways, trams und miniature railways.",
     "score": 5.5,
-    "lastUpdated": "2026-03-08"
+    "lastUpdated": "2026-06-02"
   },
   {
     "id": 2051024147,
@@ -778,7 +778,7 @@
     "website": "https://organicmaps.app/",
     "description": "Privacy-focused, open-source, free and fast offline maps without ads.",
     "score": 9.0,
-    "lastUpdated": "2026-05-27"
+    "lastUpdated": "2026-06-29"
   },
   {
     "id": 2069984600,
@@ -843,7 +843,7 @@
     "image": "https://wiki.openstreetmap.org/w/images/thumb/8/82/Osm_Go!.png/250px-Osm_Go!.png",
     "website": "https://github.com/OsmTravel/OsmGo/wiki",
     "description": "Simple POI editor app for Android.",
-    "score": 7.625,
+    "score": 7.5,
     "lastUpdated": "2024-08-29"
   },
   {
@@ -856,6 +856,17 @@
     "description": "",
     "score": 4.75,
     "lastUpdated": "2026-05-18"
+  },
+  {
+    "id": 1961466556,
+    "title": "OSM Open",
+    "category": "Map Visualization",
+    "slug": "osm-open",
+    "image": "https://wiki.openstreetmap.org/w/images/thumb/b/ba/osm-open_v1-2-0.png/250px-osm-open_v1-2-0.png",
+    "website": "https://hauke-stieler.de/osm-open/",
+    "description": "Web app to visualize and filter opening hours of POIs.",
+    "score": 4.25,
+    "lastUpdated": "2026-06-20"
   },
   {
     "id": 2108186087,
@@ -964,7 +975,7 @@
     "image": "https://wiki.openstreetmap.org/w/images/thumb/c/cc/Osmapp-logo-cc-by-sa.svg/250px-Osmapp-logo-cc-by-sa.svg.png",
     "website": "https://osmapp.org/",
     "description": "A universal web map and editor for OSM ecosystem.",
-    "score": 8.5,
+    "score": 8.25,
     "lastUpdated": "2025-06-26"
   },
   {
@@ -1063,8 +1074,8 @@
     "image": "https://wiki.openstreetmap.org/w/images/thumb/a/a9/Panoramax.svg/250px-Panoramax.svg.png",
     "website": "https://panoramax.fr/",
     "description": "\"The free alternative to photo-mapping territories\" https://panoramax.fr .",
-    "score": 5.5,
-    "lastUpdated": "2025-12-12"
+    "score": 5.75,
+    "lastUpdated": "2026-05-07"
   },
   {
     "id": 21793236,
@@ -1174,7 +1185,7 @@
     "website": "https://github.com/Maproom/qmapshack/wiki",
     "description": "Consumer grade GIS software, synchronization with Garmin devices.",
     "score": 5.125,
-    "lastUpdated": "2026-04-24"
+    "lastUpdated": "2026-06-08"
   },
   {
     "id": 1058305148,
@@ -1239,8 +1250,8 @@
     "image": "https://wiki.openstreetmap.org/w/images/thumb/f/f0/Routeconverter_screenshot.png/250px-Routeconverter_screenshot.png",
     "website": "http://www.routeconverter.com/",
     "description": "GPS routes analyser with an experimental branch for offline routing with mapsforge maps.",
-    "score": 6.625,
-    "lastUpdated": "2022-09-10"
+    "score": 7.125,
+    "lastUpdated": "2026-06-12"
   },
   {
     "id": 104470202,
@@ -1251,7 +1262,7 @@
     "website": "https://github.com/artem78/s60-maps/blob/master/docs/README.md",
     "description": "Map viewer and navigation for Simbian OS.",
     "score": 7.25,
-    "lastUpdated": "2026-05-16"
+    "lastUpdated": "2026-06-27"
   },
   {
     "id": 2539248,
@@ -1262,7 +1273,7 @@
     "website": "",
     "description": "OpenStreetMap surveyor app for experienced OSM contributors.",
     "score": 7.0,
-    "lastUpdated": "2026-04-24"
+    "lastUpdated": "2026-06-28"
   },
   {
     "id": 174026266,
@@ -1272,7 +1283,7 @@
     "image": "https://shareish.org/favicon.ico",
     "website": "https://shareish.org/",
     "description": "Shareish is an open-source web platform to facilitate diverse solidarity practices.",
-    "score": 5.0,
+    "score": 4.75,
     "lastUpdated": "2026-03-17"
   },
   {
@@ -1284,7 +1295,7 @@
     "website": "https://stm.hauke-stieler.de/",
     "description": "Simple and easy to use task manager for collaborative mapping in OpenStreetMap.",
     "score": 4.625,
-    "lastUpdated": "2026-04-03"
+    "lastUpdated": "2026-06-20"
   },
   {
     "id": 936448495,
@@ -1305,8 +1316,19 @@
     "image": "https://wiki.openstreetmap.org/w/images/thumb/6/6f/SMASH-logo.png/250px-SMASH-logo.png",
     "website": "https://www.geopaparazzi.org/smash/",
     "description": "An easy-to-use app for your phone that helps you quickly map and collect information about the world, with tools for taking notes, photos, and GPS tracking.",
-    "score": 5.625,
+    "score": 5.375,
     "lastUpdated": "2026-03-31"
+  },
+  {
+    "id": 1906843120,
+    "title": "Soundscape for Android",
+    "category": "Navigation",
+    "slug": "soundscape-for-android",
+    "image": "https://scottish-tech-army.github.io/Soundscape-Android/assets/SOUNDSCAPE-logo.png",
+    "website": "https://scottish-tech-army.github.io/Soundscape-Android/",
+    "description": "Soundscape is an Android app to help people with visual impairment explore and navigate the world. It does this by describing nearby features using mapping data from OpenStreetMap.",
+    "score": 4.375,
+    "lastUpdated": "2026-06-05"
   },
   {
     "id": 875674272,
@@ -1317,7 +1339,7 @@
     "website": "https://streetcomplete.app/",
     "description": "Surveyor app for Android.",
     "score": 8.75,
-    "lastUpdated": "2026-04-24"
+    "lastUpdated": "2026-06-27"
   },
   {
     "id": 970492126,
@@ -1339,7 +1361,7 @@
     "website": "https://sustainable.zottelig.ch/",
     "description": "A map that shows facilities and services in your area that are environmentally, socially and economically sustainable.",
     "score": 7.375,
-    "lastUpdated": "2026-03-02"
+    "lastUpdated": "2026-06-14"
   },
   {
     "id": 1051456084,
@@ -1438,7 +1460,7 @@
     "website": "https://github.com/Zkir/UrbanEye3D",
     "description": "Displays 3D world directly in JOSM.",
     "score": 4.25,
-    "lastUpdated": "2026-05-29"
+    "lastUpdated": "2026-06-27"
   },
   {
     "id": 1197063454,
@@ -1460,7 +1482,7 @@
     "website": "https://vespucci.io/",
     "description": "OpenStreetMap editor for Android.",
     "score": 8.5,
-    "lastUpdated": "2026-05-15"
+    "lastUpdated": "2026-06-22"
   },
   {
     "id": 815544004,
