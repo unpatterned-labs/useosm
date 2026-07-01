@@ -18,8 +18,8 @@ const EventAnnouncement = () => {
       <div
         role="alert"
         className={cn(
-          "bg-surface-10 shadow-alert sticky top-0 z-50 overflow-hidden rounded-3xl border border-green-200 p-2 transition-all duration-300",
-          isVisible ? "w-[21rem]" : "w-13",
+          "bg-surface-10 shadow-alert sticky top-0 z-50 overflow-hidden rounded-3xl border p-2 transition-all duration-300",
+          isVisible ? "border-surface-30 w-[21rem]" : "w-13 border-green-200",
         )}
       >
         <div
