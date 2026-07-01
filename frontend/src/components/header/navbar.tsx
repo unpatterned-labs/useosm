@@ -346,43 +346,50 @@ const DropdownMenu = ({ config }: { config: NavItem }) => {
         {config.title}
       </Button>
 
-      {isOpen && (
-        <div
-          id={`menu-${config.title}`}
-          role="menu"
-          aria-labelledby={`nav-link-${config.title}`}
-          className="border-grey-50 absolute z-10 grid w-3xl origin-top-right -translate-x-1/3 grid-cols-2 gap-x-2 rounded-2xl border bg-white p-4 shadow-2xl focus:outline-none"
-          style={{ top: "108%" }}
-          onKeyDown={handleMenuKeyDown}
-        >
-          {config.children
-            .filter((e) => e.active)
-            .map((child, index) => (
-              <a
-                key={child.title}
-                ref={(el) => {
-                  itemRefs.current[index] = el;
-                }}
-                href={child.route}
-                role="menuitem"
-                tabIndex={focusedIndex === index ? 0 : -1}
-                className={`${
-                  focusedIndex === index ? "bg-white-2" : ""
-                } hover:bg-white-2 focus:bg-white-2 flex flex-col gap-2 rounded-2xl p-4 transition-colors duration-300 focus:outline-none`}
-                onMouseEnter={() => setFocusedIndex(index)}
-                onClick={() => {
-                  setIsOpen(false);
-                  setFocusedIndex(-1);
-                }}
-              >
-                <h2 className="text-grey-200 text-sm font-semibold">
-                  {child.title}
-                </h2>
-                <p className="text-grey-100 text-xs">{child.description}</p>
-              </a>
-            ))}
-        </div>
-      )}
+      <div
+        id={`menu-${config.title}`}
+        role="menu"
+        aria-labelledby={`nav-link-${config.title}`}
+        aria-hidden={!isOpen}
+        className={`border-grey-50 absolute z-10 grid origin-top-right -translate-x-1/3 gap-x-2 rounded-2xl border bg-white p-4 shadow-2xl transition-all duration-200 ease-out focus:outline-none ${
+          config.children.filter((e) => e.active).length > 1
+            ? "w-3xl grid-cols-2"
+            : "w-max grid-cols-1"
+        } ${
+          isOpen
+            ? "translate-y-0 scale-100 opacity-100"
+            : "pointer-events-none -translate-y-1 scale-95 opacity-0"
+        }`}
+        style={{ top: "108%" }}
+        onKeyDown={handleMenuKeyDown}
+      >
+        {config.children
+          .filter((e) => e.active)
+          .map((child, index) => (
+            <a
+              key={child.title}
+              ref={(el) => {
+                itemRefs.current[index] = el;
+              }}
+              href={child.route}
+              role="menuitem"
+              tabIndex={isOpen && focusedIndex === index ? 0 : -1}
+              className={`${
+                focusedIndex === index ? "bg-white-2" : ""
+              } hover:bg-white-2 focus:bg-white-2 flex flex-col gap-2 rounded-2xl p-4 transition-colors duration-300 focus:outline-none`}
+              onMouseEnter={() => setFocusedIndex(index)}
+              onClick={() => {
+                setIsOpen(false);
+                setFocusedIndex(-1);
+              }}
+            >
+              <h2 className="text-grey-200 text-sm font-semibold">
+                {child.title}
+              </h2>
+              <p className="text-grey-100 text-xs">{child.description}</p>
+            </a>
+          ))}
+      </div>
     </div>
   );
 };
