@@ -1,13 +1,14 @@
 ---
-import Thumbnail from "@/assets/images/mapkathon_2026.svg";
+import { formatSingleDate } from "@/utils/formatDate";
 
 interface Props {
   title: string;
   slug: string;
+  publishDate: string;
   thumbnail: string;
 }
 
-const { title, slug } = Astro.props;
+const { title, slug, publishDate, thumbnail } = Astro.props;
 ---
 
 <div
@@ -19,13 +20,13 @@ const { title, slug } = Astro.props;
       <div class="text-grey-200 flex items-center gap-2 text-base">
         <span>UseOSM Community Event </span>
         <span class="text-grey-50 text-sm">•</span>
-        <span>June 29, 2026</span>
+        <span>{formatSingleDate(publishDate)}</span>
       </div>
     </header>
 
     <div class="relative min-w-full overflow-hidden rounded-3xl">
       <img
-        src={Thumbnail.src}
+        src={thumbnail}
         alt={`thumbnail-${slug}`}
         class="w-full object-cover"
       />
@@ -36,3 +37,5 @@ const { title, slug } = Astro.props;
     </article>
   </main>
 </div>
+
+<style></style>

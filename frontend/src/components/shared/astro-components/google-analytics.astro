@@ -1,0 +1,24 @@
+---
+export interface Props {
+  gaId: string;
+}
+
+const { gaId } = Astro.props;
+
+const gtagScript = `
+  window.dataLayer = window.dataLayer || [];
+  function gtag(...args) {
+    dataLayer.push(args);
+  }
+  gtag("js", new Date());
+  gtag("config", "${gaId}");
+`;
+---
+
+{
+  import.meta.env.PROD && (
+    <script async src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`} />
+  )
+}
+
+{import.meta.env.PROD && <script is:inline set:html={gtagScript} />}

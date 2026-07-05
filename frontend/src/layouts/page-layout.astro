@@ -1,5 +1,6 @@
 ---
 import "@/styles/global.css";
+import GoogleAnalytics from "@/components/shared/astro-components/google-analytics.astro";
 import AnnouncementBanner from "@/components/shared/astro-components/announcement-banner.astro";
 import NavBar from "@/components/header";
 import Footer from "@/components/footer/footer.astro";
@@ -21,6 +22,9 @@ const ogImageUrl = new URL(
   "/images/og-image.png",
   Astro.site || Astro.url,
 ).toString();
+
+// Google Analytics ID
+const gaId = "G-09VRRVG0BL";
 ---
 
 <!doctype html>
@@ -85,6 +89,7 @@ const ogImageUrl = new URL(
 
     <link rel="dns-prefetch" href="//fonts.googleapis.com" />
     <link rel="dns-prefetch" href="//www.google-analytics.com" />
+    <GoogleAnalytics gaId={gaId} />
   </head>
   <body>
     <main class="slide-in-container">

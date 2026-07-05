@@ -1,10 +1,10 @@
 @layer components {
   .markdown-content {
     h1 {
-      @apply text-grey-500 mt-12 mb-6 text-4xl font-bold;
+      @apply text-grey-500 mt-12 mb-6 text-4xl font-semibold;
     }
     h2 {
-      @apply text-grey-300 mt-10 mb-1 text-xl font-medium;
+      @apply text-grey-300 mt-10 mb-3 max-w-[45rem] text-3xl font-semibold;
     }
     h3 {
       @apply text-grey-300 mt-8 mb-3 text-2xl font-semibold;
@@ -36,15 +36,34 @@
     }
 
     a {
-      @apply hover:text-red-75 text-red-100 underline transition-colors duration-200 ease-in-out;
+      @apply hover:text-green-75 text-green-200 underline transition-colors duration-200 ease-in-out;
     }
 
     code {
       font-family: "Courier New", Courier, monospace;
     }
+    strong {
+      @apply text-grey-400 font-semibold;
+    }
 
     pre {
       font-family: "Courier New", Courier, monospace;
+    }
+
+    table {
+      @apply my-6 w-full table-auto border-collapse overflow-hidden;
+    }
+
+    thead {
+      @apply bg-grey-50;
+    }
+
+    th {
+      @apply text-grey-300 border-grey-100 px-4 py-3 text-left font-semibold;
+    }
+
+    td {
+      @apply border-grey-50 text-grey-300 border px-4 py-3;
     }
   }
 }

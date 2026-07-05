@@ -1,9 +1,9 @@
 ---
 title: "UseOSM Data Sprint"
 slug: "mapkaton-2026"
-publishDate: "2026-06-30"
-dateUpdated: "2023-06-30"
-thumbnail: "/images/events/mapkaton-2026.svg"
+publishDate: "6-07-2026"
+dateUpdated: "6-07-2026"
+thumbnail: "/images/events/mapkathon_2026.svg"
 ---
 
 import Timeline from "@/components/shared/react-components/Timeline";
@@ -11,65 +11,175 @@ import CardPrize from "@/components/shared/react-components/CardPrize";
 import CTASection from "@/components/events/cta-section";
 import ArrowRight from "@/assets/icons/astro/ArrowRight.astro";
 
-### Most OSM events end when the data is added. This one starts there.
+## Most OSM events end when the data is added. This one starts there.
 
-The **Map&lt;&gt;kathon** is a short, focused community event built around a question most mapping events never ask: now that the world is being mapped, what can we actually do with it?
-Almost every OSM event is a mapathon whose goal is to grow the map. This sprint is deliberately different. Mapping is the foundation, but the focus is use: extracting OSM data, analysing it, and building things with it for real community needs, sometimes with AI, sometimes with plain analysis. The headline outputs are data and what people do with it, gathered into a dedicated public GitHub repository the community can keep using.
+**Map&lt;&gt;kathon** 2026 is a community challenge focused on showing how OpenStreetMap data can be used beyond mapping. The goal is to help people explore, analyse, explain, and build with OSM data in ways that support communities, planning, humanitarian work, research, civic technology, and public-good projects.
 
-## Background and rationale
+This is not only about adding data to the map. It is about showing what OSM data can help people do.
 
-UseOSM exists to close a persistent gap: many people contribute to OpenStreetMap, but far fewer know how to use the data. Maps get built; the data often sits unused because people don't know how to extract, analyze, or apply it.
+Participants can submit maps, dashboards, guides, data stories, notebooks, lightweight tools, learning resources, or AI-assisted workflows.
+
+### Background and rationale
+
+**UseOSM** exists to close a persistent gap: many people contribute to OpenStreetMap, but far fewer know how to use the data. Maps get built; the data often sits unused because people don't know how to extract, analyze, or apply it.
 AI is now part of working with open data, for querying it, summarizing it, and building on it. This event puts that capability in its proper place: as a tool that helps people use OSM, not as the headline. The star is use; AI is one way to get there alongside ordinary analysis.
 
-## What we’re looking for
-
-- A clean OpenStreetMap dataset extract for a specific local use case.
-- An analysis or notebook (e.g. access to schools/clinics, road coverage, flood exposure).
-- A guide such as "How to extract schools, clinics, roads, or buildings from OSM".
-- A simple dashboard showing coverage or completeness.
-- A documented workflow using Overpass, QGIS, OSMnx, or ohsome.
-- An AI-assisted helper, e.g. natural-language-to-Overpass, an "Ask OSM" assistant over UseOSM docs, or a "which OSM tool should I use?" recommender.
-
-Make the data fun. Impactful datasets (floods, clinics, schools) are welcome, but so are playful, engaging ones that get people excited about what's in OSM: street food spots, murals and public art, football pitches, music venues, markets, "what's mappable on my street." Interesting data draws people in and shows off OSM's range.
-
-## Who can participate
+### Who can participate
 
 - Open to anyone: students, OSM contributors, developers, GIS users, NGO staff, and newcomers.
-- Participants may work solo or in small teams of 4.
+- Participants may work solo or in teams.
 
 ### Map&lt;&gt;kathon Timeline
 
 <Timeline
+  client:load
   items={[
     {
       title: "Join the Town Hall Call",
       description:
         "Map&lt;&gt;Kathon introduction, requirement, team formation and open Q&A.",
-      startDate: "03-07-2026",
-      endDate: "03-07-2026",
+      startDate: "10-07-2026",
+      endDate: "10-07-2026",
     },
     {
       title: "Async Build Phase",
       description:
         "Work on your own schedule. Prepare your data, build your analysis, or develop your tool. Install everything before the 24th.",
-      startDate: "03-07-2026",
-      endDate: "23-07-2026",
+      startDate: "10-07-2026",
+      endDate: "7-08-2026",
     },
     {
       title: "Judging",
       description: "Results are reviewed and scored by the panel.",
-      startDate: "25-07-2026",
-      endDate: "25-07-2026",
+      startDate: "7-08-2026",
+      endDate: "21-08-2026",
     },
     {
       title: "Winners Announced",
       description:
         "Results published. Outputs and recap shared with the community.",
-      startDate: "26-07-2026",
-      endDate: "26-07-2026",
+      startDate: "21-08-2026",
+      endDate: "21-08-2026",
     },
   ]}
 />
+
+### What we're looking for
+
+- A clean OpenStreetMap dataset extract for a specific local use case.
+- An analysis or notebook (e.g. access to schools/clinics, road coverage, flood exposure).
+- A guide such as "How to extract schools, clinics, roads, or buildings from OSM".
+- A simple dashboard showing coverage or completeness.
+- A documented workflow using **Overpass**, **QGIS**, **OSMnx**, or **ohsome**.
+- An AI-assisted helper, e.g. natural-language-to-Overpass, an "Ask OSM" assistant over **UseOSM** docs, or a "which OSM tool should I use?" recommender.
+
+Make the data fun. Impactful datasets (floods, clinics, schools) are welcome, but so are playful, engaging ones that get people excited about what's in OSM: street food spots, murals and public art, football pitches, music venues, markets, "what's mappable on my street." Interesting data draws people in and shows off OSM's range.
+
+
+### Submission Tracks
+
+Participants should submit under one of the following tracks.
+
+#### 1. OSM Data Story
+
+This track is for people who want to use OSM data to explain something about a place, community, or public-good issue.
+
+A strong data story should be simple, clear, and useful. It can be a map, article, story map, infographic, presentation, or short visual report.
+
+**Example ideas:**
+
+- A map showing access to schools, clinics, roads, markets, or public facilities
+- A visual story about flood-prone communities and nearby infrastructure
+- A short article showing what OSM reveals about healthcare, mobility, or public service access
+- A comparison of mapped and unmapped services in a local area
+- A community case study showing how OSM data can support planning or decision-making
+
+
+#### 2. OSM Dashboard or Analysis
+
+This track is for GIS users, data analysts, students, researchers, and anyone interested in using OSM data for analysis.
+
+Submissions should use OSM data to answer a practical question or support decision-making. Outputs can include dashboards, notebooks, QGIS projects, reports, maps, or reproducible workflows.
+
+**Example ideas:**
+
+- QGIS analysis of school or clinic accessibility
+- OSMnx notebook analyzing road networks
+- QuackOSM workflow for extracting buildings, roads, or amenities
+- ohsome analysis of OSM data completeness over time
+- Infrastructure coverage dashboard
+- Public facility accessibility map
+- Data completeness analysis for a city or region
+
+
+#### 3. Lightweight OSM Tool or Demo
+
+This track is for developers, designers, data engineers, and builders who want to create small tools or prototypes using OSM data.
+
+The tool does not need to be a finished product. It should be lightweight, understandable, and useful.
+
+**Example ideas:**
+
+- Simple OSM data extractor
+- Natural-language-to-Overpass query demo
+- OSM tag explorer
+- Community map viewer
+- OSM data quality checker
+- Local public service finder using OSM data
+- Tool for downloading schools, clinics, roads, or buildings in a selected area
+- Simple interface for non-technical users to explore OSM data
+
+
+#### 4. OSM Learning Resource
+
+This track is for educators, community organizers, writers, trainers, and documentation contributors.
+
+The goal is to create resources that help others understand how to use OSM data.
+
+**Example ideas:**
+
+- Beginner guide to using OSM data
+- Short video tutorial
+- "How to use OSM data for public health planning"
+- "How to extract roads, buildings, schools, or clinics from OSM"
+- "How to use Overpass Turbo as a beginner"
+- Localized OSM data-use guide for a country or city
+- Training material for YouthMappers or local OSM communities
+- UseOSM case study showing how a real organization uses OSM
+
+
+### AI and Open Mapping
+AI is welcome in **Map&lt;&gt;kathon**, but it is not the main focus. The main focus remains **using OSM data for the public good**.
+
+Participants may use AI where it helps people discover, understand, analyse, explain, or responsibly improve OSM data. However, AI outputs should not be treated as automatically correct. Human review, transparency, and documentation are important.
+
+
+#### AI-related ideas
+
+Participants may submit AI-related work under any track. Possible ideas include:
+
+- Natural-language-to-Overpass query demo
+- AI-assisted guide for extracting OSM data
+- OSM tag explainer that translates technical tags into plain language
+- AI tool recommender for OSM workflows
+- AI-assisted documentation for OSM data analysis
+- Short article on the risks and benefits of AI in open mapping
+- Comparison of AI-suggested mapping with human validation
+- Demo showing how AI can help non-technical users understand OSM data
+- AI-assisted summary of OSM analysis results, reviewed and corrected by humans
+
+#### Responsible AI principles
+
+Participants using AI should:
+
+- Clearly state what AI tool was used
+- Explain what role AI played
+- Review AI-generated outputs before submission
+- Avoid blindly uploading AI-generated data to OSM
+- Respect local knowledge and community mapping guidelines
+- Acknowledge limitations, risks, or uncertainty
+
+
 
 <CardPrize
   totalPrizeText="£800 prize pool"
@@ -95,13 +205,20 @@ Make the data fun. Impactful datasets (floods, clinics, schools) are welcome, bu
   ]}
 />
 
-## Winner are judged on:
+### Judging criteria:
 
-- Usefulness (30%)
-- Creativity (30%)
-- Quality & documentation (25%)
-- Reproducibility (25%)
+| Criteria                        | Weight   |
+| ------------------------------- | -------- |
+| Public-good relevance           | 25%      |
+| Effective use of OSM data       | 25%      |
+| Clarity and usability           | 20%      |
+| Reproducibility / documentation | 15%      |
+| Creativity or innovation        | 15%      |
+| **Total**                       | **100%** |
 
+### Code of conduct
+
+The event follows the OSM community code of conduct. Participation is respectful and inclusive; local knowledge is valued; and no AI-generated data is imported into OSM without human review.
 
 <CTASection
   title="Ready to UseOSM ?"
@@ -109,6 +226,10 @@ Make the data fun. Impactful datasets (floods, clinics, schools) are welcome, bu
   buttonLink="https://luma.com/8yqe6r0n"
   buttonVariant="primaryTwo"
   buttonSize="xl"
-  >
-  </CTASection>
+></CTASection>
 
+### Get in touch
+
+Have a question about the **Map&lt;&gt;kathon**, need help with your submission, or just want to say hi? We'd love to hear from you.
+
+**Email:** connect@unpatterned.org
