@@ -12,8 +12,8 @@ const CardPrize = ({
   totalPrizeText: string;
 }) => {
   return (
-    <div className="mt-14 mb-6 flex w-full flex-col space-y-4">
-      <h3 className="flex items-center justify-center text-lg font-semibold">
+    <div className="mt-8 mb-6 flex w-full flex-col space-y-8">
+      <h3 className="flex items-center justify-center text-2xl font-semibold">
         {totalPrizeText}{" "}
       </h3>
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
@@ -29,7 +29,7 @@ const CardPrize = ({
               <p className="text-grey-300 text-sm">{item.title}</p>
             </div>
 
-            <div className="bg-surface-30 flex-auto rounded-3xl bg-[url('../assets/background/resource-card-vector.svg')] px-4 py-6">
+            <div className="bg-surface-30 flex-auto rounded-3xl bg-[url('../assets/background/resource-card-vector.svg')] bg-right bg-no-repeat px-4 py-6">
               <p className="text-grey-300 w-3xs text-start text-base">
                 {item.description}
               </p>
