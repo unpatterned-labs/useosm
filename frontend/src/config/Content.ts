@@ -108,7 +108,7 @@ export const APP_CONTENT: AppConfigType = {
     announcement: {
       title: "Map<>Kathon",
       description:
-        "Participate in the useOSM Map <> Kathon 2026 challenge, happening from July 26 to July 30, 2026!",
+        "Participate in the useOSM Map <> Kathon 2026 challenge, happening from July 15 to August 21, 2026!",
       link: generateEventPath("/mapkaton-2026"),
     },
   },
@@ -196,7 +196,7 @@ export const APP_CONTENT: AppConfigType = {
         },
         layer: {
           id: "osm-communities-layer",
-          type: "fill", // better for point-based community data
+          type: "fill",
           paint: {
             "fill-color": "#5c7745",
             "fill-opacity": 0.2,
