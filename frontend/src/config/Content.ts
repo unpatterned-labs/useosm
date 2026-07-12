@@ -169,14 +169,14 @@ export const APP_CONTENT: AppConfigType = {
         },
       ],
       actions: {
-        title: "Ready to start contributing",
+        title: "Ready to start contributing ?",
         downloadEbook: {
           text: "Download eBook",
           link: "https://learnosm.org/en/beginner/",
         },
         watchVideo: {
           text: "Watch Tutorial Video",
-          link: "https://www.youtube.com/watch?v=Zx7pKyYxH2c",
+          link: "https://www.youtube.com/watch?v=MChE1jFThGw",
         },
         getStarted: {
           text: "Start Mapping",
