@@ -10,7 +10,15 @@ import generateCommunityMapInfo from "@/helper/generateCommunityMapInfo";
 import CommunityInfo from "./community-info";
 import cn from "@/utils/cn";
 
-const CommunityMap = () => {
+const CommunityMap = ({
+  mapTitle,
+  minimizeLabel,
+  maximizeLabel,
+}: {
+  mapTitle: string;
+  minimizeLabel: string;
+  maximizeLabel: string;
+}) => {
   const container = useRef<HTMLDivElement>(null);
   const [viewState, setViewState] = useState<Partial<ViewState>>({
     latitude: 0,
@@ -65,9 +73,14 @@ const CommunityMap = () => {
         <CommunityInfo
           communityInfo={communityInfo}
           setCommunityInfo={setCommunityInfo}
+          mapTitle={mapTitle}
         />
         {/* Map Controls */}
-        <ExpandControl containerRef={container} />
+        <ExpandControl
+          containerRef={container}
+          minimizeLabel={minimizeLabel}
+          maximizeLabel={maximizeLabel}
+        />
         <GeoLocate />
         <ZoomControl />
       </MapContainer>

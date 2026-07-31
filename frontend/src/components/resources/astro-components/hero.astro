@@ -1,7 +1,9 @@
 ---
-import { APP_CONTENT } from "@/config/Content";
 import cn from "src/utils/cn";
 import HeroBgVector from "@/components/shared/astro-components/hero-bg-vector.astro";
+import { getResourcesContent } from "@/i18n/utils";
+
+const resources = getResourcesContent(Astro.currentLocale);
 ---
 
 <HeroBgVector
@@ -17,10 +19,10 @@ import HeroBgVector from "@/components/shared/astro-components/hero-bg-vector.as
     id="box"
   >
     <h1 class="text-grey-300 text-2xl font-semibold sm:text-4xl">
-      {APP_CONTENT.RESOURCES_PAGE.Hero.title}
+      {resources.page.Hero.title}
     </h1>
     <p class="text-grey-100 text-lg">
-      {APP_CONTENT.RESOURCES_PAGE.Hero.description}
+      {resources.page.Hero.description}
     </p>
   </div>
 </HeroBgVector>

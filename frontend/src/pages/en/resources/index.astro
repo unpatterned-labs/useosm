@@ -3,17 +3,17 @@ import Hero from "@/components/resources/astro-components/hero.astro";
 import Layout from "@/layouts/page-layout.astro";
 import { APP_CONTENT } from "@/config/Content";
 import OsmResources from "@/components/resources/react-components/Resources";
+import { getResourcesContent } from "@/i18n/utils";
+
+const resources = getResourcesContent(Astro.currentLocale);
 ---
 
-<Layout
-  title={APP_CONTENT.RESOURCES_PAGE.title}
-  description={APP_CONTENT.RESOURCES_PAGE.description}
->
+<Layout title={resources.page.title} description={resources.page.description}>
   <section class="relative pb-20">
     <Hero />
     <OsmResources
       list={APP_CONTENT.RESOURCES_PAGE.resourcesList}
-      searchPlaceholder={APP_CONTENT.RESOURCES_PAGE.search.placeholder}
+      searchPlaceholder={resources.page.search.placeholder}
       client:load
     />
   </section>

@@ -5,6 +5,12 @@ import AnnouncementBanner from "@/components/shared/astro-components/announcemen
 import NavBar from "@/components/header";
 import Footer from "@/components/footer/footer.astro";
 import ScrollToTop from "@/components/shared/react-components/ScrollToTop";
+import {
+  getLocale,
+  getUsecasesContent,
+  getResourcesContent,
+  getEventsContent,
+} from "@/i18n/utils";
 export interface Props {
   title?: string;
   description?: string;
@@ -15,7 +21,6 @@ export interface Props {
 const {
   title = "UseOSM",
   description = "Promoting OpenStreetMap Data Usage and Impact Through an Open and Accessible Web Platform.",
-  lang = "en",
 } = Astro.props;
 
 const ogImageUrl = new URL(
@@ -25,6 +30,10 @@ const ogImageUrl = new URL(
 
 // Google Analytics ID
 const gaId = "G-09VRRVG0BL";
+const lang = getLocale(Astro.currentLocale);
+const usecasesNav = getUsecasesContent(lang);
+const resourcesNav = getResourcesContent(lang);
+const eventsNav = getEventsContent(lang);
 ---
 
 <!doctype html>
@@ -94,7 +103,12 @@ const gaId = "G-09VRRVG0BL";
   <body>
     <main class="slide-in-container">
       <AnnouncementBanner />
-      <NavBar client:load />
+      <NavBar
+        client:load
+        usecases={usecasesNav}
+        resources={resourcesNav}
+        events={eventsNav}
+      />
       <slot />
       <ScrollToTop client:load />
       <Footer />

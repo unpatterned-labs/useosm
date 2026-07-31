@@ -1,7 +1,7 @@
 ---
 // AnnouncementBanner.astro
 import cn from "src/utils/cn";
-import { APP_CONTENT } from "@/config/Content";
+import { getSiteContent } from "@/i18n/utils";
 export type Props = {
   bgColor?: string;
   textColor?: string;
@@ -15,6 +15,8 @@ const {
   height = "md:h-14 h-11",
   speed = 50,
 } = Astro.props;
+
+const site = getSiteContent(Astro.currentLocale);
 ---
 
 <section
@@ -32,15 +34,15 @@ const {
     >
       <span
         class="mr-6 inline-block"
-        set:html={APP_CONTENT.announcementContent.join("")}
+        set:html={site.announcementContent.join("")}
       />
       <span
         class="mr-6 inline-block"
-        set:html={APP_CONTENT.announcementContent.join("")}
+        set:html={site.announcementContent.join("")}
       />
       <span
         class="mr-6 inline-block"
-        set:html={APP_CONTENT.announcementContent.join("")}
+        set:html={site.announcementContent.join("")}
       />
     </div>
   </div>

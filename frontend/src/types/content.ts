@@ -23,6 +23,22 @@ export type EventsContentType = NavItem & {
   };
 };
 
+export type ResourcesContentType = NavItem & {
+  page: Pick<ResourcesPageContent, "title" | "description" | "Hero" | "search">;
+};
+
+export type SiteContentType = {
+  tagline: string;
+  copyright: string;
+  buyUsACoffeeText: string;
+  exploreOsm: ExploreOSMSection;
+  announcementContent: string[];
+  mapControls: {
+    minimizeLabel: string;
+    maximizeLabel: string;
+  };
+};
+
 export interface HeroContent {
   title: string;
   tagline?: string;
@@ -144,6 +160,7 @@ export type ExploreOSMSection = {
 
 export type LanguageItem = {
   language: string;
+  locale: string;
   supported: boolean;
 };
 

@@ -1,4 +1,3 @@
-import { APP_CONTENT } from "@/config/Content";
 import { APP_ROUTES } from "@/config/Routes";
 import { Button } from "@/components/ui/react/button";
 import { useState, useRef, useEffect } from "react";
@@ -8,7 +7,15 @@ import { XIcon } from "@/assets/icons/react/XIcon";
 import cn from "@/utils/cn";
 import { UseOSMLogoIcon } from "@/assets/icons/react/UseOSMLogoIcon";
 
-export const NavBar = () => {
+export const NavBar = ({
+  usecases,
+  resources,
+  events,
+}: {
+  usecases: NavItem;
+  resources: NavItem;
+  events: NavItem;
+}) => {
   const [mobileMenuIsOpened, setMobileMenuIsOpened] = useState<boolean>(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -61,11 +68,7 @@ export const NavBar = () => {
               <UseOSMLogoIcon className="h-6 w-30 text-green-500 duration-150 ease-in-out hover:text-green-400 md:h-7 md:w-40" />
             </a>
             <ul className="hidden gap-x-10 lg:flex" role="menubar">
-              {[
-                APP_CONTENT.USECASES,
-                APP_CONTENT.RESOURCES,
-                APP_CONTENT.EVENTS,
-              ].map((config) => {
+              {[usecases, resources, events].map((config) => {
                 const hasRoute = config.route.length > 0;
                 return (
                   <li
@@ -139,11 +142,7 @@ export const NavBar = () => {
         <div className="px-4 pt-36">
           <nav aria-label="Mobile navigation">
             <ul role="menubar" className="flex flex-col gap-y-6">
-              {[
-                APP_CONTENT.USECASES,
-                APP_CONTENT.RESOURCES,
-                APP_CONTENT.EVENTS,
-              ].map((config) => {
+              {[usecases, resources, events].map((config) => {
                 const hasRoute = config.route.length > 0;
                 return (
                   <li key={`mobile-route-${config.title}`} role="none">

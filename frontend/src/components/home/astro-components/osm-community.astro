@@ -1,6 +1,9 @@
 ---
-import { APP_CONTENT } from "@/config/Content";
 import CommunityMap from "@/components/home/react-components/community-map";
+import { getHomeContent, getSiteContent } from "@/i18n/utils";
+
+const home = getHomeContent(Astro.currentLocale);
+const site = getSiteContent(Astro.currentLocale);
 ---
 
 <section
@@ -9,9 +12,14 @@ import CommunityMap from "@/components/home/react-components/community-map";
   <h3
     class="text-grey-300 max-w-[37.87rem] text-center text-2xl font-semibold md:text-4xl"
   >
-    {APP_CONTENT.HOME_PAGE.OSMCommunities.title}
+    {home.OSMCommunities.title}
   </h3>
   <div class="h-full min-w-full">
-    <CommunityMap client:only={true} />
+    <CommunityMap
+      client:only={true}
+      mapTitle={home.OSMCommunities.map.title}
+      minimizeLabel={site.mapControls.minimizeLabel}
+      maximizeLabel={site.mapControls.maximizeLabel}
+    />
   </div>
 </section>

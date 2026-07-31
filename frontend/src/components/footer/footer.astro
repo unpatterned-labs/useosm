@@ -6,6 +6,18 @@ import { CoffeeIcon } from "@/assets/icons/react/CoffeeIcon";
 import { GitHubIcon } from "@/assets/icons/react/GitHubIcon";
 import { UseOSMLogoIcon } from "@/assets/icons/react/UseOSMLogoIcon";
 import { FooterColumn } from "@/components/footer/footer-column";
+import {
+  getLocale,
+  getUsecasesContent,
+  getResourcesContent,
+  getSiteContent,
+} from "@/i18n/utils";
+
+const locale = getLocale(Astro.currentLocale);
+const usecasesNav = getUsecasesContent(locale);
+const resourcesNav = getResourcesContent(locale);
+const site = getSiteContent(locale);
+const currentPath = `${Astro.url.pathname}${Astro.url.search}`;
 ---
 
 <footer class="bg-grey-500 min-h-80 w-full flex-col space-y-4">
@@ -21,7 +33,7 @@ import { FooterColumn } from "@/components/footer/footer-column";
       <p
         class="text-grey-75 max-w-xs text-sm text-wrap whitespace-pre-line md:max-w-full"
       >
-        {APP_CONTENT.TAGLINE}
+        {site.tagline}
       </p>
 
       <a
@@ -41,10 +53,10 @@ import { FooterColumn } from "@/components/footer/footer-column";
           <a
             href={APP_CONTENT.BUY_US_A_COFFEE.link}
             target="_blank"
-            title={APP_CONTENT.BUY_US_A_COFFEE.text}
+            title={site.buyUsACoffeeText}
           >
             <p class="text-grey-75 flex items-center space-x-2 text-sm font-semibold transition-colors hover:text-white">
-              <span>{APP_CONTENT.BUY_US_A_COFFEE.text}</span>
+              <span>{site.buyUsACoffeeText}</span>
               <CoffeeIcon className="size-4" />
             </p>
           </a>
@@ -56,12 +68,21 @@ import { FooterColumn } from "@/components/footer/footer-column";
       class="col-span-full flex w-full flex-col gap-10 md:grid md:grid-cols-7 lg:col-span-7"
     >
       {
-        [
-          APP_CONTENT.USECASES,
-          APP_CONTENT.EXPLORE_OSM,
-          APP_CONTENT.RESOURCES,
-        ].map((section, id) => (
-          <FooterColumn section={section} isWide={id === 0} />
+        (
+          [
+            { section: usecasesNav, kind: "usecases", isWide: true },
+            { section: site.exploreOsm, kind: "explore", isWide: false },
+            { section: resourcesNav, kind: "resources", isWide: false },
+          ] as const
+        ).map(({ section, kind, isWide }) => (
+          <FooterColumn
+            client:load
+            section={section}
+            kind={kind}
+            isWide={isWide}
+            currentLocale={locale}
+            currentPath={currentPath}
+          />
         ))
       }
     </div>
@@ -70,7 +91,7 @@ import { FooterColumn } from "@/components/footer/footer-column";
     class="border-grey-300 flex w-full items-center justify-center border-t px-10 py-8"
   >
     <p class="text-grey-75 text-center text-xs font-bold md:text-sm">
-      {APP_CONTENT.COPYRIGHT}
+      {site.copyright}
     </p>
   </div>
 </footer>

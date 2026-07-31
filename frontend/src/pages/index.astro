@@ -1,26 +1,6 @@
 ---
-import Hero from "@/components/home/astro-components/hero.astro";
-import AboutOSM from "@/components/home/astro-components/about-osm.astro";
-import Layout from "@/layouts/page-layout.astro";
-import { APP_CONTENT } from "@/config/Content";
-import HowOsmWorks from "@/components/home/astro-components/how-osm-works.astro";
-import { OSMStats } from "@/components/home/react-components/osm-stats";
-import OrgsUsingOsm from "@/components/home/astro-components/orgs_using_osm.astro";
-import OsmResources from "@/components/home/astro-components/osm-resources.astro";
-import OsmCommunity from "@/components/home/astro-components/osm-community.astro";
-import EventAnnouncement from "@/components/ui/react/event-announcement";
----
+import { defaultLocale } from "@/i18n/ui";
 
-<Layout
-  title={APP_CONTENT.HOME_PAGE.title}
-  description={APP_CONTENT.HOME_PAGE.description}
->
-  <Hero />
-  <EventAnnouncement client:load />
-  <AboutOSM />
-  <OSMStats client:load />
-  <OrgsUsingOsm />
-  <OsmResources />
-  <OsmCommunity />
-  <HowOsmWorks />
-</Layout>
+// Redirect to default locale if no locale is specified
+return Astro.redirect(`/${defaultLocale}`);
+---
