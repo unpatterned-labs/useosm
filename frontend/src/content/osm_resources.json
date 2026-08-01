@@ -15,11 +15,22 @@
     "title": "Alpi Maps",
     "category": "Navigation",
     "slug": "alpi-maps",
-    "image": "https://repository-images.githubusercontent.com/179635396/434a9d18-03a0-4051-abad-ea242d2cce1b",
+    "image": "https://repository-images.githubusercontent.com/github-production-repository-image-32fea6/179635396/434a9d18-03a0-4051-abad-ea242d2cce1b?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20260801%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260801T031948Z&X-Amz-Expires=300&X-Amz-Signature=ad235ebc5aa62d2fbd601df9f0d81688f1d0dd1bb0b3b5016f2c0ae1aeb9d28b&X-Amz-SignedHeaders=host&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoiaHR0cHM6Ly9yZXBvc2l0b3J5LWltYWdlcy5naXRodWJ1c2VyY29udGVudC5jb20vIiwia2V5Ijoia2V5MSIsImV4cCI6MTc4NTU1NDY4OCwibmJmIjoxNzg1NTU0Mzg4LCJwYXRoIjoicmVwb3NpdG9yeS1pbWFnZXMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIn0.gFXdWrJ-QnXZeYpXIzHLxW-Dp1Adgz86woBAdmwodvM",
     "website": "https://www.akylas.fr/",
     "description": "Offline hiking map app.",
     "score": 4.5,
     "lastUpdated": "2026-06-03"
+  },
+  {
+    "id": 654118282,
+    "title": "AnyFinder",
+    "category": "Navigation",
+    "slug": "anyfinder",
+    "image": "https://anyfinder.app/img/anyfinder-icon-1024.png",
+    "website": "https://anyfinder.app/",
+    "description": "AnyFinder helps you to find, edit and publish interesting places / POIs around you.",
+    "score": 6.0,
+    "lastUpdated": "2026-07-26"
   },
   {
     "id": 1167581170,
@@ -52,7 +63,7 @@
     "website": "https://brouter.de/brouter",
     "description": "Configurable OSM offline router with elevation awareness, Java + Android – Routing engine designed for cycling.",
     "score": 4.5,
-    "lastUpdated": "2026-04-20"
+    "lastUpdated": "2026-07-17"
   },
   {
     "id": 2076478006,
@@ -85,7 +96,7 @@
     "website": "https://www.comaps.app/",
     "description": "Privacy-focused, open-source, free and fast offline maps without ads, developed by the community for the community.",
     "score": 9.5,
-    "lastUpdated": "2026-06-05"
+    "lastUpdated": "2026-07-16"
   },
   {
     "id": 894563760,
@@ -154,6 +165,17 @@
     "lastUpdated": "2024-07-05"
   },
   {
+    "id": 1502929383,
+    "title": "FairwayMapper",
+    "category": "Editors",
+    "slug": "fairwaymapper",
+    "image": "https://wiki.openstreetmap.org/w/images/thumb/4/4e/Fairwaymapper-logo.svg/250px-Fairwaymapper-logo.svg.png",
+    "website": "https://www.fairwaymapper.com/",
+    "description": "FairwayMapper is a focused editor for golf courses.",
+    "score": 5.875,
+    "lastUpdated": "2026-07-13"
+  },
+  {
     "id": 902032814,
     "title": "fediphoto",
     "category": "Mobile",
@@ -187,17 +209,6 @@
     "lastUpdated": "2024-07-29"
   },
   {
-    "id": 865915006,
-    "title": "Freemap Slovakia",
-    "category": "Navigation",
-    "slug": "freemap-slovakia",
-    "image": "https://raw.githubusercontent.com/FreemapSlovakia/freemap-v3-react/refs/heads/main/src/images/freemap-logo-small.png",
-    "website": "https://www.freemap.sk/",
-    "description": "Feature-rich map including distance and area measurement, fullscreen mode, bicycle and hiking routes, POIs, elevation details, downloadable maps for multiple devices, diverse export options, routing, and search functionalities. While some features focus on the Slovak region, there are more to explore.",
-    "score": 4.125,
-    "lastUpdated": "2026-06-17"
-  },
-  {
     "id": 1453110877,
     "title": "Geopaparazzi",
     "category": "Editors",
@@ -227,7 +238,7 @@
     "image": "https://wiki.openstreetmap.org/w/images/thumb/d/d8/Go_Map!!_App_Icon.svg/250px-Go_Map!!_App_Icon.svg.png",
     "website": "",
     "description": "Easy to use iOS/iPadOS/macOS/visionOS editor for OSM, OHM, and OGF.",
-    "score": 8.5,
+    "score": 8.25,
     "lastUpdated": "2026-04-03"
   },
   {
@@ -238,8 +249,8 @@
     "image": "https://wiki.openstreetmap.org/w/images/thumb/c/c4/GPS_Logger_for_Android_main_screen.png/250px-GPS_Logger_for_Android_main_screen.png",
     "website": "https://gpslogger.app/",
     "description": "Battery efficient GPX logger.",
-    "score": 4.5,
-    "lastUpdated": "2025-12-05"
+    "score": 4.75,
+    "lastUpdated": "2026-07-18"
   },
   {
     "id": 87944540,
@@ -257,7 +268,7 @@
     "title": "gpx.studio",
     "category": "Editors",
     "slug": "gpxstudio",
-    "image": "https://repository-images.githubusercontent.com/783722229/5bd1b100-aafb-42d5-87a0-9b9dc0e41117",
+    "image": "https://repository-images.githubusercontent.com/github-production-repository-image-32fea6/783722229/5bd1b100-aafb-42d5-87a0-9b9dc0e41117?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20260801%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260801T031930Z&X-Amz-Expires=300&X-Amz-Signature=74c88e645d9cbd82bf6ed61e32424d84c0c1abdf1de51651e9513bb52d4daa60&X-Amz-SignedHeaders=host&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoiaHR0cHM6Ly9yZXBvc2l0b3J5LWltYWdlcy5naXRodWJ1c2VyY29udGVudC5jb20vIiwia2V5Ijoia2V5MSIsImV4cCI6MTc4NTU1NDY3MCwibmJmIjoxNzg1NTU0MzcwLCJwYXRoIjoicmVwb3NpdG9yeS1pbWFnZXMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIn0.MTomBqFp_jH8zeaOk4LIZd1S9SRtCfAZqRioUUWRGn8",
     "website": "https://gpx.studio/app",
     "description": "an free and open source online tool for creating and editing GPX files",
     "score": 5.375,
@@ -272,7 +283,7 @@
     "website": "https://www.gpxsee.org/",
     "description": "GPS log file viewer and analyzer.",
     "score": 5.5,
-    "lastUpdated": "2026-06-27"
+    "lastUpdated": "2026-07-04"
   },
   {
     "id": 411233702,
@@ -371,7 +382,7 @@
     "website": "https://level0.osmz.ru/",
     "description": "Web-based OSM data editor.",
     "score": 6.0,
-    "lastUpdated": "2025-05-24"
+    "lastUpdated": "2026-07-28"
   },
   {
     "id": 1224090016,
@@ -404,7 +415,7 @@
     "website": "https://www.mapbox.com/maps/",
     "description": "Embed customizable, interactive vector maps in Web, mobile, and desktop applications.",
     "score": 4.375,
-    "lastUpdated": "2026-06-17"
+    "lastUpdated": "2026-07-23"
   },
   {
     "id": 638634592,
@@ -433,7 +444,7 @@
     "title": "Mapforge",
     "category": "Navigation",
     "slug": "mapforge",
-    "image": "https://repository-images.githubusercontent.com/729304206/691be556-b353-4efb-8c70-f3a32fd01605",
+    "image": "https://repository-images.githubusercontent.com/github-production-repository-image-32fea6/729304206/691be556-b353-4efb-8c70-f3a32fd01605?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20260801%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260801T032045Z&X-Amz-Expires=300&X-Amz-Signature=3609e39de38a824566fae1180c476aa11e4c98ba79a038cb5de156f2b4d67794&X-Amz-SignedHeaders=host&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoiaHR0cHM6Ly9yZXBvc2l0b3J5LWltYWdlcy5naXRodWJ1c2VyY29udGVudC5jb20vIiwia2V5Ijoia2V5MSIsImV4cCI6MTc4NTU1NDc0NSwibmJmIjoxNzg1NTU0NDQ1LCJwYXRoIjoicmVwb3NpdG9yeS1pbWFnZXMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIn0.3XI1BtX9mAi9owOhhSaCpZ8p03kQqnvE1hlMOaZ64Cw",
     "website": "https://mapforge.org/",
     "description": "An easy to use map editor to create your own maps.",
     "score": 5.0,
@@ -448,7 +459,7 @@
     "website": "https://maproulette.org/",
     "description": "Micro-task platform for OpenStreetMap.",
     "score": 7.5,
-    "lastUpdated": "2026-06-02"
+    "lastUpdated": "2026-07-16"
   },
   {
     "id": 195457472,
@@ -470,7 +481,7 @@
     "website": "https://mapserver.org/",
     "description": "MapServer is an Open Source platform for publishing spatial data and interactive mapping applications to the web.",
     "score": 4.625,
-    "lastUpdated": "2026-06-02"
+    "lastUpdated": "2026-07-10"
   },
   {
     "id": 1535780407,
@@ -481,7 +492,7 @@
     "website": "https://mapsforge.org/",
     "description": "map application library.",
     "score": 4.75,
-    "lastUpdated": "2026-04-30"
+    "lastUpdated": "2026-07-24"
   },
   {
     "id": 1164302394,
@@ -624,7 +635,7 @@
     "website": "https://openinframap.org/",
     "description": "Open Infrastructure Map is a view of the world's hidden infrastructure mapped in the OpenStreetMap database.",
     "score": 5.5,
-    "lastUpdated": "2026-04-15"
+    "lastUpdated": "2026-07-05"
   },
   {
     "id": 1942374798,
@@ -646,7 +657,7 @@
     "website": "https://openbeermap.github.io/",
     "description": "This application was created to help people find their favourite beers.",
     "score": 6.625,
-    "lastUpdated": "2026-03-23"
+    "lastUpdated": "2026-07-19"
   },
   {
     "id": 2046783486,
@@ -701,7 +712,7 @@
     "website": "https://openrouteservice.org/",
     "description": "routing services offered by University of Heidelberg",
     "score": 6.0,
-    "lastUpdated": "2026-04-29"
+    "lastUpdated": "2026-07-28"
   },
   {
     "id": 1626583424,
@@ -711,7 +722,7 @@
     "image": "https://wiki.openstreetmap.org/w/images/thumb/5/58/OpenSeaMap_Icon_1024.png/250px-OpenSeaMap_Icon_1024.png",
     "website": "https://wiki.openseamap.org/wiki/Hauptseite:en",
     "description": "Display of navigation marks, waterways, restricted areas & route planning functions with waypoints.",
-    "score": 4.375,
+    "score": 4.125,
     "lastUpdated": "2025-07-08"
   },
   {
@@ -778,7 +789,7 @@
     "website": "https://organicmaps.app/",
     "description": "Privacy-focused, open-source, free and fast offline maps without ads.",
     "score": 9.0,
-    "lastUpdated": "2026-06-29"
+    "lastUpdated": "2026-07-23"
   },
   {
     "id": 2069984600,
@@ -821,8 +832,8 @@
     "image": "https://wiki.openstreetmap.org/w/images/thumb/7/72/MapComplete_Screenshot.png/250px-MapComplete_Screenshot.png",
     "website": "https://openstreetmap.community/",
     "description": "An index of community resources for OpenStreetMap.",
-    "score": 4.75,
-    "lastUpdated": "2025-10-28"
+    "score": 5.0,
+    "lastUpdated": "2026-07-29"
   },
   {
     "id": 1780677465,
@@ -884,11 +895,11 @@
     "title": "OSM SIdewalKreator",
     "category": "Data Extraction and Analysis",
     "slug": "osm-sidewalkreator",
-    "image": "https://repository-images.githubusercontent.com/411724666/2b7c867e-3e78-4a19-b9e8-69766e1d506e",
+    "image": "https://repository-images.githubusercontent.com/github-production-repository-image-32fea6/411724666/2b7c867e-3e78-4a19-b9e8-69766e1d506e?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20260801%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260801T032017Z&X-Amz-Expires=300&X-Amz-Signature=0f72d014f00e3a55814e166a97dfdb512d08d995e49fdeee7db08b9392faa54f&X-Amz-SignedHeaders=host&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoiaHR0cHM6Ly9yZXBvc2l0b3J5LWltYWdlcy5naXRodWJ1c2VyY29udGVudC5jb20vIiwia2V5Ijoia2V5MSIsImV4cCI6MTc4NTU1NDcxNywibmJmIjoxNzg1NTU0NDE3LCJwYXRoIjoicmVwb3NpdG9yeS1pbWFnZXMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIn0.oBnY81fWRtj4fIo8l4zQnnkQJQ4NGuy0tbnc0W1k8l0",
     "website": "https://github.com/kauevestena/osm_sidewalkreator",
     "description": "Plugin designated to create the Geometries of Sidewalks (separated from streets) based on OpenStreetMap Streets, given a bounding polygon, outputting to JOSM format.",
-    "score": 4.5,
-    "lastUpdated": "2025-09-14"
+    "score": 4.75,
+    "lastUpdated": "2026-07-31"
   },
   {
     "id": 1415285513,
@@ -909,7 +920,7 @@
     "image": "https://wiki.openstreetmap.org/w/images/thumb/d/df/Osmutils_screenshot.jpg/250px-Osmutils_screenshot.jpg",
     "website": "https://yopaseopor.github.io/osmutils",
     "description": "Watch +15000 brands in OpenStreetMap. A map mixing OSM ecosystem and vibe coding.",
-    "score": 4.375,
+    "score": 4.125,
     "lastUpdated": "2025-07-12"
   },
   {
@@ -931,7 +942,7 @@
     "image": "https://wiki.openstreetmap.org/w/images/thumb/6/68/Wikiraduno_Bologna_marzo_2023_-_Screenshot_Certosa_di_Bologna_-_Open_Burial_Map_-_nodo_Tomba_Borghi-Mamo_abc2.png/250px-Wikiraduno_Bologna_marzo_2023_-_Screenshot_Certosa_di_Bologna_-_Open_Burial_Map_-_nodo_Tomba_Borghi-Mamo_abc2.png",
     "website": "https://wiki.openstreetmap.org/wiki/OSM-Wikidata_Map_Framework",
     "description": "Merge data from OpenStreetMap and Wikidata to map information about entities and points of interest.",
-    "score": 5.125,
+    "score": 5.25,
     "lastUpdated": "2026-04-18"
   },
   {
@@ -953,7 +964,7 @@
     "image": "https://wiki.openstreetmap.org/w/images/thumb/c/cd/Osmand-icon.png/250px-Osmand-icon.png",
     "website": "https://osmand.net/",
     "description": "Navigation (routing) offline and online, OSM and custom map display (vector data or tiles, offline, cached or online), POI and address search (offline or online Nominatim), submit OSM bugs and POI, mark favorites, public transport info. Actively being developed. Keywords: GPS navigator, GPS navigation, navigation system, satellite navigation, sat nav, satnav, GPS tracker, GPS tracking, GPS map, OpenStreetMap, OSM viewer, map viewer, OSM mapping, offline routing, offline world map, global offline country maps, outdoor.",
-    "score": 9.25,
+    "score": 9.0,
     "lastUpdated": "2026-04-24"
   },
   {
@@ -1075,7 +1086,7 @@
     "website": "https://panoramax.fr/",
     "description": "\"The free alternative to photo-mapping territories\" https://panoramax.fr .",
     "score": 5.75,
-    "lastUpdated": "2026-05-07"
+    "lastUpdated": "2026-07-15"
   },
   {
     "id": 21793236,
@@ -1093,11 +1104,11 @@
     "title": "PeakNav",
     "category": "Navigation",
     "slug": "peaknav",
-    "image": "https://peaknav.com/favicon.ico",
+    "image": "https://wiki.openstreetmap.org/w/images/thumb/a/ac/App-view-monte-rosa.jpg/250px-App-view-monte-rosa.jpg",
     "website": "https://peaknav.com/",
     "description": "3D mountain viewer for offline usage. Keywords: 3D, hiking, outdoor, map viewer, OSM viewer, OpenStreetMap.",
-    "score": 4.125,
-    "lastUpdated": "2025-10-21"
+    "score": 4.375,
+    "lastUpdated": "2026-07-29"
   },
   {
     "id": 955079320,
@@ -1141,7 +1152,7 @@
     "website": "https://priceless.zottelig.ch/",
     "description": "A map showing public and free facilities and offers near you.",
     "score": 6.75,
-    "lastUpdated": "2025-07-06"
+    "lastUpdated": "2026-07-28"
   },
   {
     "id": 1614136195,
@@ -1152,7 +1163,7 @@
     "website": "https://book-exchange.zottelig.ch/",
     "description": "A map shows public bookcases near you.",
     "score": 6.75,
-    "lastUpdated": "2025-07-06"
+    "lastUpdated": "2026-07-28"
   },
   {
     "id": 801316772,
@@ -1173,8 +1184,8 @@
     "image": "https://wiki.openstreetmap.org/w/images/thumb/3/3e/QGIS_logo_minimal.svg/250px-QGIS_logo_minimal.svg.png",
     "website": "https://qgis.org/",
     "description": "QGIS is a free, open source, cross platform (lin/win/mac) geographical information system (GIS).",
-    "score": 7.25,
-    "lastUpdated": "2026-05-29"
+    "score": 8.25,
+    "lastUpdated": "2026-07-31"
   },
   {
     "id": 445195879,
@@ -1184,7 +1195,7 @@
     "image": "https://wiki.openstreetmap.org/w/images/thumb/5/5e/Qmapshack_1.20.1_brouter.png/250px-Qmapshack_1.20.1_brouter.png",
     "website": "https://github.com/Maproom/qmapshack/wiki",
     "description": "Consumer grade GIS software, synchronization with Garmin devices.",
-    "score": 5.125,
+    "score": 5.625,
     "lastUpdated": "2026-06-08"
   },
   {
@@ -1192,7 +1203,7 @@
     "title": "QueerMap by qiekub",
     "category": "Editors",
     "slug": "queermap-by-qiekub",
-    "image": "https://repository-images.githubusercontent.com/256574351/247b4000-8108-11ea-93b4-56c4de30a435",
+    "image": "https://repository-images.githubusercontent.com/github-production-repository-image-32fea6/256574351/247b4000-8108-11ea-93b4-56c4de30a435?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20260801%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260801T032029Z&X-Amz-Expires=300&X-Amz-Signature=31df9df097624b583991309417467ad0cb0770486983dc702c1ae40a50f9e151&X-Amz-SignedHeaders=host&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoiaHR0cHM6Ly9yZXBvc2l0b3J5LWltYWdlcy5naXRodWJ1c2VyY29udGVudC5jb20vIiwia2V5Ijoia2V5MSIsImV4cCI6MTc4NTU1NDcyOSwibmJmIjoxNzg1NTU0NDI5LCJwYXRoIjoicmVwb3NpdG9yeS1pbWFnZXMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIn0.uHc6Sm823wzuTjpYnZYlJbDX2kA_JQi4lzDKK2kAMsM",
     "website": "https://map.qiekub.org/",
     "description": "🏳️‍🌈🗺 A map of community centers and other helpful information for queer (LGBTQ) people.",
     "score": 5.5,
@@ -1251,7 +1262,7 @@
     "website": "http://www.routeconverter.com/",
     "description": "GPS routes analyser with an experimental branch for offline routing with mapsforge maps.",
     "score": 7.125,
-    "lastUpdated": "2026-06-12"
+    "lastUpdated": "2026-07-03"
   },
   {
     "id": 104470202,
@@ -1261,8 +1272,8 @@
     "image": "https://wiki.openstreetmap.org/w/images/thumb/8/8a/S60maps_icon.svg/250px-S60maps_icon.svg.png",
     "website": "https://github.com/artem78/s60-maps/blob/master/docs/README.md",
     "description": "Map viewer and navigation for Simbian OS.",
-    "score": 7.25,
-    "lastUpdated": "2026-06-27"
+    "score": 8.25,
+    "lastUpdated": "2026-07-12"
   },
   {
     "id": 2539248,
@@ -1273,7 +1284,7 @@
     "website": "",
     "description": "OpenStreetMap surveyor app for experienced OSM contributors.",
     "score": 7.0,
-    "lastUpdated": "2026-06-28"
+    "lastUpdated": "2026-07-03"
   },
   {
     "id": 174026266,
@@ -1339,7 +1350,7 @@
     "website": "https://streetcomplete.app/",
     "description": "Surveyor app for Android.",
     "score": 8.75,
-    "lastUpdated": "2026-06-27"
+    "lastUpdated": "2026-07-28"
   },
   {
     "id": 970492126,
@@ -1372,7 +1383,7 @@
     "website": "https://github.com/hotosm/tasking-manager/",
     "description": "Tool for teams to coordinate mapping on OpenStreetMap. The screenshot shows a project progress overview of the Tasking Manager.",
     "score": 5.25,
-    "lastUpdated": "2026-05-23"
+    "lastUpdated": "2026-07-15"
   },
   {
     "id": 1751152395,
@@ -1394,7 +1405,18 @@
     "website": "https://touch-mapper.org/",
     "description": "Tactile maps easily. Enter an address, and order a map or 3D print it yourself.",
     "score": 4.375,
-    "lastUpdated": "2026-03-25"
+    "lastUpdated": "2026-07-19"
+  },
+  {
+    "id": 783170898,
+    "title": "TracesMap",
+    "category": "Editors",
+    "slug": "tracesmap",
+    "image": "https://wiki.openstreetmap.org/w/images/thumb/8/80/TracesMap_Editing_Screenshot.png/250px-TracesMap_Editing_Screenshot.png",
+    "website": "",
+    "description": "TracesMap is an iOS app developed by Tracestrack Map Service. It features GPS recording and POI editing.",
+    "score": 4.25,
+    "lastUpdated": "2026-07-26"
   },
   {
     "id": 1761118835,
@@ -1415,7 +1437,7 @@
     "image": "https://transportr.app/favicon.ico",
     "website": "https://transportr.app/",
     "description": "Transportr make using public transport as easy as possible wherever you are.",
-    "score": 4.625,
+    "score": 4.75,
     "lastUpdated": "2025-12-03"
   },
   {
@@ -1437,7 +1459,7 @@
     "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Logo%20uMap%2001.jpg",
     "website": "https://umap-project.org/",
     "description": "Create your own map, add marker and much more.",
-    "score": 6.375,
+    "score": 6.125,
     "lastUpdated": "2026-04-08"
   },
   {
@@ -1460,7 +1482,7 @@
     "website": "https://github.com/Zkir/UrbanEye3D",
     "description": "Displays 3D world directly in JOSM.",
     "score": 4.25,
-    "lastUpdated": "2026-06-27"
+    "lastUpdated": "2026-07-31"
   },
   {
     "id": 1197063454,
@@ -1482,7 +1504,7 @@
     "website": "https://vespucci.io/",
     "description": "OpenStreetMap editor for Android.",
     "score": 8.5,
-    "lastUpdated": "2026-06-22"
+    "lastUpdated": "2026-07-13"
   },
   {
     "id": 815544004,
@@ -1536,7 +1558,7 @@
     "image": "https://wiki.openstreetmap.org/w/images/thumb/a/aa/Yaac.png/250px-Yaac.png",
     "website": "https://www.ka2ddo.org/ka2ddo/YAAC.html",
     "description": "Amateur Radio Automatic Packet Reporting System client written in Java that uses OSM data to render maps on the fly. Under active development with rapid development release cycle.",
-    "score": 4.625,
+    "score": 4.375,
     "lastUpdated": "2026-04-23"
   }
 ]
