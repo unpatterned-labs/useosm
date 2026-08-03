@@ -104,6 +104,8 @@ const eventsNav = getEventsContent(lang);
     <main class="slide-in-container">
       <AnnouncementBanner />
       <NavBar
+        locale={lang}
+        currentPath={`${Astro.url.pathname}${Astro.url.search}`}
         client:load
         usecases={usecasesNav}
         resources={resourcesNav}

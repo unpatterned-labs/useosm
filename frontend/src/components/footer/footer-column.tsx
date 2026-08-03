@@ -42,7 +42,11 @@ export const FooterColumn = ({
         ))}
       </ul>
       {kind === "resources" && currentLocale && currentPath && (
-        <Translator currentLocale={currentLocale} currentPath={currentPath} />
+        <Translator
+          position="footer"
+          currentLocale={currentLocale}
+          currentPath={currentPath}
+        />
       )}
     </div>
   );

@@ -6,12 +6,18 @@ import { HamburgerIcon } from "@/assets/icons/react/HamburgerIcon";
 import { XIcon } from "@/assets/icons/react/XIcon";
 import cn from "@/utils/cn";
 import { UseOSMLogoIcon } from "@/assets/icons/react/UseOSMLogoIcon";
+import { Translator } from "../footer/translator";
+import { type Locale } from "@/i18n/ui";
 
 export const NavBar = ({
+  locale,
+  currentPath,
   usecases,
   resources,
   events,
 }: {
+  locale: Locale;
+  currentPath: string;
   usecases: NavItem;
   resources: NavItem;
   events: NavItem;
@@ -22,7 +28,7 @@ export const NavBar = ({
   // Detect scroll and toggle blur background
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 5); // adjust threshold if needed
+      setIsScrolled(window.scrollY > 5);
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
@@ -95,6 +101,11 @@ export const NavBar = ({
             </ul>
           </div>
           <div className="flex items-center gap-x-4">
+            <Translator
+              position="header"
+              currentLocale={locale}
+              currentPath={currentPath}
+            />
             <div>
               {/* This is a hack to show different button sizes on mobile and desktop. Another alternative is to use javascript to get the screen width, but I decided to go with this for now. */}
               <Button
@@ -379,7 +390,7 @@ const DropdownMenu = ({ config }: { config: NavItem }) => {
               tabIndex={isOpen && focusedIndex === index ? 0 : -1}
               className={`${
                 focusedIndex === index ? "bg-white-2" : ""
-              } hover:bg-white-2 focus:bg-white-2 flex flex-col gap-2 rounded-2xl p-4 transition-colors duration-300 focus:outline-none`}
+              } group flex flex-col gap-2 rounded-2xl p-4 transition-colors duration-300 hover:bg-green-50 focus:bg-green-50 focus:outline-none`}
               onMouseEnter={() => setFocusedIndex(index)}
               onClick={() => {
                 setIsOpen(false);

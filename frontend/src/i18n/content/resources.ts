@@ -10,7 +10,8 @@ export const resourcesContent: Record<Locale, ResourcesContentType> = {
       {
         title: "Editors",
         route: generateResourcePath(ResourceCategory.EDITORS, "en"),
-        isHref: true,
+        description: "Discover the editors for OpenStreetMap data.",
+        active: true,
       },
       {
         title: "Data Extraction and Analysis",
@@ -18,12 +19,15 @@ export const resourcesContent: Record<Locale, ResourcesContentType> = {
           ResourceCategory.DATA_EXTRACTION_AND_ANALYSIS,
           "en",
         ),
-        isHref: true,
+        description:
+          "Explore tools for extracting and analyzing OpenStreetMap data.",
+        active: true,
       },
       {
         title: "Libraries",
         route: generateResourcePath(ResourceCategory.LIBRARIES, "en"),
-        isHref: true,
+        description: "Find libraries to work with OpenStreetMap data.",
+        active: true,
       },
       {
         title: "Map Visualization Stack",
@@ -31,12 +35,16 @@ export const resourcesContent: Record<Locale, ResourcesContentType> = {
           ResourceCategory.MAP_VISUALIZATION_STACK,
           "en",
         ),
-        isHref: false,
+        description:
+          "Discover tools for visualizing OpenStreetMap data on maps.",
+        active: true,
       },
       {
         title: "Navigation & Mobile Framework",
         route: generateResourcePath(ResourceCategory.NAVIGATION, "en"),
-        isHref: true,
+        description:
+          "Explore navigation and mobile frameworks for OpenStreetMap.",
+        active: true,
       },
     ],
     page: {
