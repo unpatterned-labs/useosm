@@ -105,6 +105,7 @@ export const NavBar = ({
               position="header"
               currentLocale={locale}
               currentPath={currentPath}
+              className="border-grey-50 hidden rounded-xl border shadow-xs md:flex"
             />
             <div>
               {/* This is a hack to show different button sizes on mobile and desktop. Another alternative is to use javascript to get the screen width, but I decided to go with this for now. */}
@@ -150,7 +151,13 @@ export const NavBar = ({
           mobileMenuIsOpened ? "translate-x-0" : "translate-x-full"
         }`}
       >
-        <div className="px-4 pt-36">
+        <div className="space-y-6 px-4 pt-36">
+          <Translator
+            position="header"
+            currentLocale={locale}
+            currentPath={currentPath}
+            className="flex w-40 border md:hidden"
+          />
           <nav aria-label="Mobile navigation">
             <ul role="menubar" className="flex flex-col gap-y-6">
               {[usecases, resources, events].map((config) => {

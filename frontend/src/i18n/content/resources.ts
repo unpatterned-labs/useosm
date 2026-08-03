@@ -66,7 +66,8 @@ export const resourcesContent: Record<Locale, ResourcesContentType> = {
       {
         title: "Éditeurs",
         route: generateResourcePath(ResourceCategory.EDITORS, "fr"),
-        isHref: true,
+        description: "Découvrez les éditeurs pour les données OpenStreetMap.",
+        active: true,
       },
       {
         title: "Extraction et analyse de données",
@@ -74,12 +75,16 @@ export const resourcesContent: Record<Locale, ResourcesContentType> = {
           ResourceCategory.DATA_EXTRACTION_AND_ANALYSIS,
           "fr",
         ),
-        isHref: true,
+        description:
+          "Explorez des outils pour extraire et analyser les données OpenStreetMap.",
+        active: true,
       },
       {
         title: "Bibliothèques",
         route: generateResourcePath(ResourceCategory.LIBRARIES, "fr"),
-        isHref: true,
+        description:
+          "Trouvez des bibliothèques pour travailler avec les données OpenStreetMap.",
+        active: true,
       },
       {
         title: "Visualisation cartographique",
@@ -87,12 +92,16 @@ export const resourcesContent: Record<Locale, ResourcesContentType> = {
           ResourceCategory.MAP_VISUALIZATION_STACK,
           "fr",
         ),
-        isHref: false,
+        description:
+          "Découvrez des outils pour visualiser les données OpenStreetMap sur des cartes.",
+        active: true,
       },
       {
         title: "Navigation et frameworks mobiles",
         route: generateResourcePath(ResourceCategory.NAVIGATION, "fr"),
-        isHref: true,
+        description:
+          "Explorez les frameworks de navigation et mobiles pour OpenStreetMap.",
+        active: true,
       },
     ],
     page: {

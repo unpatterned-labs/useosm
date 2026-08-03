@@ -9,16 +9,19 @@ export const Translator = ({
   currentLocale,
   currentPath,
   position,
+  className,
 }: {
   currentLocale: Locale;
   currentPath: string;
   position: "header" | "footer";
+  className?: string;
 }) => {
   return (
     <div
       className={cn(
         "bg-grey-300 text-grey-50 flex w-fit items-center gap-2 rounded-full px-4 py-3 text-xs font-medium md:w-full",
         position === "header" ? "text-grey-400 bg-white" : "md:w-full",
+        className,
       )}
     >
       <TranslateIcon className="size-4" />
