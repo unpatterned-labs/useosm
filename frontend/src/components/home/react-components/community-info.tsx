@@ -1,12 +1,12 @@
 import { XIcon } from "@/assets/icons/react/XIcon";
 import { Button } from "@/components/ui/react/button";
-import { APP_CONTENT } from "@/config/Content";
 import cn from "@/utils/cn";
 import type { Dispatch } from "react";
 
 const CommunityInfo = ({
   communityInfo,
   setCommunityInfo,
+  mapTitle,
 }: {
   communityInfo: {
     longitude: number;
@@ -20,6 +20,7 @@ const CommunityInfo = ({
       resolvedKeys: { name: string; url: string }[];
     } | null>
   >;
+  mapTitle: string;
 }) => {
   // Clear Community Info
   const handleClearInfo = () => {
@@ -37,7 +38,7 @@ const CommunityInfo = ({
     >
       <div className="flex items-center justify-between">
         <h4 className="mx-2 text-lg font-bold md:mx-3 md:text-xl">
-          {APP_CONTENT.HOME_PAGE.OSMCommunities.map.title}
+          {mapTitle}
         </h4>
         <Button
           title="close"

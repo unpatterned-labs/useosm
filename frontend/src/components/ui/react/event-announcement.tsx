@@ -4,9 +4,9 @@ import cn from "@/utils/cn";
 import { useState } from "react";
 import { Button } from "./button";
 import { ArrowRight } from "@/assets/icons/react/ArrowRight";
-import { APP_CONTENT } from "@/config/Content";
+import type { EventsContentType } from "src/types/content";
 
-const EventAnnouncement = () => {
+const EventAnnouncement = ({ events }: { events: EventsContentType }) => {
   const [isVisible, setIsVisible] = useState(true);
 
   const handleHide = () => {
@@ -60,18 +60,18 @@ const EventAnnouncement = () => {
           )}
         >
           <span className="text-grey-300 text-base font-semibold">
-            {APP_CONTENT.EVENTS.announcement.title}
+            {events.announcement.title}
           </span>
 
           <div className="bg-surface-30 h-40 space-y-3 rounded-3xl bg-[url('../assets/background/resource-card-vector.svg')] px-4 py-6">
             <p className="text-grey-300 w-3xs text-base">
-              {APP_CONTENT.EVENTS.announcement.description}
+              {events.announcement.description}
             </p>
             <Button
               id="cta-event"
               variant="primaryTwo"
               size="lg"
-              href={APP_CONTENT.EVENTS.announcement.link}
+              href={events.announcement.link}
               target="_blank"
             >
               Read more

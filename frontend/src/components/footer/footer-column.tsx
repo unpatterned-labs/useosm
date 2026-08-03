@@ -1,19 +1,25 @@
-import { APP_CONTENT } from "@/config/Content";
 import { Translator } from "./translator";
 import type { ExploreOSMSection, NavChild, NavItem } from "src/types/content";
+import type { Locale } from "@/i18n/ui";
+
+export type FooterColumnKind = "usecases" | "explore" | "resources";
 
 export const FooterColumn = ({
   section,
+  kind,
   isWide,
+  currentLocale,
+  currentPath,
 }: {
   section: NavItem | ExploreOSMSection;
+  kind: FooterColumnKind;
   isWide?: boolean;
+  currentLocale?: Locale;
+  currentPath?: string;
 }) => {
-  const isUsecaseSection = section.title === APP_CONTENT.USECASES.title;
-
   const visibleLinks = section.children.filter((link) => {
     const typedLink = link as NavChild;
-    return isUsecaseSection ? typedLink.active : true;
+    return kind === "usecases" ? typedLink.active : true;
   });
 
   return (
@@ -35,7 +41,13 @@ export const FooterColumn = ({
           </li>
         ))}
       </ul>
-      {section.title === APP_CONTENT.RESOURCES.title && <Translator />}
+      {kind === "resources" && currentLocale && currentPath && (
+        <Translator
+          position="footer"
+          currentLocale={currentLocale}
+          currentPath={currentPath}
+        />
+      )}
     </div>
   );
 };

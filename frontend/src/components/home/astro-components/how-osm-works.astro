@@ -1,10 +1,12 @@
 ---
 import MapTrifold from "@/assets/icons/astro/MapTrifold.astro";
 import Tag from "@/components/ui/astro-ui/tag.astro";
-import { APP_CONTENT } from "@/config/Content";
 import Button from "@/components/ui/astro-ui/button.astro";
 import ArrowRight from "@/assets/icons/astro/ArrowRight.astro";
 import cn from "@/utils/cn";
+import { getHomeContent } from "@/i18n/utils";
+
+const home = getHomeContent(Astro.currentLocale);
 ---
 
 <section
@@ -17,10 +19,10 @@ import cn from "@/utils/cn";
 >
   <div class="mb-12 flex max-w-full flex-col items-center justify-center gap-2">
     <Tag>
-      {APP_CONTENT.HOME_PAGE.HowOSMWorks.tagline}
+      {home.HowOSMWorks.tagline}
     </Tag>
     <h4 class="text-grey-300 text-center text-2xl font-semibold md:text-3xl">
-      {APP_CONTENT.HOME_PAGE.HowOSMWorks.title}
+      {home.HowOSMWorks.title}
     </h4>
   </div>
   <div>
@@ -29,7 +31,7 @@ import cn from "@/utils/cn";
       class="page-container mb-20 grid w-full grid-cols-1 gap-6 sm:grid-cols-2 md:gap-8 lg:grid-cols-3"
     >
       {
-        APP_CONTENT.HOME_PAGE.HowOSMWorks.steps.map((step, index) => (
+        home.HowOSMWorks.steps.map((step, index) => (
           <li class="group hover:shadow-dialog relative col-span-1 flex min-h-[28rem] flex-col justify-between gap-8 rounded-lg bg-green-50 bg-[url('../assets/background/contribute_osm_step_vector.svg')] bg-contain bg-right-top bg-no-repeat p-6 transition-all delay-150 ease-in-out sm:min-h-[30rem]">
             <div class="space-y-6">
               <div class="flex items-center justify-between gap-4">
@@ -75,7 +77,7 @@ import cn from "@/utils/cn";
     <div class="flex flex-col gap-8">
       <div class="inline-flex items-center gap-2">
         <h4 class="text-grey-300 align-middle text-2xl font-light md:text-4xl">
-          {APP_CONTENT.HOME_PAGE.HowOSMWorks.actions.title}
+          {home.HowOSMWorks.actions.title}
         </h4>
         <MapTrifold class="text-green-300" size={33} />
       </div>
@@ -83,10 +85,10 @@ import cn from "@/utils/cn";
         variant="primary-two"
         size="xl"
         id="get-started-button"
-        href={APP_CONTENT.HOME_PAGE.HowOSMWorks.actions.getStarted.link}
+        href={home.HowOSMWorks.actions.getStarted.link}
         class="w-fit"
       >
-        {APP_CONTENT.HOME_PAGE.HowOSMWorks.actions.getStarted.text}
+        {home.HowOSMWorks.actions.getStarted.text}
         <div
           class="flex size-8 items-center justify-center rounded-full bg-white md:size-10"
         >
@@ -101,20 +103,20 @@ import cn from "@/utils/cn";
         size="lg"
         id="download-ebook-button"
         class="gap-8 rounded-full font-normal"
-        href={APP_CONTENT.HOME_PAGE.HowOSMWorks.actions.downloadEbook.link}
+        href={home.HowOSMWorks.actions.downloadEbook.link}
         icon_name="download"
       >
-        {APP_CONTENT.HOME_PAGE.HowOSMWorks.actions.downloadEbook.text}
+        {home.HowOSMWorks.actions.downloadEbook.text}
       </Button>
       <Button
         variant="secondary"
         size="lg"
         id="watch-video-button"
         class="min-w-full gap-8 rounded-full font-normal"
-        href={APP_CONTENT.HOME_PAGE.HowOSMWorks.actions.watchVideo.link}
+        href={home.HowOSMWorks.actions.watchVideo.link}
         icon_name="play"
       >
-        {APP_CONTENT.HOME_PAGE.HowOSMWorks.actions.watchVideo.text}
+        {home.HowOSMWorks.actions.watchVideo.text}
       </Button>
     </div>
   </div>

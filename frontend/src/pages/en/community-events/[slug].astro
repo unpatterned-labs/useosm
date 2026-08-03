@@ -1,0 +1,34 @@
+---
+import type { GetStaticPaths } from "astro";
+import { getCollection, render } from "astro:content";
+import Layout from "@/layouts/page-layout.astro";
+import EventLayout from "@/layouts/event-layout.astro";
+import Button from "@/components/ui/astro-ui/button.astro";
+import ImageContainer from "@/components/ui/astro-ui/image-container.astro";
+import { getEntrySlug, isEntryForLocale } from "@/i18n/utils";
+
+export const getStaticPaths = (async () => {
+  const eventEntries = await getCollection("events", isEntryForLocale("en"));
+
+  return eventEntries.map((entry) => ({
+    params: { slug: getEntrySlug(entry) },
+    props: { entry },
+  }));
+}) satisfies GetStaticPaths;
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+const slug = getEntrySlug(entry);
+---
+
+<Layout title={entry.data.title}>
+  <EventLayout
+    title={entry.data.title}
+    slug={slug}
+    subtitle={entry.data.subtitle}
+    thumbnail={entry.data.thumbnail}
+    publishDate={entry.data.publishDate}
+  >
+    <Content components={{ Button, ImageContainer }} />
+  </EventLayout>
+</Layout>

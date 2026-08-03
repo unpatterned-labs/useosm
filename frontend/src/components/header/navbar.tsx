@@ -1,4 +1,3 @@
-import { APP_CONTENT } from "@/config/Content";
 import { APP_ROUTES } from "@/config/Routes";
 import { Button } from "@/components/ui/react/button";
 import { useState, useRef, useEffect } from "react";
@@ -7,15 +6,29 @@ import { HamburgerIcon } from "@/assets/icons/react/HamburgerIcon";
 import { XIcon } from "@/assets/icons/react/XIcon";
 import cn from "@/utils/cn";
 import { UseOSMLogoIcon } from "@/assets/icons/react/UseOSMLogoIcon";
+import { Translator } from "../footer/translator";
+import { type Locale } from "@/i18n/ui";
 
-export const NavBar = () => {
+export const NavBar = ({
+  locale,
+  currentPath,
+  usecases,
+  resources,
+  events,
+}: {
+  locale: Locale;
+  currentPath: string;
+  usecases: NavItem;
+  resources: NavItem;
+  events: NavItem;
+}) => {
   const [mobileMenuIsOpened, setMobileMenuIsOpened] = useState<boolean>(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
   // Detect scroll and toggle blur background
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 5); // adjust threshold if needed
+      setIsScrolled(window.scrollY > 5);
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
@@ -61,11 +74,7 @@ export const NavBar = () => {
               <UseOSMLogoIcon className="h-6 w-30 text-green-500 duration-150 ease-in-out hover:text-green-400 md:h-7 md:w-40" />
             </a>
             <ul className="hidden gap-x-10 lg:flex" role="menubar">
-              {[
-                APP_CONTENT.USECASES,
-                APP_CONTENT.RESOURCES,
-                APP_CONTENT.EVENTS,
-              ].map((config) => {
+              {[usecases, resources, events].map((config) => {
                 const hasRoute = config.route.length > 0;
                 return (
                   <li
@@ -92,6 +101,12 @@ export const NavBar = () => {
             </ul>
           </div>
           <div className="flex items-center gap-x-4">
+            <Translator
+              position="header"
+              currentLocale={locale}
+              currentPath={currentPath}
+              className="border-grey-50 hidden rounded-xl border shadow-xs md:flex"
+            />
             <div>
               {/* This is a hack to show different button sizes on mobile and desktop. Another alternative is to use javascript to get the screen width, but I decided to go with this for now. */}
               <Button
@@ -136,14 +151,16 @@ export const NavBar = () => {
           mobileMenuIsOpened ? "translate-x-0" : "translate-x-full"
         }`}
       >
-        <div className="px-4 pt-36">
+        <div className="space-y-6 px-4 pt-36">
+          <Translator
+            position="header"
+            currentLocale={locale}
+            currentPath={currentPath}
+            className="flex w-40 border md:hidden"
+          />
           <nav aria-label="Mobile navigation">
             <ul role="menubar" className="flex flex-col gap-y-6">
-              {[
-                APP_CONTENT.USECASES,
-                APP_CONTENT.RESOURCES,
-                APP_CONTENT.EVENTS,
-              ].map((config) => {
+              {[usecases, resources, events].map((config) => {
                 const hasRoute = config.route.length > 0;
                 return (
                   <li key={`mobile-route-${config.title}`} role="none">
@@ -380,7 +397,7 @@ const DropdownMenu = ({ config }: { config: NavItem }) => {
               tabIndex={isOpen && focusedIndex === index ? 0 : -1}
               className={`${
                 focusedIndex === index ? "bg-white-2" : ""
-              } hover:bg-white-2 focus:bg-white-2 flex flex-col gap-2 rounded-2xl p-4 transition-colors duration-300 focus:outline-none`}
+              } group flex flex-col gap-2 rounded-2xl p-4 transition-colors duration-300 hover:bg-green-50 focus:bg-green-50 focus:outline-none`}
               onMouseEnter={() => setFocusedIndex(index)}
               onClick={() => {
                 setIsOpen(false);

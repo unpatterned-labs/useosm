@@ -20,15 +20,22 @@ The frontend follows a modular structure:
 
 - **`src/`**: Contains all source code, including:
   - **`components/`**: Reusable UI components organized by feature (e.g., `footer`, `header`, `ui`).
+  - **`assets/`**: Images and icons used for the website.
   - **`layouts/`**: Layout templates for pages.
   - **`pages/`**: Individual pages for the website.
   - **`styles/`**: Global and component-specific styles.
+  - **`types/`**: Content types used across the frontend pages.
+  - **`helpers/`**: Reusable functions used for data formatting or conversion.
+  - **`config/`**: Website configuration files.
+  - **`i18n/`**: Translated contents files and Internationalization(i18n) translation utility functions.
   - **`utils/`**: Utility functions for common tasks.
 - **`public/`**: Static assets such as images and `robots.txt`.
   - Includes theme-specific logos: `logo_green.svg` (light theme) and `logo_white.svg` (dark theme).
+- **`husky/`**: Configuration of automatic linting of commit messages, code, and run tests upon committing or pushing .
 - **`docs/`**: Documentation for the frontend architecture.
   - **`architecture/`**: Contains Architecture Decision Records (ADRs) that document key technical decisions.
 - **`astro.config.mjs`**: Configuration file for the Astro framework.
+- **`.prettierrc`**: Configuration file for the Astro framework.
 - **`package.json`**: Lists project dependencies and scripts.
 
 ---
@@ -67,6 +74,7 @@ To set up the frontend locally, follow these steps:
 
 5. **Preview the Build**:
    Run:
+
    ```sh
    pnpm preview
    ```

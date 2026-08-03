@@ -1,0 +1,238 @@
+---
+title: "Sprint de données UseOSM"
+subtitle: "UseOSM Community Event"
+publishDate: "6-07-2026"
+dateUpdated: "6-07-2026"
+thumbnail: "/images/events/mapkathon_2026.svg"
+
+---
+
+import Timeline from "@/components/shared/react-components/Timeline";
+import CardPrize from "@/components/shared/react-components/CardPrize";
+import CTASection from "@/components/events/cta-section";
+import ArrowRight from "@/assets/icons/astro/ArrowRight.astro";
+
+## La plupart des événements OSM s'arrêtent une fois les données ajoutées. Celui-ci commence là.
+
+Le **Map&lt;&gt;kathon** 2026 est un défi communautaire qui vise à montrer comment les données OpenStreetMap peuvent servir au-delà de la cartographie. L'objectif est d'aider chacun à explorer, analyser, expliquer et créer à partir des données OSM, au service des communautés, de l'aménagement, de l'action humanitaire, de la recherche, des technologies civiques et des projets d'intérêt général.
+
+Il ne s'agit pas seulement d'ajouter des données à la carte. Il s'agit de montrer ce que les données OSM permettent de faire.
+
+Les participants peuvent soumettre des cartes, des tableaux de bord, des guides, des récits de données, des notebooks, des outils légers, des ressources pédagogiques ou des workflows assistés par IA.
+
+### Contexte et objectifs
+
+**UseOSM** existe pour combler un manque persistant : beaucoup de personnes contribuent à OpenStreetMap, mais bien moins savent en exploiter les données. Les cartes se construisent ; les données, elles, restent souvent inutilisées, faute de savoir comment les extraire, les analyser ou les appliquer.
+L'IA fait désormais partie du travail avec les données ouvertes, pour les interroger, les résumer et construire par-dessus. Cet événement lui donne sa juste place : celle d'un outil qui aide les gens à utiliser OSM, et non celle du sujet principal. La vedette, c'est l'usage ; l'IA n'est qu'un moyen d'y parvenir, aux côtés de l'analyse classique.
+
+### Qui peut participer
+
+- Ouvert à tous : étudiants, contributeurs OSM, développeurs, utilisateurs SIG, personnel d'ONG et débutants.
+- Les participants peuvent travailler seuls ou en équipe.
+
+### Calendrier du Map&lt;&gt;kathon
+
+<Timeline
+  client:load
+  items={[
+    {
+      title:
+        "Rejoignez la réunion d'information le 15 juillet 2026 à 16h00 GMT +1",
+      description:
+        "Présentation du Map&lt;&gt;Kathon, conditions de participation, formation des équipes et questions ouvertes.",
+      startDate: "15-07-2026",
+      endDate: "15-07-2026",
+    },
+    {
+      title: "Phase de réalisation en asynchrone",
+      description:
+        "Travaillez à votre rythme. Préparez vos données, construisez votre analyse ou développez votre outil. Terminez le tout avant le 7 août 2026.",
+      startDate: "15-07-2026",
+      endDate: "7-08-2026",
+    },
+    {
+      title: "Évaluation",
+      description: "Les résultats sont examinés et notés par le jury.",
+      startDate: "7-08-2026",
+      endDate: "21-08-2026",
+    },
+    {
+      title: "Annonce des gagnants",
+      description:
+        "Publication des résultats. Les productions et un récapitulatif sont partagés avec la communauté.",
+      startDate: "21-08-2026",
+      endDate: "21-08-2026",
+    },
+  ]}
+/>
+
+### Ce que nous recherchons
+
+- Un extrait de données OpenStreetMap propre, pour un cas d'usage local précis.
+- Une analyse ou un notebook (par exemple : accès aux écoles ou aux centres de santé, couverture du réseau routier, exposition aux inondations).
+- Un guide du type « Comment extraire les écoles, les centres de santé, les routes ou les bâtiments depuis OSM ».
+- Un tableau de bord simple montrant la couverture ou la complétude des données.
+- Un workflow documenté utilisant **Overpass**, **QGIS**, **OSMnx** ou **ohsome**.
+- Un assistant basé sur l'IA, par exemple une conversion du langage naturel vers Overpass, un assistant « Ask OSM » qui s'appuie sur la documentation **UseOSM**, ou un outil qui recommande quel outil OSM utiliser.
+
+Rendez les données amusantes. Les jeux de données à fort impact (inondations, centres de santé, écoles) sont les bienvenus, mais les données ludiques et engageantes le sont tout autant, celles qui donnent envie de découvrir ce que contient OSM : stands de cuisine de rue, fresques et art public, terrains de football, salles de concert, marchés, « ce qu'on peut cartographier dans ma rue ». Des données intéressantes attirent les gens et montrent toute l'étendue d'OSM.
+
+### Catégories de soumission
+
+Chaque projet doit être soumis dans l'une des catégories suivantes.
+
+#### 1. Récit de données OSM
+
+Cette catégorie s'adresse à celles et ceux qui veulent utiliser les données OSM pour expliquer quelque chose sur un lieu, une communauté ou un enjeu d'intérêt général.
+
+Un bon récit de données est simple, clair et utile. Ce peut être une carte, un article, une story map, une infographie, une présentation ou un court rapport visuel.
+
+**Exemples d'idées :**
+
+- Une carte montrant l'accès aux écoles, aux centres de santé, aux routes, aux marchés ou aux équipements publics
+- Un récit visuel sur les communautés exposées aux inondations et les infrastructures voisines
+- Un court article montrant ce que révèle OSM sur la santé, la mobilité ou l'accès aux services publics
+- Une comparaison entre les services cartographiés et non cartographiés d'une zone donnée
+- Une étude de cas montrant comment les données OSM peuvent soutenir la planification ou la prise de décision
+
+#### 2. Tableau de bord ou analyse OSM
+
+Cette catégorie s'adresse aux utilisateurs SIG, analystes de données, étudiants, chercheurs et à toute personne intéressée par l'analyse des données OSM.
+
+Les projets doivent utiliser les données OSM pour répondre à une question concrète ou éclairer une décision. Les livrables peuvent être des tableaux de bord, des notebooks, des projets QGIS, des rapports, des cartes ou des workflows reproductibles.
+
+**Exemples d'idées :**
+
+- Analyse QGIS de l'accessibilité des écoles ou des centres de santé
+- Notebook OSMnx analysant les réseaux routiers
+- Workflow QuackOSM pour extraire des bâtiments, des routes ou des équipements
+- Analyse ohsome de la complétude des données OSM dans le temps
+- Tableau de bord de la couverture des infrastructures
+- Carte d'accessibilité des équipements publics
+- Analyse de la complétude des données pour une ville ou une région
+
+#### 3. Outil léger ou démo OSM
+
+Cette catégorie s'adresse aux développeurs, designers, ingénieurs de données et makers qui veulent créer de petits outils ou prototypes à partir des données OSM.
+
+L'outil n'a pas besoin d'être un produit fini. Il doit être léger, compréhensible et utile.
+
+**Exemples d'idées :**
+
+- Extracteur simple de données OSM
+- Démo de conversion du langage naturel vers une requête Overpass
+- Explorateur de tags OSM
+- Visualiseur de cartes communautaires
+- Vérificateur de qualité des données OSM
+- Outil de recherche de services publics locaux à partir des données OSM
+- Outil de téléchargement des écoles, centres de santé, routes ou bâtiments d'une zone sélectionnée
+- Interface simple permettant aux non-spécialistes d'explorer les données OSM
+
+#### 4. Ressource pédagogique OSM
+
+Cette catégorie s'adresse aux enseignants, animateurs de communauté, rédacteurs, formateurs et contributeurs à la documentation.
+
+L'objectif est de créer des ressources qui aident les autres à comprendre comment utiliser les données OSM.
+
+**Exemples d'idées :**
+
+- Guide pour débuter avec les données OSM
+- Courte vidéo tutorielle
+- « Comment utiliser les données OSM pour la planification en santé publique »
+- « Comment extraire des routes, des bâtiments, des écoles ou des centres de santé depuis OSM »
+- « Comment utiliser Overpass Turbo quand on débute »
+- Guide localisé sur l'usage des données OSM pour un pays ou une ville
+- Support de formation pour les YouthMappers ou les communautés OSM locales
+- Étude de cas UseOSM montrant comment une organisation utilise OSM au quotidien
+
+### IA et cartographie ouverte
+
+L'IA est la bienvenue au **Map&lt;&gt;kathon**, mais elle n'en est pas le cœur. Le cœur reste l'**usage des données OSM au service de l'intérêt général**.
+
+Les participants peuvent recourir à l'IA lorsqu'elle aide à découvrir, comprendre, analyser, expliquer ou améliorer de façon responsable les données OSM. Les résultats produits par l'IA ne doivent toutefois jamais être considérés comme automatiquement corrects. La relecture humaine, la transparence et la documentation comptent.
+
+#### Idées autour de l'IA
+
+Les participants peuvent soumettre un travail lié à l'IA dans n'importe quelle catégorie. Quelques pistes :
+
+- Démo de conversion du langage naturel vers une requête Overpass
+- Guide assisté par IA pour extraire des données OSM
+- Explicateur de tags OSM qui traduit les tags techniques en langage clair
+- Recommandateur d'outils IA pour les workflows OSM
+- Documentation assistée par IA pour l'analyse de données OSM
+- Court article sur les risques et les bénéfices de l'IA dans la cartographie ouverte
+- Comparaison entre une cartographie suggérée par IA et une validation humaine
+- Démo montrant comment l'IA peut aider les non-spécialistes à comprendre les données OSM
+- Synthèse assistée par IA de résultats d'analyse OSM, relue et corrigée par des humains
+
+#### Principes d'une IA responsable
+
+Les participants qui utilisent l'IA doivent :
+
+- Indiquer clairement quel outil d'IA a été utilisé
+- Expliquer le rôle joué par l'IA
+- Relire les résultats générés par l'IA avant de les soumettre
+- Éviter de téléverser aveuglément des données générées par IA dans OSM
+- Respecter les savoirs locaux et les règles de la communauté cartographique
+- Reconnaître les limites, les risques et les incertitudes
+
+<CardPrize
+  totalPrizeText="800 £ de dotation totale"
+  items={[
+    {
+      title: "1re place",
+      price: "400 £",
+      description:
+        "Meilleur projet dans l'ensemble : utilité, qualité, documentation et reproductibilité.",
+    },
+    {
+      title: "2e place",
+      price: "250 £",
+      description:
+        "Un projet solide, remarquable par sa documentation ou par un usage particulièrement créatif des données OSM.",
+    },
+    {
+      title: "3e place",
+      price: "150 £",
+      description:
+        "Un jeu de données, une analyse ou un outil qui aide réellement quelqu'un à utiliser OSM.",
+    },
+  ]}
+/>
+
+### Critères d'évaluation
+
+| Critère                            | Pondération |
+| ---------------------------------- | ----------- |
+| Pertinence pour l'intérêt général  | 25 %        |
+| Usage efficace des données OSM     | 25 %        |
+| Clarté et facilité d'utilisation   | 20 %        |
+| Reproductibilité et documentation  | 15 %        |
+| Créativité ou innovation           | 15 %        |
+| **Total**                          | **100 %**   |
+
+### Code de conduite
+
+L'événement suit le code de conduite de la communauté OSM. La participation se veut respectueuse et inclusive, les savoirs locaux sont valorisés, et aucune donnée générée par IA n'est importée dans OSM sans relecture humaine.
+
+<CTASection
+  title="Prêt à soumettre votre projet Map<>Kathon ?"
+  buttonText="Soumettre votre projet"
+  buttonLink="https://forms.gle/LEvv4P7Hv8EvBqjW9"
+  buttonVariant="primaryTwo"
+  buttonSize="xl"
+></CTASection>
+
+### Revoir l'enregistrement de la réunion d'information
+
+Vous avez manqué la réunion ou vous souhaitez revoir les détails ? L'enregistrement complet couvre tout ce qu'il faut savoir : critères d'évaluation, conditions de soumission et session de questions-réponses.
+
+[Voir l'enregistrement](https://drive.google.com/file/d/1mttZrUCRCmrhPrZtipqPhrn1JNole-8_/view?usp=sharing)
+
+[Consulter la présentation](https://docs.google.com/presentation/d/1U72vfuZdxG0bQAvnoh8cltDCqKAsE1TfnMrb95TFqGc/edit?usp=sharing)
+
+### Nous contacter
+
+Une question sur le **Map&lt;&gt;kathon**, besoin d'aide pour votre soumission, ou simplement envie de dire bonjour ? Écrivez-nous.
+
+**Courriel :** connect@unpatterned.org

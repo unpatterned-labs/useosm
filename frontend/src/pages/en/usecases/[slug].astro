@@ -3,21 +3,24 @@ import type { GetStaticPaths } from "astro";
 import { getCollection } from "astro:content";
 import Layout from "@/layouts/page-layout.astro";
 import UsecaseLayout from "@/layouts/usecase-layout.astro";
-import { slugify } from "@/utils/slugify";
+import { getEntrySlug, isEntryForLocale } from "@/i18n/utils";
 
 export const getStaticPaths = (async () => {
-  const usecaseEntries = await getCollection("usecases");
+  const usecaseEntries = await getCollection(
+    "usecases",
+    isEntryForLocale("en"),
+  );
+
   return usecaseEntries.map((entry) => ({
-    // Slugify the usecase name because it's slugified in the config/Content file. This ensure we get the same slug even if the name of the
-    // markdown file is different.
-    params: { slug: slugify(entry.data.usecase) },
+    params: { slug: getEntrySlug(entry) },
     props: { entry },
   }));
 }) satisfies GetStaticPaths;
 
 const { entry } = Astro.props;
+const slug = getEntrySlug(entry);
 ---
 
 <Layout title={entry.data.usecase} description={entry.data.description}>
-  <UsecaseLayout data={entry.data} slug={entry.slug} />
+  <UsecaseLayout data={entry.data} slug={slug} />
 </Layout>

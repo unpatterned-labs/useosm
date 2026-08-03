@@ -1,4 +1,3 @@
-import { APP_CONTENT } from "@/config/Content";
 import { useEffect, useRef, useState } from "react";
 import OSMStatistics from "@/content/osm_stats.json";
 import type { TOSMStats } from "src/types/content";
@@ -172,7 +171,7 @@ const OSMStatsInsights = ({ activeYear }: { activeYear: number }) => {
   );
 };
 
-export const OSMStats = () => {
+export const OSMStats = ({ title }: { title: string }) => {
   const [activeYear, setActiveYear] = useState<number>(
     APP_CONFIG.OSMFoundingYear,
   );
@@ -183,7 +182,7 @@ export const OSMStats = () => {
         id="osm-stats"
       >
         <h2 className="max-w-[38.125rem] text-xl font-semibold sm:text-3xl">
-          {APP_CONTENT.HOME_PAGE.OSMStats.title}
+          {title}
         </h2>
         <div className="hidden w-full md:block">
           <OSMStatsSlider

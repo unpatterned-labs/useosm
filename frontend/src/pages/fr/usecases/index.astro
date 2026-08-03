@@ -1,0 +1,10 @@
+---
+import Layout from "@/layouts/page-layout.astro";
+import { getUsecasesContent } from "@/i18n/utils";
+
+const usecases = getUsecasesContent(Astro.currentLocale);
+---
+
+<Layout title={usecases.title}>
+  <section class="relative pb-20"></section>
+</Layout>
