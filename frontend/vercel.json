@@ -5,6 +5,11 @@
       "source": "/",
       "destination": "/en",
       "permanent": true
+    },
+    {
+      "source": "/:path((?!(?:en|fr)(?:/|$)|_astro(?:/|$)|images(?:/|$)|favicon\\.svg$|robots\\.txt$|sitemap).*)",
+      "destination": "/en/:path",
+      "permanent": true
     }
   ]
 }
