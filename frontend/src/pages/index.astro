@@ -2,5 +2,5 @@
 import { defaultLocale } from "@/i18n/ui";
 
 // Redirect to default locale if no locale is specified
-return Astro.redirect(`/${defaultLocale}`);
+return Astro.redirect(`/${defaultLocale}`, 301);
 ---
