@@ -1,28 +1,31 @@
 ---
 import type { GetStaticPaths } from "astro";
-import { getCollection } from "astro:content";
+import { getCollection, render } from "astro:content";
 import Layout from "@/layouts/page-layout.astro";
 import EventLayout from "@/layouts/event-layout.astro";
 import Button from "@/components/ui/astro-ui/button.astro";
 import ImageContainer from "@/components/ui/astro-ui/image-container.astro";
+import { getEntrySlug, isEntryForLocale } from "@/i18n/utils";
 
 export const getStaticPaths = (async () => {
-  const eventEntries = await getCollection("events");
+  const eventEntries = await getCollection("events", isEntryForLocale("fr"));
 
   return eventEntries.map((entry) => ({
-    params: { slug: entry.slug },
+    params: { slug: getEntrySlug(entry) },
     props: { entry },
   }));
 }) satisfies GetStaticPaths;
 
 const { entry } = Astro.props;
-const { Content } = await entry.render();
+const { Content } = await render(entry);
+const slug = getEntrySlug(entry);
 ---
 
-<Layout title={entry.data.title} description={entry.data.description}>
+<Layout title={entry.data.title}>
   <EventLayout
     title={entry.data.title}
-    slug={entry.data.slug}
+    slug={slug}
+    subtitle={entry.data.subtitle}
     thumbnail={entry.data.thumbnail}
     publishDate={entry.data.publishDate}
   >

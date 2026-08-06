@@ -24,7 +24,15 @@ export default defineConfig({
       lastmod: new Date(),
     }),
   ],
+  i18n: {
+    defaultLocale: "en",
+    locales: ["en", "fr"],
+    routing: {
+      prefixDefaultLocale: true,
+      redirectToDefaultLocale: true,
+    },
+  },
   vite: {
     plugins: [tailwindcss()],
-  }
+  },
 });

@@ -1,11 +1,12 @@
 ---
-import { APP_CONTENT } from "@/config/Content";
 import Button from "@/components/ui/astro-ui/button.astro";
 import Tag from "@/components/ui/astro-ui/tag.astro";
 import HeroBgVector from "@/components/shared/astro-components/hero-bg-vector.astro";
 import { parseHeroText } from "@/utils/text-formatter";
+import { getHomeContent } from "@/i18n/utils";
 
-const heroText = parseHeroText(APP_CONTENT.HOME_PAGE.Hero.title);
+const home = getHomeContent(Astro.currentLocale);
+const heroText = parseHeroText(home.Hero.title);
 ---
 
 <HeroBgVector
@@ -15,12 +16,12 @@ const heroText = parseHeroText(APP_CONTENT.HOME_PAGE.Hero.title);
   <div class="max-w-[45.219rem] space-y-6 text-center" id="hero-text">
     <div class="space-y-6">
       <Tag>
-        {APP_CONTENT.HOME_PAGE.Hero.tagline}
+        {home.Hero.tagline}
       </Tag>
     </div>
     <h1 class="text-3xl font-semibold sm:text-6xl" set:html={heroText} />
     <p id="typingBox" class="text-grey-300 text-sm font-light sm:text-lg">
-      {APP_CONTENT.HOME_PAGE.Hero.description}
+      {home.Hero.description}
     </p>
   </div>
 

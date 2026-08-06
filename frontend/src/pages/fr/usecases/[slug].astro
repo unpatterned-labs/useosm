@@ -1,0 +1,26 @@
+---
+import type { GetStaticPaths } from "astro";
+import { getCollection } from "astro:content";
+import Layout from "@/layouts/page-layout.astro";
+import UsecaseLayout from "@/layouts/usecase-layout.astro";
+import { getEntrySlug, isEntryForLocale } from "@/i18n/utils";
+
+export const getStaticPaths = (async () => {
+  const usecaseEntries = await getCollection(
+    "usecases",
+    isEntryForLocale("fr"),
+  );
+
+  return usecaseEntries.map((entry) => ({
+    params: { slug: getEntrySlug(entry) },
+    props: { entry },
+  }));
+}) satisfies GetStaticPaths;
+
+const { entry } = Astro.props;
+const slug = getEntrySlug(entry);
+---
+
+<Layout title={entry.data.usecase} description={entry.data.description}>
+  <UsecaseLayout data={entry.data} slug={slug} />
+</Layout>

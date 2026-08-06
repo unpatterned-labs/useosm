@@ -1,12 +1,15 @@
 import { useState, useEffect } from "react";
 import ArrowOut from "@/assets/icons/react/ArrowOut";
 import { Button } from "@/components/ui/react/button";
-import { APP_CONTENT } from "@/config/Content";
 
 const ExpandControl = ({
   containerRef,
+  minimizeLabel,
+  maximizeLabel,
 }: {
   containerRef: React.RefObject<HTMLDivElement | null>;
+  minimizeLabel: string;
+  maximizeLabel: string;
 }) => {
   const [isFullscreen, setIsFullscreen] = useState(false);
 
@@ -42,9 +45,7 @@ const ExpandControl = ({
     >
       <ArrowOut />
       <span className="text-sm font-medium">
-        {isFullscreen
-          ? APP_CONTENT.MAP_CONFIG.control.layout.minimizeLabel
-          : APP_CONTENT.MAP_CONFIG.control.layout.maximizeLabel}
+        {isFullscreen ? minimizeLabel : maximizeLabel}
       </span>
     </Button>
   );

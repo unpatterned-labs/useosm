@@ -1,0 +1,12 @@
+---
+import Layout from "@/layouts/page-layout.astro";
+import { getEventsContent } from "@/i18n/utils";
+
+const events = getEventsContent(Astro.currentLocale);
+
+return Astro.redirect(events.announcement.link);
+---
+
+<Layout title={events.title} description={events.title}>
+  <section class="relative pb-20"></section>
+</Layout>
