@@ -1,4 +1,8 @@
-import { ResourceCategory, type ResourceItem } from "src/types/content";
+import {
+  getCategoryLabel,
+  ResourceCategory,
+  type ResourceItem,
+} from "src/types/content";
 import { APP_CONTENT } from "@/config/Content";
 import ResourceList from "@/components/resources/react-components/ResourceList";
 import { useEffect, useState } from "react";
@@ -6,48 +10,24 @@ import cn from "@/utils/cn";
 
 const OSMResources = ({
   disablePagination = false,
+  resourcesCategory,
+  locale = "en",
 }: {
   disablePagination?: boolean;
+  locale: string | undefined;
+  resourcesCategory: Array<{
+    id: number;
+    category: string;
+    description: string;
+  }>;
 }) => {
   const [isPaused, setIsPaused] = useState(false);
   const [activeCategory, setActiveCategory] = useState<string>(
-    ResourceCategory.EDITORS,
+    getCategoryLabel(ResourceCategory.EDITORS, locale),
   );
   const [resourcesList, setResourcesList] = useState<ResourceItem[]>(
     APP_CONTENT.RESOURCES_PAGE.resourcesList,
   );
-
-  const ResourcesCategory = [
-    {
-      id: 1,
-      category: ResourceCategory.EDITORS,
-      description: "Editors are too used to contribute to osm data",
-    },
-    {
-      id: 2,
-      category: ResourceCategory.DATA_EXTRACTION_AND_ANALYSIS,
-      description:
-        "Utilities and libraries to query, extract, and analyze raw OpenStreetMap data at scale.",
-    },
-    {
-      id: 3,
-      category: ResourceCategory.MAP_VISUALIZATION_STACK,
-      description:
-        "Utilities and libraries to query, extract, and analyze raw OpenStreetMap data at scale.",
-    },
-    {
-      id: 4,
-      category: ResourceCategory.LIBRARIES,
-      description:
-        "Code libraries in various programming languages to read, write, and manipulate OSM data.",
-    },
-    {
-      id: 5,
-      category: ResourceCategory.NAVIGATION,
-      description:
-        "Routing engines, on-device libraries, and mobile apps that turn OSM data into turn-by-turn navigation.",
-    },
-  ];
 
   const DESKTOP_BREAKPOINT = 1024;
 
@@ -69,12 +49,12 @@ const OSMResources = ({
     let nextCategory = category;
 
     if (autoAdvance) {
-      const currentIndex = ResourcesCategory.findIndex(
+      const currentIndex = resourcesCategory.findIndex(
         (cat) => cat.category === category,
       );
       const nextIndex =
-        currentIndex === ResourcesCategory.length - 1 ? 0 : currentIndex + 1;
-      nextCategory = ResourcesCategory[nextIndex].category;
+        currentIndex === resourcesCategory.length - 1 ? 0 : currentIndex + 1;
+      nextCategory = resourcesCategory[nextIndex].category;
     }
 
     setActiveCategory(nextCategory);
@@ -102,7 +82,7 @@ const OSMResources = ({
   return (
     <div className="flex md:gap-4">
       <ul className="flex flex-col gap-8 lg:max-w-[22.56rem]">
-        {ResourcesCategory.map((category) => (
+        {resourcesCategory.map((category) => (
           <li
             key={category.id}
             className={cn(

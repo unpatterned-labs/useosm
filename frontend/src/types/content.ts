@@ -63,6 +63,11 @@ export type HomePageContent = {
       title: string;
       link: string;
     };
+    resourceCategories: Array<{
+      id: number;
+      category: string;
+      description: string;
+    }>;
   };
   OrgsUsingOSM: {
     title: string;
@@ -83,7 +88,7 @@ export type HomePageContent = {
     }>;
     actions: {
       title: string;
-      downloadEbook: {
+      learn: {
         text: string;
         link: string;
       };
@@ -134,6 +139,43 @@ export enum ResourceCategory {
   MOBILE = "Mobile",
 }
 
+const resourceCategoryLabels: Record<
+  string,
+  Record<ResourceCategory, string>
+> = {
+  en: {
+    [ResourceCategory.ALL]: "All",
+    [ResourceCategory.EDITORS]: "Editors",
+    [ResourceCategory.DATA_EXTRACTION_AND_ANALYSIS]:
+      "Data Extraction and Analysis",
+    [ResourceCategory.MAP_VISUALIZATION_STACK]: "Map Visualization",
+    [ResourceCategory.DATA_ANALYTICS]: "Data Analytics",
+    [ResourceCategory.USER_INTERACTION]: "User Interaction",
+    [ResourceCategory.LIBRARIES]: "Libraries",
+    [ResourceCategory.NAVIGATION]: "Navigation",
+    [ResourceCategory.MOBILE]: "Mobile",
+  },
+  fr: {
+    [ResourceCategory.ALL]: "Tous",
+    [ResourceCategory.EDITORS]: "Éditeurs",
+    [ResourceCategory.DATA_EXTRACTION_AND_ANALYSIS]:
+      "Extraction et analyse de données",
+    [ResourceCategory.MAP_VISUALIZATION_STACK]: "Visualisation cartographique",
+    [ResourceCategory.DATA_ANALYTICS]: "Analyse de données",
+    [ResourceCategory.USER_INTERACTION]: "Interaction utilisateur",
+    [ResourceCategory.LIBRARIES]: "Bibliothèques",
+    [ResourceCategory.NAVIGATION]: "Navigation",
+    [ResourceCategory.MOBILE]: "Mobile",
+  },
+};
+
+// usage
+export const getCategoryLabel = (
+  category: ResourceCategory,
+  lang: string = "en",
+): string => {
+  return resourceCategoryLabels[lang]?.[category] ?? category;
+};
 export type ResourceItem = {
   id: number;
   title: string;
