@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/react/button";
 import { getHomeContent } from "@/i18n/utils";
 
 const home = getHomeContent(Astro.currentLocale);
+const defaultLocale = Astro.currentLocale;
 ---
 
 <section class="bg-surface-30 py-12 md:px-12 lg:px-24">
@@ -19,7 +20,12 @@ const home = getHomeContent(Astro.currentLocale);
       </p>
     </div>
     <div class="min-h-[40rem] w-full">
-      <OSMResources client:load disablePagination={true} />
+      <OSMResources
+        locale={defaultLocale}
+        resourcesCategory={home.OSMResources.resourceCategories}
+        client:load
+        disablePagination={true}
+      />
     </div>
     <div class="mt-20 mb-12 flex justify-center">
       <Button

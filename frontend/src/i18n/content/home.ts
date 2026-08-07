@@ -1,4 +1,8 @@
-import type { HomePageContent } from "src/types/content";
+import {
+  getCategoryLabel,
+  ResourceCategory,
+  type HomePageContent,
+} from "src/types/content";
 import type { Locale } from "@/i18n/ui";
 import OsmStep1 from "@/assets/images/osm_step_1.jpg";
 import OsmStep2 from "@/assets/images/osm_step_2.jpg";
@@ -38,6 +42,43 @@ export const homeContent: Record<Locale, HomePageContent> = {
         title: "Explore All Resources",
         link: "/en/resources",
       },
+      resourceCategories: [
+        {
+          id: 1,
+          category: getCategoryLabel(ResourceCategory.EDITORS, "en"),
+          description: "Editors are too used to contribute to osm data",
+        },
+        {
+          id: 2,
+          category: getCategoryLabel(
+            ResourceCategory.DATA_EXTRACTION_AND_ANALYSIS,
+            "en",
+          ),
+          description:
+            "Utilities and libraries to query, extract, and analyze raw OpenStreetMap data at scale.",
+        },
+        {
+          id: 3,
+          category: getCategoryLabel(
+            ResourceCategory.MAP_VISUALIZATION_STACK,
+            "en",
+          ),
+          description:
+            "Utilities and libraries to query, extract, and analyze raw OpenStreetMap data at scale.",
+        },
+        {
+          id: 4,
+          category: getCategoryLabel(ResourceCategory.LIBRARIES, "en"),
+          description:
+            "Code libraries in various programming languages to read, write, and manipulate OSM data.",
+        },
+        {
+          id: 5,
+          category: getCategoryLabel(ResourceCategory.NAVIGATION, "en"),
+          description:
+            "Routing engines, on-device libraries, and mobile apps that turn OSM data into turn-by-turn navigation.",
+        },
+      ],
     },
     HowOSMWorks: {
       tagline: "How OSM Works",
@@ -64,8 +105,8 @@ export const homeContent: Record<Locale, HomePageContent> = {
       ],
       actions: {
         title: "Ready to start contributing ?",
-        downloadEbook: {
-          text: "Download eBook",
+        learn: {
+          text: "Learn OSM",
           link: "https://learnosm.org/en/beginner/",
         },
         watchVideo: {
@@ -132,6 +173,43 @@ export const homeContent: Record<Locale, HomePageContent> = {
         title: "Explorer toutes les ressources",
         link: "/fr/resources",
       },
+      resourceCategories: [
+        {
+          id: 1,
+          category: getCategoryLabel(ResourceCategory.EDITORS, "fr"),
+          description: "Editors are too used to contribute to osm data",
+        },
+        {
+          id: 2,
+          category: getCategoryLabel(
+            ResourceCategory.DATA_EXTRACTION_AND_ANALYSIS,
+            "fr",
+          ),
+          description:
+            "Utilities and libraries to query, extract, and analyze raw OpenStreetMap data at scale.",
+        },
+        {
+          id: 3,
+          category: getCategoryLabel(
+            ResourceCategory.MAP_VISUALIZATION_STACK,
+            "fr",
+          ),
+          description:
+            "Utilities and libraries to query, extract, and analyze raw OpenStreetMap data at scale.",
+        },
+        {
+          id: 4,
+          category: getCategoryLabel(ResourceCategory.LIBRARIES, "fr"),
+          description:
+            "Code libraries in various programming languages to read, write, and manipulate OSM data.",
+        },
+        {
+          id: 5,
+          category: getCategoryLabel(ResourceCategory.NAVIGATION, "fr"),
+          description:
+            "Routing engines, on-device libraries, and mobile apps that turn OSM data into turn-by-turn navigation.",
+        },
+      ],
     },
     HowOSMWorks: {
       tagline: "Comment fonctionne OSM",
@@ -158,8 +236,8 @@ export const homeContent: Record<Locale, HomePageContent> = {
       ],
       actions: {
         title: "Prêt à commencer à contribuer ?",
-        downloadEbook: {
-          text: "Télécharger l'eBook",
+        learn: {
+          text: "Apprenez OSM",
           link: "https://learnosm.org/fr/beginner/",
         },
         watchVideo: {

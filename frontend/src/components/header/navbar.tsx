@@ -100,12 +100,12 @@ export const NavBar = ({
               })}
             </ul>
           </div>
-          <div className="flex items-center gap-x-4">
+          <div className="flex items-center gap-x-2">
             <Translator
               position="header"
               currentLocale={locale}
               currentPath={currentPath}
-              className="border-grey-50 hidden rounded-xl border shadow-xs md:flex"
+              className="border-grey-50 hidden rounded-xl border px-2 py-2.5 shadow-xs md:flex"
             />
             <div>
               {/* This is a hack to show different button sizes on mobile and desktop. Another alternative is to use javascript to get the screen width, but I decided to go with this for now. */}

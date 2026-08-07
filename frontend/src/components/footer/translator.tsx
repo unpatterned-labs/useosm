@@ -36,12 +36,12 @@ export const Translator = ({
           }}
           className={cn(
             "text-grey-50 w-full cursor-pointer appearance-none bg-transparent pr-6 focus:outline-none",
-            position === "header" ? "text-grey-400" : "",
+            position === "header" ? "text-grey-400 uppercase" : "",
           )}
         >
           {APP_CONTENT.LANGUAGES.filter((l) => l.supported).map((l) => (
             <option key={l.locale} value={l.locale}>
-              {l.language}
+              {position == "header" ? l.locale : l.language}
             </option>
           ))}
         </select>
