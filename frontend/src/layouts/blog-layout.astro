@@ -17,7 +17,9 @@ const { title, slug, subtitle, publishDate, thumbnail } = Astro.props;
 >
   <main class="page-container my-30">
     <header class="mb-8 flex flex-col items-center justify-center gap-2">
-      <h4 class="text-grey-300 text-3xl font-bold md:text-4xl">{title}</h4>
+      <h4 class="text-grey-300 text-center text-3xl font-bold md:text-4xl">
+        {title}
+      </h4>
       <div class="text-grey-200 flex items-center gap-2 text-base">
         <span>{subtitle}</span>
         <span class="text-grey-50 text-sm">•</span>
@@ -25,7 +27,7 @@ const { title, slug, subtitle, publishDate, thumbnail } = Astro.props;
       </div>
     </header>
 
-    <div class="relative mt-30 min-w-full overflow-hidden rounded-3xl">
+    <div class="relative mt-15 min-w-full overflow-hidden rounded-3xl md:mt-30">
       <img
         src={thumbnail}
         alt={`thumbnail-${slug}`}
