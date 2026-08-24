@@ -9,6 +9,7 @@ const CTASection = ({
   buttonLink,
   buttonSize,
   buttonVariant,
+  disabled,
 }: {
   link: string;
   buttonText: string;
@@ -23,6 +24,7 @@ const CTASection = ({
     | "navlinkHovered"
     | "primaryTwo";
   title: string;
+  disabled?: boolean;
 }) => {
   return (
     <div className="mt-20 flex w-full flex-col items-center gap-8 md:gap-8">
@@ -37,6 +39,7 @@ const CTASection = ({
         href={buttonLink}
         className="w-fit no-underline"
         target="_blank"
+        disabled={disabled}
       >
         {buttonText}
         <div className="flex size-8 items-center justify-center rounded-full bg-white md:size-10">

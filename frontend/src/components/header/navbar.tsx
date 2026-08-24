@@ -14,13 +14,13 @@ export const NavBar = ({
   currentPath,
   usecases,
   resources,
-  events,
+  blogs,
 }: {
   locale: Locale;
   currentPath: string;
   usecases: NavItem;
   resources: NavItem;
-  events: NavItem;
+  blogs: NavItem;
 }) => {
   const [mobileMenuIsOpened, setMobileMenuIsOpened] = useState<boolean>(false);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -74,7 +74,7 @@ export const NavBar = ({
               <UseOSMLogoIcon className="h-6 w-30 text-green-500 duration-150 ease-in-out hover:text-green-400 md:h-7 md:w-40" />
             </a>
             <ul className="hidden gap-x-10 lg:flex" role="menubar">
-              {[usecases, resources, events].map((config) => {
+              {[usecases, resources, blogs].map((config) => {
                 const hasRoute = config.route.length > 0;
                 return (
                   <li
@@ -163,7 +163,7 @@ export const NavBar = ({
             className="w-full flex-1 overflow-y-auto"
           >
             <ul role="menubar" className="flex flex-col gap-y-6">
-              {[usecases, resources, events].map((config) => {
+              {[usecases, resources, blogs].map((config) => {
                 const hasRoute = config.route.length > 0;
                 return (
                   <li key={`mobile-route-${config.title}`} role="none">

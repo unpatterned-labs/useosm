@@ -76,6 +76,7 @@ export const Button = React.forwardRef<
       sizeClasses[size],
       variantClasses[variant],
       className,
+      disabled && "pointer-events-none opacity-50",
     );
 
     const Icon = icon_name ? AppIcons[icon_name] : null;

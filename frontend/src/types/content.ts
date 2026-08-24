@@ -65,6 +65,7 @@ export type HomePageContent = {
     };
     resourceCategories: Array<{
       id: number;
+      title: string;
       category: string;
       description: string;
     }>;
@@ -209,7 +210,7 @@ export type LanguageItem = {
 export type AppConfigType = {
   USECASES: NavItem;
   RESOURCES: NavItem;
-  EVENTS: EventsContentType;
+  BLOGS: EventsContentType;
   HOME_PAGE: HomePageContent;
   RESOURCES_PAGE: ResourcesPageContent;
   announcementContent: string[];

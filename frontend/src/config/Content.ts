@@ -1,5 +1,5 @@
 import type { AppConfigType } from "src/types/content";
-import { eventsContent } from "@/i18n/content/events";
+import { blogsContent } from "@/i18n/content/blogs";
 import { usecasesContent } from "@/i18n/content/usecases";
 import { resourcesContent } from "@/i18n/content/resources";
 import { homeContent } from "@/i18n/content/home";
@@ -13,7 +13,7 @@ export const APP_CONTENT: AppConfigType = {
     title: resourcesContent.en.title,
     children: resourcesContent.en.children,
   },
-  EVENTS: eventsContent.en,
+  BLOGS: blogsContent.en,
   HOME_PAGE: homeContent.en,
   RESOURCES_PAGE: {
     ...resourcesContent.en.page,

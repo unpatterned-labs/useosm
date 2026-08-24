@@ -1,8 +1,8 @@
 import { defineCollection } from "astro:content";
 import { z } from "astro/zod";
 
-// Event collection schema
-const eventCollection = defineCollection({
+// Blog collection schema
+const blogCollection = defineCollection({
   schema: z.object({
     title: z.string(),
     subtitle: z.string(),
@@ -42,7 +42,20 @@ const useCaseCollection = defineCollection({
   }),
 });
 
+// Resource collection schema
+const resourceCollection = defineCollection({
+  schema: z.object({
+    title: z.string(),
+    publishDate: z.string(),
+    dateUpdated: z.string(),
+    link: z.string(),
+    thumbnail: z.string(),
+    description: z.string(),
+  }),
+});
+
 export const collections = {
-  events: eventCollection,
+  blogs: blogCollection,
   usecases: useCaseCollection,
+  resources: resourceCollection,
 };

@@ -36,7 +36,7 @@
     }
 
     a {
-      @apply hover:text-green-75 text-green-200 underline transition-colors duration-200 ease-in-out;
+      @apply hover:text-green-75 text-green-300 font-medium underline transition-colors duration-200 ease-in-out;
     }
 
     code {

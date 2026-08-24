@@ -15,7 +15,7 @@ const { title, slug, subtitle, publishDate, thumbnail } = Astro.props;
 <div
   class="w-full bg-[url('../assets/background/event_container_vector.svg')] bg-[size:100%_100%] bg-[position:center_calc(100%+60rem)] bg-no-repeat"
 >
-  <main class="page-container my-24">
+  <main class="page-container my-30">
     <header class="mb-8 flex flex-col items-center justify-center gap-2">
       <h4 class="text-grey-300 text-3xl font-bold md:text-4xl">{title}</h4>
       <div class="text-grey-200 flex items-center gap-2 text-base">
@@ -25,7 +25,7 @@ const { title, slug, subtitle, publishDate, thumbnail } = Astro.props;
       </div>
     </header>
 
-    <div class="relative min-w-full overflow-hidden rounded-3xl">
+    <div class="relative mt-30 min-w-full overflow-hidden rounded-3xl">
       <img
         src={thumbnail}
         alt={`thumbnail-${slug}`}
@@ -33,7 +33,7 @@ const { title, slug, subtitle, publishDate, thumbnail } = Astro.props;
       />
     </div>
 
-    <article class="markdown-content mx-auto mt-24 max-w-[95%] md:max-w-[90%]">
+    <article class="markdown-content mx-auto mt-16 max-w-[95%] md:max-w-[90%]">
       <slot />
     </article>
   </main>

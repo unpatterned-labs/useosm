@@ -22,11 +22,9 @@ const { Content } = await entry.render();
 <Layout title={entry.data.title} description={entry.data.description}>
   <ResourceLayout
     title={entry.data.title}
-    slug={entry.data.slug}
+    slug={entry.slug}
     thumbnail={entry.data.thumbnail}
     description={entry.data.description}
-    publishDate={new Date(entry.data.date)}
-    author={entry.data.author}
   >
     <Content components={{ Button, ImageContainer }} />
   </ResourceLayout>

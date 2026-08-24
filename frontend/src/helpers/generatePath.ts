@@ -16,9 +16,9 @@ export const generateUsecasePath = (
   return `/${locale}/${APP_ROUTES.USECASES(slugify(usecase))}`;
 };
 
-export const generateEventPath = (
-  event: string,
+export const generateBlogPath = (
+  blog: string,
   locale: Locale = defaultLocale,
 ) => {
-  return `/${locale}/${APP_ROUTES.EVENTS(slugify(event))}`;
+  return `/${locale}/${APP_ROUTES.BLOGS(slugify(blog))}`;
 };

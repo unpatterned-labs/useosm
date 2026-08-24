@@ -9,7 +9,7 @@ import {
   getLocale,
   getUsecasesContent,
   getResourcesContent,
-  getEventsContent,
+  getBlogsContent,
 } from "@/i18n/utils";
 export interface Props {
   title?: string;
@@ -33,7 +33,7 @@ const gaId = "G-09VRRVG0BL";
 const lang = getLocale(Astro.currentLocale);
 const usecasesNav = getUsecasesContent(lang);
 const resourcesNav = getResourcesContent(lang);
-const eventsNav = getEventsContent(lang);
+const blogsNav = getBlogsContent(lang);
 ---
 
 <!doctype html>
@@ -44,7 +44,7 @@ const eventsNav = getEventsContent(lang);
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     {description && <meta name="description" content={description} />}
-    <title>UseOSM - {title}</title>
+    <title>{title} - UseOSM</title>
 
     <!-- Core SEO Meta Tags -->
     {description && <meta name="description" content={description} />}
@@ -109,7 +109,7 @@ const eventsNav = getEventsContent(lang);
         client:load
         usecases={usecasesNav}
         resources={resourcesNav}
-        events={eventsNav}
+        blogs={blogsNav}
       />
       <slot />
       <ScrollToTop client:load />
