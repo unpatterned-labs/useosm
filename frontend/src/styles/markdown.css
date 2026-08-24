@@ -32,7 +32,7 @@
     }
 
     img {
-      @apply mx-auto my-6 block h-auto max-w-full shadow-md;
+      @apply mx-auto my-6 block h-auto max-w-full;
     }
 
     a {
