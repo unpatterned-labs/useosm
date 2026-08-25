@@ -20,7 +20,7 @@ const site = getSiteContent(Astro.currentLocale);
 ---
 
 <section
-  class={cn("md:py-4 py-2.5 overflow-hidden", bgColor, height)}
+  class={cn("md:py-4 py-2.5 overflow-hidden relative", bgColor, height)}
   id="announcement-banner"
   data-speed={speed}
 >
@@ -141,7 +141,7 @@ const site = getSiteContent(Astro.currentLocale);
     position: absolute;
     top: 0;
     bottom: 0;
-    width: 1.25rem;
+    width: 3rem;
     z-index: 10;
     pointer-events: none;
   }
