@@ -17,6 +17,7 @@ const OSMResources = ({
   locale: string | undefined;
   resourcesCategory: Array<{
     id: number;
+    title: string;
     category: string;
     description: string;
   }>;
@@ -123,7 +124,7 @@ const OSMResources = ({
                       : "font-normal",
                   )}
                 >
-                  {category.category}
+                  {category.title}
                 </h4>
                 <p className="text-grey-200 text-sm font-light md:text-base">
                   {category.description}

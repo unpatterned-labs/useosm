@@ -36,7 +36,7 @@ export const Translator = ({
           }}
           className={cn(
             "text-grey-50 w-full cursor-pointer appearance-none bg-transparent pr-6 focus:outline-none",
-            position === "header" ? "text-grey-400 uppercase" : "",
+            position === "header" ? "text-grey-400 text-sm uppercase" : "",
           )}
         >
           {APP_CONTENT.LANGUAGES.filter((l) => l.supported).map((l) => (

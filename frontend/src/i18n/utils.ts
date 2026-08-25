@@ -1,6 +1,6 @@
 import type { CollectionEntry, CollectionKey } from "astro:content";
 import { defaultLocale, locales, type Locale } from "@/i18n/ui";
-import { eventsContent } from "@/i18n/content/events";
+import { blogsContent } from "@/i18n/content/blogs";
 import { usecasesContent } from "@/i18n/content/usecases";
 import { resourcesContent } from "@/i18n/content/resources";
 import { homeContent } from "@/i18n/content/home";
@@ -12,8 +12,8 @@ export const isLocale = (value: string | undefined): value is Locale =>
 export const getLocale = (currentLocale: string | undefined): Locale =>
   isLocale(currentLocale) ? currentLocale : defaultLocale;
 
-export const getEventsContent = (locale: string | undefined) =>
-  eventsContent[getLocale(locale)];
+export const getBlogsContent = (locale: string | undefined) =>
+  blogsContent[getLocale(locale)];
 
 export const getUsecasesContent = (locale: string | undefined) =>
   usecasesContent[getLocale(locale)];

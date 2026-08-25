@@ -45,36 +45,42 @@ export const homeContent: Record<Locale, HomePageContent> = {
       resourceCategories: [
         {
           id: 1,
-          category: getCategoryLabel(ResourceCategory.EDITORS, "en"),
+          title: getCategoryLabel(ResourceCategory.EDITORS, "en"),
+          category: ResourceCategory.EDITORS,
           description: "Editors are too used to contribute to osm data",
         },
         {
           id: 2,
-          category: getCategoryLabel(
+          title: getCategoryLabel(
             ResourceCategory.DATA_EXTRACTION_AND_ANALYSIS,
             "en",
           ),
+          category: ResourceCategory.DATA_EXTRACTION_AND_ANALYSIS,
           description:
             "Utilities and libraries to query, extract, and analyze raw OpenStreetMap data at scale.",
         },
         {
           id: 3,
-          category: getCategoryLabel(
+          title: getCategoryLabel(
             ResourceCategory.MAP_VISUALIZATION_STACK,
             "en",
           ),
+
+          category: ResourceCategory.MAP_VISUALIZATION_STACK,
           description:
             "Utilities and libraries to query, extract, and analyze raw OpenStreetMap data at scale.",
         },
         {
           id: 4,
-          category: getCategoryLabel(ResourceCategory.LIBRARIES, "en"),
+          title: getCategoryLabel(ResourceCategory.LIBRARIES, "en"),
+          category: ResourceCategory.LIBRARIES,
           description:
             "Code libraries in various programming languages to read, write, and manipulate OSM data.",
         },
         {
           id: 5,
-          category: getCategoryLabel(ResourceCategory.NAVIGATION, "en"),
+          title: getCategoryLabel(ResourceCategory.NAVIGATION, "en"),
+          category: ResourceCategory.NAVIGATION,
           description:
             "Routing engines, on-device libraries, and mobile apps that turn OSM data into turn-by-turn navigation.",
         },
@@ -173,43 +179,48 @@ export const homeContent: Record<Locale, HomePageContent> = {
         title: "Explorer toutes les ressources",
         link: "/fr/resources",
       },
-       resourceCategories: [
-  {
-    id: 1,
-    category: getCategoryLabel(ResourceCategory.EDITORS, "fr"),
-    description: "Outils utilisés pour contribuer aux données OSM.",
-  },
-  {
-    id: 2,
-    category: getCategoryLabel(
-      ResourceCategory.DATA_EXTRACTION_AND_ANALYSIS,
-      "fr",
-    ),
-    description:
-      "Utilitaires et bibliothèques pour interroger, extraire et analyser les données brutes d'OpenStreetMap à grande échelle.",
-  },
-  {
-    id: 3,
-    category: getCategoryLabel(
-      ResourceCategory.MAP_VISUALIZATION_STACK,
-      "fr",
-    ),
-    description:
-      "Outils et bibliothèques pour styliser, rendre et afficher les données OSM sous forme de cartes.",
-  },
-  {
-    id: 4,
-    category: getCategoryLabel(ResourceCategory.LIBRARIES, "fr"),
-    description:
-      "Bibliothèques de code dans divers langages de programmation pour lire, écrire et manipuler les données OSM.",
-  },
-  {
-    id: 5,
-    category: getCategoryLabel(ResourceCategory.NAVIGATION, "fr"),
-    description:
-      "Moteurs de routage, bibliothèques embarquées et applications mobiles qui transforment les données OSM en navigation étape par étape.",
-  },
-],
+      resourceCategories: [
+        {
+          id: 1,
+          category: ResourceCategory.EDITORS,
+          title: getCategoryLabel(ResourceCategory.EDITORS, "fr"),
+          description: "Outils utilisés pour contribuer aux données OSM.",
+        },
+        {
+          id: 2,
+          category: ResourceCategory.DATA_EXTRACTION_AND_ANALYSIS,
+          title: getCategoryLabel(
+            ResourceCategory.DATA_EXTRACTION_AND_ANALYSIS,
+            "fr",
+          ),
+          description:
+            "Utilitaires et bibliothèques pour interroger, extraire et analyser les données brutes d'OpenStreetMap à grande échelle.",
+        },
+        {
+          id: 3,
+          category: ResourceCategory.MAP_VISUALIZATION_STACK,
+          title: getCategoryLabel(
+            ResourceCategory.MAP_VISUALIZATION_STACK,
+            "fr",
+          ),
+          description:
+            "Outils et bibliothèques pour styliser, rendre et afficher les données OSM sous forme de cartes.",
+        },
+        {
+          id: 4,
+          category: ResourceCategory.LIBRARIES,
+          title: getCategoryLabel(ResourceCategory.LIBRARIES, "fr"),
+          description:
+            "Bibliothèques de code dans divers langages de programmation pour lire, écrire et manipuler les données OSM.",
+        },
+        {
+          id: 5,
+          category: ResourceCategory.NAVIGATION,
+          title: getCategoryLabel(ResourceCategory.NAVIGATION, "fr"),
+          description:
+            "Moteurs de routage, bibliothèques embarquées et applications mobiles qui transforment les données OSM en navigation étape par étape.",
+        },
+      ],
     },
     HowOSMWorks: {
       tagline: "Comment fonctionne OSM",

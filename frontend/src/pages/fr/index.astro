@@ -8,15 +8,15 @@ import OrgsUsingOsm from "@/components/home/astro-components/orgs_using_osm.astr
 import OsmResources from "@/components/home/astro-components/osm-resources.astro";
 import OsmCommunity from "@/components/home/astro-components/osm-community.astro";
 import EventAnnouncement from "@/components/ui/react/event-announcement";
-import { getEventsContent, getHomeContent } from "@/i18n/utils";
+import { getBlogsContent, getHomeContent } from "@/i18n/utils";
 
 const home = getHomeContent(Astro.currentLocale);
-const events = getEventsContent(Astro.currentLocale);
+const blogs = getBlogsContent(Astro.currentLocale);
 ---
 
 <Layout title={home.title} description={home.description}>
   <Hero />
-  <EventAnnouncement client:load events={events} />
+  <EventAnnouncement client:load events={blogs} />
   <AboutOSM />
   <OSMStats client:load title={home.OSMStats.title} />
   <OrgsUsingOsm />
