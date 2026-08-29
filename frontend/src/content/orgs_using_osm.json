@@ -10,6 +10,11 @@
     "link": "https://www.tomtom.com/"
   },
   {
+    "name": "Michelin",
+    "image": "michelin.png",
+    "link": "https://www.michelin.com"
+  },
+  {
     "name": "DHL",
     "image": "dhl.png",
     "link": "https://www.dhl.com"
