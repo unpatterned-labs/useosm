@@ -128,18 +128,17 @@ We anticipate a 4-month implementation timeline from the date of funding. There 
 Milestone | Anticipated Completion Date | Status
 -- | -- | --
 Project kickoff | June, 2025 | Done
-Figma prototype design | July, 2025 | In progress
-Community review of UI design | July, 2025 | Planned
-Content research (use cases, tools, metadata) | August, 2025 | Planned
-Core site development (Astro) | August, 2025 | Planned
-Hackathon planning & outreach | September, 2025 | Planned
-Hackathon event | September, 2025 | Planned
-Public launch of UseOSM | September, 2025 | Planned
-Lighting talk at SotM Global | October 3 - 5, 2025 | Planned
+Figma prototype design | July, 2025 | Done
+Community review of UI design | July, 2025 | Done
+Content research (use cases, tools, metadata) | August, 2025 | Done
+Core site development (Astro) | August 2025 - July 2026 | Done
+Hackathon planning & outreach | June - July, 2026 | Done
+Hackathon event | July - August, 2026 | Done
+Talk at SotM Paris 2026| August 28 - 30, 2026 | In progress
+Public launch of UseOSM | August, 2026 | In progress
 Post-launch feedback and content adjustments | October, 2025 | Planned
-Final report and outcomes | October, 2025 | Planned
-Evaluation and future planning | October, 2025 | Planned
-Lighting talk at SotM Africa | November 28 - 30, 2025 | Planned
+Final report and outcomes | September, 2026 | In progress
+Evaluation and future planning | September, 2026 | Planned
 </div><br /></b>
 
 ### Community Engagement
