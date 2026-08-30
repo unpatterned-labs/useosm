@@ -15,6 +15,16 @@
     "link": "https://www.michelin.com"
   },
   {
+    "name": "Geofabrik",
+    "image": "geofabrik.png",
+    "link": "https://www.geofabrik.de/"
+  },
+  {
+    "name": "Esri",
+    "image": "esri.png",
+    "link": "https://www.esri.com"
+  },
+  {
     "name": "DHL",
     "image": "dhl.png",
     "link": "https://www.dhl.com"
