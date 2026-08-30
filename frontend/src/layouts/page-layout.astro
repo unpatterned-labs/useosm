@@ -1,6 +1,6 @@
 ---
 import "@/styles/global.css";
-import GoogleAnalytics from "@/components/shared/astro-components/google-analytics.astro";
+import GoatCounter from "@/components/shared/astro-components/goat-counter.astro";
 import AnnouncementBanner from "@/components/shared/astro-components/announcement-banner.astro";
 import NavBar from "@/components/header";
 import Footer from "@/components/footer/footer.astro";
@@ -28,8 +28,6 @@ const ogImageUrl = new URL(
   Astro.site || Astro.url,
 ).toString();
 
-// Google Analytics ID
-const gaId = "G-09VRRVG0BL";
 const lang = getLocale(Astro.currentLocale);
 const usecasesNav = getUsecasesContent(lang);
 const resourcesNav = getResourcesContent(lang);
@@ -97,8 +95,8 @@ const blogsNav = getBlogsContent(lang);
     />
 
     <link rel="dns-prefetch" href="//fonts.googleapis.com" />
-    <link rel="dns-prefetch" href="//www.google-analytics.com" />
-    <GoogleAnalytics gaId={gaId} />
+    <link rel="dns-prefetch" href="//gc.zgo.at" />
+    <GoatCounter />
   </head>
   <body>
     <main class="slide-in-container">
