@@ -18,7 +18,7 @@
     "image": "https://repository-images.githubusercontent.com/179635396/434a9d18-03a0-4051-abad-ea242d2cce1b",
     "website": "https://www.akylas.fr/",
     "description": "Offline hiking map app.",
-    "score": 4.5,
+    "score": 4.25,
     "lastUpdated": "2026-06-03"
   },
   {
@@ -42,6 +42,28 @@
     "description": "Allows users to download, edit, and upload OSM data in ArcMap, and/or create feature services based on OSM data in ArcGIS Server.",
     "score": 6.0,
     "lastUpdated": "2022-05-05"
+  },
+  {
+    "id": 1217050314,
+    "title": "ArxSilex MapTools Converter",
+    "category": "Map Visualization",
+    "slug": "arxsilex-maptools-converter",
+    "image": "https://wiki.openstreetmap.org/w/images/thumb/3/3a/ArxSilex-MapTools-Converter-logo.png/250px-ArxSilex-MapTools-Converter-logo.png",
+    "website": "https://www.arxsilex.de/app/maptools-converter/",
+    "description": "Portable desktop application for locally previewing, clipping, converting and packaging OSM PBF/XML, Mapsforge map/POI, raster elevation and LAS/LAZ/COPC data.",
+    "score": 4.625,
+    "lastUpdated": "2026-09-24"
+  },
+  {
+    "id": 131088680,
+    "title": "ASComplete",
+    "category": "Editors",
+    "slug": "ascomplete",
+    "image": "https://wiki.openstreetmap.org/w/images/thumb/2/2e/ASComplete_logo.svg/250px-ASComplete_logo.svg.png",
+    "website": "https://codeberg.org/Patkek/ASComplete",
+    "description": "Anti-surveillance surveying app for Android.",
+    "score": 8.0,
+    "lastUpdated": "2026-09-14"
   },
   {
     "id": 1802660736,
@@ -73,7 +95,7 @@
     "image": "https://cartes.app/favicon.ico",
     "website": "https://cartes.app/",
     "description": "Universal online maps for the general public. No app required – available directly on the internet.",
-    "score": 7.875,
+    "score": 8.0,
     "lastUpdated": "2026-07-14"
   },
   {
@@ -107,7 +129,7 @@
     "website": "https://www.comaps.app/",
     "description": "Privacy-focused, open-source, free and fast offline maps without ads, developed by the community for the community.",
     "score": 9.5,
-    "lastUpdated": "2026-08-07"
+    "lastUpdated": "2026-09-23"
   },
   {
     "id": 894563760,
@@ -128,7 +150,7 @@
     "image": "https://wiki.openstreetmap.org/w/images/thumb/9/9a/CyclOSM.png/250px-CyclOSM.png",
     "website": "https://www.cyclosm.org/",
     "description": "map style for OSM aboout cycling",
-    "score": 4.25,
+    "score": 5.0,
     "lastUpdated": "2021-07-22"
   },
   {
@@ -217,7 +239,7 @@
     "website": "https://fieldpapers.org/",
     "description": "A tool for printing maps for data collection during field surveys for OpenStreetMap.",
     "score": 5.75,
-    "lastUpdated": "2026-06-30"
+    "lastUpdated": "2026-09-23"
   },
   {
     "id": 763639443,
@@ -231,6 +253,17 @@
     "lastUpdated": "2024-07-29"
   },
   {
+    "id": 2064459392,
+    "title": "Freepark",
+    "category": "Navigation",
+    "slug": "freepark",
+    "image": "https://freeparkapp.fr/favicon.ico",
+    "website": "https://freeparkapp.fr/",
+    "description": "Find free parking in mainland France, report and complete parking spots in OSM.",
+    "score": 4.875,
+    "lastUpdated": "2026-09-28"
+  },
+  {
     "id": 1622628407,
     "title": "GeoDesk",
     "category": "Data Extraction and Analysis",
@@ -238,7 +271,7 @@
     "image": "https://wiki.openstreetmap.org/w/images/thumb/0/09/Geodesk-logo2.png/250px-Geodesk-logo2.png",
     "website": "http://www.geodesk.com/",
     "description": "Fast and storage-efficient spatial database engine for OSM data.",
-    "score": 4.5,
+    "score": 4.25,
     "lastUpdated": "2026-07-01"
   },
   {
@@ -272,7 +305,7 @@
     "website": "https://apps.gnome.org/Maps/",
     "description": "A simple map client for GNOME.",
     "score": 8.5,
-    "lastUpdated": "2026-08-01"
+    "lastUpdated": "2026-09-11"
   },
   {
     "id": 1568054564,
@@ -294,7 +327,18 @@
     "website": "https://docs.geodesk.com/gol",
     "description": "Command-line utility for building, managing and querying Geo-Object Libraries .",
     "score": 4.75,
-    "lastUpdated": "2026-08-17"
+    "lastUpdated": "2026-09-16"
+  },
+  {
+    "id": 70794,
+    "title": "GPS",
+    "category": "Navigation",
+    "slug": "gps",
+    "image": "",
+    "website": "",
+    "description": "Simple script language to effect tag manipulation on geoJSON files.",
+    "score": 6.0,
+    "lastUpdated": "2026-09-21"
   },
   {
     "id": 2115680030,
@@ -327,7 +371,7 @@
     "website": "https://gpx.studio/app",
     "description": "an free and open source online tool for creating and editing GPX files",
     "score": 5.375,
-    "lastUpdated": "2026-06-20"
+    "lastUpdated": "2026-09-11"
   },
   {
     "id": 2076790178,
@@ -338,7 +382,7 @@
     "website": "https://www.gpxsee.org/",
     "description": "GPS log file viewer and analyzer.",
     "score": 5.5,
-    "lastUpdated": "2026-08-28"
+    "lastUpdated": "2026-09-26"
   },
   {
     "id": 411233702,
@@ -359,8 +403,8 @@
     "image": "https://wiki.openstreetmap.org/w/images/thumb/a/ad/GraphHopper-Maps-Example.png/250px-GraphHopper-Maps-Example.png",
     "website": "https://www.graphhopper.com/",
     "description": "Routing server and Java library.",
-    "score": 4.875,
-    "lastUpdated": "2025-10-14"
+    "score": 5.125,
+    "lastUpdated": "2026-09-29"
   },
   {
     "id": 588035033,
@@ -451,6 +495,17 @@
     "lastUpdated": "2026-07-28"
   },
   {
+    "id": 457713045,
+    "title": "libraries",
+    "category": "Navigation",
+    "slug": "libraries",
+    "image": "https://wiki.openstreetmap.org/w/images/thumb/7/72/MapComplete_Screenshot.png/250px-MapComplete_Screenshot.png",
+    "website": "https://mapcomplete.org/libraries",
+    "description": "A MapComplete theme: A place to read and/or borrow books.",
+    "score": 4.875,
+    "lastUpdated": "2019-04-01"
+  },
+  {
     "id": 1224090016,
     "title": "LINZ Address Update",
     "category": "Editors",
@@ -481,7 +536,7 @@
     "website": "https://www.mapbox.com/maps/",
     "description": "Embed customizable, interactive vector maps in Web, mobile, and desktop applications.",
     "score": 4.375,
-    "lastUpdated": "2026-08-20"
+    "lastUpdated": "2026-09-29"
   },
   {
     "id": 638634592,
@@ -502,8 +557,19 @@
     "image": "https://wiki.openstreetmap.org/w/images/thumb/9/9a/MapComplete.svg/250px-MapComplete.svg.png",
     "website": "https://mapcomplete.org/",
     "description": "An easy-to-use webapp to edit OpenStreetMap.",
-    "score": 8.375,
+    "score": 9.75,
     "lastUpdated": "2026-02-05"
+  },
+  {
+    "id": 283594167,
+    "title": "MapDraw",
+    "category": "Navigation",
+    "slug": "mapdraw",
+    "image": "https://wiki.openstreetmap.org/w/images/thumb/1/13/MapDraw-icon-1024x1024.png/250px-MapDraw-icon-1024x1024.png",
+    "website": "https://www.mapdraw.net/",
+    "description": "A simple, powerful web-based editor for creating, viewing, and managing geographic data like paths, areas, and markers, built with Leaflet.js.",
+    "score": 6.5,
+    "lastUpdated": "2026-07-20"
   },
   {
     "id": 1964279374,
@@ -513,8 +579,30 @@
     "image": "https://repository-images.githubusercontent.com/729304206/691be556-b353-4efb-8c70-f3a32fd01605",
     "website": "https://mapforge.org/",
     "description": "An easy to use map editor to create your own maps.",
-    "score": 5.0,
-    "lastUpdated": "2026-08-20"
+    "score": 5.5,
+    "lastUpdated": "2026-09-20"
+  },
+  {
+    "id": 1514567722,
+    "title": "MapLibre GL JS",
+    "category": "Map Visualization",
+    "slug": "maplibre-gl-js",
+    "image": "https://wiki.openstreetmap.org/w/images/thumb/1/1d/Maplibre-logo.png/250px-Maplibre-logo.png",
+    "website": "https://maplibre.org/projects/gl-js/",
+    "description": "Open-source mapping libraries for maps on websites.",
+    "score": 4.25,
+    "lastUpdated": "2026-09-24"
+  },
+  {
+    "id": 509145019,
+    "title": "Mapnik",
+    "category": "Map Visualization",
+    "slug": "mapnik",
+    "image": "https://wiki.openstreetmap.org/w/images/thumb/d/d6/Mapnik-logo.png/250px-Mapnik-logo.png",
+    "website": "https://mapnik.org/",
+    "description": "Mapnik is an open source toolkit for developing mapping applications",
+    "score": 4.5,
+    "lastUpdated": "2026-09-23"
   },
   {
     "id": 929510231,
@@ -525,7 +613,7 @@
     "website": "https://maproulette.org/",
     "description": "Micro-task platform for OpenStreetMap.",
     "score": 7.5,
-    "lastUpdated": "2026-07-16"
+    "lastUpdated": "2026-09-17"
   },
   {
     "id": 195457472,
@@ -547,7 +635,7 @@
     "website": "https://mapserver.org/",
     "description": "MapServer is an Open Source platform for publishing spatial data and interactive mapping applications to the web.",
     "score": 4.625,
-    "lastUpdated": "2026-07-10"
+    "lastUpdated": "2026-09-06"
   },
   {
     "id": 1535780407,
@@ -569,7 +657,7 @@
     "website": "http://mapswipe.org/",
     "description": "Super-simple contribution to humanitarian mapping (indirectly) by helping find features in imagery.",
     "score": 4.25,
-    "lastUpdated": "2026-08-10"
+    "lastUpdated": "2026-09-23"
   },
   {
     "id": 1164302394,
@@ -590,7 +678,7 @@
     "image": "https://wiki.openstreetmap.org/w/images/thumb/e/e6/Marble-logo.svg/250px-Marble-logo.svg.png",
     "website": "http://marble.kde.org/",
     "description": "Virtual globe with multiple projections, tiles and vector data, routing and POI search.",
-    "score": 4.5,
+    "score": 5.25,
     "lastUpdated": "2025-09-09"
   },
   {
@@ -620,19 +708,19 @@
     "title": "Navit",
     "category": "Navigation",
     "slug": "navit",
-    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Navit%20logoV2%20squircle.svg",
+    "image": "https://wiki.openstreetmap.org/w/images/thumb/4/4d/Navit_icon.png/250px-Navit_icon.png",
     "website": "https://www.navit-project.org/",
     "description": "Most popular open source car navigation tool; maps (offline-\"custom\"), vector-rendered.",
-    "score": 5.375,
+    "score": 6.25,
     "lastUpdated": "2026-02-08"
   },
   {
-    "id": 1093984909,
+    "id": 1167672403,
     "title": "New Zealand Place Names",
     "category": "Editors",
     "slug": "new-zealand-place-names",
     "image": "https://osm-nz.github.io/img/logo.png",
-    "website": "https://osm-nz.github.io/place-name-conflation",
+    "website": "https://osm-nz.github.io/osm-conflation-engine/#/project/ref:linz:place_id",
     "description": "Compares place names with the NZGB, and reports missing places and names.",
     "score": 5.25,
     "lastUpdated": "2024-06-08"
@@ -708,7 +796,7 @@
     "title": "Open Infrastructure Map",
     "category": "Map Visualization",
     "slug": "open-infrastructure-map",
-    "image": "https://wiki.openstreetmap.org/w/images/thumb/8/88/openinframap-world.png/250px-openinframap-world.png",
+    "image": "https://openinframap.org/pwa-64x64.png",
     "website": "https://openinframap.org/",
     "description": "Open Infrastructure Map is a view of the world's hidden infrastructure mapped in the OpenStreetMap database.",
     "score": 5.5,
@@ -778,7 +866,7 @@
     "website": "https://openrailwaymap.app/",
     "description": "OpenRailwayMap with vector tiles.",
     "score": 4.25,
-    "lastUpdated": "2026-01-25"
+    "lastUpdated": "2026-09-14"
   },
   {
     "id": 1205465821,
@@ -789,7 +877,7 @@
     "website": "https://openrouteservice.org/",
     "description": "routing services offered by University of Heidelberg",
     "score": 6.0,
-    "lastUpdated": "2026-07-28"
+    "lastUpdated": "2026-09-24"
   },
   {
     "id": 1626583424,
@@ -799,7 +887,7 @@
     "image": "https://wiki.openstreetmap.org/w/images/thumb/5/58/OpenSeaMap_Icon_1024.png/250px-OpenSeaMap_Icon_1024.png",
     "website": "https://wiki.openseamap.org/wiki/Hauptseite:en",
     "description": "Display of navigation marks, waterways, restricted areas & route planning functions with waypoints.",
-    "score": 4.125,
+    "score": 4.625,
     "lastUpdated": "2025-07-08"
   },
   {
@@ -811,7 +899,7 @@
     "website": "https://opensnowmap.org/",
     "description": "Ski map website Ski map mapnik style and scripts.",
     "score": 4.5,
-    "lastUpdated": "2026-06-03"
+    "lastUpdated": "2026-09-18"
   },
   {
     "id": 591398512,
@@ -821,8 +909,8 @@
     "image": "https://wiki.openstreetmap.org/w/images/thumb/0/0f/OpenStop_Logo.png/250px-OpenStop_Logo.png",
     "website": "https://openstop.app/",
     "description": "App for collecting OpenStreetMap-compliant accessibility data in public transport.",
-    "score": 7.375,
-    "lastUpdated": "2025-12-16"
+    "score": 7.625,
+    "lastUpdated": "2026-09-18"
   },
   {
     "id": 274776034,
@@ -832,7 +920,7 @@
     "image": "https://wiki.openstreetmap.org/w/images/thumb/4/48/Openstreetbrowser_logo.svg/250px-Openstreetbrowser_logo.svg.png",
     "website": "https://openstreetbrowser.org/",
     "description": "Interactively browse not only the map but also the contained information.",
-    "score": 5.125,
+    "score": 5.75,
     "lastUpdated": "2024-07-23"
   },
   {
@@ -844,7 +932,7 @@
     "website": "https://americanamap.org/",
     "description": "A quintessentially American map style.",
     "score": 4.25,
-    "lastUpdated": "2026-07-04"
+    "lastUpdated": "2026-09-12"
   },
   {
     "id": 1604529652,
@@ -856,6 +944,17 @@
     "description": "Web calendar editable with an OSM account .",
     "score": 4.125,
     "lastUpdated": "2021-11-07"
+  },
+  {
+    "id": 1736933296,
+    "title": "OpenStreetMap Carto",
+    "category": "Map Visualization",
+    "slug": "openstreetmap-carto",
+    "image": "https://wiki.openstreetmap.org/w/images/thumb/6/69/Baclaran_and_Pasay_Rotunda_-_in_Standard_map_layer.png/250px-Baclaran_and_Pasay_Rotunda_-_in_Standard_map_layer.png",
+    "website": "https://www.openstreetmap.org/?layers=M",
+    "description": "A general-purpose OpenStreetMap mapnik style, in CartoCSS.",
+    "score": 4.25,
+    "lastUpdated": "2026-09-10"
   },
   {
     "id": 532187133,
@@ -899,7 +998,7 @@
     "website": "https://opentopomap.org/",
     "description": "Topographic maps from OSM and SRTM data.",
     "score": 4.75,
-    "lastUpdated": "2026-06-26"
+    "lastUpdated": "2026-09-23"
   },
   {
     "id": 1401011354,
@@ -910,7 +1009,7 @@
     "website": "https://organicmaps.app/",
     "description": "Privacy-focused, open-source, free and fast offline maps without ads.",
     "score": 9.0,
-    "lastUpdated": "2026-08-27"
+    "lastUpdated": "2026-09-29"
   },
   {
     "id": 2069984600,
@@ -943,7 +1042,7 @@
     "website": "https://yuiseki.github.io/osm-address-editor-vite/",
     "description": "This web app make editing addresses in OpenStreetMap fun and easy.",
     "score": 6.0,
-    "lastUpdated": "2026-02-25"
+    "lastUpdated": "2026-09-18"
   },
   {
     "id": 2105720507,
@@ -988,17 +1087,6 @@
     "description": "",
     "score": 4.5,
     "lastUpdated": "2026-05-18"
-  },
-  {
-    "id": 1961466556,
-    "title": "OSM Open",
-    "category": "Map Visualization",
-    "slug": "osm-open",
-    "image": "https://wiki.openstreetmap.org/w/images/thumb/b/ba/osm-open_v1-2-0.png/250px-osm-open_v1-2-0.png",
-    "website": "https://hauke-stieler.de/osm-open/",
-    "description": "Web app to visualize and filter opening hours of POIs.",
-    "score": 4.25,
-    "lastUpdated": "2026-06-20"
   },
   {
     "id": 2108186087,
@@ -1086,7 +1174,7 @@
     "website": "https://osmand.net/",
     "description": "Navigation (routing) offline and online, OSM and custom map display (vector data or tiles, offline, cached or online), POI and address search (offline or online Nominatim), submit OSM bugs and POI, mark favorites, public transport info. Actively being developed. Keywords: GPS navigator, GPS navigation, navigation system, satellite navigation, sat nav, satnav, GPS tracker, GPS tracking, GPS map, OpenStreetMap, OSM viewer, map viewer, OSM mapping, offline routing, offline world map, global offline country maps, outdoor.",
     "score": 9.25,
-    "lastUpdated": "2026-07-31"
+    "lastUpdated": "2026-09-04"
   },
   {
     "id": 2103923465,
@@ -1096,8 +1184,8 @@
     "image": "https://wiki.openstreetmap.org/w/images/thumb/9/9b/OsmapiR_logo.svg/250px-OsmapiR_logo.svg.png",
     "website": "https://docs.ropensci.org/osmapiR/",
     "description": "Openstreetmap API implementation for R.",
-    "score": 4.5,
-    "lastUpdated": "2026-02-15"
+    "score": 4.75,
+    "lastUpdated": "2026-09-04"
   },
   {
     "id": 1338921087,
@@ -1173,7 +1261,7 @@
     "image": "https://wiki.openstreetmap.org/w/images/thumb/7/7a/OSMTracker_for_Android.png/250px-OSMTracker_for_Android.png",
     "website": "https://github.com/labexp/osmtracker-android/wiki",
     "description": "Offline GPS tracker with fast POI placement shortcuts. Exports in GPX format with waypoints, suitable for editing in JOSM.",
-    "score": 7.25,
+    "score": 7.0,
     "lastUpdated": "2025-09-12"
   },
   {
@@ -1186,6 +1274,17 @@
     "description": "Tool for matching Overture Maps data with OpenStreetMap elements and applying enriched tags.",
     "score": 4.25,
     "lastUpdated": "2026-03-23"
+  },
+  {
+    "id": 909172537,
+    "title": "Overpass turbo",
+    "category": "Map Visualization",
+    "slug": "overpass-turbo",
+    "image": "https://wiki.openstreetmap.org/w/images/thumb/c/c3/Overpass-turbo.svg/250px-Overpass-turbo.svg.png",
+    "website": "https://overpass-turbo.eu/",
+    "description": "A web-based data filtering tool for OpenStreetMap using the Overpass API.",
+    "score": 5.25,
+    "lastUpdated": "2025-04-09"
   },
   {
     "id": 668091192,
@@ -1238,9 +1337,9 @@
     "slug": "peaknav",
     "image": "https://wiki.openstreetmap.org/w/images/thumb/a/ac/App-view-monte-rosa.jpg/250px-App-view-monte-rosa.jpg",
     "website": "https://peaknav.com/",
-    "description": "3D mountain viewer for offline usage. Keywords: 3D, hiking, outdoor, map viewer, OSM viewer, OpenStreetMap.",
-    "score": 4.375,
-    "lastUpdated": "2026-08-05"
+    "description": "3D mountain viewer for offline usage. Keywords: 3D, hiking, skiing, outdoor, map viewer, OSM viewer, OpenStreetMap.",
+    "score": 4.875,
+    "lastUpdated": "2026-09-23"
   },
   {
     "id": 955079320,
@@ -1317,7 +1416,7 @@
     "website": "https://qgis.org/",
     "description": "QGIS is a free, open source, cross platform (lin/win/mac) geographical information system (GIS).",
     "score": 8.25,
-    "lastUpdated": "2026-08-28"
+    "lastUpdated": "2026-09-25"
   },
   {
     "id": 445195879,
@@ -1328,7 +1427,7 @@
     "website": "https://github.com/Maproom/qmapshack/wiki",
     "description": "Consumer grade GIS software, synchronization with Garmin devices.",
     "score": 5.625,
-    "lastUpdated": "2026-08-21"
+    "lastUpdated": "2026-09-05"
   },
   {
     "id": 1058305148,
@@ -1361,7 +1460,7 @@
     "website": "https://rackfinder.app/",
     "description": "Easily find bike racks in the nearby area and add unmapped ones.",
     "score": 6.625,
-    "lastUpdated": "2026-04-06"
+    "lastUpdated": "2026-09-14"
   },
   {
     "id": 413160656,
@@ -1430,6 +1529,17 @@
     "lastUpdated": "2026-08-05"
   },
   {
+    "id": 695844940,
+    "title": "Seamap",
+    "category": "Map Visualization",
+    "slug": "seamap",
+    "image": "https://openwaters.io/charts/seamap/viewer/favicon.ico",
+    "website": "https://openwaters.io/charts/seamap/viewer/",
+    "description": "A nautical-themed map with depths, seamarks, and hazards.",
+    "score": 4.75,
+    "lastUpdated": "2026-09-22"
+  },
+  {
     "id": 174026266,
     "title": "Shareish",
     "category": "Map Visualization",
@@ -1448,7 +1558,7 @@
     "image": "https://wiki.openstreetmap.org/w/images/thumb/f/f1/simple-task-manager_v1-6-0.webp/250px-simple-task-manager_v1-6-0.webp",
     "website": "https://stm.hauke-stieler.de/",
     "description": "Simple and easy to use task manager for collaborative mapping in OpenStreetMap.",
-    "score": 4.625,
+    "score": 4.375,
     "lastUpdated": "2026-06-20"
   },
   {
@@ -1481,8 +1591,8 @@
     "image": "https://wiki.openstreetmap.org/w/images/thumb/6/6f/SMASH-logo.png/250px-SMASH-logo.png",
     "website": "https://www.geopaparazzi.org/smash/",
     "description": "An easy-to-use app for your phone that helps you quickly map and collect information about the world, with tools for taking notes, photos, and GPS tracking.",
-    "score": 5.125,
-    "lastUpdated": "2026-04-02"
+    "score": 5.375,
+    "lastUpdated": "2026-09-17"
   },
   {
     "id": 1906843120,
@@ -1526,7 +1636,7 @@
     "website": "https://sustainable.zottelig.ch/",
     "description": "A map that shows facilities and services in your area that are environmentally, socially and economically sustainable.",
     "score": 7.625,
-    "lastUpdated": "2026-06-14"
+    "lastUpdated": "2026-09-10"
   },
   {
     "id": 1051456084,
@@ -1537,7 +1647,7 @@
     "website": "https://github.com/hotosm/tasking-manager/",
     "description": "Tool for teams to coordinate mapping on OpenStreetMap. The screenshot shows a project progress overview of the Tasking Manager.",
     "score": 5.25,
-    "lastUpdated": "2026-07-15"
+    "lastUpdated": "2026-09-04"
   },
   {
     "id": 1751152395,
@@ -1636,7 +1746,7 @@
     "website": "https://github.com/Zkir/UrbanEye3D",
     "description": "Displays 3D world directly in JOSM.",
     "score": 4.25,
-    "lastUpdated": "2026-08-21"
+    "lastUpdated": "2026-09-19"
   },
   {
     "id": 1197063454,
@@ -1657,8 +1767,8 @@
     "image": "https://wiki.openstreetmap.org/w/images/thumb/5/52/Vespucci-logo.svg/250px-Vespucci-logo.svg.png",
     "website": "https://vespucci.io/",
     "description": "OpenStreetMap editor for Android.",
-    "score": 8.5,
-    "lastUpdated": "2026-08-08"
+    "score": 9.0,
+    "lastUpdated": "2026-09-21"
   },
   {
     "id": 815544004,
@@ -1692,6 +1802,17 @@
     "description": "website that shows waymarked trails for hiking, cycling, mtb, riding, skating and winter sport slopes.",
     "score": 5.75,
     "lastUpdated": "2026-08-17"
+  },
+  {
+    "id": 413454681,
+    "title": "Wayside",
+    "category": "Map Visualization",
+    "slug": "wayside",
+    "image": "https://wayside.cc/favicon.ico",
+    "website": "https://wayside.cc/",
+    "description": "Wayside is a web map for finding small public amenities from OpenStreetMap — public toilets, drinking water, benches, playgrounds, recycling and about twenty more categories — with a page for every city and category it covers.",
+    "score": 4.125,
+    "lastUpdated": "2026-09-03"
   },
   {
     "id": 1740300129,
